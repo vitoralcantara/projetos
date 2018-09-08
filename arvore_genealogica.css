@@ -1,5 +1,7 @@
 .arvore {
     text-align: center;
+    justify-content: space-between;
+    border: 1px solid green ;
 }
 
 .footer{
@@ -8,4 +10,8 @@
    bottom: 5%;
    width: 100%;
    text-align: center;
+}
+
+small { 
+    font-size: small;
 }

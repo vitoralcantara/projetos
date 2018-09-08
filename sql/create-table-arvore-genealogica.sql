@@ -1,4 +1,4 @@
-create table if not exists arvore (
+create table if not exists pessoas (
     id INT not null AUTO_INCREMENT,
     nome VARCHAR(255) not null,
     pai INT,

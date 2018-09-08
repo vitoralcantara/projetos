@@ -4,7 +4,7 @@
 
 <h2>Insira uma pessoa</h2>
 
-<form action="/arvore_genealogica.php" method="post">
+<form action="/inserir_pessoa_DAO.php" method="post">
   Nome da pessoa:<br>
   <input type="text" name="nomedapessoa" value="">
   <br>

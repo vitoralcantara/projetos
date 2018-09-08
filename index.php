@@ -6,12 +6,16 @@
 
 <body>
 
-<h2>Arvore genealógica da família Alcântara Gregório</h2>
+<h2>Arvore genealógica da família Alcântara Gregório - <small><a href="/inserir_pessoa.php">Adicionar pessoa à árvore</a></small> </h2>
 
 <div class="arvore">
 <?php require_once "conexao_bd.php";
 
-echo $res_array[0][1];
+for($i = 0; $i < count($res_array);$i++){
+
+    echo $res_array[$i][1] . " ";
+    //echo "<br/>";    
+}
 
 ?>
 
@@ -21,9 +25,6 @@ echo $res_array[0][1];
 <br>
 
 <div class="footer">
-<form action="/inserir_pessoa.php">
-    <input type="submit" value="Adicionar pessoa à árvore" />
-</form>
 
 </div>
 

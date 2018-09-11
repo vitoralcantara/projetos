@@ -1,3 +1,6 @@
+<?php
+require_once('authenticate.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +14,13 @@
 <div class="arvore">
 <?php require_once "conexao_bd.php";
 
+$random_family = getRandomFamily();
+
 for($i = 0; $i < count($res_array);$i++){
 
-    echo $res_array[$i][1] . " ";
-    //echo "<br/>";    
+    echo "<div class='person'>" . $res_array[$i][1] . "</div>";
+    echo "<br/>";
+    echo "<br/>";    
 }
 
 ?>

@@ -1,5 +1,10 @@
 <?php
+error_reporting(-1);
+ini_set('display_errors', 'On');
+
 require_once('authenticate.php');
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,16 +26,22 @@ function closeSession() {
 <hr>
 
 <div class="arvore">
-<?php require_once "conexao_bd.php";
+<?php 
+require "get_users.php";
 
-$random_family = getRandomFamily();
+$first_id = get_first_user_id();
+$children = get_children($first_id);
 
-for($i = 0; $i < count($res_array);$i++){
+var_dump($first_id);
+// echo "<br/>";
+var_dump($children);
 
-    echo "<div class='person'>" . $res_array[$i][1] . "</div>";
-    echo "<br/>";
-    echo "<br/>";    
-}
+// for($i = 0; $i < count($res_array);$i++){
+
+//     echo "<div class='person'>" . $res_array[$i][1] . "</div>";
+//     echo "<br/>";
+//     echo "<br/>";    
+// }
 
 ?>
 

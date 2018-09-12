@@ -4,14 +4,6 @@
     border: 1px solid green ;
 }
 
-.footer{
-    position: fixed;
-   left: 0;
-   bottom: 5%;
-   width: 100%;
-   text-align: center;
-}
-
 small { 
     font-size: small;
 }

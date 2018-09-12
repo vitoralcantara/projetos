@@ -5,11 +5,20 @@ require_once('authenticate.php');
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="arvore_genealogica.css">
+<script type="text/javascript">
+function closeSession() {
+    
+    location.reload();
+    return false;
+}
+</script>
+
 </head>
 
 <body>
 
-<h2>Arvore genealógica da família Alcântara Gregório - <small><a href="/inserir_pessoa.php">Adicionar pessoa à árvore</a></small> </h2>
+<h2>Arvore genealógica da família Alcântara Gregório - <small><a href="/inserir_pessoa.php">Adicionar pessoa à árvore</a></small><small> -<a a href="/close_session.php"> Sair</small></h2>
+<hr>
 
 <div class="arvore">
 <?php require_once "conexao_bd.php";

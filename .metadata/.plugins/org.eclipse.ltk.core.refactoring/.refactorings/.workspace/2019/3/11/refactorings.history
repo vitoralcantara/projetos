@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;fj21-jdbc&apos;" deleteContents="false" description="Delete resource &apos;fj21-jdbc&apos;" element1="/fj21-jdbc" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1552588024406"/>
+</session>

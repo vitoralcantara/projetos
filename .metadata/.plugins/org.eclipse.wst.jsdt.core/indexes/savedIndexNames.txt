@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\valcantara\OneDrive - ufrn.edu.br\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3791624543.index
+1089962747.index
+187486878.index
+501427381.index
+4095579788.index
+3564889660.index

@@ -1,0 +1,18 @@
+TODO:
+
+Falta criar tradução para acessar posição elemento específico de relação. Ex:
+
+<variable name="f" type="ℙ(ℤ × ℤ)" />
+
+Que tradução fazer quando aparecer f(2) ?
+
+Ou seja y um inteiro, como traduzir f(y)?
+
+
+
+
+
+
+
+
+

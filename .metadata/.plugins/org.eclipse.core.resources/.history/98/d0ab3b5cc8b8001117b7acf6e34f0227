@@ -1,0 +1,27 @@
+package br.edu.ifrn.tads.psd.chatgui;
+
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+
+import br.edu.ifrn.tads.psd.chatgui.gui.ChatGUI;
+import br.edu.ifrn.tads.psd.chatgui.gui.ChatRMIGui;
+
+public class ChatRMI extends Thread {
+
+	private ChatRMIGui janela;
+
+	@Override
+	public void run() {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				
+	}
+
+}
+	}
+}

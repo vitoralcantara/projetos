@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">O que está acontecendo?</string>
+    <string name="app_name">AndroidTwitter</string>
+    <string name="postar">postar</string>
+    <string name="novotweet">Novo tweet</string>
+    <string name="voltar">Voltar</string>
+    <string name="deletar">Deletar</string>
+    <string name="max150car">Max 150 car.</string>
+    <string name="tweetselecionado">Tweet selecionado</string>
+    <string name="tweetsproduzidos">Tweets produzidos</string>
+    <string name="semtweet">Não há tweets =/</string>
+</resources>

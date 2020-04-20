@@ -1,0 +1,125 @@
+package game.forum;
+
+import game.data.JogoData;
+import game.data.ServidorDados;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class JogoPerfilActivity extends Activity {
+
+	public static final String JOGO = "COD_JOGO";
+	TextView textViewNomeJogo;
+	TextView textViewPlataforma;
+	ImageView imageViewFotoJogo;
+	Button buttonSobre;
+	Button buttonRequisitos;
+	Button buttonImagens;
+	Button buttonVideos;
+
+	private String jogoIndex;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.jogo_perfil);
+
+		textViewNomeJogo = (TextView) findViewById(R.id.textViewNomeDoJogo);
+		textViewPlataforma = (TextView) findViewById(R.id.textViewPlataforma);
+		imageViewFotoJogo = (ImageView) findViewById(R.id.imageViewFotoJogo);
+		buttonSobre = (Button) findViewById(R.id.buttonSobre);
+		buttonRequisitos = (Button) findViewById(R.id.ButtonRequisitosSistema);
+		buttonImagens = (Button) findViewById(R.id.ButtonImagens);
+		buttonVideos = (Button) findViewById(R.id.buttonVideos);
+
+		Intent intent = getIntent();
+		jogoIndex = intent.getStringExtra(JOGO);
+		if (jogoIndex == null || jogoIndex == "") {
+			Toast.makeText(this,
+					"Houve um problema, por favor, retorne à página anterior",
+					Toast.LENGTH_SHORT);
+		} else {
+			JogoData jd = ServidorDados.getDadosDeJogo(jogoIndex);
+			textViewNomeJogo.setText(jd.getNomeDoJogo());
+			textViewPlataforma.setText(jd.getPlataformasToString());
+
+			setImageIcon(jd);
+		}
+
+		buttonSobre.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(),
+						JogoSobreActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+			}
+		});
+
+		buttonRequisitos.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(),
+						RequisitosSistemaActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+			}
+		});
+
+		buttonImagens.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(v.getContext(),
+						JogoImagensActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+			}
+		});
+
+		buttonVideos.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(v.getContext(),
+						JogoVideosActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+			}
+		});
+
+	}
+	
+	private Drawable ImageOperations(Context ctx, String url, String saveFilename) {
+		try {
+			InputStream is = (InputStream) this.fetch(url);
+			Drawable d = Drawable.createFromStream(is, "src");
+			return d;
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+			return null;
+		} catch (IOException e) {
+			e.printStackTrace();
+			return null;
+		}
+	
+
+	private void setImageIcon(JogoData jd) {
+		Bitmap preview_bitmap = BitmapFactory.decodeFile(jd.getIconeURL());
+		Drawable image = ImageOperat
+		imageViewFotoJogo.setImageBitmap(preview_bitmap);
+	}
+}

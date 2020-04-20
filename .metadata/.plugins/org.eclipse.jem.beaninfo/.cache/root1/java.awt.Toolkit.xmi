@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213396907">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213396907" key="org.eclipse.jem.java:JavaClass java:/java.awt#Toolkit">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396907" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396907" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#BeanDecorator_1272213396907"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396908" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396908" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396907 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396908 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396909 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396910 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396911 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396912 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396913 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396914 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396915 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396916 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396917 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396918 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396919 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.Toolkit.xmi#EReference_1272213396920"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213396907" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396907" name="screenSize" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Dimension" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396907" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getScreenSize("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396908" name="menuShortcutKeyMask" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396908" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getMenuShortcutKeyMask("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396909" name="systemSelection" eType="org.eclipse.jem.java:JavaClass java:/java.awt.datatransfer#Clipboard" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396909" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getSystemSelection("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396910" name="propertyChangeListeners" eType="org.eclipse.jem.java:ArrayType java:/java.beans#PropertyChangeListener[]" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396910" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getPropertyChangeListeners("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396911" name="alwaysOnTopSupported" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396911" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.isAlwaysOnTopSupported("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396912" name="screenResolution" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396912" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getScreenResolution("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396913" name="AWTEventListeners" eType="org.eclipse.jem.java:ArrayType java:/java.awt.event#AWTEventListener[]" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396913" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getAWTEventListeners("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396914" name="dynamicLayout" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396914" implicitlySetBits="56" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" writeMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.setDynamicLayout(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396915" name="systemEventQueue" eType="org.eclipse.jem.java:JavaClass java:/java.awt#EventQueue" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396915" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getSystemEventQueue("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396916" name="maximumCursorColors" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396916" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getMaximumCursorColors("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396917" name="fontList" eType="org.eclipse.jem.java:ArrayType java:/java.lang#String[]" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396917" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getFontList("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396918" name="systemClipboard" eType="org.eclipse.jem.java:JavaClass java:/java.awt.datatransfer#Clipboard" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396918" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getSystemClipboard("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396919" name="colorModel" eType="org.eclipse.jem.java:JavaClass java:/java.awt.image#ColorModel" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396919" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.getColorModel("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396920" name="dynamicLayoutActive" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396920" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Toolkit.isDynamicLayoutActive("/>
+  </objectsToAttach>
+</change:ChangeDescription>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:weightSum="1" android:orientation="vertical">
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:layout_weight="0.12" android:weightSum="1">
+		<ImageView android:src="@drawable/icon"
+			android:layout_width="wrap_content" android:id="@+id/imageViewFotoJogo"
+			android:layout_weight="0.41" android:layout_height="114dp"></ImageView>
+		<LinearLayout android:id="@+id/linearLayout2"
+			android:layout_weight="0.81" android:layout_width="wrap_content"
+			android:orientation="vertical" android:layout_height="match_parent">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="0.19"
+				android:text="@string/nome_do_jogo" android:id="@+id/textViewNomeDoJogo"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_weight="0.19"
+				android:text="@string/plataforma" android:id="@+id/textViewPlataforma"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<TableLayout android:id="@+id/tableLayout1"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<Button android:id="@+id/ButtonRequisitosSistema"
+				android:text="@string/requisitos_sistema" android:layout_height="match_parent"
+				android:layout_width="match_parent" android:layout_weight="1"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+			<Button android:layout_height="wrap_content" android:id="@+id/ButtonImagens"
+				android:text="@string/imagens" android:layout_width="match_parent"
+				android:layout_weight="1"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow3" android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<Button android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" android:id="@+id/buttonSobre" android:text="@string/sobre"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow4" android:layout_height="wrap_content"
+			android:layout_width="match_parent">
+			<Button android:layout_width="match_parent" android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/buttonVideos" android:text="@string/videos"></Button>
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

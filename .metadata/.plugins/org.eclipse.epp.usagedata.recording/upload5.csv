@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.mylyn.monitor.ui,3.2.2.v20090912-0400-e3x,"org.eclipse.mylyn.monitor.ui",1261541773123
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1261541773264
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1261541773264
+started,bundle,org.eclipse.team.ui,3.5.0.I20090430-0408,"org.eclipse.team.ui",1261541773279
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1261541773295
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1261541773560
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1261541782149
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1261541782165
+closed,view,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.internal.introview",1261541782180
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261541787250
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261541790963
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.newWizard",1261541790979
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261541793724
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261541872373
+started,bundle,org.eclipse.equinox.p2.ui,1.0.101.R35x_v20090819,"org.eclipse.equinox.p2.ui",1261541877412
+started,bundle,org.eclipse.equinox.p2.ui.sdk,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk",1261541877428
+started,bundle,org.eclipse.ecf.identity,3.0.0.v20090831-1906,"org.eclipse.ecf.identity",1261541877506
+started,bundle,org.eclipse.ecf,3.0.0.v20090831-1906,"org.eclipse.ecf",1261541877506
+started,bundle,org.eclipse.ecf.provider.filetransfer.httpclient,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer.httpclient",1261541877521
+started,bundle,org.eclipse.ecf.provider.filetransfer,3.0.1.v20090831-1906,"org.eclipse.ecf.provider.filetransfer",1261541877537
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261541877755
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.edit.paste",1261541884510
+error,log,,,"Unhandled event loop exception during blocked modal context.",1261542076417
+error,log,,,"Unhandled event loop exception during blocked modal context.",1261542078258
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261542365941

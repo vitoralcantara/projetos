@@ -1,0 +1,5 @@
+package br.edu.ifrn.tads.psd.chatgui.client;
+
+public class ChatClienteRMI {
+
+}

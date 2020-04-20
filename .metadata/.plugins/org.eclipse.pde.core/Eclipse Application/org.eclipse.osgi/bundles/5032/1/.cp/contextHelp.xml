@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.contexts"?>
+<contexts>
+	<context id="help_J2MEProjectPropertiesPage"
+		parentId="help_index">
+		<description>Java ME Project Properties Page</description>
+		<topic label="Java ME Project Properties Page Reference"
+			href="/org.eclipse.mtj.doc/docs/refPropProject.html" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_J2MEPreferencePage">
+		<description>Java ME Basic Preferences</description>
+		<topic label="Java ME Basic Preferences Reference"
+			href="/org.eclipse.mtj.doc/docs/refPrefJ2ME.html#basic" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_J2MEOTAPreferencePage">
+		<description>J2ME Over-The-Air Preferences</description>
+		<topic label="Java ME Over-The-Air Preferences Reference"
+			href="/org.eclipse.mtj.doc/docs/refPrefJ2ME.html#ota" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_ObfuscationPreferencePage">
+		<description>Java ME Basic Preferences</description>
+		<topic label="Java ME Basic Preferences Reference"
+			href="/org.eclipse.mtj.doc/docs/refPrefJ2ME.html#obfuscation" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_PackagingPreferencePage">
+		<description>Java ME Packaging Preferences</description>
+		<topic label="Java ME Packaging Preferences Reference"
+			href="/org.eclipse.mtj.doc/docs/refPrefJ2ME.html#packaging" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_DeviceManagementPage">
+		<description>Java ME Device Management</description>
+		<topic label="Java ME Device Management Reference"
+			href="/org.eclipse.mtj.doc/docs/advDeviceMgmt.html" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_JADRequiredPropertiesEditorPage">
+		<description>Java ME JAD Editor</description>
+		<topic label="Required Properties Editor"
+			href="/org.eclipse.mtj.doc/docs/jadeditor.html#required" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_JADMidletsEditorPage">
+		<description>Java ME JAD Editor</description>
+		<topic label="MIDlets Editor"
+			href="/org.eclipse.mtj.doc/docs/jadeditor.html#midlets" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_JADOptionalPropertiesEditorPage">
+		<description>Java ME JAD Editor</description>
+		<topic label="Optional Properties Editor"
+			href="/org.eclipse.mtj.doc/docs/jadeditor.html#optional" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_JADOTAPropertiesEditorPage">
+		<description>Java ME JAD Editor</description>
+		<topic label="Over-The-Air Properties Editor"
+			href="/org.eclipse.mtj.doc/docs/jadeditor.html#overtheair" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.doc/docs/index.html" />
+	</context>
+	<context id="help_JADPushRegistryEditorPage">
+		<description>Java ME JAD Editor</description>
+		<topic label="Push Registry Properties Editor"
+			href="/org.eclipse.mtj.docs/docs/jadeditor.html#pushreg" />
+		<topic label="MTJ Table Of Contents"
+			href="/org.eclipse.mtj.docs/docs/index.html" />
+	</context>
+	<context id="help_JADUserDefinedPropertiesEditorPage">
+		<description>Java ME JAD Editor</description>
+		<topic label="User Defined Properties Editor"
+			href="/org.eclipse.mtj.doc/docs/jadeditor.html#userdefined" />
+		<topic label="MTJ Table Of Contents"
+			href="/eclipseme.docs/docs/index.html" />
+	</context>
+</contexts>

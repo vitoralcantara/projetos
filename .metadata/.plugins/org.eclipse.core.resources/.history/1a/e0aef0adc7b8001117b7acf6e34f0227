@@ -1,0 +1,12 @@
+package br.edu.ifrn.tads.psd.chatgui.server;
+
+public class CharServerRMI {
+
+	public static void main(String[] args){
+		
+	}
+	
+	
+	
+	
+}

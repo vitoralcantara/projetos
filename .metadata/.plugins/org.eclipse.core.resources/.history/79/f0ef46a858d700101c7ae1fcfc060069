@@ -1,0 +1,9 @@
+package android.twitter;
+
+import android.app.Activity;
+import android.widget.EditText;
+
+public class NewTweetActivity extends Activity {
+	
+	private EditText editTextPostar;
+}

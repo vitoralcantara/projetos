@@ -1,0 +1,26 @@
+package test;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import core.Obi;
+
+public class obiVL {
+
+	private Obi obi;
+	
+	@Before
+	public void setUp(){
+		obi = new Obi();
+	}
+	
+	
+	@Test
+	public void testNumeroDeParticipantes0(){
+		
+	}
+	
+	
+	
+}

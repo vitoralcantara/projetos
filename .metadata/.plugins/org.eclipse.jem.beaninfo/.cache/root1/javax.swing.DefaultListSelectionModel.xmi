@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi">
+  <objectChanges xsi:type="change:EObjectToChangesMapEntry" key="org.eclipse.jem.java:JavaClass java:/javax.swing#DefaultListSelectionModel">
+    <value xsi:type="change:FeatureChange" featureName="eAnnotations">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.0"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="eStructuralFeatures">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.1 #//@objectsToAttach.2 #//@objectsToAttach.3 #//@objectsToAttach.4 #//@objectsToAttach.5 #//@objectsToAttach.6 #//@objectsToAttach.7 #//@objectsToAttach.8 #//@objectsToAttach.9"/>
+    </value>
+    <value xsi:type="change:FeatureChange" featureName="events">
+      <listChanges xsi:type="change:ListChange" referenceValues="#//@objectsToAttach.10"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xsi:type="ecore:EReference" name="minSelectionIndex" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getMinSelectionIndex("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="leadSelectionIndex" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getLeadSelectionIndex(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.setLeadSelectionIndex(int"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="listSelectionListeners" eType="org.eclipse.jem.java:ArrayType java:/javax.swing.event#ListSelectionListener[]" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getListSelectionListeners("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="selectionMode" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getSelectionMode(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.setSelectionMode(int"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="valueIsAdjusting" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getValueIsAdjusting(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.setValueIsAdjusting(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="anchorSelectionIndex" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getAnchorSelectionIndex(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.setAnchorSelectionIndex(int"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="leadAnchorNotificationEnabled" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.isLeadAnchorNotificationEnabled(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.setLeadAnchorNotificationEnabled(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="maxSelectionIndex" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.getMaxSelectionIndex("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="ecore:EReference" name="selectionEmpty" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.isSelectionEmpty("/>
+  </objectsToAttach>
+  <objectsToAttach xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent" name="listSelection">
+    <eAnnotations xsi:type="org.eclipse.jem.internal.beaninfo.beaninfo:EventSetDecorator" implicitlySetBits="25" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" addListenerMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.addListSelectionListener(javax.swing.event.ListSelectionListener" listenerType="org.eclipse.jem.java:JavaClass java:/javax.swing.event#ListSelectionListener" removeListenerMethod="org.eclipse.jem.java:Method java:/javax.swing#DefaultListSelectionModel.removeListSelectionListener(javax.swing.event.ListSelectionListener"/>
+  </objectsToAttach>
+</change:ChangeDescription>

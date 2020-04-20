@@ -1,0 +1,12 @@
+package br.edu.ifrn.diatinf.tads.psd.rmi.helloworld.impl;
+
+import java.rmi.RemoteException;
+import br.edu.ifrn.diatinf.tads.psd.rmi.helloworld.Helloworld;
+
+public class HelloWorldImpl implements Helloworld {
+
+	@Override
+	public String sayHello() throws RemoteException {
+		return "Hello World!";
+	}
+}

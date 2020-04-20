@@ -1,0 +1,8 @@
+package game.data;
+
+public class Elemento {
+
+	private String nome;
+	private String chave;
+
+}

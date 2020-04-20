@@ -1,0 +1,3409 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Generated-from: 1120700252703;type=2
+Bundle-SymbolicName: org.eclipse.mtj.ui;singleton:=true
+Bundle-Activator: org.eclipse.mtj.internal.ui.MTJUIPlugin
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.mt
+ j.core,org.eclipse.jdt.core,org.eclipse.debug.ui,org.eclipse.jdt.debu
+ g.ui,org.eclipse.jdt.ui,org.eclipse.ui.ide,org.eclipse.ui.forms,org.e
+ clipse.ui.console,org.eclipse.jface.text,org.eclipse.jdt.debug,org.ec
+ lipse.ui.editors,org.eclipse.ui.workbench.texteditor,org.eclipse.ui.i
+ ntro.universal,org.eclipse.ui.intro
+Export-Package: org.eclipse.mtj.internal.ui;x-internal:=true,org.eclip
+ se.mtj.internal.ui.actions;x-friends:="org.eclipse.mtj.jmunit",org.ec
+ lipse.mtj.internal.ui.actions.exporting;x-internal:=true,org.eclipse.
+ mtj.internal.ui.actions.l10n;x-internal:=true,org.eclipse.mtj.interna
+ l.ui.actions.packaging;x-internal:=true,org.eclipse.mtj.internal.ui.a
+ ctions.preprocessing;x-internal:=true,org.eclipse.mtj.internal.ui.con
+ figurations;x-internal:=true,org.eclipse.mtj.internal.ui.console;x-in
+ ternal:=true,org.eclipse.mtj.internal.ui.devices;x-internal:=true,org
+ .eclipse.mtj.internal.ui.dialog;x-internal:=true,org.eclipse.mtj.inte
+ rnal.ui.editor;x-internal:=true,org.eclipse.mtj.internal.ui.editor.ac
+ tions;x-internal:=true,org.eclipse.mtj.internal.ui.editor.context;x-i
+ nternal:=true,org.eclipse.mtj.internal.ui.editor.elements;x-internal:
+ =true,org.eclipse.mtj.internal.ui.editor.outline;x-internal:=true,org
+ .eclipse.mtj.internal.ui.editor.text;x-internal:=true,org.eclipse.mtj
+ .internal.ui.editors;x-internal:=true,org.eclipse.mtj.internal.ui.edi
+ tors.build;x-internal:=true,org.eclipse.mtj.internal.ui.editors.build
+ .pages;x-internal:=true,org.eclipse.mtj.internal.ui.editors.device;x-
+ internal:=true,org.eclipse.mtj.internal.ui.editors.device.pages;x-int
+ ernal:=true,org.eclipse.mtj.internal.ui.editors.jad.form;x-internal:=
+ true,org.eclipse.mtj.internal.ui.editors.jad.form.pages;x-internal:=t
+ rue,org.eclipse.mtj.internal.ui.editors.jad.source;x-internal:=true,o
+ rg.eclipse.mtj.internal.ui.editors.jad.source.contentassist;x-interna
+ l:=true,org.eclipse.mtj.internal.ui.editors.jad.source.rules;x-intern
+ al:=true,org.eclipse.mtj.internal.ui.editors.l10n;x-internal:=true,or
+ g.eclipse.mtj.internal.ui.editors.l10n.actions;x-internal:=true,org.e
+ clipse.mtj.internal.ui.editors.l10n.details;x-internal:=true,org.ecli
+ pse.mtj.internal.ui.editors.l10n.pages;x-internal:=true,org.eclipse.m
+ tj.internal.ui.forms.blocks;x-internal:=true,org.eclipse.mtj.internal
+ .ui.forms.parts;x-internal:=true,org.eclipse.mtj.internal.ui.launchin
+ g;x-internal:=true,org.eclipse.mtj.internal.ui.markers;x-internal:=tr
+ ue,org.eclipse.mtj.internal.ui.parts;x-internal:=true,org.eclipse.mtj
+ .internal.ui.preferences;x-internal:=true,org.eclipse.mtj.internal.ui
+ .preprocess.contentAssistant;x-internal:=true,org.eclipse.mtj.interna
+ l.ui.preprocess.contentAssistant.template;x-internal:=true,org.eclips
+ e.mtj.internal.ui.properties;x-internal:=true,org.eclipse.mtj.interna
+ l.ui.statusHandlers;x-internal:=true,org.eclipse.mtj.internal.ui.temp
+ lates.midlets;x-internal:=true,org.eclipse.mtj.internal.ui.util;x-fri
+ ends:="org.eclipse.mtj.jmunit",org.eclipse.mtj.internal.ui.viewers;x-
+ internal:=true,org.eclipse.mtj.internal.ui.wizards;x-internal:=true,o
+ rg.eclipse.mtj.internal.ui.wizards.dialogfields;x-internal:=true,org.
+ eclipse.mtj.internal.ui.wizards.importer.common;x-internal:=true,org.
+ eclipse.mtj.internal.ui.wizards.importer.eclipseme;x-internal:=true,o
+ rg.eclipse.mtj.internal.ui.wizards.importer.netbeans;x-internal:=true
+ ,org.eclipse.mtj.internal.ui.wizards.l10n;x-internal:=true,org.eclips
+ e.mtj.internal.ui.wizards.libraries;x-internal:=true,org.eclipse.mtj.
+ internal.ui.wizards.midlet;x-internal:=true,org.eclipse.mtj.internal.
+ ui.wizards.midlet.page;x-internal:=true,org.eclipse.mtj.internal.ui.w
+ izards.projects;x-internal:=true,org.eclipse.mtj.internal.ui.wizards.
+ templates,org.eclipse.mtj.internal.ui.wizards.templates.midlets;x-int
+ ernal:=true,org.eclipse.mtj.ui,org.eclipse.mtj.ui.editors.device,org.
+ eclipse.mtj.ui.editors.jad,org.eclipse.mtj.ui.templates
+Bundle-Version: 1.2.0.v201006161022
+Bundle-ClassPath: .
+Bundle-Vendor: %Bundle.Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle.Name
+Bundle-ManifestVersion: 2
+Import-Package: org.eclipse.core.filesystem,org.eclipse.search.ui.text
+ ,org.eclipse.ui.views.contentoutline
+
+Name: org/eclipse/mtj/internal/ui/preferences/PreverificationPreferenc
+ ePage$3.class
+SHA1-Digest: zg0OXZB7LbW3ITjNdxXQp0yWrzw=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceSymbolSet
+ EditorPage$DevicePropertiesContentProvider.class
+SHA1-Digest: WXc0mHFrsFW8rxiwGfhnGXCmZ00=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$1.class
+SHA1-Digest: 2XfxaPpTrtW4+5B+cX3gpyJsb4I=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarException
+ .class
+SHA1-Digest: XcS+TP/YQ3Jngfpcpsdl5G4UOuY=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$4.class
+SHA1-Digest: F3YFB2LWWKK8HuW07cM+q6H9L4k=
+
+Name: org/eclipse/mtj/internal/ui/MtjPerspectiveFactory.class
+SHA1-Digest: 9DytrJuBJdDeVXhxbQOm8la+IFc=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nEntryDetail
+ s$2.class
+SHA1-Digest: nST5ARqi1S3d4rYa+7PbSmWgcVI=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJProjectionViewer.class
+SHA1-Digest: D2yh6CHpYjg2WeP0n4rBOfbZwBw=
+
+Name: org/eclipse/mtj/internal/ui/util/StringComparator.class
+SHA1-Digest: UHQKAEuAH5BG7aKd8eYMYI/Rxrw=
+
+Name: org/eclipse/mtj/internal/ui/preferences/J2MEPreferencePage$Progu
+ ardDirectoryFieldEditor.class
+SHA1-Digest: PUKE3DH4B10FcYuTco0gzARAgVs=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$Copy
+ Action.class
+SHA1-Digest: MgXwBwk2R5dYydc4SIApDANATmo=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJSourcePage.class
+SHA1-Digest: 6jbTYpx5g8Cuevja/Kyeeadx4Bs=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$6.class
+SHA1-Digest: nD5DhyfbAkUiY/FUqa+aktyN3Rc=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/IPreproc
+ essDirectiveProvider.class
+SHA1-Digest: eszfzaRo7fjvSHeNFNXu9D8JQwQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/midlet/NewMidletWizard$1.cla
+ ss
+SHA1-Digest: 7ppAQ17+xmBBPm2xgJzonKo4918=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$2.c
+ lass
+SHA1-Digest: sbdqjO3JgbGgoF6nKE5Le1sveXc=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/contentassist/JAD
+ SourceEditorMessages.properties
+SHA1-Digest: eM+buUpuzTpcR1DKg9/UWRPgT5o=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$2.class
+SHA1-Digest: oM7OA7OYCLrKPmhppgQjgZF4WEg=
+
+Name: org/eclipse/mtj/internal/ui/console/BuilderConsole$1.class
+SHA1-Digest: gA7SFQETi9y6LlsUX/GZ2Ui/fwE=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage$5.class
+SHA1-Digest: RkyrbrP+cf+vrzRV/mwj+honEFA=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/rules/JadScanner.
+ class
+SHA1-Digest: pcfc9WztCM0MUTC/w9HLaia4wNI=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$4.class
+SHA1-Digest: JY+cyj1XiTM7SKZCz7VgwJUCeg0=
+
+Name: org/eclipse/mtj/internal/ui/util/ManifestPreferenceStore.class
+SHA1-Digest: rY8912xvj/FmaEGtaNVvnL2t53U=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage.class
+SHA1-Digest: 0BTbKSmwgnlxl1O9zKoe6R2/hFo=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$2.class
+SHA1-Digest: ruGdV9qnAlo7v8z8SVT4dxiw7Uk=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor$5.class
+SHA1-Digest: Z51bAF3kO8Yu0hOB9rzbXNrton4=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJDropAdapter.class
+SHA1-Digest: 9pqtWLd2/QNGdtGlJeiaHOh0rNk=
+
+Name: icons/th_vertical.gif
+SHA1-Digest: 62YyfDVCfzktCVyYbxgE56eTa4M=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/OverviewEdito
+ rPage.class
+SHA1-Digest: kMuzb/zurHCXl3dt2l6a32O5s14=
+
+Name: org/eclipse/mtj/internal/ui/IMTJUIConstants.class
+SHA1-Digest: g+ZuaCnMkzKaoWG3I23mlsdnYYQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesS
+ ourcePage$2.class
+SHA1-Digest: U+RTE4lINTswWe8M6yNNcb/MuvI=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$1.cla
+ ss
+SHA1-Digest: B9j5uwq7VsuN38Dpf7+qJqh5rNU=
+
+Name: icons/full/wizban/newclass_wiz_M.png
+SHA1-Digest: p9tVbW3r/l+SiUxH8xsSiUVUHF4=
+
+Name: org/eclipse/mtj/internal/ui/viewers/TableViewerConfiguration$Rev
+ ersingComparator.class
+SHA1-Digest: 22YXxUJpvEF3M/t/TcnN72OJpFU=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$CellModifier.class
+SHA1-Digest: tXNrsIDTqKq2Q1uVJ1piUA1UQD4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$5.class
+SHA1-Digest: fahPhi2IMCj2186UDv6UkA0Kr6A=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$9.class
+SHA1-Digest: 4tkTp15PFcIzZzQ0PkTl6L5IS/E=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ .class
+SHA1-Digest: 4+6mCGeNHPUWWBbTRefqONDvgVg=
+
+Name: icons/full/ovr16/optional_co.gif
+SHA1-Digest: IGE1UZ5U0YfpA9zmC5xtwBNMxlY=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$1.class
+SHA1-Digest: 6cFarWV+AQA2VbpiGWANfTcax8w=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationData.
+ class
+SHA1-Digest: GzVAGQCq8vWU9U+J6WP92Q5Vbi4=
+
+Name: org/eclipse/mtj/internal/ui/editor/SystemFileEditorInputFactory.
+ class
+SHA1-Digest: ymd235N+EZSFN0Rt/t70rqCll0o=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page.class
+SHA1-Digest: PmcLEeu59YQyZSqNBp6tgSyhqn0=
+
+Name: org/eclipse/mtj/internal/ui/console/BuilderConsole.class
+SHA1-Digest: kaEM84AQB9Uh1k+aiwND42R9RZY=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceSymbolSet
+ EditorPage.class
+SHA1-Digest: fuzADPXALy2RZzeQF82rG7/wXkI=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/actions/L10nAddLocaleEn
+ tryAction.class
+SHA1-Digest: QrdTNYKJXFEzE7Cw2LR6q4VhMLQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nUtil.class
+SHA1-Digest: rlOlgPcBXpxNTDCMQdZJ5f+Bwqc=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nSourcePage$1.
+ class
+SHA1-Digest: rmZevLUfM74csUI9sco/HqS9/q0=
+
+Name: org/eclipse/mtj/internal/ui/launching/DebugTypeSelectionDialog$D
+ ebugTypeSelectionHistory.class
+SHA1-Digest: 8po+tfrJN0p9fR50r3wATt4x1Yk=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceBasicEdit
+ orPage.class
+SHA1-Digest: CTJmhIZLb4AEBG2Dzh1uKwyhknk=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/StringDialogFie
+ ld.class
+SHA1-Digest: ZXtya9/mishuPqngKMZhVDh2OU0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/rules/Scanner.cla
+ ss
+SHA1-Digest: rMSaCtN0n7yZ6vkqfqUpNFFZXcM=
+
+Name: icons/th_horizontal.gif
+SHA1-Digest: wpzXlnORNZ+xlgzyQudNiJGgYGs=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nEntriesTableP
+ age$L10nEntriesLabelProvider.class
+SHA1-Digest: oj8FbtGB9zziLtJlc4GHj0qh3Tc=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$7.c
+ lass
+SHA1-Digest: fdi2o93oGHHJ49dI1V5X6oT94tA=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditor$2.class
+SHA1-Digest: 05vEm4b2PYYi0iUwKyJ9LNd65mQ=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SecurityPermissionsDialog$Per
+ missionNode.class
+SHA1-Digest: /K4uqlWmsLzJvM4MuvO5W+2wnt8=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SigningPasswordsDialog$2.clas
+ s
+SHA1-Digest: /RZ/8btn4AKi5OhpRlMYNkUithI=
+
+Name: icons/newjprj_wiz_M.gif
+SHA1-Digest: IcuB9MKFZDVIJLpE6PQCZ3b9WrA=
+
+Name: org/eclipse/mtj/internal/ui/parts/SharedPartWithButtons.class
+SHA1-Digest: k+tGzsH9gbq5bH82lKgpARYbgF4=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$9.class
+SHA1-Digest: tV6mnONEz8iewNog8ByGp1CsTGU=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$SymbolNameCellEditor.class
+SHA1-Digest: qlFkD2cx81SF6y2fyHGIa14hrQ8=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$1.class
+SHA1-Digest: Qs8sJaNjc6XFkDxe78RgUv0ugjk=
+
+Name: org/eclipse/mtj/internal/ui/properties/J2MEProjectPropertiesPage
+ $2.class
+SHA1-Digest: RYJNfw/DPYEE/EseW2KakJ5Tkjs=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$5.class
+SHA1-Digest: ADF6xRxFr3CRADWGc6lt/efOjTg=
+
+Name: org/eclipse/mtj/internal/ui/editor/actions/SortAction.class
+SHA1-Digest: AhrwRz8cDGS5puBJfaMhR4wBO9o=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$6.cla
+ ss
+SHA1-Digest: nFFvRxrxZc2YLINO135+RGPG8rE=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ListDialogField
+ $2.class
+SHA1-Digest: GV6E8Tmvd7R1zbwBIvMnQ7TpnYI=
+
+Name: org/eclipse/mtj/internal/ui/editor/XMLSourcePage.class
+SHA1-Digest: 2GVdrG0iISxt2Ob5eyZzKIsbCsU=
+
+Name: org/eclipse/mtj/ui/editors/jad/AbstractJADEditorPage$2.class
+SHA1-Digest: qPjZaILNyMqVwqOwbZT9aRWl3gk=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/XMLDocumentSetupParti
+ cipant.class
+SHA1-Digest: TLv2GMVtVFZK0WAylndxO6GvW5U=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateEngine.class
+SHA1-Digest: oOEa4QoCOuL/a08Gg1vhpVf/478=
+
+Name: org/eclipse/mtj/internal/ui/editor/IModelUndoManager.class
+SHA1-Digest: ZuLqTc4lSM1fUbM63AS/MdUloC0=
+
+Name: icons/library.gif
+SHA1-Digest: gaxhmXCc42P8IH7O+DrlGM4E29Q=
+
+Name: org/eclipse/mtj/internal/ui/util/ValueChangeTrackingBooleanField
+ Editor.class
+SHA1-Digest: 9Yj0FXdCBrnDnzqk/stvXPjRswg=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssContentAssistMessages.class
+SHA1-Digest: pWrYOk6s4LMM0O9Y9zUscTh8VSM=
+
+Name: org/eclipse/mtj/internal/ui/actions/packaging/CreateObfuscatedPa
+ ckageAction.class
+SHA1-Digest: yErx2tNwuJ9K0iubCbMamZdAIuc=
+
+Name: icons/full/obj16/library_obj.gif
+SHA1-Digest: nkL22+4kbPDTI1ASDZhct7YaLXQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$1.class
+SHA1-Digest: B/St8eX5wn9eXT6y919d7sYyiIE=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJWordFinder.class
+SHA1-Digest: lmC3vSw/s1Qao7WqYQrZqOnAv3I=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$11.class
+SHA1-Digest: j6t3I1L01PHPpyJuiYyE/YNXH1Q=
+
+Name: org/eclipse/mtj/internal/ui/util/MTJLabelUtility.class
+SHA1-Digest: zYmO7WLE2Ehm/DGpknXmAWbuEYw=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$6.class
+SHA1-Digest: 2bUc8kUKrnLEMMEarFNPy/smim0=
+
+Name: org/eclipse/mtj/internal/ui/properties/PropertyAndPreferencePage
+ .class
+SHA1-Digest: K8zdz61iy9b+ub1Vl9mCo1cMFEQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/SourceInformationProvide
+ r.class
+SHA1-Digest: yROweuXMJBbmEuoZmpWea8uA9gE=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nEntryDetail
+ s.class
+SHA1-Digest: QBJjIX+yx67aJltWVDJqYZ7TEyk=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/IDocumentKey.class
+SHA1-Digest: +2j6lP/iT3RYpr8yB2N9AoTQk3w=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$4.class
+SHA1-Digest: wzAVOuOc32h40JE/N6SuoT9D0cI=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlinePopupDial
+ og$5.class
+SHA1-Digest: Zn8bOi5zw2V/O0u2S8F9/fxOIUA=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$1.class
+SHA1-Digest: KoX8LTsj/VU0L7WlDR/lnW+beD8=
+
+Name: org/eclipse/mtj/internal/ui/dialog/StringLocalizationCandidatesD
+ ialog$StringOccurences.class
+SHA1-Digest: x3LpjalRoV0YQgUJY96BjUp8TVE=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nEntriesTableP
+ age.class
+SHA1-Digest: jcUTR4WRXNnrERRTbblBafKcLXA=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/XMLDoubleClickStrategy.c
+ lass
+SHA1-Digest: CI1und8NRKW9OoSxezVn2amFHGc=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/ScrolledPropertiesBlock
+ $2.class
+SHA1-Digest: BFIDuorRbG2DyIie4HapfKY5Rgg=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceEditorConfigElement.cl
+ ass
+SHA1-Digest: VOYvyYFikDYkHoWHoZYXB+DgpJU=
+
+Name: icons/full/obj16/class_obj.gif
+SHA1-Digest: gzOR8HGC3hr5JbwG3JjzIeEjvbw=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$Advanc
+ edListContentProvider.class
+SHA1-Digest: 4vxzoZDAyS4C42hi5d2+wr2U0+E=
+
+Name: org/eclipse/mtj/internal/ui/preferences/PreverificationPreferenc
+ ePage.class
+SHA1-Digest: F0Ps2bI4Pe0MPOKyEjix+rrkkUo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$6.class
+SHA1-Digest: d6ufFE2oJgtuHCaC7y5/DOtjTac=
+
+Name: icons/full/elcl16/alphab_sort_co.gif
+SHA1-Digest: JjLUPavD/jFA7MwWtXEyWh+PFu8=
+
+Name: org/eclipse/mtj/internal/ui/dialog/StringLocalizationCandidatesD
+ ialog$1.class
+SHA1-Digest: OdY+kWOaGEWYXcDH/+2aAUp8P14=
+
+Name: org/eclipse/mtj/internal/ui/templates/midlets/MIDletTemplateBuil
+ derException.class
+SHA1-Digest: tbspyHKkdZ6dO9r71kpRTLvglWQ=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector.class
+SHA1-Digest: /eTwCTGw+EDVLOYp5sBG32oYI/E=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$16.class
+SHA1-Digest: uMrlOj/bGIgNvTxmT5MKdzrcYHw=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$4.class
+SHA1-Digest: /FXA0QfUrufUgeQlGhxasvkjjtc=
+
+Name: org/eclipse/mtj/internal/ui/util/PixelConverter.class
+SHA1-Digest: tqN+v/hnxlFp1LSVmt2/h2P2MGQ=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SigningPreferencePage$5.
+ class
+SHA1-Digest: qY2njpBgEPhrs5EzRXco0/rdebw=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/AntennaP
+ PPrefixHandler.class
+SHA1-Digest: dCsYicTk+w2JHbeJFv497ltQPVE=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/OverviewEdito
+ rPage$1.class
+SHA1-Digest: xVosA9uRY81aLsnMo19fScZcIPA=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /ExclusivePositionUpdater.class
+SHA1-Digest: 8JJYe/zWxC9MfghNT0eHoCFkn54=
+
+Name: org/eclipse/mtj/internal/ui/MTJLabelProvider.class
+SHA1-Digest: Ou5RYC+OjrMeMIeI/mMR0gmbSMI=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContextManager.c
+ lass
+SHA1-Digest: r39E3vCQQOeaHovmshVCy0+7Sbo=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditor$MTJFormEditorCh
+ angeListener.class
+SHA1-Digest: Mv3oOlsA5Uzc+uuhEC0VE0g+kNs=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$8$1.c
+ lass
+SHA1-Digest: NA+xqhYduBwfxSWc9S0Y0RE42O4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ProjectImpor
+ terMessage.class
+SHA1-Digest: j0PcYaoMf/iX+zCJNgA0fs7byR8=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$6.class
+SHA1-Digest: OpKTmPLlMzww9og3N3aTLOOcQWQ=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izardPage$1.class
+SHA1-Digest: XC04JHTNfHmBIjihesOl/p9cqo0=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/LocalizationBlock.class
+SHA1-Digest: nGTjGGHxhz3q3RT+3DJ4RsADrqg=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/LocalesTreeSection$2.cl
+ ass
+SHA1-Digest: 7hJKeJW7NzU4RYTbcacm9PX5YUo=
+
+Name: org/eclipse/mtj/internal/ui/forms/parts/FormEntry.class
+SHA1-Digest: f1b2pxFokXb2/AAdFdzUuzLI6PI=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormTextEditorContributor$
+ MTJTextEditorActionContributor.class
+SHA1-Digest: NfZM3fth0Y0EFwOgHjT330gOb3c=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$1.class
+SHA1-Digest: JigtMM252psmAFJbWBaJOH59U9Q=
+
+Name: org/eclipse/mtj/internal/ui/actions/exporting/AntennaBuildExport
+ Action$1.class
+SHA1-Digest: eK5q+tSIjmz6rrZ+/9RqDlrPCXk=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $5.class
+SHA1-Digest: TA8qN9JoZE1H8qucK4WQLR72/z0=
+
+Name: icons/preprocess_template_proposal.gif
+SHA1-Digest: GlIJ1BSXCLvsA3Pgl9w6wIMyyNg=
+
+Name: icons/newclass_wiz_green.gif
+SHA1-Digest: Dsxxw4Ru72KM4CqOA8C8Gkaep0g=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izard$2.class
+SHA1-Digest: Fezt7vYUQXN63OJlUrGXjl133Yg=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog.class
+SHA1-Digest: 8Q+gbiqDDZWqM6IRrtUWZUPvt/I=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$3.clas
+ s
+SHA1-Digest: +j0P9r+/okS1YtU1HM/b0GYVq/I=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$KeyValuePair.class
+SHA1-Digest: htPrS+LtnfLiHsw16jQNVWG5mKk=
+
+Name: org/eclipse/mtj/internal/ui/launching/LinedStackTraceMatcher.cla
+ ss
+SHA1-Digest: a5mPSBvdhVC8xTXzXTsktWnE2UY=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/SelectMarkerRulerAction.
+ class
+SHA1-Digest: HsvK5lLHUrPsjpO9MVMgyqw4WbI=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$14.class
+SHA1-Digest: Q+fM+cnYsbNz2Cw3M8IE/rEA0xg=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage.class
+SHA1-Digest: rMACB4997OvlW1jXzm8PnXHMDko=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SigningPreferencePage.cl
+ ass
+SHA1-Digest: HwbKq121p7jFpphphib+IzhcLhc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/DialogField.cla
+ ss
+SHA1-Digest: 9tEjp4n5Q2pk3cg4QihHGJ7/Bqw=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$Direc
+ toryFocusListener.class
+SHA1-Digest: gNqVub0+nOagz3yaeowk0OOKY4E=
+
+Name: org/eclipse/mtj/internal/ui/actions/ConvertToMidletProjectAction
+ $1.class
+SHA1-Digest: UeYp0mB7ckGYee9z+6/z/KPnVtc=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog$2.class
+SHA1-Digest: wFmj8gKz3TEXcGIif3LnajJNr04=
+
+Name: org/eclipse/mtj/internal/ui/editor/SystemFileStorage.class
+SHA1-Digest: tuINrYsw4yfgMVDl5ZqwWxwQ+rI=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$ListId.class
+SHA1-Digest: NEtDphRnAOQlm39Agts+uDjvdKg=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1$StringLocalizationCellModifier.class
+SHA1-Digest: 5gyfgIIWuzZ6EOe+B2c/6QePa54=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nSourceOutlinePage.c
+ lass
+SHA1-Digest: BJ3KGD+2TTtjp4RNf0zu2kwDDP4=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$SecurityDomainCo
+ ntentProvider.class
+SHA1-Digest: 87SNXF5UnnA1Y5epbjD2rK5q6dw=
+
+Name: org/eclipse/mtj/internal/ui/util/ImageSelectionDialogCreator$1.c
+ lass
+SHA1-Digest: F4ofLNdW8IwyBK6i4dQ3nSKo+cM=
+
+Name: org/eclipse/mtj/internal/ui/util/ExceptionHandler.class
+SHA1-Digest: fyTw4vwbnbm2Ur7xgud6+8H+yx4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$10.class
+SHA1-Digest: VgoYeweOsOR69I77HjNU/DuzHjo=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJProjectionSourcePage.class
+SHA1-Digest: m9/OdX5SsOZO7GCQrJTjR9UF/jU=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$5.class
+SHA1-Digest: UZhFuj3EZL5urvhRFuqtAtDsvq8=
+
+Name: org/eclipse/mtj/internal/ui/preferences/WorkspaceAndExternalFile
+ FieldEditor$2.class
+SHA1-Digest: agpw94Ch6qcQOhEpTbhJcoUxg4M=
+
+Name: org/eclipse/mtj/internal/ui/forms/parts/IFormEntryListener.class
+SHA1-Digest: PzkeoCfEq/j4D21bcpPgfL1/fog=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ListDialogField
+ $ListViewerAdapter.class
+SHA1-Digest: 9F5VZ3JT4Y0TOVLQOwWYePcFF5M=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$IncludesVisitor.class
+SHA1-Digest: XWmg54bb1NXawrJz1m/hc/uh4EA=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $TableContentProvider.class
+SHA1-Digest: wpXnJBVihirnCrPvxUMv3VZXlbY=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izard.class
+SHA1-Digest: OIcNIjQmbj7ioFu09TARZMfffys=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$Advanc
+ edListLabelProvider.class
+SHA1-Digest: JLh9yUIYQzUNV2PKWXsK4LQLpNU=
+
+Name: org/eclipse/mtj/internal/ui/editor/SystemFileMarkerAnnotationMod
+ el.class
+SHA1-Digest: zjCrPp8FOmP6UzHy3nshlo6BN7s=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1$5.class
+SHA1-Digest: 8hSmx8D/eS2Qj6VNyvFm1U7XQz4=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJSourcePage$2.class
+SHA1-Digest: 8UZ9KU+VlYWrDKRBtkZ50YP3ZS4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SyntaxColorTab$1.class
+SHA1-Digest: 0BWYDwXCi8yz/Il2bxUS/Yl8NFQ=
+
+Name: org/eclipse/mtj/internal/ui/forms/parts/FormEntry$2.class
+SHA1-Digest: TRDWsOO1cbe26CCCFAIJD369BMo=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$DeviceGroupNa
+ meLabelProvider.class
+SHA1-Digest: mfjx+4tdoySxzOXM97/0+AdYXdo=
+
+Name: org/eclipse/mtj/internal/ui/parts/TreePart.class
+SHA1-Digest: +/TQMRAypoVcE/G05It3o6M371E=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocaleDetai
+ ls$2.class
+SHA1-Digest: wENlxg1GGekS+YbYz68IYTYUdqo=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nContentProvider.cla
+ ss
+SHA1-Digest: TDGd75fppDJ+M/e2c+lO1VUfvqo=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJMarkerAnnotationModel
+ $MTJMarkerAnnotation.class
+SHA1-Digest: +Btf9oR/quhHZqKZfv5HnVqqgis=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/LocalesBlock.class
+SHA1-Digest: 9m9t/BwbTlhOYKeco80mBkS3Fkg=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceBasicEdit
+ orPage$3.class
+SHA1-Digest: 7rVEMckg5Gnp5+5LRUe5sQgIQEA=
+
+Name: org/eclipse/mtj/internal/ui/editors/IModel.class
+SHA1-Digest: mbg9CVdepRtPktNDF1cxGUCKtJo=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/XMLWhitespaceDetector.cl
+ ass
+SHA1-Digest: 0SJWz4+D5oG6lS26qYoqpzY8zvc=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssSymbolProviderInfo.class
+SHA1-Digest: H55W2gbEDqdjMlJ5eExZVrqXOz4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$TableLabelProvider.class
+SHA1-Digest: vxb4YvJqSz4ZbmPBPudwfc5CgQo=
+
+Name: org/eclipse/mtj/internal/ui/parts/TreePart$2.class
+SHA1-Digest: dXzMNSi1yzGCJs3a9ta66LIrL3I=
+
+Name: org/eclipse/mtj/internal/ui/preferences/PreverificationPreferenc
+ ePage$1.class
+SHA1-Digest: YC2/Ml4VpbRvDH2DktyjnPaDNwk=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$CellModifier.class
+SHA1-Digest: HxCM8cpj7ePnxuyxEd7944FEWqQ=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceListLabelProvider.clas
+ s
+SHA1-Digest: 5RRZr90D4oVsjSmfaDdb+n5EwYc=
+
+Name: org/eclipse/mtj/internal/ui/templates/midlets/MIDletTemplateRegi
+ stry.class
+SHA1-Digest: AyaompaX8qznY62DKxj8jEXqVgA=
+
+Name: org/eclipse/mtj/internal/ui/templates/midlets/MIDletTemplateObje
+ ct.class
+SHA1-Digest: w1EX81Foibo9tldWsjoNhkpgWnA=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJSection.class
+SHA1-Digest: EPEE/9ncXOnSI/o2s3TSxijzFiE=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/JADMultiPageEdito
+ rActionContributor.class
+SHA1-Digest: T6QnTgl/gP1HN+mvpaeL7lUtPg4=
+
+Name: org/eclipse/mtj/internal/ui/util/JARSelectionValidator.class
+SHA1-Digest: l+DqC7j3Bn7yeWJe3vB7ne/ULqE=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceBasicEdit
+ orPage$BooleanLabelProvider.class
+SHA1-Digest: Q92vB2GTzkMNO51FVjmydmzPDEc=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$2.class
+SHA1-Digest: V+obomjQ/KQ6IhOnkr2nvJkO9c4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ProjectImpor
+ ter$1.class
+SHA1-Digest: GIcm9Z9TBlPwbh4S222ewdWvRHI=
+
+Name: icons/full/ovr16/external_co.gif
+SHA1-Digest: WrmzbKECa++UmGYv6hsNSFkkgC8=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocalesDeta
+ ils$2.class
+SHA1-Digest: oE4k6omrTQ644DAw72eWdT6bTyw=
+
+Name: org/eclipse/mtj/internal/ui/properties/PropertyAndPreferencePage
+ $1.class
+SHA1-Digest: Q/kEvc/mJDTjfiEDwyNdvWuPwdY=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$4.class
+SHA1-Digest: v7DJLZ0TP7U6r8s0W3dOP+9JyOI=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$CellModifier.class
+SHA1-Digest: BhjAquWPLc3g6KOgMStYYc1NW1Y=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1.class
+SHA1-Digest: lAFYtS6xtJgfObmvEsLvggWZQzg=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nEditorContributor.c
+ lass
+SHA1-Digest: iULpXmSu51uwLs9vB3cZSl+VA7M=
+
+Name: org/eclipse/mtj/internal/ui/wizards/midlet/NewMidletWizard.class
+SHA1-Digest: UjUqg9xJHLN6j9nFJf41HWBV/28=
+
+Name: icons/full/wizban/template_wiz.png
+SHA1-Digest: 8pMDeUNHDq0d7d9QwzPVARgtDtY=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$4.class
+SHA1-Digest: jzK9+nZr6LTAf2CjV+t7dflqIdM=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJTextHover$2.class
+SHA1-Digest: b8LdWiGQE1WPI6dwP+Rzc3mozy0=
+
+Name: icons/preprocess_directive_assist.gif
+SHA1-Digest: iferFWaeuEuuHvUqQxr3GiXeFCQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ComboDialogFiel
+ d.class
+SHA1-Digest: qY/aPAQw2ot0vMS6Vnhb/2TXfQs=
+
+Name: org/eclipse/mtj/internal/ui/actions/l10n/EnableLocalizationActio
+ n.class
+SHA1-Digest: xjoocL+OqdxTBiYqMuQtrDpipnY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage$3.class
+SHA1-Digest: 0/1eXOYBx6xBGMvSr/o4wk7kjEU=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$2.class
+SHA1-Digest: qGMYnJx+WpEQlCd1wVTXNF52g3o=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/JADEditorPageConfig
+ Element.class
+SHA1-Digest: jOSfNGtm7BUSEZ/i/6Xy7ngH/dE=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesS
+ ourcePage.class
+SHA1-Digest: dYDexhcYQEDPgJq4S8xtzaEw7lc=
+
+Name: icons/full/obj16/locale_entry_obj.gif
+SHA1-Digest: J8tSWHu8OUD0MN2+1Q+Vri7zOws=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor$3.class
+SHA1-Digest: ltaoWE7JVobbdSRw4No7Anc19dM=
+
+Name: icons/run_exc.gif
+SHA1-Digest: 9nUFtkM1LiPz9RddB8tq+Zl7LlE=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /JavaSourceViewer.class
+SHA1-Digest: oPow+PfweNSWOzIZWv/0Z6yvHR8=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$4.class
+SHA1-Digest: ddkaDNUZwW26COVw3qHGgPQwYjk=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizard.class
+SHA1-Digest: 5hXFBCapNmCbB7q/IHVdchnMwlA=
+
+Name: org/eclipse/mtj/internal/ui/messages.properties
+SHA1-Digest: 6kAQEBi7shXVGDyq1es1Hktagvw=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$3.class
+SHA1-Digest: WM2OyBhTt8SQh3SxaK9gEH8/OU4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$7.class
+SHA1-Digest: kxhH4WgimOOfRhNKY7tdN7LAjoU=
+
+Name: icons/full/etool16/build_properties.gif
+SHA1-Digest: WtRCkxJjruoZdS8/xinBX9h8LF4=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$WorkSpaceSymbolSetTableContentProvider.class
+SHA1-Digest: he128wRnBxlizSfPUOrTimWQRuw=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SecurityPermissionsDialog$Sec
+ urityPermissionsDialogLabelProvider.class
+SHA1-Digest: gBw4UrbP4IihhTYFEuhGLlhmg4w=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormOutlinePage$1.class
+SHA1-Digest: zlmqIecK+1Bjy9IFbScccdg4Luk=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$5.c
+ lass
+SHA1-Digest: zZGSwbZqbYfO3c3PM1+hMUUFV3k=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJMarkerAnnotationModel
+ .class
+SHA1-Digest: daN3r8CMan1kSqxlDmu3qrxNQPE=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$5.class
+SHA1-Digest: dpN0PQqv1OW+geJNg994IjMK92g=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$7.class
+SHA1-Digest: WsGrLIh0CVzTPJGhXw6paqn8r0M=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletType.cl
+ ass
+SHA1-Digest: NAYZfr37C+ZzPggk785LsxnntYA=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ChangeAwareSourceViewerC
+ onfiguration$2.class
+SHA1-Digest: l1XqUoZ/f2lSQctTjNOXwVO45hc=
+
+Name: icons/full/obj16/page_obj.gif
+SHA1-Digest: steTY7ifVuR6yBGgOI08jyey3EQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/rules/Scanner$1.c
+ lass
+SHA1-Digest: dYBV0bco/0Y9EKnuSExzm6VTqn4=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormTextEditorContributor.
+ class
+SHA1-Digest: /pY037IK8Acc7FTfMAMbmIwb8/k=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$3.class
+SHA1-Digest: G1IukHwsRRJkEigV5wYP4wn4YyU=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab.class
+SHA1-Digest: 7EKoR3JWBChgqQuv8M2gz61AFn0=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateFormatter.class
+SHA1-Digest: +0n8Tzrow1PpI7kIXjc9WmD7PEA=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$4.cla
+ ss
+SHA1-Digest: x5NrpvnCduK6xkrUp2ZUbs0KT8k=
+
+Name: org/eclipse/mtj/internal/ui/preferences/EditorPreferencePage$2.c
+ lass
+SHA1-Digest: 844qpQ2bdtGQwGGNxeuSOteoxOc=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nSourceOutlinePage$1
+ .class
+SHA1-Digest: IGA/vmxkLzPjQKgkAQ7cjTfEZCc=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$Past
+ eAction.class
+SHA1-Digest: 2SFz0Rxwk+Ys7hpVPnwdS2W7Gno=
+
+Name: org/eclipse/mtj/internal/ui/editor/MissingResourcePage.class
+SHA1-Digest: shM+q2XP/oEFi5TlxWyyQADLooY=
+
+Name: icons/uparrow16.gif
+SHA1-Digest: PdSlt6uTOdupPlaAD03/KUySZfY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$8.class
+SHA1-Digest: VYP5yscSA9tWA6dLNvo9zQ8eBG0=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ArchiveFileM
+ anipulations.class
+SHA1-Digest: xQEjlLEn2A86f4h6USPAohHU+j0=
+
+Name: org/eclipse/mtj/internal/ui/editor/actions/CollapseAction.class
+SHA1-Digest: LgrO0sJIqfwX3PHTxZC5tC9n62k=
+
+Name: org/eclipse/mtj/internal/ui/preferences/PreprocessTemplatePrefer
+ encePage.class
+SHA1-Digest: eMaQMecTn8NcX1EbSU1mEsuPf+I=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJDragAdapter.class
+SHA1-Digest: HqcxOxiAUfABGNwPYSj8t2EmLOI=
+
+Name: org/eclipse/mtj/internal/ui/editor/IContextPart.class
+SHA1-Digest: 4GodWFlWjMCc1M9DF/lRqrh2EMQ=
+
+Name: org/eclipse/mtj/internal/ui/util/LogAndDisplaySafeRunnable.class
+SHA1-Digest: a7nqEmPtmL8H++N3aOc3q75hCvQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/SystemFileEditorInput.class
+SHA1-Digest: OkB+MpMx1N4RU3KM2u6DkjRSET4=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/ObfuscationErrorHandl
+ er.class
+SHA1-Digest: 3ZOqyF949OVzb0mmkyFoUdddNxs=
+
+Name: org/eclipse/mtj/internal/ui/launching/OffsetedStackTraceMatcher.
+ class
+SHA1-Digest: T0D/XQ3mR6r6qBwgefvlncj/b20=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/StringButtonDia
+ logField$1.class
+SHA1-Digest: 26YeKryPHOF+UIbe1dbLyjlQ0z8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/TemplateWizardPage
+ Delegate.class
+SHA1-Digest: qfQPIhzowDe3Rhriq66oOCKL8aw=
+
+Name: org/eclipse/mtj/internal/ui/IEmbeddableWorkbenchPreferencePage.c
+ lass
+SHA1-Digest: eiuOxxBE6Ym3gEguSiGQUjTa5P4=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nEntriesTableP
+ age$1.class
+SHA1-Digest: 4eqiTUW6RVN08NnKWAWKfprWUIg=
+
+Name: org/eclipse/mtj/internal/ui/actions/l10n/DisableLocalizationActi
+ on.class
+SHA1-Digest: OYPDAO4j0/TsC+sHUyCLyn3wI7A=
+
+Name: org/eclipse/mtj/internal/ui/editor/StructuredViewerSection.class
+SHA1-Digest: pJFEkT6p3dwbBRPhWxMEpEUZzXg=
+
+Name: icons/projects_M.gif
+SHA1-Digest: Y7AZeETjkJWNJ2uE3ola5B18AXQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContext$2.class
+SHA1-Digest: Fet+9yZCOh6pTxeo8yO2SjazPsw=
+
+Name: org/eclipse/mtj/internal/ui/editor/TreeSection.class
+SHA1-Digest: b4O9/R/X5vNzGX5ESpOkDAQYnv4=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /SimpleJavaSourceViewerConfiguration.class
+SHA1-Digest: 1hr2tJ4AbKHgeSU1Tt1GDgWtvRI=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateAccess.class
+SHA1-Digest: lBCowo0LTNcc9gOeHxxJZZT4O1U=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$4.class
+SHA1-Digest: Ajbhr4Maj8URb4EmC5GGGyq8rq0=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$8.class
+SHA1-Digest: bao03U+f19xwqyeGmHhkYh2HpFc=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateProposal.class
+SHA1-Digest: mVxqpuLiMtAA2nwpBrJi9IrVGEQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormFilteredTree$1.class
+SHA1-Digest: W0nggoD1mLcULKdWjbS1Dfi7P3Q=
+
+Name: org/eclipse/mtj/internal/ui/viewers/TableViewerConfiguration$Tab
+ leColumnListener.class
+SHA1-Digest: fczaVB6rZNS7dNIKskXki8WK3MM=
+
+Name: org/eclipse/mtj/internal/ui/editors/IModelListener.class
+SHA1-Digest: IJ3cb02Mzue5EXMihCyqX/81saU=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$2.class
+SHA1-Digest: soA2cyfR5CIElbMr03IM/1UoKxw=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/XMLTagRule.class
+SHA1-Digest: N8S4ipQP7JcDSITjgkxKwdXmmX0=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlinePopupDial
+ og$3.class
+SHA1-Digest: SIKeX2jSthV29NxFHQC7zDKoYWo=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog$Library
+ ApiContentProvider.class
+SHA1-Digest: i/HtvxPT2po+nM5ZzhbF73ZWLQY=
+
+Name: icons/full/ovr16/internal_co.gif
+SHA1-Digest: 6FATvQMzn9UPL/yYFpTPmA4yjuY=
+
+Name: org/eclipse/mtj/internal/ui/editor/IFoldingStructureProvider.cla
+ ss
+SHA1-Digest: Waau+o/Nl1Jfc35SuZTCjVqaeEk=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nSourcePage.cl
+ ass
+SHA1-Digest: pnedX0RsB+jMEu+We/cn/y9jvUU=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$DefinitionSetsContentProvider.class
+SHA1-Digest: L1tV0tChWlk/S8bfjx6us4gtEZw=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/AnnotationModelFactory.c
+ lass
+SHA1-Digest: P7a+zfbiuYmUa472mhw7UeLgaWM=
+
+Name: org/eclipse/mtj/internal/ui/dialog/DeviceMatchDialog.class
+SHA1-Digest: UmmmIAYG4/Wr0tEftjXvIFvX1JU=
+
+Name: org/eclipse/mtj/internal/ui/editor/actions/FormatAction.class
+SHA1-Digest: 0MsqrwYv16DZW8HTFd9KPMifmeQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ComboButtonDial
+ ogField$1.class
+SHA1-Digest: 2cBqNTpwVDovzh73GGh9eBXkA9g=
+
+Name: org/eclipse/mtj/ui/editors/device/DeviceEditorDialog.class
+SHA1-Digest: vHQ9cehDrIyoPm77Db8skFVkv34=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarEntry.cla
+ ss
+SHA1-Digest: 42VrmcC1ap4J30j9YAmLRbclKj4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$LocationGroup.class
+SHA1-Digest: 6xrjKC9eW7lSIWb9IVinPU6HtFs=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$4.class
+SHA1-Digest: E9lwV8HHQw+3X6QrzeanPD/LZLc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/libraries/LibraryInfoBlock.c
+ lass
+SHA1-Digest: sMI5y89eBCuiCarydcGm5jVNwuY=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/ButtonBarBlock.class
+SHA1-Digest: Hw72XwAr6tAfSsC1ls1bf6r+tM4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/TabFolderLayout.class
+SHA1-Digest: Ysct6X5gjhKpDRPe8FMNWSMwX1A=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$14.class
+SHA1-Digest: l4Nv+3veeHThnSg3rVu36ePGTCw=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageLibrary.class
+SHA1-Digest: TVakwO2AbbFzgBrdAUmWO5CP0DM=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$CutA
+ ction.class
+SHA1-Digest: dTP1UkgWC7QLqNU8WpG+UDbrJ9Q=
+
+Name: org/eclipse/mtj/internal/ui/wizards/NewElementWizard.class
+SHA1-Digest: 5ttlrUCO2WP6484viqDj8JksOwo=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$2.class
+SHA1-Digest: gFkqmtl02XNTVZrFukT0MRrbqkE=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MultilineDamagerRepairer
+ .class
+SHA1-Digest: I5FcfiSQm86y+ATpSVriigLiqhM=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$Glob
+ alAction.class
+SHA1-Digest: +nxkee5s0hrl1pvPnc/UI7dw1dU=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateContextType.class
+SHA1-Digest: Cd1iBp7oBYhSB3uk+fxvwuqd0pI=
+
+Name: org/eclipse/mtj/internal/ui/editor/AbstractFoldingStructureProvi
+ der.class
+SHA1-Digest: 6GJYqSYLvWoNDMptrTVR6q/p+0M=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SigningPreferencePage$3.
+ class
+SHA1-Digest: mPMCr57tRCzQn0RGDgq8xo7Gbi4=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlineNamePatte
+ rnFilter.class
+SHA1-Digest: Mgz3dUMO69EtHp3H+szDNe0bRQo=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage.class
+SHA1-Digest: SpDjXCpeaB+rVp4KeUZYFSPCp8w=
+
+Name: org/eclipse/mtj/internal/ui/util/AbstractOverlayIcon.class
+SHA1-Digest: Z81mdF/AncnyrDqTIUbmJWU7Z+E=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/DebuggerSettingCheckH
+ andler.class
+SHA1-Digest: gIX15oxQGpfKv6jCZogXbRbe2rU=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$4.class
+SHA1-Digest: 2XrrL3R5giPkH315p5TgV4rnDRM=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $3.class
+SHA1-Digest: gN9QSBRc/Je1WdEKeAz/WMy1tts=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocaleDetai
+ ls.class
+SHA1-Digest: +P8a3f+nFUWRawhnJ1DMI7qZLpE=
+
+Name: org/eclipse/mtj/internal/ui/viewers/TableViewerConfiguration$Tab
+ leViewerInfoSorter.class
+SHA1-Digest: GN3bwAkaLh7294lphmNnhhM6M8o=
+
+Name: org/eclipse/mtj/internal/ui/MTJUIPlugin.class
+SHA1-Digest: qopKUXklIQQ97m68G65XU6SwhvM=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nInputContext.class
+SHA1-Digest: 13nEttEWmnBFt0Aq8557L4Mw0qo=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$1.clas
+ s
+SHA1-Digest: dLHvaWjowlOIxUsqEDHfJU63osM=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJMultiPageContentOutline.cl
+ ass
+SHA1-Digest: xhJzC4eX2HPJDzGttRQqSSXEtYk=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nEntriesTableP
+ age$L10nEntriesTableCellModifier.class
+SHA1-Digest: od4YrQcF6uAimVY+c62dmRyI1mU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$9.class
+SHA1-Digest: rovIsotoFNNpcrphUW8FX2Rmwk8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$12.class
+SHA1-Digest: z5ACh5SuD1rDKNcoPkJyAZFh1Pw=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ILeveledImpo
+ rtStructureProvider.class
+SHA1-Digest: F2vbV2408TP1USG+p7KBye1iUyI=
+
+Name: contextHelp.xml
+SHA1-Digest: cKrfxKLJ6ucg86z/h9DBYsVpHho=
+
+Name: org/eclipse/mtj/internal/ui/wizards/libraries/LibrarySelectionBl
+ ock.class
+SHA1-Digest: XSXdGfTT/d1SjwuoR7+X3KROqHA=
+
+Name: org/eclipse/mtj/internal/ui/actions/WorkbenchRunnableAdapter$1.c
+ lass
+SHA1-Digest: sXvgF5xU8tjjkyC15q8+j1/QgaQ=
+
+Name: org/eclipse/mtj/ui/JavaDeviceEditorActionDelegate.class
+SHA1-Digest: bH4PdsAW+BvB+2hL36+WN+wJgzA=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$3.class
+SHA1-Digest: V04ABY4rS6LY4dovgJDXnf+AZiE=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/XMLPartitionScanner.clas
+ s
+SHA1-Digest: QYExSglHFhdog8uNh/gYfggmQy4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizard.class
+SHA1-Digest: IsscXZZE2AKpL/4fLbQiohhfruw=
+
+Name: org/eclipse/mtj/internal/ui/viewers/LabelProviderViewerSorter.cl
+ ass
+SHA1-Digest: THz8aCDU+3fqCaxbTTmFBvIkLbY=
+
+Name: org/eclipse/mtj/internal/ui/actions/ConfigurationErrorDialog.cla
+ ss
+SHA1-Digest: ol6ww90nOtVPAV4bqSI+5c6ohtY=
+
+Name: org/eclipse/mtj/ui/editors/jad/JADPropertiesEditorPage.class
+SHA1-Digest: wpfzB1azHFgxsR9V5AIqIwmmzc4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$9.class
+SHA1-Digest: w/GWoSzSJOoOF0+EfTMWkNJD/Sc=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izardPage$4.class
+SHA1-Digest: U3GoYB7zUFrxUqYhuiO8nDLQyd8=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/OTANoMidletsHandler.c
+ lass
+SHA1-Digest: 8doy8D6zkh0pxxHOmS3MfQuNXFw=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1$3.class
+SHA1-Digest: uuYHsnQ48PNQ7C6zuTzP29EKgLo=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $8.class
+SHA1-Digest: XeOUNCCWM/71g6frcrq/voS+Vfk=
+
+Name: icons/downarrow16.gif
+SHA1-Digest: 7CIOCsQnS1zh7nzs7UPjCT6kA4k=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$DefinitionSetLabelProvider.class
+SHA1-Digest: Xb4334oIc63NqW2Rj9H5gumimuo=
+
+Name: org/eclipse/mtj/ui/editors/device/AbstractDeviceEditorPage.class
+SHA1-Digest: 9MFA5W2mfcz7jeJFWiKJD9x/VJs=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageJavaSettings.class
+SHA1-Digest: 9vnYyb9PIFePvTi6Dmu65mZAEeo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarFile.clas
+ s
+SHA1-Digest: lKaW9LzSbccurgDo2BAdr/jjkfo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageProperties$OptionsGroup.class
+SHA1-Digest: MYCFZCsj0Ru+D+/hDJQ082CZxbM=
+
+Name: org/eclipse/mtj/internal/ui/launching/StackTraceMatcher.class
+SHA1-Digest: BYV5iemah5LIAPCrx7dAvMhxR6o=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceBasicEdit
+ orPage$1.class
+SHA1-Digest: wvxnbQaJ+QqWenQnNbtmwr9PkEs=
+
+Name: org/eclipse/mtj/internal/ui/wizards/libraries/LibraryListLabelPr
+ ovider.class
+SHA1-Digest: EjSD1cGb5e5RbcBdUGtpKgNSjzY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$17.class
+SHA1-Digest: H0yCqn0XnTXtY2kapig4gfKchjI=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/JADFormEditor$1.cla
+ ss
+SHA1-Digest: HD/P6IbPwmiFpblexYLfMptnDww=
+
+Name: org/eclipse/mtj/internal/ui/wizards/libraries/LibraryInfoBlock$1
+ .class
+SHA1-Digest: 81cei/rVMBAKO+m1Ok3+oIW54c4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageJavaSettings$1.class
+SHA1-Digest: Cn1yqf4jvGHbhWsj5eqSHHiCIL8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarFile$1.cl
+ ass
+SHA1-Digest: 6LGvxRelhZ+qplRqI1TVE9BMCVw=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlinePopupDial
+ og.class
+SHA1-Digest: bOL6LzGPM5zJMO2WoAVVlZup9kw=
+
+Name: org/eclipse/mtj/internal/ui/util/PluginPreferenceStore$2.class
+SHA1-Digest: IXsH1vJy/AmYffRC21cOg3XRbGE=
+
+Name: org/eclipse/mtj/internal/ui/preferences/WorkspaceAndExternalFile
+ FieldEditor.class
+SHA1-Digest: YdDmKXaUnMtTfF07lcxu+Jo/2Qo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageProperties$PropertiesGroup.class
+SHA1-Digest: wphu0w6EDmQzn3TvrZOzimp4QTs=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$ExcludesVisitor.class
+SHA1-Digest: KdcWvjbFEDpKuW9bybM6T5qqKpU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/libraries/LibrarySelectionBl
+ ock$2.class
+SHA1-Digest: 0+GcRZ+KltgihvXJyw+UFn//BBw=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$2.class
+SHA1-Digest: wZQ2k154dINqILHP86pRjlZ/phU=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/IInputContextListener
+ .class
+SHA1-Digest: 3+gkiyVVupVARvOsSE056xRimjI=
+
+Name: org/eclipse/mtj/internal/ui/launching/MTJConsoleHyperLink.class
+SHA1-Digest: yAmL4ytLrjd89NIOhXcJc6aOBbE=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ListDialogField
+ $ColumnsDescription.class
+SHA1-Digest: EbAu4JXaKDd5asjAS/SoXDkXu7o=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $TableLabelProvider.class
+SHA1-Digest: ZbJX+ltBwhi6zPqsOcLbbEEOX8s=
+
+Name: icons/full/elcl16/collapseall.gif
+SHA1-Digest: X2SYkCGSP2jr+iOlYBLU19jEd4Y=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$2.class
+SHA1-Digest: XO9ziFH8zwgKYK/8zSTtXbKuDV0=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormPage$2$1.class
+SHA1-Digest: wEvKqDQ7dpMfUfkMcjBx9ONVXDg=
+
+Name: org/eclipse/mtj/internal/ui/dialog/DeviceSelectDialog.class
+SHA1-Digest: 5DdG1duMZfDPHeC6KLz+ksrNvnM=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJDetails.class
+SHA1-Digest: iNnsxSX1cd99d0mcjBUw3TQeR2E=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarInputStre
+ am.class
+SHA1-Digest: sIUfFVnL0u2zECK+FAfIy6e2gZQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletTypeDet
+ ailsPage$MIDletsFormEntryAdapter.class
+SHA1-Digest: lL3X1WUMi/cu45lPLdinICtigsw=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletTypeDet
+ ailsPage.class
+SHA1-Digest: 7olADza8jWoFPHlJKLQAXHIYDVQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/actions/MTJActionConstants.cl
+ ass
+SHA1-Digest: ofDRc1K0pvlMIyZvq9zMtcgTIn8=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SyntaxColorTab$4.class
+SHA1-Digest: dHTGFvmBkKg6dVsINdkcEvjoFdA=
+
+Name: org/eclipse/mtj/internal/ui/dialog/DeviceMatchDialog$1.class
+SHA1-Digest: aImmM8etwzlP9oL7/gJ7GMgBnUM=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage$1.class
+SHA1-Digest: q0VbU95Rj8cfalbn09IMWIbcQAY=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage.class
+SHA1-Digest: 31BLAsZb6Wwv3i89irS/9t7EetY=
+
+Name: org/eclipse/mtj/internal/ui/actions/WorkbenchRunnableAdapter.cla
+ ss
+SHA1-Digest: LeHdjlHybjJgPUkkSsjG1wOkB20=
+
+Name: org/eclipse/mtj/internal/ui/preferences/ObfuscationPreferencePag
+ e.class
+SHA1-Digest: 77Tl2FRVKn1kdc9gL5SZiBiTSLc=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor$1.class
+SHA1-Digest: MtGKuKHiPj3BrN+g2j0Ev0J5ye0=
+
+Name: org/eclipse/mtj/ui/editors/jad/ListDescriptorPropertyDescription
+ .class
+SHA1-Digest: O+nwTEJiz+m/1eOSDZL5L2Ge+V0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/contentassist/Com
+ pletionProcessor$1.class
+SHA1-Digest: V/87f96MxZ2jwcCoGCMIOe7cKAU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ard.class
+SHA1-Digest: HfvW319TYTiuwl85L+KI52rr0OQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage.class
+SHA1-Digest: Ow5skNFMurzrYlPkce5HT/BzDq8=
+
+Name: org/eclipse/mtj/internal/ui/dialog/KeystoreEntryDialog.class
+SHA1-Digest: 1Hn1uX3UioRJJzrgBKsHki54FHo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/midlet/page/NewMidletWizardP
+ age.class
+SHA1-Digest: /GG30QOfHYCBCXx8DjlpfFnOb24=
+
+Name: icons/full/obj16/locale_obj.gif
+SHA1-Digest: MTBbDuUfRY6XOdjDHEo738pTKHM=
+
+Name: icons/full/elcl16/help.gif
+SHA1-Digest: TTHvKbGnhQNQvjACaa5JPJ501T4=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$SymbolNameCellEditor$1.class
+SHA1-Digest: OU0ygxnOGHopDJ7E9DQ5LkYL7bY=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$2.class
+SHA1-Digest: CYODayWYNBgM+DhBZlB99vbdLag=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJMultiPageContentOutline$So
+ rtingAction.class
+SHA1-Digest: nM8lYHtZklPRjZ/IvLw3uvKh/xg=
+
+Name: icons/full/obj16/locales_obj.gif
+SHA1-Digest: TrUS9y/hOjZIm687sZPFmycWTmg=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$1.class
+SHA1-Digest: E4Cjw8a1kwcjh2tEVMwcqaH3vw4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$5.class
+SHA1-Digest: f+I3VHja1QIgNL3svXGWSxNZhNQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/GenericSourcePage.class
+SHA1-Digest: 2oFt0YFZRCEc2OqXqygnNsBbUI4=
+
+Name: org/eclipse/mtj/internal/ui/launching/DebugTypeSelectionDialog$D
+ ebugTypeLabelProvider.class
+SHA1-Digest: axiurQlVyHgfAO8ud567hCNCiVQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlineMouseMove
+ Listener.class
+SHA1-Digest: triRT9U+iDdYGPi2aK/xaqO5c5k=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/XMLTagScanner.class
+SHA1-Digest: C2W6vh9addKC89i16yuF6RVBPs0=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/IOutlineContentCreato
+ r.class
+SHA1-Digest: PNqeCpBOqbH8KnjedUKEUlmRziI=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$ConfigurationGroup$1.class
+SHA1-Digest: D2H3ngXYejNJZsTzkwIGnA8IDvM=
+
+Name: org/eclipse/mtj/internal/ui/wizards/midlet/NewMidletWizard$2.cla
+ ss
+SHA1-Digest: z+2H8LjKARNjdiNja5izkllQQu8=
+
+Name: .api_description
+SHA1-Digest: KNiGD8voh+w/j0IpPbqnS5zdLRk=
+
+Name: org/eclipse/mtj/internal/ui/launching/NonJavaLaunchShortcut.clas
+ s
+SHA1-Digest: 27JKPQhu4rp5T2LvdX4DVBHBTzo=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor.clas
+ s
+SHA1-Digest: 3tGmtKeR+OV16mESeNPmmXcVaM8=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$3.c
+ lass
+SHA1-Digest: z/3ngwOExafILnWnFPjuIEDoIn0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$3.class
+SHA1-Digest: 7TJzYCDrTtyF4VYL/4+V1X77Cok=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$5.class
+SHA1-Digest: vhHoGyGfmtW/B63+wyMo7mK1UB0=
+
+Name: org/eclipse/mtj/internal/ui/properties/LibraryPropertyPage.class
+SHA1-Digest: uCJS6H7G4P1oLbFgh/PTYn7LHXk=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$SourceAttachDialogCellEditor.class
+SHA1-Digest: aoHGn0Ma6B6i6dbJc9+fL+/udoA=
+
+Name: org/eclipse/mtj/internal/ui/editor/IMTJDropParticipant.class
+SHA1-Digest: xKwB1ikgGzwUo9DtN3R69I5TXDQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/ToggleLinkWithEditorAction.cl
+ ass
+SHA1-Digest: ObDyL7SLpQfI3wrmIvbnWdjaJXM=
+
+Name: org/eclipse/mtj/internal/ui/util/StringMatcher$Position.class
+SHA1-Digest: TF8pcwGuaA18R7/6M9bObdNt7bI=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$1.class
+SHA1-Digest: Z8Y358/Wg2Zbczor9zWb/6+HS3A=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$3.class
+SHA1-Digest: s94yMM5l/rP8L4yphZRHdDbt0Q4=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor$6.class
+SHA1-Digest: lcjCgT8s23P1oK0QFD3fRKJS5E8=
+
+Name: org/eclipse/mtj/internal/ui/actions/packaging/AbstractCreatePack
+ ageAction.class
+SHA1-Digest: y22gUTeLAmT7M9yzXMdoWfamR9Y=
+
+Name: org/eclipse/mtj/internal/ui/properties/LibraryPropertyPage$1.cla
+ ss
+SHA1-Digest: CZap0iWcvFJQs3B24qD7pu6Wxh4=
+
+Name: org/eclipse/mtj/internal/ui/actions/packaging/CreatePackageActio
+ n.class
+SHA1-Digest: y767dmPnUPazxLKs1B17HRQCDe8=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$2.cla
+ ss
+SHA1-Digest: mou+7aM1N0MSc5N8pkjxw254kyA=
+
+Name: icons/preprocess_symbol_assist.gif
+SHA1-Digest: ZJD5YY1z3z8UfN9wh65b+Q0xzaQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/OTAJADDescrip
+ torsProvider.class
+SHA1-Digest: QPfu1Ulu+gkA5xAmOOI0CqABScw=
+
+Name: org/eclipse/mtj/internal/ui/markers/MissingDeviceMarkerResolutio
+ n.class
+SHA1-Digest: Q+kK7YPnQuum0Gh5TmxGDUwErjg=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$6.class
+SHA1-Digest: fShHADTMPAoBEaJbBfxY8Uu0BGk=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormPage$1.class
+SHA1-Digest: Biv3JxmEWN6d+Byy8moYnH51onk=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SyntaxColorTab$ColorElem
+ ent.class
+SHA1-Digest: c7N+c3pgSS47gDN2Zc2blUhajKo=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$2.class
+SHA1-Digest: XyKxvIZgOvIdlQXnhebuzgq4UYA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ d.class
+SHA1-Digest: NaOvIfF99U8ygx0q0WJ/O/lLWV4=
+
+Name: org/eclipse/mtj/internal/ui/util/ImageOverlayIcon.class
+SHA1-Digest: kAIYb7T2N2k7pQ0GMMl822UrW6w=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/JavaDeviceEditorDialo
+ g.class
+SHA1-Digest: Rf6JFvL5zyUFQUKdFRov4fyLxLM=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssSymbolManager.class
+SHA1-Digest: /yj3t8XhniGDOBGqSEHZDEmkMz8=
+
+Name: org/eclipse/mtj/internal/ui/preferences/NewJ2MEProjectPreference
+ Page.class
+SHA1-Digest: +sOHnvLYEB05Qj1vL2QT5LKm0hg=
+
+Name: org/eclipse/mtj/ui/DefaultDeviceEditorActionDelegate.class
+SHA1-Digest: G/TFLwPXWAsXs+C17JDjPVImMwU=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$8.c
+ lass
+SHA1-Digest: 4yjxhRk5yrax8yvIzTgQMQ+r+xI=
+
+Name: org/eclipse/mtj/internal/ui/launching/MTJConsoleLineTracker.clas
+ s
+SHA1-Digest: 9wKqD4sD5ckhw5Bz7KVnPLPd01w=
+
+Name: org/eclipse/mtj/internal/ui/parts/SharedPart.class
+SHA1-Digest: id5wtv/1U25onoQFlxUeypzdBso=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ComboDialogFiel
+ d$1.class
+SHA1-Digest: pQuJYzSSDIbggQzftSDeju6/pf8=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$SourceFolderFilter.class
+SHA1-Digest: 31eeIkZr4VSnN8LGZ6uSktNHnFM=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$2.class
+SHA1-Digest: jSJtQ3z1S3GPKi99sUO9Z6YTK3c=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /VariableTracker.class
+SHA1-Digest: xu8N2sLMqZJl+lBk+zxjh+4J/2U=
+
+Name: org/eclipse/mtj/internal/ui/properties/J2MEProjectPropertiesPage
+ $3.class
+SHA1-Digest: 2m//zA4yPwVgVdjc/VwSApqXTT0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$TableLabelProvider.class
+SHA1-Digest: KMDAbP7yFtN5ER5vEw6Z5olD7qw=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$6.class
+SHA1-Digest: y2llTpaFhYN+gwsbS6xLVEdL4sc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/CheckedListDial
+ ogField$1.class
+SHA1-Digest: VDaeu7FdiKw3XOr11xmzB1bzn5U=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormPage.class
+SHA1-Digest: /XQXDF1Nz3Tkv1qVqtc/5qelD9Y=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$TableContentProvider.class
+SHA1-Digest: qDTvpWvjTFC+R2cBDQYKw7O8emo=
+
+Name: org/eclipse/mtj/internal/ui/actions/l10n/LocalizeStringsAction.c
+ lass
+SHA1-Digest: wJWyler0SK4L0djE/o+2PIAv76s=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$7.cla
+ ss
+SHA1-Digest: bJ4XPwFtoWd6PfI5Jr55DJoQZMc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/NewElementWizard$1.class
+SHA1-Digest: V1M1TnxLXNTkIX69/3Ymb3Y9M2o=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ListDialogField
+ $3.class
+SHA1-Digest: MUv7Ai5wmBtM7D4KIsPsAbsdTzk=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/LocalizationPage.class
+SHA1-Digest: rVZwiTCR51OFz3IUXbk9PWHqZPo=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlinePopupDial
+ og$1.class
+SHA1-Digest: +46hIpySceMvh/5jwXj8q1YVfjk=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$SigningBlo
+ ckContentProvider.class
+SHA1-Digest: D6dDyhegLJqRcmV/bTWTbOB9FdM=
+
+Name: org/eclipse/mtj/internal/ui/util/SourceViewerDecorator.class
+SHA1-Digest: KV1D31FP2D5HYZmgE7AgDT4mLnk=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/DebuggerSettingCheckH
+ andler$ErrorDialogWithToggle.class
+SHA1-Digest: Feqnxd0ZrLNzvA83f9V6p4UY/TU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$ConfigurationGroup.class
+SHA1-Digest: PA2uIazwnVmxlD33+AkP01T8XjU=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormOutlinePage$BasicContentP
+ rovider.class
+SHA1-Digest: ep9F13hoahWLpbT9bL4y6HQIJlQ=
+
+Name: org/eclipse/mtj/internal/ui/MTJUIPlugin$FontCacheKey.class
+SHA1-Digest: T12QuTxC6J/dKSyeZjZjDL28Z4Y=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ComboButtonDial
+ ogField.class
+SHA1-Digest: Qsufmow29Etv0bJHk6A9zpDqvV4=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormOutlinePage.class
+SHA1-Digest: otqPLqkjMAX3D5iyYza3RPS88z8=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SecurityPermissionsDialog$Sec
+ urityPermissionsDialogContentProvider.class
+SHA1-Digest: rtshjIH8nZuuruVMcjOpDR6l0to=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/DebuggerSettingCheckH
+ andler$ErrorDialogWithToggle$1.class
+SHA1-Digest: MMo3p/SEzHmcXzEDq7LCzAd0aFM=
+
+Name: icons/full/obj16/overview_obj.gif
+SHA1-Digest: H4Se4bmwjRPw54EY3hA1+u3jnAI=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/BuildPropertiesEditor.
+ class
+SHA1-Digest: +bmYZM+RLbo4o/m7Y0t+CetZpfk=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateInformationControlCreator$1.class
+SHA1-Digest: ZNV2yjk2i1j4CqB6YPJ43AZekoU=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJStorageDocumentProvider.cl
+ ass
+SHA1-Digest: t4vXzsBR9+w1ad3wvVFzKNaghw4=
+
+Name: org/eclipse/mtj/internal/ui/launching/JadLaunchShortcut.class
+SHA1-Digest: gsrd6O9Z0NfNww2dfqxA29UownU=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContext.class
+SHA1-Digest: YVQze3zzJRuDzwfm1arGi3auPZA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$2.class
+SHA1-Digest: r6RwcyV9e61GAaVgnmUhB73RumA=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssProposalComputer.class
+SHA1-Digest: WlNprtbVMGZWIDSLsUvhPoad3kg=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/IControlHoverContentProv
+ ider.class
+SHA1-Digest: 2XwaQwS39jm6yoVPMX0tln6xrao=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContext$ElementL
+ istener.class
+SHA1-Digest: WnlSgs4PHnLbIIWBMU3d2yyaAnI=
+
+Name: icons/full/dlcl16/alphab_sort_co.gif
+SHA1-Digest: FDMI+c41+UcMX7nR/bTNT/maK+g=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$12.class
+SHA1-Digest: 7aGf3zcsCUdDsgzRXUHO27MbYSs=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/CouldNotFindJarToolHa
+ ndler.class
+SHA1-Digest: 5OTJG9xsWZbuljqTJKNNnbqxg8o=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/RequiredJADDe
+ sciptorsProvider.class
+SHA1-Digest: XrT87eOpZBLeCQUYffRDRBa1KaA=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /SourceViewerInformationControl$1.class
+SHA1-Digest: oKQAHz/li6UcSJhl/Lwr4DwpaF4=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssDirective.class
+SHA1-Digest: E2SBTtouh22u9bunU6/OP/xwbXk=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ProjectImpor
+ ter.class
+SHA1-Digest: TCoMATDruDkRiKfTd5YEOq5h/JE=
+
+Name: org/eclipse/mtj/internal/ui/parts/SharedPartWithButtons$Selectio
+ nHandler.class
+SHA1-Digest: ZZoo1LkH8RNrk2YUItbVbK1sfJY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ProjectIm
+ porterMessage.class
+SHA1-Digest: sBLV4a1KbGtLho5K23G2YkkcIjs=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SigningPreferencePage$1.
+ class
+SHA1-Digest: DGPrxsqrw4z6mltfUbUs8M++jTc=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJOutlinePage.class
+SHA1-Digest: 6H7etpzPDZCf+mDsPNkyrtqMVCw=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$5.class
+SHA1-Digest: 7c75vGg1uYW2id3PmMTFmyA+P+M=
+
+Name: icons/class_obj_green.gif
+SHA1-Digest: S8QnN0mK8a5jL0RXFlbkWIJ3DUc=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/AntennaP
+ PDirectiveProvider.class
+SHA1-Digest: Om++qxHBGfwnfZA1rR+g+g8gDXw=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$2.class
+SHA1-Digest: pTuFGpHaekUNKwrkpJX/LQKWiIo=
+
+Name: org/eclipse/mtj/internal/ui/util/MidletSelectionDialogCreator.cl
+ ass
+SHA1-Digest: JUmEEwUUwrDs7qPJxE1vANPrwTw=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/IPreproc
+ essPrefixHandler.class
+SHA1-Digest: jhtedlyrdBE10+Sa1P73syJUemg=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ResourceMarkerAnnotation
+ Model$1.class
+SHA1-Digest: Gc8XW58kVo6aCWGnaw+jz5CmKaQ=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $1.class
+SHA1-Digest: W1WyuUcIXLwEuOqmIgLNxcb7dqk=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/ScrolledPropertiesBlock
+ $3.class
+SHA1-Digest: tjud5WHkwxANn+ppdNMq5z5meA0=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/LocalizationWizard.clas
+ s
+SHA1-Digest: /gVAiE8GpniomnzDuq6sOZX5YZI=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$PushRegEntry.class
+SHA1-Digest: ZFG5LxivcmbIUp38qOn3rQ4LxHs=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateContext.class
+SHA1-Digest: rLK0sm1c/BQG/Eis6Cg5ETijOoY=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$APIFileSelectionDialogCellEditor.class
+SHA1-Digest: SNtEklKrC0Esf86I6Uz+91Yl4+Q=
+
+Name: org/eclipse/mtj/internal/ui/properties/J2MEProjectPropertiesPage
+ .class
+SHA1-Digest: GrmjIKgIsHXcNj04WMGGpiee8Dc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$7.class
+SHA1-Digest: 1tk0rTSgNyTgJhAePYb0mIipDEY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$10.class
+SHA1-Digest: zhGG3+zHVrjlqKlrCV3m+rG4PYg=
+
+Name: org/eclipse/mtj/internal/ui/dialog/StringLocalizationCandidatesD
+ ialog$2.class
+SHA1-Digest: 2mMRGptxVu9Y6u3NHdIIKFvL/wg=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nFormOutlinePage.cla
+ ss
+SHA1-Digest: kAkYezIW9ezaUP3FHNLI15TNvIQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/UTF8InputContext.clas
+ s
+SHA1-Digest: nFv5sbA/fcz6EL/EqQko+CB9rp8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$17.class
+SHA1-Digest: JhW8Xz/kZhIBnHl5mcNfPFJ13gU=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormFilteredTree.class
+SHA1-Digest: D3hwfP9YBEgr5wE7DS9MxXebuGA=
+
+Name: icons/full/elcl16/synced.gif
+SHA1-Digest: Ghj9SQaJ6vJj8hRCpmwiAfHF1uI=
+
+Name: org/eclipse/mtj/internal/ui/MTJUIPreferenceInitializer.class
+SHA1-Digest: ix1bnKc6HVnTty/u0GyBG+sIjmk=
+
+Name: org/eclipse/mtj/internal/ui/util/ArrayListContentProvider.class
+SHA1-Digest: 7il8TPjgRw2bSFxBMIpl1jTkUSo=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssCompletionEngine.class
+SHA1-Digest: vWCJz3dYXJNX1CfSBwDTCFmE8zA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/IComboButtonAda
+ pter.class
+SHA1-Digest: sl1Ci+qSl4h4JGuIBGtgw9rwVkw=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$5.class
+SHA1-Digest: otjMJL9y+xCYVp8HqcoidRpy27c=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$SecurityPermissionListItem.class
+SHA1-Digest: PZm/io2jcZ10V9B0ooMmZ1tf720=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$1.class
+SHA1-Digest: i44kqDTcEVOaf9sEet9xvfp3HDo=
+
+Name: icons/full/obj16/template_obj.png
+SHA1-Digest: HMFE6BVKM0XF1mz4mWwBRT1ozpQ=
+
+Name: org/eclipse/mtj/internal/ui/actions/packaging/AbstractCreatePack
+ ageAction$1.class
+SHA1-Digest: Z7KWz8RSWmwiOHHQZPzFWHn/6B8=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJSelectAnnotationRuler
+ Action.class
+SHA1-Digest: vnM8MGUY+CqILszGWc9aGOL5oG4=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izardPage.class
+SHA1-Digest: VHr4tzR9c+8UO7PSQuKwObzZf24=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$JadNameGroup.class
+SHA1-Digest: kNU9Kd60x7cf6x1cf0mFG/b++E0=
+
+Name: templates/preprocess-templates.xml
+SHA1-Digest: dSPhjvCkTaW1dP6RBCb4PyJY8iY=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$8$2.c
+ lass
+SHA1-Digest: CDtnAMryakxc3tkL8dsCGaHcEN8=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$Table
+ ContentProvider.class
+SHA1-Digest: P3omxmWKDL/2cylC+Km0ewskcjg=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$7.class
+SHA1-Digest: BywFCF8NHLZh4V5oGEv1PugdEVA=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izardPage$2.class
+SHA1-Digest: O2urinjYbCVPKK1E2CWEldcLNVg=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$2.class
+SHA1-Digest: I2u0P5OrEI0/MOFxevX8mwAjESE=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContextManager$1
+ .class
+SHA1-Digest: 0zpI9TJrl+WRAqt6l4VoQBrvwC0=
+
+Name: icons/full/obj16/link_obj.gif
+SHA1-Digest: d4/caCyTtzpGuEeSr8UTWk3IzHo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1$1.class
+SHA1-Digest: 6ckutEfBH4b7RWGvD6rUQ4Ij798=
+
+Name: org/eclipse/mtj/internal/ui/actions/exporting/AntennaBuildExport
+ Action$2.class
+SHA1-Digest: IHBA3ZZo6iZiZUDUDjP7rjz70zU=
+
+Name: org/eclipse/mtj/internal/ui/MTJUIPlugin$ColorCacheKey.class
+SHA1-Digest: n412VIgFJJTd7JO3nLtC2g3vlyE=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $6.class
+SHA1-Digest: 8MALMpHVIbnLUeVx0n/2XU3i1Qk=
+
+Name: org/eclipse/mtj/internal/ui/editor/ISortableContentOutlinePage.c
+ lass
+SHA1-Digest: HFeFxG6IdpOtTYApERgoJvlKefg=
+
+Name: org/eclipse/mtj/internal/ui/actions/ConvertToMidletProjectAction
+ .class
+SHA1-Digest: zEy+S1hjUl1f8rXcSWaqXBj+g1k=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izard$3.class
+SHA1-Digest: /gVtJwr0L6azbRfi9FRgnjNBMqI=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/actions/L10nRemoveObjec
+ tAction.class
+SHA1-Digest: 09pAYEYK4kREYBq91r6CiodIiWg=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$4.clas
+ s
+SHA1-Digest: J86Q2LEi6/dFfI5C++LmLs+gQaQ=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$SymbolDefinitionLabelProvider.class
+SHA1-Digest: vm0/03czhtCRCZRQ9JsOCM1PCEw=
+
+Name: org/eclipse/mtj/internal/ui/editor/EmptyOutlinePage$1.class
+SHA1-Digest: x7EMN7ZCUZ1AQlW+FqfArHQmW28=
+
+Name: org/eclipse/mtj/internal/ui/viewers/TableViewerConfiguration.cla
+ ss
+SHA1-Digest: 065LVxD5Rv7L15Z5ePgzJmiPo7A=
+
+Name: org/eclipse/mtj/internal/ui/preferences/PackagingPreferencePage.
+ class
+SHA1-Digest: BXePFzCchjC2YaL/IMRV+cxvG6Q=
+
+Name: org/eclipse/mtj/internal/ui/util/PluginPreferenceStore.class
+SHA1-Digest: U0O+ZKW7+imuwa5FzQ6D9snMOCg=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$15.class
+SHA1-Digest: eRoHnw4mXNRjB2MTly6hX+5xecc=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocalesDeta
+ ils.class
+SHA1-Digest: gS0nZILYG2SYAXHM60hTyHlViwQ=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog$3.class
+SHA1-Digest: jhNudry1Ef2iqy+kDxvR+ky+OD4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage$5$1.class
+SHA1-Digest: mRbjEpB2eoMc7piEVGQp2H+EPUI=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/rules/JadScanner$
+ 1.class
+SHA1-Digest: YqNFIVUPmXT6xVM0bRTRypDpbRE=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$ProjectRecord.class
+SHA1-Digest: o8d9JW8syTWWM7MNI3PFmsMWUGw=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$ArchiveFileSelectionDialogCellEditor.class
+SHA1-Digest: l9OpZTYBUu5iutTILcIy800BfOQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$6.class
+SHA1-Digest: /A7kSYu3HCzuwhjxpB87yN4mVjg=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageProperties$Validator.class
+SHA1-Digest: tMKblZHKF30SlVvdcgXcCnV0VJ4=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$TableContentProvider.class
+SHA1-Digest: g/BZh2phXf3nnTKkYfBuRn2POAk=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/contentassist/JAD
+ AttributeCompletionProposal.class
+SHA1-Digest: 5v4xOWeI9fCzbpx8RQDXUKM7U7s=
+
+Name: org/eclipse/mtj/internal/ui/preferences/WorkspaceAndExternalFile
+ FieldEditor$3.class
+SHA1-Digest: l69hdXJzEzeo/a8POaf5qc/iQGY=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/XMLScanner.class
+SHA1-Digest: DPoXTn2lLbmsDhqWe8b21idl7TQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJTextHover.class
+SHA1-Digest: vGi8fxB5HYH3ptKra05790FCYRY=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/JADSourceEditor.c
+ lass
+SHA1-Digest: tOFjC4poe80li8EA0aFU1EYOi3M=
+
+Name: org/eclipse/mtj/internal/ui/util/TableLayoutComposite.class
+SHA1-Digest: wm/7HYoNvhh/rChIOJi/5RyNVkM=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nAbstractDet
+ ails.class
+SHA1-Digest: E6ToPpEauK4FnHdS8Tts6qwwXvo=
+
+Name: org/eclipse/mtj/internal/ui/launching/ToolkitEmulatorTabGroup.cl
+ ass
+SHA1-Digest: GOu8q3Wy3hq39F9KATRjSMqKd1Q=
+
+Name: org/eclipse/mtj/internal/ui/editor/XMLConfiguration.class
+SHA1-Digest: G1DDxI9yKbn5N4xbkyvkBTEPQMc=
+
+Name: org/eclipse/mtj/internal/ui/launching/DebugTypeSelectionDialog$D
+ ebugTypeDetailsLabelProvider.class
+SHA1-Digest: T8oRvpasl3AF1c3nt2QmmcDJAyA=
+
+Name: org/eclipse/mtj/internal/ui/properties/ProjectPackagingPropertie
+ sPage.class
+SHA1-Digest: /5E+vrvUAvVeOlMBxJCscDSE6Go=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/SelectionButton
+ DialogField$1.class
+SHA1-Digest: yozEoGpmcRaMadkegbHS0Hrc3GA=
+
+Name: org/eclipse/mtj/internal/ui/actions/ConfigurationErrorDialog$1.c
+ lass
+SHA1-Digest: wSf5oZI9BCA3L8AUrqS2HVXiyh0=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SyntaxColorTab$2.class
+SHA1-Digest: 8PuoVbkXnzl0bSy9b0tOh0fwK7Y=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ChangeAwareSourceViewerC
+ onfiguration.class
+SHA1-Digest: pr+T3WHXB6K4HU5jL/NM42zO6uQ=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditor$MTJMultiPageEdi
+ torSite.class
+SHA1-Digest: 3TfntPILeXuXa4tGM5tVpBiJk84=
+
+Name: org/eclipse/mtj/internal/ui/forms/parts/FormEntry$3.class
+SHA1-Digest: dWagQFVpULHiUst2zMp04qnL7zY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/IListAdapter.cl
+ ass
+SHA1-Digest: E5uaVFW7cdCvuC3c3N56c2lD+TE=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocaleDetai
+ ls$3.class
+SHA1-Digest: LdGOM9QiOMeIxw3+eD4qp6J9III=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormOutlinePage$BasicComparat
+ or.class
+SHA1-Digest: mvCQm5ae9zMiy9v6k4/wBLZbQWE=
+
+Name: schema/org_eclipse_mtj_ui_deviceEditor.exsd
+SHA1-Digest: 4QPuBFjmTywgtyR7tA0fvIbA0Is=
+
+Name: org/eclipse/mtj/internal/ui/preferences/PreverificationPreferenc
+ ePage$2.class
+SHA1-Digest: qI/qu74OgGICL97UP6pZZckB2Wo=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$JavadocAttachDialogCellEditor.class
+SHA1-Digest: pelr6ANynNpScuwo4O4bSTeQTcU=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$StringHolder.class
+SHA1-Digest: C/g9W7ob0grtCke5Ok1Hj4GUxqc=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$3.class
+SHA1-Digest: gxX2LIU0vcLJo974OfWTAWkkbRw=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/IStringButtonAd
+ apter.class
+SHA1-Digest: VJ4rZ2ZwwIosqo8KSFmMcUsoDIY=
+
+Name: org/eclipse/mtj/internal/ui/editor/IMTJSourceParticipant.class
+SHA1-Digest: Kz4Ed+1Sitl3197Jfar4CLgUpnc=
+
+Name: icons/full/ovr16/jar_co.gif
+SHA1-Digest: GJvrnetvf+eiAkV345a0zXArbLo=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nEntryDetail
+ s$1.class
+SHA1-Digest: uat9kkwhf8A0McK5PkvxW0dBikI=
+
+Name: icons/full/ovr16/friend_co.gif
+SHA1-Digest: X+S3jsqvLxy2z4UEj9gROrECv3E=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /PreprocessTemplateInformationControlCreator.class
+SHA1-Digest: oMiWFQLIwUWhPAq285+fhWTzxYE=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$5.class
+SHA1-Digest: Wr7LMn8anRJ3I2Aq8a4HSIxKIeE=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditor.class
+SHA1-Digest: 0H+O9mggDIxWUvh8/iFcHzW5oyM=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SigningPasswordsDialog.class
+SHA1-Digest: YjocVuZCjbAP43Qfc3f5FkQOJew=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne.class
+SHA1-Digest: LNIe0FV82gt/h6SFhEe+Retfehw=
+
+Name: org/eclipse/mtj/internal/ui/properties/ProjectObfuscationPropert
+ iesPage.class
+SHA1-Digest: IGps4AGMsTokgvLXl8122yeU7dk=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$1.c
+ lass
+SHA1-Digest: F8Ao6wOElak05a4ctYICqy1nfcE=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/DetailPage.class
+SHA1-Digest: eRCVpCNE5jad9dMZTWWzPEn/k+o=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$1.class
+SHA1-Digest: YwjncQrttfYAY7EC35rMHpSXAhc=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/actions/L10nAddObjectAc
+ tion.class
+SHA1-Digest: p8s1NtlxJdFDmwzpB7gfAhu4dzU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage$4.class
+SHA1-Digest: i6C5ThvSxgl4KuIeo8siwH+5Wno=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizard.class
+SHA1-Digest: o/ZghYCCPI71lCcp0Mo6bmnAQvE=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ConstructedMTJEditorMess
+ ages.properties
+SHA1-Digest: irnpBtZwH356cDROH7Awj14zZJM=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$3.class
+SHA1-Digest: iVWyD1pdzrl/ZxRPaoXiVu5ajWI=
+
+Name: org/eclipse/mtj/internal/ui/preferences/J2MEPreferencePage.class
+SHA1-Digest: ash9kjH88bxyehhQabOq6YQcA4U=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nEntriesTableP
+ age$L10nEntriesContentProvider.class
+SHA1-Digest: Z5i8KSojsnCBRwRit0PnZ5PJESo=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$1.class
+SHA1-Digest: +iVS0KNkNVX1KYigEY0uqxHMUOE=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor$4.class
+SHA1-Digest: cUzwoiJaAMwu41lYpHV7oAsTM8g=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$CellModifier.class
+SHA1-Digest: cEOrnAWCVA+/EMO+Jow/owtpzLY=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesS
+ ourcePage$1.class
+SHA1-Digest: Bh5EZMBU6hx3bGtLKuOSZACwE98=
+
+Name: org/eclipse/mtj/internal/ui/util/SharedLabelProvider.class
+SHA1-Digest: ucoQ5YjIIlSvtHUGwPJDl6lAY8Y=
+
+Name: org/eclipse/mtj/internal/ui/launching/DebugTypeSelectionDialog$1
+ .class
+SHA1-Digest: Bfl+oIF+NZxs6XDllE1xCIu1Dag=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$4.class
+SHA1-Digest: /anJH6gIVWrWCRVdV7D9YPOzxUE=
+
+Name: org/eclipse/mtj/internal/ui/preferences/J2MEOTAPreferencePage.cl
+ ass
+SHA1-Digest: 0ZJpApgRJDzXXbF10SnHJGqBmNA=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$8.class
+SHA1-Digest: 7S5iutU8o1mRLi64C0Ni0eIKXz4=
+
+Name: icons/full/ovr16/project_co.gif
+SHA1-Digest: cfiQxmIsUQ9Vjd4WpVcyFff6uWE=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$DeviceGroupsC
+ ontentProvider.class
+SHA1-Digest: lN/fNqvCzBaYPJNbFNXKCTcfyu8=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$CellModifier.class
+SHA1-Digest: w6TB4IHHgVm/dDteP/rivuf/Hkc=
+
+Name: org/eclipse/mtj/internal/ui/configurations/JMUnitLaunchConfigura
+ tionTabGroup.class
+SHA1-Digest: YfJikOLlakGa311tLZK+q2nNIlI=
+
+Name: org/eclipse/mtj/internal/ui/editor/EmptyOutlinePage.class
+SHA1-Digest: +aUUE5phLA0lLCR/XY6XrR9Qjp8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/RegExpStringExternalize
+ r.class
+SHA1-Digest: c7iO41hc0Gc3AkmyXV+YL6ew3s0=
+
+Name: org/eclipse/mtj/internal/ui/templates/midlets/MidletTemplateBuil
+ der.class
+SHA1-Digest: z5ae5XCzgDFaFPl3BDWaaBG8xIg=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssContentAssistMessages.properties
+SHA1-Digest: UsdBXndiyd+zWzgvz5N922jjJ/M=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$6.c
+ lass
+SHA1-Digest: FfJ5Qdfx1BXHRkObj+g7YxdVF9o=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditor$1.class
+SHA1-Digest: Z11iK3x4UU4hse0BWCxfAOjlxzU=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SigningPasswordsDialog$1.clas
+ s
+SHA1-Digest: 2NLEx72SBSPLAC5Cg85eXgY0pD4=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/LocalizationDataEditor.
+ class
+SHA1-Digest: P8HoIxlHpLJYimNxfIYqbcVFqWM=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$8.class
+SHA1-Digest: lWXsdh+9oJSTWMMe4SDEkkMFy/w=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ColorManager.class
+SHA1-Digest: mOxv2IXOlZ5y3fQzyApdrQAcgHY=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/rules/Scanner$2.c
+ lass
+SHA1-Digest: vIX9ywbXQkZ8Lm8yu7zrKV612mE=
+
+Name: org/eclipse/mtj/internal/ui/properties/J2MEProjectPropertiesPage
+ $1.class
+SHA1-Digest: D7IapxmEDlJrwDyIK6nYk7gmuCw=
+
+Name: icons/full/obj16/cellphone_icon.gif
+SHA1-Digest: Xwy8Z6WuUve+8HD2FyxoOSG44O8=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$4.class
+SHA1-Digest: 4p3G33WfQpvUxhVoAHVSlwYlT2w=
+
+Name: icons/ant.gif
+SHA1-Digest: 11Uf0D3n5i6QGw3K/p3FrlsEaDk=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$5.cla
+ ss
+SHA1-Digest: bO6eMnYuKz+8GzMqqfwyePVKIJY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ListDialogField
+ $1.class
+SHA1-Digest: QsilXOoYbSTag4epZHdyTF3ey04=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/LocalesTreeSection.clas
+ s
+SHA1-Digest: ZYjm6uV4t+ddNkhfV2TaX00bc5U=
+
+Name: org/eclipse/mtj/internal/ui/editors/FormLayoutFactory.class
+SHA1-Digest: P3dTtCrOGnyH+SKhAuSdNEoUyro=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$9.class
+SHA1-Digest: fBzVtje2mC3jbgx3THx22aWW1GA=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage.class
+SHA1-Digest: GrTBalORxEZDdDySJ45PvLmrIW0=
+
+Name: org/eclipse/mtj/ui/editors/jad/AbstractJADEditorPage$1.class
+SHA1-Digest: 4jyh5gXI9bRAu0Lk6/4sU7YwAoc=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/IPreproc
+ essContentAssistModel.class
+SHA1-Digest: qAc6FSKd9ywjqy+N14RHBvAQiwE=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$Updat
+ ingFoundDevicesList.class
+SHA1-Digest: Wx51ee6zRFhC22mZiq5XCSVSTlU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ArchiveFileM
+ anipulations$1.class
+SHA1-Digest: MU+MDim1m78uc90XLQKD9F1T7DU=
+
+Name: org/eclipse/mtj/internal/ui/util/FolderValidator.class
+SHA1-Digest: FJCVwhNd2YDQ5Gpt/aPmncNTw+M=
+
+Name: org/eclipse/mtj/internal/ui/launching/DebugTypeSelectionDialog$D
+ ebugTypeItemsFilter.class
+SHA1-Digest: D7mYMOop0Z9/Eg3Tc0kazyKG7MQ=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletLaunchConfigUtils.cl
+ ass
+SHA1-Digest: xmpyr5d2TZrJHeNGj8rSPOjrmp0=
+
+Name: about.html
+SHA1-Digest: bKSkrxcna0YCqyDKdA1uOEwGua4=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor.class
+SHA1-Digest: LnCndVbCF/AzkirQQ8j195oyNnw=
+
+Name: icons/page_obj.gif
+SHA1-Digest: steTY7ifVuR6yBGgOI08jyey3EQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$10.class
+SHA1-Digest: 8NUMtH/Zgj+GE1pGWQqql+qPqnw=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContext$3.class
+SHA1-Digest: NPyNVMULGvtv4NHqJmdsBMEZR5Q=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/LocalizationPage.
+ class
+SHA1-Digest: nd9zneJyRdsGihiyUM0nlR2S89Y=
+
+Name: org/eclipse/mtj/internal/ui/markers/MissingDeviceMarkerResolutio
+ nGenerator.class
+SHA1-Digest: 5xufPlcjCcy9O3REarMySAIkgFA=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/BaseMTJScanner.class
+SHA1-Digest: Du/96ASV529EIgf1ul/x6K4xLQw=
+
+Name: org/eclipse/mtj/internal/ui/preferences/PreprocessPreferencePage
+ .class
+SHA1-Digest: nqYD/Ztp/dYU8ROGe7i0s3mVOuc=
+
+Name: org/eclipse/mtj/internal/ui/preferences/EditorPreferencePage.cla
+ ss
+SHA1-Digest: b2ZZeZ0WF0U0QyiYd0Gj04kdfhg=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$5.class
+SHA1-Digest: 5Jf7soOeqH5sTzewuHsY0QUgShM=
+
+Name: org/eclipse/mtj/internal/ui/actions/preprocessing/DisablePreproc
+ essingAction.class
+SHA1-Digest: 4bmVu5vnkrUL0Hx5OFgdgL4+9U8=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$CellModifier.class
+SHA1-Digest: A9qnVVqWZ9Tjrlh6tkSWZCQEmnY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/IDialogFieldLis
+ tener.class
+SHA1-Digest: YsUdBDz0X3vXlpcAnYkmKQIo69c=
+
+Name: org/eclipse/mtj/internal/ui/dialog/NewKeyPairDialog.class
+SHA1-Digest: 2oqAWHQrcLTaG3HzVuJIhaIL5cs=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$SymbolNameCellEditor.class
+SHA1-Digest: CV7MQ33XMmhDZHm0hOMfv6BjlKU=
+
+Name: org/eclipse/mtj/internal/ui/util/OverlayIcon.class
+SHA1-Digest: pA+Cj9JvcVPOQQwLXww7kkcHjAQ=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$3.class
+SHA1-Digest: ApI5mUTdg7R8Eer7bHjGNcNE+W8=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlinePopupDial
+ og$4.class
+SHA1-Digest: 2PNyjn2iKFb/ia/+yFiuFyjW33M=
+
+Name: schema/org_eclipse_mtj_ui_midlettemplate.exsd
+SHA1-Digest: mAMtb9sw8+wgbmK5a2BrMApnwLU=
+
+Name: org/eclipse/mtj/internal/ui/console/BuilderConsoleFactory.class
+SHA1-Digest: Ctdv0M905mjD/9sX2+0fYZgf+QM=
+
+Name: org/eclipse/mtj/internal/ui/DeviceMatcher.class
+SHA1-Digest: e+rvVp/+fSVT7KM0wN1Y0qWs3x4=
+
+Name: org/eclipse/mtj/ui/editors/jad/IManifestPreferenceStore.class
+SHA1-Digest: jtwYfRfHzMr3HuqEpn5njOS8nUk=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceEditorRegistry.class
+SHA1-Digest: CPZ52gPMLO23AeiL9n2PZxmoMYs=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/ScrolledPropertiesBlock
+ $1.class
+SHA1-Digest: Op1zLjpwKTWhNBnHdbaU1UOwEDg=
+
+Name: org/eclipse/mtj/internal/ui/properties/ProjectPreverificationPro
+ pertiesPage.class
+SHA1-Digest: 59r7wl72fnEkWtLyG2Uw7KuC2G8=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$MasterContentProvider.class
+SHA1-Digest: tWcDKsAGxlibNtm0m/qhBWJPBu0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADSourceEdit
+ orPage.class
+SHA1-Digest: RXYwqAFbbhsqmMbxl6ayq21JSe0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/JADFormEditor.class
+SHA1-Digest: 26uV1ON8dF3T8fTsDig8hh2oJXo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$5.class
+SHA1-Digest: 83fP+tvKI/gkpFUO/vCWRq2Iy8U=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssJavaDocProvider.class
+SHA1-Digest: U6q2SbGKehTriJ7xwxzbiZ7TS2M=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/IMTJColorConstants.class
+SHA1-Digest: UM54PwvPqiqiWf4shw7LrYkdEwY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$15.class
+SHA1-Digest: jplfUE/KntOOzF5GX636PbD+Ge4=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$3.class
+SHA1-Digest: PBCbxc/vRtfRlIFzxgpEfbVbBjE=
+
+Name: icons/full/ovr16/error_co.gif
+SHA1-Digest: 837WZOYq5P1nCsjer7IptxeeAX0=
+
+Name: org/eclipse/mtj/internal/ui/MTJUIPluginImages.class
+SHA1-Digest: vKDlD3dNnJD2h9b9os160wItjco=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceListContentProvider.cl
+ ass
+SHA1-Digest: cCIb2TLnTk9zqQofYomMoyJjJqg=
+
+Name: org/eclipse/mtj/internal/ui/viewers/TableColumnInfo.class
+SHA1-Digest: /g/9rnd3624kKgTKdHJY6uN4i6U=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/IOutlineSelectionHand
+ ler.class
+SHA1-Digest: Dm5NxekSePKyB/wxPpgKeKGs29M=
+
+Name: org/eclipse/mtj/internal/ui/preferences/ExtendedStringFieldEdito
+ r.class
+SHA1-Digest: 0vAbN5zSF7lk4CulRZGEg2w0Yng=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SigningPreferencePage$4.
+ class
+SHA1-Digest: Y7iVE83xkJygnN31Imtjj6JypgU=
+
+Name: org/eclipse/mtj/internal/ui/editor/TreeSection$PartAdapter.class
+SHA1-Digest: F9J69YDpli+hNKV/Oc5XrWYdkzQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nInputContextManager
+ .class
+SHA1-Digest: 2RrVSU719OXsRQAOsnAbYpgha0k=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$5.class
+SHA1-Digest: cMVuiWwr8wks1qDb6FZu5za35/Q=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/LocalesTreeSection$1.cl
+ ass
+SHA1-Digest: 9FPo/dGF75kphoA1we/zlbXkLKI=
+
+Name: org/eclipse/mtj/internal/ui/editor/SourceViewerConfigurationFact
+ ory.class
+SHA1-Digest: B3DvlfRlt2i51490i55xVJ6KPTk=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $4.class
+SHA1-Digest: 88WUYM/QoWqTqFsr7Rskln1BTkk=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJQuickAssistAssistant.
+ class
+SHA1-Digest: oLTf5jWcydEakcly3sjJGdxzL4c=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izard$1.class
+SHA1-Digest: HHRaimksFwTOMhKa0lEivqfVUsY=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog$APILabe
+ lProvider.class
+SHA1-Digest: 3CgCIA/EOuE0pro432yBe5mY5UU=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$2.clas
+ s
+SHA1-Digest: 8XWZdmxeX0+JQMC74/vRyAhfm+Q=
+
+Name: org/eclipse/mtj/internal/ui/properties/PreprocessorPropertyPage.
+ class
+SHA1-Digest: ksChLAPPwmt86v1fbZ7csDBQXjA=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ResourceMarkerAnnotation
+ Model$ResourceChangeListener.class
+SHA1-Digest: ON4HLKjsQVn832dJWdCJVSz2KJ0=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssDebugLevel.class
+SHA1-Digest: 2EmALH1dF61jXtt/7ZeVOqZgNSA=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SecurityPermissionsDialog.cla
+ ss
+SHA1-Digest: v0XO/E9do7RdwhVD3GITKNpVu4k=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$Validator.class
+SHA1-Digest: JPrXESJuEStWHSXbryPVfxrb5TA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$13.class
+SHA1-Digest: 91YjaPStdLli50xQTDN9UcFzLs8=
+
+Name: org/eclipse/mtj/internal/ui/util/ImageSelectionDialogCreator.cla
+ ss
+SHA1-Digest: u9KaSjNmdC5ryP1oSPi1sxvoM04=
+
+Name: org/eclipse/mtj/internal/ui/launching/DebugTypeSelectionDialog.c
+ lass
+SHA1-Digest: 630b9E3xVzeJltCM59s4npsyfPA=
+
+Name: schema/org_eclipse_mtj_ui_jadEditorPages.exsd
+SHA1-Digest: HamJJ5cFt5ny5Bh8T+FcJO/LYYc=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog$1.class
+SHA1-Digest: KwG0x02tze437I/8VgV2v+mZLwc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/netbeans/ImportNetB
+ eansProjectWizard.class
+SHA1-Digest: qPC+c2+ZVtfv1zORzkpfXLLj+78=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$LibraryLabelProvider.class
+SHA1-Digest: yKtKMx4wGRwGxSUKf/E/nujs3oI=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$4.class
+SHA1-Digest: teQUKq4E4tOwcpS14EpKhHtN7K8=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/SignaturePasswordHand
+ ler.class
+SHA1-Digest: DxiOjNkhQ1CZiZurXez7bKwVuXA=
+
+Name: org/eclipse/mtj/internal/ui/editor/MultiSourceEditor.class
+SHA1-Digest: Ng5xoJ3+AbHkrUL+Ej01nTRs/s0=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$Clip
+ boardAction.class
+SHA1-Digest: Lidk+40s8/5Kqoq+/IKsL8sDlMA=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SigningPasswordDialog.class
+SHA1-Digest: 38AwOPbHTnAJaPkdxdZU5inVjRw=
+
+Name: icons/full/ovr16/binary_co.gif
+SHA1-Digest: q++2leSy6Hd1uqmmIrG2AXhsX3k=
+
+Name: org/eclipse/mtj/internal/ui/preferences/WorkspaceAndExternalFile
+ FieldEditor$1.class
+SHA1-Digest: CM1jtGI/pSs8W38cULTwQwPtPDk=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/ScrolledPropertiesBlock
+ .class
+SHA1-Digest: OmqdKspvNQxcr3QoXRO+yVx/NEg=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJQuickAssistAssistant$
+ MTJCompletionProposal.class
+SHA1-Digest: zxNI2gLxGihMY4bA1a/4XW+Zt6o=
+
+Name: icons/importdev_wiz.gif
+SHA1-Digest: XI38XaJ1LhSpW5VsKqSYScPAFNs=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$Save
+ Action.class
+SHA1-Digest: ZHh/APEMIzM+wbvNjEZEODe7bD8=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock.class
+SHA1-Digest: huWalkpYoGI4SEjl73gRv7d7aME=
+
+Name: org/eclipse/mtj/internal/ui/util/TestSuiteSelectionDialogCreator
+ .class
+SHA1-Digest: ZyXS+T+nVyPuMxzZUD6BVnndO5o=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab.class
+SHA1-Digest: 1UkWKhgma77dZa3QJUWdQPcJJEY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1$4.class
+SHA1-Digest: zKq9RWPPzRUh4h7RjX/wHh1qKGk=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJSourcePage$1.class
+SHA1-Digest: hDJ/il5jLgtNbnhNL2YblUkifQE=
+
+Name: org/eclipse/mtj/internal/ui/viewers/TableViewerConfiguration$Lab
+ elProviderComparator.class
+SHA1-Digest: jd/aaGe/Mo2L2o7qx/BxQaa8btQ=
+
+Name: org/eclipse/mtj/internal/ui/forms/parts/FormEntry$1.class
+SHA1-Digest: OqV2eYqXV/rjuVkSPIjGFd14T0Y=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /SourceViewerInformationControl.class
+SHA1-Digest: on8sCFEfOAqdF3mT+RI0xhKVUEQ=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab.class
+SHA1-Digest: MyZSZsBPgD3cfzVAqAh52Uspc1Y=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$WorkingSetGroup.class
+SHA1-Digest: ieLYe5joQEEeL3Oi3eZ680EdXSM=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocaleDetai
+ ls$1.class
+SHA1-Digest: NZRmBSwAsQQOVTKyCvWvNPTmUcg=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceBasicEdit
+ orPage$2.class
+SHA1-Digest: fyxOIedMIH/CGr9prdtxyCvU3ck=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$18.class
+SHA1-Digest: 1raRPA4TjHN6rCQt60GzeNUvmX4=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age.class
+SHA1-Digest: arysbhiCioImxdlx72pKMkO4wsw=
+
+Name: icons/full/dlcl16/synced.gif
+SHA1-Digest: t1WfTj8cRQ3o/E+jiif9ijsa6sM=
+
+Name: org/eclipse/mtj/internal/ui/parts/TreePart$1.class
+SHA1-Digest: sKF5EyIHVVTuSfuyQIfrS8ei/9Y=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage.class
+SHA1-Digest: TAWy8mzM7eUQRr0wgwRAkYkdSQA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarFile$2.cl
+ ass
+SHA1-Digest: T9OJ4+9QagYvyJ3lW6nPef2Q51s=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$TableContentProvider.class
+SHA1-Digest: jqKwpdzquimiThDbFXrRQq/Mu1g=
+
+Name: org/eclipse/mtj/internal/ui/MTJUIMessages.class
+SHA1-Digest: 3zl526I7qI2EQsq5f3ARRVAGmKA=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$DeviceContent
+ Provider.class
+SHA1-Digest: JlPzPXjyJ7SLg8eyalC+nZHsFgU=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$1.class
+SHA1-Digest: S4jZR+GYqk70tFTcHChrGhSM+Y0=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/details/L10nLocalesDeta
+ ils$1.class
+SHA1-Digest: FtY9uvwc4jHkSxGVR6BBhqtA6cU=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/MasterLabelProvider.cla
+ ss
+SHA1-Digest: bneK4byMfGpcrFXHUZbuJOzJmwE=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$SigningBlo
+ ckLabelProvider.class
+SHA1-Digest: sphuWchV/S9CPxRNPsCpHa6hvJs=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage.class
+SHA1-Digest: +60gV4EqFjVMdRelNl2dnvttLls=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$MidletMasterLabelProvider.class
+SHA1-Digest: giReg4/fYSDDYJdSG/SMQyK0T2Q=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$3.class
+SHA1-Digest: Pvs2PrPAi7c8RhjqaYJZXyP2PLg=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$WorkSpaceSymbolSetTableLabelProvider.class
+SHA1-Digest: u77H6wIuTLyJDThrhZkGZY/vddk=
+
+Name: icons/full/ovr16/java_co.gif
+SHA1-Digest: mEErKnMpbVDoVyz5N9BOO7PpJfA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ZipLeveledSt
+ ructureProvider.class
+SHA1-Digest: MoampDB6olCAHvqQ+NtamKHii2A=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJSourcePage$MTJSourcePageCh
+ angedListener.class
+SHA1-Digest: iUCpL1YV2Ffqcek+zyYP+aZyvx4=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$MidletCellEditor.class
+SHA1-Digest: 76X18Kos5vx0NiZdlN+0o/N3X08=
+
+Name: org/eclipse/mtj/internal/ui/actions/exporting/AntennaBuildExport
+ Action.class
+SHA1-Digest: unkozvXNFI1n/MNF4Sz761wGfSY=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$3.class
+SHA1-Digest: eJQKDEqgWIVPWrqqjmd9HDdA39I=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormEntryAdapter.class
+SHA1-Digest: e/hCUg3NrJbxLmXw32uz3RbZZAw=
+
+Name: org/eclipse/mtj/internal/ui/util/TestCaseSelectionDialogCreator.
+ class
+SHA1-Digest: 4owW3wzoDB3LPL/L1EoyLXPPnKM=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJTextHover$1.class
+SHA1-Digest: Ll4lfj18pbPPvZiH9FdroEDDROs=
+
+Name: org/eclipse/mtj/internal/ui/dialog/StringLocalizationCandidatesD
+ ialog.class
+SHA1-Digest: QAsfl854QjXLnBNNaIwlXonLlYo=
+
+Name: org/eclipse/mtj/internal/ui/util/TableLayoutComposite$1.class
+SHA1-Digest: pGkmQ5wQn/5QQNEBOhCBnPR9m0A=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage$2.class
+SHA1-Digest: 78PJxV3G04aPNscGrZw0EI0yLsI=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$1.class
+SHA1-Digest: 1e85kqOhDoU92wyuspq6FE9mtVs=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/contentassist/Com
+ pletionProcessor.class
+SHA1-Digest: AkiuxLa9MwkRXLExT0skdP+4tsk=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/TextCellEditor$2.class
+SHA1-Digest: lbbsHm45geMxbtYwS/b9g8HMVUA=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJMasterDetailsBlock.class
+SHA1-Digest: bl9Fsoh3MQyUpvOYgPQIcTA7U/0=
+
+Name: org/eclipse/mtj/internal/ui/preferences/ObfuscationPreferencePag
+ e$1.class
+SHA1-Digest: 3vD5xqqySTqqWi+FezKSPMXZ08c=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Proposal
+ Type.class
+SHA1-Digest: XSMWD9PjxtedtuHKWPcKPdtdNZI=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$3.class
+SHA1-Digest: w9/VCTj8SQir0ohfH1cLhozOcco=
+
+Name: org/eclipse/mtj/ui/editors/jad/AbstractJADEditorPage.class
+SHA1-Digest: UYqE/8/45RHv+U4yK9PEhMixEwU=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$MTJObject.class
+SHA1-Digest: visWxHc59U4bibULDUWUC8Ecf40=
+
+Name: org/eclipse/mtj/internal/ui/editor/ModelDataTransfer.class
+SHA1-Digest: jHYn9cIu0ioLc+yqMq6ktn5v6CI=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$2.class
+SHA1-Digest: /nvsHvfGxswLc22ueKtDmmWrBpg=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$6.class
+SHA1-Digest: 5XISeKVZPPBbHevjF9HXuhWn2lw=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/IStringExternalizer.cla
+ ss
+SHA1-Digest: ywEKnM+ydh+WQMvuV1zn/Xczpd0=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsModel.
+ class
+SHA1-Digest: JU0rKTpWYqps8/V+P7V4O7QaTkw=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlockItem.cl
+ ass
+SHA1-Digest: 0z7JbEsVDAHp06X0FZqVkapPgJU=
+
+Name: icons/full/wizban/importdev_wiz.png
+SHA1-Digest: GDVY4+kXcPQyjge0zXKss75sh14=
+
+Name: org/eclipse/mtj/internal/ui/properties/LibraryPropertyPage$Libra
+ ryAdapter.class
+SHA1-Digest: 3Og+0jnpd3yQkOJPAczKq6ApbcI=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/SelectionButton
+ DialogField.class
+SHA1-Digest: qjgDJSlkiCyzBkQXLko6P20htwI=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssContext.class
+SHA1-Digest: g1WUXy4oehuLq5T/5bJPV7szCE0=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/messages.pro
+ perties
+SHA1-Digest: ziiNDAL7HSRgmyYyYdU8cjbfpwc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/templates/midlets/MidletTemp
+ lateListWizardPage.class
+SHA1-Digest: 3ZZDOM4aBx9elCaKgpP7SEY6Prk=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /JavaFormattingContext.class
+SHA1-Digest: JLCnTemC5Kr7DcBnmj2oRIXCvbw=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$4.c
+ lass
+SHA1-Digest: Hzfh4WBSQbigOmbgGh+wtx+cY/w=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/AnnotationHover.class
+SHA1-Digest: KbJ29sikf/aruyPlCUEBY0zmIPY=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/ObfuscationErrorHandl
+ er$1.class
+SHA1-Digest: rcgU+GyUyFuZGm0eSMFfFlBsDDA=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsEditor
+ Page$4.class
+SHA1-Digest: 8SHlueznr7A5o07LxOj1498u/LQ=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock.class
+SHA1-Digest: RlztPu92YiCfy9idOK6p1apjXiY=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/IColorManager.class
+SHA1-Digest: UYEISZmcBqIGBS06M5XDRM22xtk=
+
+Name: org/eclipse/mtj/internal/ui/dialog/SrcFolderFilter.class
+SHA1-Digest: ZK9dNP95KyG0qmGWbBIGM4jGQKU=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/OptionalJADDe
+ scriptorsProvider.class
+SHA1-Digest: OUq9Wx6/3QnK2PsEkUK9oaN97vA=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletTab$6.class
+SHA1-Digest: aOzBgyckCgGk1MNDviqHLUHQ2EQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/messages.
+ properties
+SHA1-Digest: qpcHDDmFQ2B9n9uF4mhSo4CARgo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/StringDialogFie
+ ld$1.class
+SHA1-Digest: GeKOr34xFQR61lHbk/LqFtE3IPw=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ChangeAwareSourceViewerC
+ onfiguration$1.class
+SHA1-Digest: FBpeImelrlWCaOSKUEqiFt2t8cg=
+
+Name: org/eclipse/mtj/internal/ui/editor/actions/HyperlinkAction.class
+SHA1-Digest: QxgW+otgkQ/AzI/+phk50K0myyc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ProjectRecor
+ d.class
+SHA1-Digest: vO9eGtgph5JRVBUPcNIuepTZvis=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$2.class
+SHA1-Digest: MqdCxuuR8UGDj46xj9af5HwAW/g=
+
+Name: org/eclipse/mtj/ui/editors/device/LibraryApiEditorDialog$CellMod
+ ifier.class
+SHA1-Digest: DUD1tbEZu9i2Cjjejc/LcWRyPik=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor$4.class
+SHA1-Digest: 1go2zoTa+p8cujFxb1h40BN5hhk=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageProperties.class
+SHA1-Digest: lB9yAA2ed7WD4zCNH3nGPyC2uoA=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/SignaturePasswordHand
+ ler$DialogRunner.class
+SHA1-Digest: rUnN6bvgMdtl4IHWewU9x+VuN+o=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceSelector$DeviceLabelPr
+ ovider.class
+SHA1-Digest: CnbFmKEDH7ZVPS7dsY9YCrpwfI8=
+
+Name: icons/debug_exc.gif
+SHA1-Digest: xcI4+D7trOUQ8uabR2pEBGg/FcY=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$3.cla
+ ss
+SHA1-Digest: TldORKyVvlFSadivGik+sj0X3Rg=
+
+Name: org/eclipse/mtj/internal/ui/launching/JavaLaunchShortcut.class
+SHA1-Digest: JGtkvXiVjgEx92zsvYVvFauS22s=
+
+Name: org/eclipse/mtj/internal/ui/preferences/EditorPreferencePage$1.c
+ lass
+SHA1-Digest: djeCkTCTO08suthW+a42EtnIf7s=
+
+Name: plugin.properties
+SHA1-Digest: /2960OOkjYKoSdH1ZCnoQvd059Y=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage.class
+SHA1-Digest: SYID3r0CHROBwsNaQyTp6jgc1GY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$7.class
+SHA1-Digest: 6n6NDm9knCvnQxk/dBPmfTtY93k=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormPage$2.class
+SHA1-Digest: yS5EUR7sJDycD6F2gzK8tKJI6ds=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/JADSourceEditorAc
+ tionContributor.class
+SHA1-Digest: plfsvqGCX2aAsYx6gY23xjGT80w=
+
+Name: plugin.xml
+SHA1-Digest: V+fcxkJhHrei5vzSZTbFafSVBYs=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADUserDefine
+ dPropertiesEditorPage$3.class
+SHA1-Digest: kqt6vzZHyxXYl57UUbw2G3dcMxc=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssSymbol.class
+SHA1-Digest: cYhKSOouriBqGnce6GHo0d5XlXo=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage.cla
+ ss
+SHA1-Digest: cSUH3H3oFA6kkgVN1pfWzETQNXo=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJSourceInfoProvider.cl
+ ass
+SHA1-Digest: 4ZMy1rawoMlxGz2QuMoluvItVZ8=
+
+Name: org/eclipse/mtj/internal/ui/launching/BCIStackTraceMatcher.class
+SHA1-Digest: aRbbHKP1K/BueUtQj0NABRiDqxQ=
+
+Name: org/eclipse/mtj/internal/ui/preferences/ScrolledPageContent.clas
+ s
+SHA1-Digest: WRtXdHI1VOW5UQ5fMupFCJqDl1c=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nFoldingStructurePro
+ vider.class
+SHA1-Digest: SpAuruK3H32GNVDvWJ5m1co91DM=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceTableLabelProvider.cla
+ ss
+SHA1-Digest: gzKJ/SDvAyGYPw8FoOilXqX2oRQ=
+
+Name: org/eclipse/mtj/internal/ui/properties/SigningPropertiesPage$9.c
+ lass
+SHA1-Digest: RKje9sZmt4LphK8GCek5zmXMwxY=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/OTANoMidletsHandler$1
+ .class
+SHA1-Digest: x7roTCuQ+nDd9HlpUnG8ZYHSj6o=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/StatusUtil.c
+ lass
+SHA1-Digest: KBtBNaqnmqJUoJHlZAod+mMC+48=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContext$1.class
+SHA1-Digest: DQJIBOAD8BSzZGUpeic98W9J9UA=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlockListene
+ r.class
+SHA1-Digest: 86jPUAAQw8QSPpNYuL9n9Q5TJJs=
+
+Name: org/eclipse/mtj/internal/ui/actions/AbstractJavaProjectAction.cl
+ ass
+SHA1-Digest: aywUk3Jb9sFm4nq1UrAjRaqOSeo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ComboDialogFiel
+ d$2.class
+SHA1-Digest: uPeKfMMKbVE8c9tQHr2RM5PxSI8=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletLaunchShortcut.class
+SHA1-Digest: sqg7DRZDl0t1a9hgcSRe9NZumig=
+
+Name: org/eclipse/mtj/internal/ui/editor/StructuredViewerSection$1.cla
+ ss
+SHA1-Digest: I2oV8JQQg9b1CHZIfxWjCozuXjA=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$3.class
+SHA1-Digest: QsHKMjL80mrGYcm4Sr4fCEJMJL0=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJDefaultInformationCon
+ trol.class
+SHA1-Digest: 6k/HQ0tXJ7DJ/mhJJvVHGwg7Q7Q=
+
+Name: icons/full/ovr16/export_co.gif
+SHA1-Digest: bbOCFmscy/n2TYEKr5B7gOsxlcU=
+
+Name: org/eclipse/mtj/internal/ui/launching/JMUnitTab$7.class
+SHA1-Digest: kSFIf7QOMQX5WaphPNnmNZTXPGI=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$TableLabelProvider.class
+SHA1-Digest: 48oVxil4b51KneorDC+1udugXeo=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$8.cla
+ ss
+SHA1-Digest: fo4Wh84BjGJ4ObJGEOckcZ78Oos=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$1.class
+SHA1-Digest: R0YDSzsARLDV7EmGgaV/1EI+3Tc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/NewElementWizard$2.class
+SHA1-Digest: sk663BLXiC/v8UQuVQpDrMroewg=
+
+Name: org/eclipse/mtj/internal/ui/editor/outline/QuickOutlinePopupDial
+ og$2.class
+SHA1-Digest: 1hCqVj8kI6vuHYhKrkDKbLWY2qg=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/MidletsModel$
+ Direction.class
+SHA1-Digest: SR7kGwxHMKD4rN204rq0yAwmeWY=
+
+Name: icons/full/ovr16/doc_co.gif
+SHA1-Digest: qYf4vUVYQ1kkXIY/htEL+7uO2OY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/netbeans/NetBeansPr
+ ojectImporter.class
+SHA1-Digest: WbsSFbQTBGrT/4PqboHLMbY/f1Q=
+
+Name: org/eclipse/mtj/internal/ui/dialog/ErrorTextWithContinueDialog.c
+ lass
+SHA1-Digest: j7/HUPYpAZ1LdgmFoDYSiQfHAkE=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/LayoutUtil.clas
+ s
+SHA1-Digest: rX+pXVljKtLQvrRMd2/DrmC7QUM=
+
+Name: org/eclipse/mtj/internal/ui/editor/FoldingStructureProviderFacto
+ ry.class
+SHA1-Digest: R1D/dviEJrg/QY+lhCy/SDHsXMY=
+
+Name: icons/full/obj16/iu_obj.gif
+SHA1-Digest: hQ7JVOSknV6FDn2D3W2ORWa3jNA=
+
+Name: org/eclipse/mtj/internal/ui/devices/DeviceImportWizardPage$Updat
+ ingFoundDevicesList$1.class
+SHA1-Digest: 7hw5mG6BwSOnyDIZYLoGylKOK2w=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/pages/L10nContentProvid
+ er.class
+SHA1-Digest: pl0ogctR062fcxMOMKao4LcJtjo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ArchiveUtils
+ .class
+SHA1-Digest: FgVQHuDj1n37rZGf2tNcWJk94zQ=
+
+Name: icons/full/ovr16/warning_co.gif
+SHA1-Digest: 76fAklsFV/Jw7hyoXj0qFN8pgPQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$3.class
+SHA1-Digest: GPMifTj3LfFtM/R9xZh5ZdzrY6E=
+
+Name: icons/full/obj16/locker.png
+SHA1-Digest: /XOESHjT+JiiKLvzDiwdJaQQT9k=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/Preproce
+ ssCompletionProposal.class
+SHA1-Digest: TtR4e2V24K1J1GrD/Z8xA4srcoc=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$13.class
+SHA1-Digest: haHXb3Hm157aDkTz8DxKr421UJY=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /SourceViewerInformationControl$2.class
+SHA1-Digest: Xp5qi8s8xp+EiSlJ9Z4mthl6Ii8=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$1.class
+SHA1-Digest: 7kS25hbD/1EBJ1GOzsIOuFJebVI=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ d.class
+SHA1-Digest: /LWBL5Zf5shmUU6aGDMBABrqL3U=
+
+Name: org/eclipse/mtj/internal/ui/statusHandlers/CouldNotFindJarToolHa
+ ndler$1.class
+SHA1-Digest: CLQEtO3uMy25ahHbJ/fwNcsG5Hw=
+
+Name: org/eclipse/mtj/internal/ui/editor/MTJFormEditorContributor$Reve
+ rtAction.class
+SHA1-Digest: AJWfhlxVTPbo1P0oxGfxR3Z3368=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SigningPreferencePage$2.
+ class
+SHA1-Digest: 1ibSZtwOrwMWXnQzzzgo3ankdK4=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/ClassFileStringsContent
+ Provider.class
+SHA1-Digest: PQoIBousWT+Uab7NJeTCXX70oxQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/DialogField$1.c
+ lass
+SHA1-Digest: bo1apGajIXbLyB8tV4s+8mDqigI=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$SymbolNameCellEditorValidator.class
+SHA1-Digest: 4hioboCc2eR+/dpGsdg5nbtMT6o=
+
+Name: org/eclipse/mtj/internal/ui/preprocess/contentAssistant/template
+ /JavaSourceViewer$1.class
+SHA1-Digest: 4HBdE2xb81ipqNqEN1IKeaUeX+A=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$SymbolsLabelProvider.class
+SHA1-Digest: MaVvgOolS1qtLVBnrW2y9dR91zE=
+
+Name: org/eclipse/mtj/internal/ui/launching/DeviceTab$6.class
+SHA1-Digest: NMrKlq8ugRuDY1w4LhChRFhST74=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/StringButtonDia
+ logField.class
+SHA1-Digest: Zqskm/irSA2L6p54l1aNferLLYo=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$3.class
+SHA1-Digest: Qj7hapnlOYW2hP1NJ9ekZ1hhdq4=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $2.class
+SHA1-Digest: TwYUn8Wa2KFcHa+YZDa/PiinVUg=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/contentassist/JAD
+ AttributeHeadersProvider.class
+SHA1-Digest: TxYZscgPKb7DISaa1kGTW2RTVjI=
+
+Name: org/eclipse/mtj/internal/ui/DeviceMatcher$1.class
+SHA1-Digest: hK5KJvLqq/xNgNHzliIBqZVg6ug=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$8.class
+SHA1-Digest: Stu2Yu3EOAJnn5h+aAwK15O/hAI=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$11.class
+SHA1-Digest: zHJJPUeiTTWnEoRb/+r8ysZHrEY=
+
+Name: org/eclipse/mtj/internal/ui/launching/OTALaunchShortcut.class
+SHA1-Digest: avMndS1sKHaMDAT3GyC/OK2jrwI=
+
+Name: org/eclipse/mtj/internal/ui/dialog/StringLocalizationCandidatesD
+ ialog$3.class
+SHA1-Digest: eb5bJM8bLp4wY25VILb4hvDdDh0=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/eclipseme/ImportEcl
+ ipseMEProjectWizardPage$18.class
+SHA1-Digest: OkRZywt0C6zYi5Mm3h1gabqyg84=
+
+Name: org/eclipse/mtj/internal/ui/actions/preprocessing/EnablePreproce
+ ssingAction.class
+SHA1-Digest: S+Fhh+P5O8/YpryypQ6U4gHCsWA=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigAddAndEditWizar
+ dPage$SymbolsTableContentProvider.class
+SHA1-Digest: 61plxR6O58CdL6PB7paj+J35bFw=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$6.class
+SHA1-Digest: bRB6s7qoVzVUNfPcbLxYGVuX3KQ=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/JADSourceViewerCo
+ nfiguration.class
+SHA1-Digest: D0rVBOHSvOq72Qb+RTw1hpTTteI=
+
+Name: org/eclipse/mtj/internal/ui/editors/build/pages/BuildPropertiesP
+ age$2.class
+SHA1-Digest: HS+iAIw48Z9wTnjeItPzeJzBCJM=
+
+Name: icons/full/wizban/addL10n_wiz.png
+SHA1-Digest: IpqiIPg9izjkIsm+mU9pbckhYJM=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/actions/L10nAddLocaleAc
+ tion.class
+SHA1-Digest: A/s5CXyvEIc/S9G/grRKP/pj6AA=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceBasicEdit
+ orPage$BooleanContentProvider.class
+SHA1-Digest: m3JsgvtyuZOUkYzU2/ey2ySVvFI=
+
+Name: icons/newjprj_wiz_m_sm.gif
+SHA1-Digest: 7iMFUpRZhuIiuPh5r00DefCQvUI=
+
+Name: org/eclipse/mtj/internal/ui/actions/packaging/AbstractCreatePack
+ ageAction$2.class
+SHA1-Digest: f6qCqWYziZaWrW35aGBF0u1xrzA=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$SymbolNameCellEditorValidator.class
+SHA1-Digest: RewWSuMws6U9nR91pejIWnkR7tY=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$SymbolNameCellEditor$1.class
+SHA1-Digest: ev0SmOtsviDH0raNpNzqAX5rfN8=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SyntaxColorTab.class
+SHA1-Digest: 565cZ51eeMJFH+dYoSj/6Zbdcs8=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nXMLTextHover.class
+SHA1-Digest: E9YfPO41Wg+mfIYe8DmLcSvnZew=
+
+Name: org/eclipse/mtj/internal/ui/preferences/DeviceManagementPreferen
+ cePage$8.class
+SHA1-Digest: dcrdFcN+2z/ZyfYmpg2EvImhwYw=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/NamedObject.class
+SHA1-Digest: ppOQJ16gVgbmvrqCG1U3BXXip1U=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsImportW
+ izardPage$3.class
+SHA1-Digest: NZulG6m8PFkqNbFZzvGDchZ9Gmg=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$3.class
+SHA1-Digest: yx1Y9CH20ZtmieUU6kvB1spIvtY=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/InputContextManager$2
+ .class
+SHA1-Digest: WycsIMatzar7BC/2yaJSRKPluE8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageJavaSettings$1UpdateRunnable.class
+SHA1-Digest: eMTQogjQMzvL/p3KCmdxgPFQ/yo=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/StringLocalizationWizar
+ dPage1$2.class
+SHA1-Digest: YSbGe/NU/Rp3T4OFWv/pXgrR0ZA=
+
+Name: org/eclipse/mtj/internal/ui/configurations/ConfigManageComponent
+ $7.class
+SHA1-Digest: lbX4jlfqZkPl+zdORSdZqkdkx8g=
+
+Name: icons/linkto_help.gif
+SHA1-Digest: rPmovBGARoDY4DIO6eJwtboVz8Y=
+
+Name: org/eclipse/mtj/internal/ui/preferences/MultiValuedTableFieldEdi
+ tor.class
+SHA1-Digest: upb2t4VzwdPhmNMPLFhmzedrGtY=
+
+Name: org/eclipse/mtj/internal/ui/editor/elements/DefaultContentProvid
+ er.class
+SHA1-Digest: rN0NYGEN5rxIbk+5KQDLI7GZ5Hg=
+
+Name: org/eclipse/mtj/internal/ui/editor/SourceOutlinePage$1.class
+SHA1-Digest: yoT54bSCQhdC7zhk+TKCrKuNQQI=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/GenericListBlock$5.clas
+ s
+SHA1-Digest: 5eeHVbDO+yeVAAfqOBkKvoOTDrM=
+
+Name: org/eclipse/mtj/internal/ui/editors/l10n/L10nFormOutlinePage$L10
+ nLabelProvider.class
+SHA1-Digest: 837rXDwj7Nenu60NUEiAo1I012U=
+
+Name: org/eclipse/mtj/internal/ui/preferences/XMLSyntaxColorTab.class
+SHA1-Digest: GLp+6y3QXHRniCcLm7EVQ0WfEAA=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage$16.class
+SHA1-Digest: QiVSfraVNU/GhjuPJ0Q7irceQRc=
+
+Name: org/eclipse/mtj/internal/ui/IPreferenceConstants.class
+SHA1-Digest: zHA/ilRDnf/TS+R45GUGySDH0hU=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/ListDialogField
+ .class
+SHA1-Digest: ZEtdem/ZHu1Nbx/5sAA8buL4bRg=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ReconcilingStrategy.clas
+ s
+SHA1-Digest: 8V3AWVvuhYUx1APl3+hH8yII/+E=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/source/rules/JadScanner$
+ 2.class
+SHA1-Digest: khEcuKrfzkausv8iJStN0R2XDJ0=
+
+Name: org/eclipse/mtj/internal/ui/wizards/l10n/ClassFileStringsLabelPr
+ ovider.class
+SHA1-Digest: 4p4H3mUHm44M6jUVMqkOt171IUI=
+
+Name: org/eclipse/mtj/internal/ui/util/PluginPreferenceStore$1.class
+SHA1-Digest: usE7dNOWp2IQRwfeG793REErJRQ=
+
+Name: org/eclipse/mtj/internal/ui/util/StringMatcher.class
+SHA1-Digest: Q2AWpndHTZ9G1n/S8AGQTO9NaRY=
+
+Name: org/eclipse/mtj/internal/ui/wizards/projects/NewMidletProjectWiz
+ ardPageOne$ProjectNameGroup.class
+SHA1-Digest: z185fIiPuqabnzJDkZb5UZ8ApcE=
+
+Name: org/eclipse/mtj/internal/ui/wizards/libraries/LibrarySelectionBl
+ ock$1.class
+SHA1-Digest: IlIEieNX7cI5JOg+ZjlB+mGH+Tc=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/JADOptionalPr
+ opertiesEditorPage$1.class
+SHA1-Digest: jy8H3CzfYKkY5K2+SuUmV+SzKos=
+
+Name: org/eclipse/mtj/internal/ui/editor/FormOutlinePage$BasicLabelPro
+ vider.class
+SHA1-Digest: +6XSQszoRmZNZPzVnBTHYfVFzd8=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/ResourceMarkerAnnotation
+ Model.class
+SHA1-Digest: aovt8n9/fX1lVTzAvK85wAAYvpc=
+
+Name: org/eclipse/mtj/internal/ui/editor/IMTJDragParticipant.class
+SHA1-Digest: jTLeLxCFnwQqkxUZa+0l+KSxpN0=
+
+Name: org/eclipse/mtj/internal/ui/parts/StructuredViewerPart.class
+SHA1-Digest: fN2a9NH7/wWSsAw4b8ZL1kekrBc=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SymbolDefinitionsPrefere
+ ncePage$TableContentProvider.class
+SHA1-Digest: e5QX6lgelMISbbhvBrs55EhUCo8=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/TarLeveledSt
+ ructureProvider.class
+SHA1-Digest: C+X2d/RyH4Ckqb2a9T8e6y86h44=
+
+Name: org/eclipse/mtj/internal/ui/editors/jad/form/pages/SigningJADEdi
+ torPage$1.class
+SHA1-Digest: Me0Kj4Kl2SWNYm/1+utQHXetH+c=
+
+Name: org/eclipse/mtj/internal/ui/wizards/importer/common/ImportProjec
+ tWizardPage.class
+SHA1-Digest: +r3HH5lnGc1TfZAlEwfvUqWqTy8=
+
+Name: org/eclipse/mtj/internal/ui/editors/device/pages/DeviceLibraries
+ EditorPage$DeviceClasspathContentProvider.class
+SHA1-Digest: i5SGkctrBD7wxvALdiyqBT84tyc=
+
+Name: org/eclipse/mtj/internal/ui/editor/SourceOutlinePage.class
+SHA1-Digest: TmIST9nLAXDrIZmnyXv6Le+TtdY=
+
+Name: org/eclipse/mtj/internal/ui/editor/context/XMLInputContext.class
+SHA1-Digest: 20VfEz6Px5qUCAgbrrqpQtym0gU=
+
+Name: org/eclipse/mtj/internal/ui/preferences/SyntaxColorTab$3.class
+SHA1-Digest: IRsR0Kb2z6jqPNZ4APD4LB5KgO4=
+
+Name: org/eclipse/mtj/internal/ui/forms/parts/FormEntry$4.class
+SHA1-Digest: Uu2YMEj1GVICRryn1IuiAth5hKc=
+
+Name: org/eclipse/mtj/ui/templates/AbstractTemplateWizardPage.class
+SHA1-Digest: MM6hXJNVsLD7CxaseHbuMfUzCQQ=
+
+Name: org/eclipse/mtj/internal/ui/wizards/dialogfields/CheckedListDial
+ ogField.class
+SHA1-Digest: obmeQjeNy5g9AaBU10KjldTLmC4=
+
+Name: org/eclipse/mtj/internal/ui/launching/MidletLaunchConfigUtils$1.
+ class
+SHA1-Digest: SPV4/wz6nQWyHYdCHUWaeURnJUs=
+
+Name: org/eclipse/mtj/internal/ui/editor/text/MTJQuickAssistAssistant$
+ 1.class
+SHA1-Digest: AVmGIuSS34DwLGe61IerR7kvqa8=
+
+Name: org/eclipse/mtj/internal/ui/forms/blocks/SigningBlock$PasswordTy
+ pe.class
+SHA1-Digest: 1VhTPsU4pHoz3FCo9DNnUwWJPHM=
+

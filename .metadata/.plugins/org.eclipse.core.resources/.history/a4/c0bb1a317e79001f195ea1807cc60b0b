@@ -1,0 +1,34 @@
+
+public class Testee {
+	
+	public static void hanoi(
+							 int n,
+							 int origem,
+							 int destino,
+							 int auxiliar,
+							 int[] vetOrigem,
+							 int[] vetDestino,
+							 int[] vetAuxiliar
+							 )
+	{
+		if(n==1)
+		{
+			System.out.println("Move disco de " +  origem + " para " + destino);
+			for(int i = 1 ; i < vetOrigem.length ; i++)
+			{
+				
+			}
+			return;
+		}
+		hanoi(n-1,origem,auxiliar,destino);
+		System.out.println("Move disco de " + origem + " para " + destino);
+		hanoi(n-1,auxiliar,destino,origem);
+	}
+	
+	public static void main(String[] args)
+	{
+		hanoi(5,1,2,3);
+	}
+	
+
+}

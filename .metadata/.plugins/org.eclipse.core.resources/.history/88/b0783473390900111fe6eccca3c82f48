@@ -1,0 +1,96 @@
+package game.data;
+
+
+public class Jogos {
+
+	// private List<JogoData> jogos = new ArrayList<JogoData>();
+	// private List<String> jogoNames = new ArrayList<String>();
+
+	// public Jogos() {
+	// Requisitos mw2r = new Requisitos(
+	// "AMD 64 3200+, Intel Pentium® 4 ou superior",//
+	// "1 GB RAM", //
+	// "12 GB livre em disco", //
+	// "9.0c", //
+	// " 256 MB");
+	//
+	// String[] plataformas = { JogoData.XBOX360, JogoData.PS3, JogoData.PC };
+	//
+	// String[] mw2FotosURls = { "/sdcard/media/cod/cod1.jpg",
+	// "/sdcard/media/cod/cod2.jpg", "/sdcard/media/cod/cod3.jpg",
+	// "/sdcard/media/cod/cod4.jpg", "/sdcard/media/cod/cod5.jpg" };
+	//
+	// String[] mw2VideosUrls = { "/sdcard/media/cod/CodMw2Android1.mp4",
+	// "/sdcard/media/cod/CodMw2Android2.mp4",
+	// "/sdcard/media/cod/CodMw2Android3.mp4" };
+	//
+	// String resumoMw2 =
+	// "Call of Duty: Modern Warfare 2 (também conhecido como Modern Warfare 2 ou MW2) é um jogo de tiro em primeira pessoa desenvolvido pela Infinity Ward e distribuído pela Activision para as plataformas Microsoft Windows, PlayStation 3 e Xbox 360. Anunciado oficialmente em 11 de fevereiro de 2009, foi lançado mundialmente em 10 de novembro de 2009."
+	// +
+	// "É o sexto lançamento relacionado à série Call of Duty, sendo uma sequência direta de Call of Duty 4: Modern Warfare, trazendo uma continuação da história desenvolvida em seu predecessor. Foi lançado em conjunção com dois outros jogos da série: Call Of Duty: Modern Warfare: Mobilized, para Nintendo DS, e Call of Duty: Modern Warfare: Reflex, uma versão portátil de Call of Duty 4 adaptada pela Treyarch para o console Wii."
+	// +
+	// "O jogo é situado cinco anos após os eventos em Call of Duty 4. O modo campanha é dividido entre o grupo contra-terrorista multi nacional Task Force 141, que tem a missão de eliminar o ultranacionalista Vladimir Makarov, e uma tropa de Rangers, com a tarefa de defender os Estados Unidos de uma invasão russa. Entre os cenários do jogo estão o Afeganistão, Rio de Janeiro, Sibéria e Washington D.C.";
+	//
+	// JogoData mw2 = new JogoData(
+	// "Call of Duty: Modern Warfare 2",
+	// "Infinity Ward", //
+	// mw2r, //
+	// mw2FotosURls,//
+	// // TODO Lista de url de videos
+	// mw2VideosUrls,//
+	// JogoData.FPS, 10, 9, 2009, plataformas, resumoMw2,
+	// "/sdcard/media/cod/codicon.png");
+	//
+	// String resumoBf3 =
+	// "Battlefield 3 dá sequência à consagrada franquia shooter da DICE, acrescentando à fórmula tradicional da série novas possibilidades estratégicas, bem como unidades inéditas e um tratamento gráfico diferenciado."
+	// +
+	// "Para dar vazão ao caos épico reinante no título, a desenvolvedora também acrescentou novos mapas, consideravelmente mais extensos do que os que se podia encontrar em títulos anteriores."
+	// +
+	// "Uma das principais adições de BF 3 vem na forma de um modo campanha história completo e cheio de reviravoltas. Em uma das missões, por exemplo, os fuzileiros navais precisam abrir caminho através da cidade de Sulaymaniyah (Curdistão) — embora a história não fique restrita ao Oriente Médio, levando a guerra também para regiões urbanas dos EUA e da Europa."
+	// +
+	// "O clima bélico ainda ganha considerável upgrade com a adição de novos veículos, com destaque para o retorno dos caças. Em relação às classes de jogo, a DICE manteve as mesmas quatro presentes em jogos anteriores da franquia. Entretanto, Battlefield 3 traz diversos bônus e equipamentos capazes de conferir especializações."
+	// +
+	// "BF 3 não é apenas caótico, mas também bastante realista. Por trás de uma destruição sem precedentes dos elementos que forma o cenário, surge uma nova versão da engine Frostbite — convenientemente chamada de Frostbite 2. Já as animações representam a parte da EA no desenvolvimento, que disponibilizou a tecnologia utilizada nos jogos da série FIFA para a construção dos personagens.";
+	//
+	// Requisitos battleReq = new Requisitos(
+	// "Core 2 Duo ou equivalente (2 núcleos de 2 GHz)",//
+	// "2 GB",//
+	// "15 GB livres em disco",//
+	// "Directx 10.0", "256 MB");
+	//
+	// String[] bf3FotosURL = { "/sdcard/media/bf3/bf1.jpg",
+	// "/sdcard/media/bf3/bf2.jpg", "/sdcard/media/bf3/bf3.jpg",
+	// "/sdcard/media/bf3/bf4.jpg", "/sdcard/media/bf3/bf5.jpg",
+	// "/sdcard/media/bf3/bf6.jpg" };
+	//
+	// String[] bf3VideosURL = { "/sdcard/media/bf3/Bf3Android.mp4" };
+	//
+	// JogoData battlefield3 = new JogoData("Battlefield 3",//
+	// "EA Digital Illusions CE", //
+	// battleReq,//
+	// bf3FotosURL,//
+	// bf3VideosURL,//
+	// JogoData.FPS,//
+	// 25,//
+	// 10,//
+	// 2011,//
+	// plataformas, resumoBf3, "/sdcard/media/bf3/bf3icon.jpg");
+	//
+	// jogos.add(battlefield3);
+	// jogos.add(mw2);
+	// jogoNames.add(battlefield3.getNomeDoJogo());
+	// jogoNames.add(mw2.getNomeDoJogo());
+	// }
+
+	// public List<JogoData> getJogos() {
+	// return jogos;
+	// }
+	//
+	// public JogoData getJogo(int i) {
+	// return jogos.get(i);
+	// }
+	//
+	// public List<String> getJogoNames() {
+	// return jogoNames;
+	// }
+}

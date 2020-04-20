@@ -1,0 +1,10 @@
+1316475763620	Extracts string 'null' into R.string.pesquisar_jogo
+1316475781342	Delete element
+1316475790164	Rename resource 'pesquisar_jogos.xml'
+1316527704472	Rename field 'listItems'
+1316548184398	Delete element
+1316553205823	Extracts string 'null' into R.string.produtora
+1316553257611	Rename field 'textViewProduto'
+1316606832946	Rename field 'textViewNomeJogo'
+1316609739375	Rename local variable 'arg0'
+1316612607140	Extract method 'setImageIcon'

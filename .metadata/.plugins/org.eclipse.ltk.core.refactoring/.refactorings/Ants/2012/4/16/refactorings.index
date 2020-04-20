@@ -1,0 +1,28 @@
+1334782609576	Rename type 'Default'
+1334783476361	Copy compilation unit
+1334783490874	Rename type 'AgenteCognitivo'
+1334783647031	Copy compilation unit
+1334783914037	Rename type 'Beniefs'
+1334783952834	Rename type 'Beliefs'
+1334783963910	Rename type 'Intentions'
+1334885317073	Delete element
+1334885893177	Delete element
+1334887946380	Extract method 'moverAgente'
+1334930880785	Delete element
+1334933584625	Rename field 'resource'
+1334936161862	Rename method 'getResource'
+1334936176031	Rename local variable 'resource'
+1334936990460	Rename method 'definirDesejoDeObterTodosOsRecursos'
+1334937239469	Rename method 'getBelief'
+1334937691963	Rename local variable 'firstResouce'
+1334937709875	Rename method 'getFirstResouce'
+1334947280622	Rename field 'operacaoCompletada'
+1334947285801	Rename method 'setOperacaoCompletada'
+1334949838804	Rename local variable 'belief'
+1334950305662	Rename field 'resource'
+1334951860334	Rename method 'getResource'
+1334968321966	Delete element
+1334968325642	Delete element
+1334968342255	Rename type 'AgenteReativoV3'
+1334969588368	Rename type 'Behaviour_AgReativoV3'
+1334970995679	Delete element

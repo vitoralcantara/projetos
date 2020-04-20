@@ -1,0 +1,13 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261944498674
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261944510794
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261944944039
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261944944687
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261944947915
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261945023666
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261945061524
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261945094705
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261945129804
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261945179275
+activated,editor,org.eclipse.jdt.ui,3.5.1.r351_v20090821-0800,"org.eclipse.jdt.ui.CompilationUnitEditor",1261945192078
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261945192458

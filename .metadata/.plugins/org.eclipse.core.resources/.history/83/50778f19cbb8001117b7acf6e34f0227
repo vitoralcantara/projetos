@@ -1,0 +1,75 @@
+package br.edu.ifrn.tads.psd.chatgui.gui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextArea;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
+public class ChatGUI extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextArea textArea;
+	private JButton btnNewButton;
+
+	/**
+	 * Create the frame.
+	 */
+	public ChatGUI(String title) {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		setTitle(title);
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+
+		textArea = new JTextArea();
+		textArea.setEditable(false);
+		contentPane.add(textArea, BorderLayout.CENTER);
+
+		JPanel panel = new JPanel();
+		contentPane.add(panel, BorderLayout.SOUTH);
+		panel.setLayout(new BorderLayout(0, 0));
+
+		btnNewButton = new JButton("Clique aqui para enviar");
+		panel.add(btnNewButton, BorderLayout.EAST);
+
+		textField = new JTextField();
+		panel.add(textField, BorderLayout.CENTER);
+		textField.setColumns(10);
+	}
+
+	public String getMessage(){
+		return this.textField.getText();
+	}
+
+	public void clearText(){
+		this.textField.setText("");
+	}
+
+	public void addMessage(String message){
+		this.textArea.append(message+"\n");
+		this.clearText();
+	}
+
+	public void clearMessage(){
+		this.textArea.setText("");
+	}
+	
+	public void actionListener(ActionListener al){
+		btnNewButton.addActionListener(al);
+	}
+
+	public JButton getButton(){
+		return this.btnNewButton;
+	}
+
+}

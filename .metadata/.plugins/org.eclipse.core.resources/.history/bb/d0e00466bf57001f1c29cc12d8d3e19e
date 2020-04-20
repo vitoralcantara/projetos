@@ -1,0 +1,15 @@
+
+public class Cas {
+
+	public static int k = 4;
+	
+	public static void main(String[] args)
+	{
+		Cas.k = 8;
+		System.out.println(Cas.k);
+		
+		
+	}
+	
+	
+}

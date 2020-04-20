@@ -1,0 +1,60 @@
+package senha.core;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Jogo {
+
+	public void iniciarJogo() {
+
+		imprimirInformacoesJogo();
+		FornecedorDaSenha fds = new FornecedorDaSenha();
+		fds.gerarNovaSenha();
+		Senha senha = fds.getSenha();
+
+		Adivinho adivinho = new Adivinho();
+		Tentativa tentativa = adivinho.lerTentativa();
+		Retorno retorno = calcularRetorno(tentativa, senha);
+
+	}
+
+	/**
+	 * Código: 0 - Acertou cor e posição 1 - Acertou cor, mas cor não 2 - Não
+	 * tem a cor na lista
+	 * 
+	 * @param tentativa
+	 * @param senha
+	 * @return
+	 */
+	private Retorno calcularRetorno(Tentativa tentativa, Senha senha) {
+		List<Integer> lad = tentativa.getTentativa();
+		List<Integer> s = senha.getSenha();
+		List<Integer> r = new ArrayList<Integer>();
+
+		for (int i = 0; i < r.size(); i++) {
+			if (lad.get(i) == s.get(i)) {
+				r.add(0);
+			} else if (s.contains(lad.get(i))) {
+				r.add(1);
+			} else {
+				r.add(2);
+			}
+		}
+
+		Retorno retorno = new Retorno();
+		retorno.setRetorno(r);
+		return retorno;
+	}
+
+	private void imprimirInformacoesJogo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void main(String[] args) {
+		Jogo jogo = new Jogo();
+		jogo.iniciarJogo();
+		System.out.println("1: P | B | P | B");
+		System.out.println("2: P | B | P | B");
+	}
+}

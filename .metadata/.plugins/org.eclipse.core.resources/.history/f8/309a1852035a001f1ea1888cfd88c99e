@@ -1,0 +1,13 @@
+
+public class Cas {
+
+	
+	public static void main(String[] args)
+	{
+		Subi.vitor = 29292992;
+		System.out.println(Subi.vitor);
+
+	}
+	
+	
+}

@@ -1,0 +1,16 @@
+1315183228694	Extracts string 'null' into R.string.novotweet
+1315183316285	Extracts string 'null' into R.string.voltar
+1315183333401	Extracts string 'null' into R.string.deletar
+1315183547555	Rename type 'AndroidTwitterActivity'
+1315184201256	Rename resource 'main.xml'
+1315185959654	Extracts string 'null' into R.string.max150car
+1315187872254	Rename local variable 'intent'
+1315188944510	Rename local variable 'arg0'
+1315188953181	Rename local variable 'arg1'
+1315188962281	Rename local variable 'arg2'
+1315188969390	Rename local variable 'arg3'
+1315189628427	Rename field 'POSICAO_TEXTO'
+1315247637327	Extracts string 'null' into R.string.tweetselecionado
+1315248405434	Wrap in Container
+1315250493664	Extracts string 'null' into R.string.tweetsproduzidos
+1315250744688	Extracts string 'null' into R.string.semtweet

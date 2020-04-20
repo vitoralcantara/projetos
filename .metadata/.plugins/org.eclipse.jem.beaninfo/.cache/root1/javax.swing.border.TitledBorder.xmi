@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213397127">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213397127" key="org.eclipse.jem.java:JavaClass java:/javax.swing.border#TitledBorder">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397127" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397127" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#BeanDecorator_1272213397127"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397128" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397128" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#EReference_1272213397127 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#EReference_1272213397128 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#EReference_1272213397129 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#EReference_1272213397130 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#EReference_1272213397131 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.border.TitledBorder.xmi#EReference_1272213397132"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213397127" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397127" name="title" eType="org.eclipse.jem.java:JavaClass java:/java.lang#String" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397127" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.getTitle(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.setTitle(java.lang.String"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397128" name="titleJustification" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397128" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.getTitleJustification(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.setTitleJustification(int"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397129" name="titlePosition" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397129" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.getTitlePosition(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.setTitlePosition(int"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397130" name="titleColor" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Color" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397130" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.getTitleColor(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.setTitleColor(java.awt.Color"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397131" name="border" eType="org.eclipse.jem.java:JavaClass java:/javax.swing.border#Border" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397131" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.getBorder(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.setBorder(javax.swing.border.Border"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397132" name="titleFont" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Font" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397132" implicitlySetBits="60" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.getTitleFont(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing.border#TitledBorder.setTitleFont(java.awt.Font"/>
+  </objectsToAttach>
+</change:ChangeDescription>

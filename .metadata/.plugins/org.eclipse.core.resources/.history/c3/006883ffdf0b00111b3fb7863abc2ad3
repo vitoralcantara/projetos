@@ -1,0 +1,16 @@
+package senha.core;
+
+import java.util.Scanner;
+
+public class Jogador {
+
+	public void lerEntrada() {
+		Scanner scanner = new Scanner(System.in);
+		List<Integer>
+		while (scanner.hasNext()) {
+
+		}
+
+	}
+
+}

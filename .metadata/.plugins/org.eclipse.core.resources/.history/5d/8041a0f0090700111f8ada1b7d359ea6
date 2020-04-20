@@ -1,0 +1,102 @@
+package game.forum;
+
+import game.data.Elemento;
+import game.data.ServidorDados;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.sax.Element;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+//TODO Inserir mensagem de boas vindas
+//TODO Criar pesquisa dinâmica
+//TODO Por opção de atualizar os jogos
+//TODO Por opção de salvar dados de um jogo no computador local
+public class GameForumActivity extends Activity {
+	/** Called when the activity is first created. */
+
+	Button buttonPesquisarJogo;
+	ListView listViewJogosPesquisados;
+	EditText editTestPesquisarJogos;
+	// public Map<String, String> jogos;
+
+	// LIST OF ARRAY STRINGS WHICH WILL SERVE AS LIST ITEMS
+	List<Elemento> listGames = new ArrayList<Elemento>();
+
+	// DEFINING STRING ADAPTER WHICH WILL HANDLE DATA OF LISTVIEW
+	ArrayAdapter<Elemento> adapter;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		listGames.addAll(ServidorDados.obterListaDeJogos());
+
+		buttonPesquisarJogo = (Button) findViewById(R.id.buttonPesquisarJogo);
+		listViewJogosPesquisados = (ListView) findViewById(R.id.listViewJogosPesquisados);
+		editTestPesquisarJogos = (EditText) findViewById(R.id.editTextPesquisarJogo);
+
+		buttonPesquisarJogo.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				String search = editTestPesquisarJogos.getText().toString();
+				if (search.length() == 0) {
+					listGames.clear();
+					listGames.addAll(ServidorDados.obterListaDeJogos());
+				} else {
+					listGames.clear();
+					for (String string : jogos.keySet()) {
+						if (string.toLowerCase().contains(search.toLowerCase())) {
+							listGames.add(string);
+						}
+					}
+				}
+				adapter.notifyDataSetChanged();
+			}
+		});
+
+		listViewJogosPesquisados
+				.setOnItemClickListener(new OnItemClickListener() {
+
+					@Override
+					public void onItemClick(AdapterView<?> parent, View view,
+							int position, long id) {
+						Intent intent = new Intent(parent.getContext(),
+								JogoPerfilActivity.class);
+						String code = (String) listViewJogosPesquisados
+								.getSelectedItem();
+						if (code == null) {
+							try {
+								throw new Exception(
+										"O arquivo encontrado é nulo");
+							} catch (Exception e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+						intent.putExtra(JogoPerfilActivity.JOGO,
+								jogos.get(code));
+						startActivity(intent);
+					}
+				});
+
+		adapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, listGames);
+
+		listViewJogosPesquisados.setAdapter(adapter);
+
+	}
+}

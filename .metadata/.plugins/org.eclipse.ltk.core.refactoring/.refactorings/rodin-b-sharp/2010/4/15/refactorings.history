@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 1 element(s) from project &apos;rodin-b-sharp&apos;&#x0D;&#x0A;- Original project: &apos;rodin-b-sharp&apos;&#x0D;&#x0A;- Original element: &apos;rodin-b-sharp/trunk/_exploratory/cfsnook/ac.soton.umlb.umlb2ecore.examples/UmlB2Ecore/RWS_model.editor/src&apos;" description="Delete element" element1="/trunk\/_exploratory\/cfsnook\/ac.soton.umlb.umlb2ecore.examples\/UmlB2Ecore\/RWS_model.editor\/src" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1270905573580" subPackages="false" version="1.0"/>
+</session>

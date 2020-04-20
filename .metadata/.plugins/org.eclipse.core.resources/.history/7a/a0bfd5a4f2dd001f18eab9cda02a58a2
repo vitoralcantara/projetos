@@ -1,0 +1,9 @@
+package principal;
+
+public class CaractereIncorretoException extends Exception {
+	
+	public CaractereIncorretoException(){
+		
+	}
+
+}

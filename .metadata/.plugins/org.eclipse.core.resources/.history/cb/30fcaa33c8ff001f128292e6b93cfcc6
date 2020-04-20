@@ -1,0 +1,7 @@
+
+public class Partida {
+	
+	int codigoPartida;
+	private Carta[] cartasNaMesa;
+
+}

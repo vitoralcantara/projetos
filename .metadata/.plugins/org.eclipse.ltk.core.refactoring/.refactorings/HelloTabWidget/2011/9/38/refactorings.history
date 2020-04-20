@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;tab.layout.TabLayoutTutorialActivity&apos; to &apos;ArtistsActivity&apos;&#x0D;&#x0A;- Original project: &apos;HelloTabWidget&apos;&#x0D;&#x0A;- Original element: &apos;tab.layout.TabLayoutTutorialActivity&apos;&#x0D;&#x0A;- Renamed element: &apos;tab.layout.ArtistsActivity&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TabLayoutTutorialActivity&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;tab.layout{TabLayoutTutorialActivity.java[TabLayoutTutorialActivity" matchStrategy="1" name="ArtistsActivity" qualified="false" references="true" similarDeclarations="true" stamp="1315781950334" textual="true" version="1.0"/>
+</session>

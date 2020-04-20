@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:codeGenHelpers="platform:/plugin/org.eclipse.ve.java.core/overrides/codegenHelpers.ecore" xmlns:ecore="ecore.xmi" xmlns:gridbagpreference="platform:/plugin/org.eclipse.ve.jfc/overrides/java/awt/gridbagpreference.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmlns:org.eclipse.ve.internal.cde.decorators="http:///org/eclipse/ve/internal/cde/decorators.ecore" xmlns:org.eclipse.ve.internal.jcm="http:///org/eclipse/ve/internal/jcm.ecore" xmi:id="ChangeDescription_1272764627111">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627111" key="org.eclipse.jem.java:JavaClass java:/javax.swing.text#JTextComponent">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627111" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627111" referenceValues="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.text.JTextComponent.override.xmi#ClassDescriptorDecorator_1272764627111"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627112" referenceValues="org.eclipse.ve.internal.jcm:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.text.JTextComponent.override.xmi#BeanDecorator_1272764627111"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627113" referenceValues="codeGenHelpers:CodeGenHelperClass file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.text.JTextComponent.override.xmi#CodeGenHelperClass_1272764627111"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627112" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627114" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.text.JTextComponent.override.xmi#EReference_1272764627111"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627115" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.text.JTextComponent.override.xmi#EReference_1272764627112"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627116" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.text.JTextComponent.override.xmi#EReference_1272764627113"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator" xmi:id="ClassDescriptorDecorator_1272764627111" graphViewClassname="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.ComponentGraphicalEditPart:false"/>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.jcm:BeanDecorator" xmi:id="BeanDecorator_1272764627111" beanProxyClassName="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.JTextComponentProxyAdapter">
+    <keyedValues xmi:type="gridbagpreference:Preference" xmi:id="Preference_1272764627112" typedValue="both"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="codeGenHelpers:CodeGenHelperClass" xmi:id="CodeGenHelperClass_1272764627111" source="codegen.CodeGenHelperClass" expDecoder="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.codegen.JTextComponentDecoder"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627111" name="text" unsettable="true"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627112" name="selectionEnd" unsettable="true"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627113" name="selectionStart" unsettable="true"/>
+</change:ChangeDescription>

@@ -1,0 +1,31 @@
+package android.twitter;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+public class NewTweetActivity extends Activity {
+
+	private EditText editTextPostar;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		editTextPostar = (EditText) findViewById(R.id.editTextPostar);
+	}
+	
+	public void addItems(View v) {
+		
+		
+		
+		
+		// listItems.add(editTextPostar.getText().toString());
+		// editTextPostar.setText("");
+		// adapter.notifyDataSetChanged();
+	}
+	
+	
+}

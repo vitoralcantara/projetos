@@ -1,0 +1,13 @@
+package br.edu.ifrn.tads.psd.chatgui.gui;
+
+import java.rmi.RemoteException;
+
+public class ChatGuiRMI implements ChatRMIInterface {
+
+	@Override
+	public void escreverMensagem(String s) throws RemoteException {
+		// TODO Auto-generated method stub
+
+	}
+
+}

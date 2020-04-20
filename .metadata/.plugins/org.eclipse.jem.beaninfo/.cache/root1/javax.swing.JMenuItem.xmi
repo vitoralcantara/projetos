@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213396886">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213396887" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JMenuItem">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396887" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396887" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuItem.xmi#BeanDecorator_1272213396887"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396888" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396888" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuItem.xmi#EReference_1272213396887 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuItem.xmi#EReference_1272213396888 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuItem.xmi#EReference_1272213396889"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396889" featureName="events">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396889" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuItem.xmi#BeanEvent_1272213396887 org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuItem.xmi#BeanEvent_1272213396888"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213396887" shortDescription="JFC Menu item" implicitlySetBits="6773413839565225998" implicitDecoratorFlag="IMPLICIT_DECORATOR" mergeSuperMethods="false">
+    <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213396887" key="ICON_COLOR_32x32" value="implicit,&quot;icons/menuit32.gif&quot;"/>
+    <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213396888" key="ICON_COLOR_16x16" value="implicit,&quot;icons/menuit16.gif&quot;"/>
+    <notInheritedPropertyNames>enabled</notInheritedPropertyNames>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396887" name="accelerator" eType="org.eclipse.jem.java:JavaClass java:/javax.swing#KeyStroke" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396887" shortDescription="Accelerator key to invoke the menuitem action" expert="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" bound="true" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.getAccelerator(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.setAccelerator(javax.swing.KeyStroke"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396888" name="armed" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396888" shortDescription="Arm or disarm the menu item" expert="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.isArmed(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.setArmed(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396889" name="enabled" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396889" shortDescription="Disable or enable the menu item" preferred="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" bound="true" readMethod="org.eclipse.jem.java:Method java:/java.awt#Component.isEnabled(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.setEnabled(boolean"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent" xmi:id="BeanEvent_1272213396887" name="menuKey">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:EventSetDecorator" xmi:id="EventSetDecorator_1272213396887" displayName="Menu Key" shortDescription="All menuKey events" implicitlySetBits="-2594073385365405571" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" inDefaultEventSet="true" addListenerMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.addMenuKeyListener(javax.swing.event.MenuKeyListener" listenerType="org.eclipse.jem.java:JavaClass java:/javax.swing.event#MenuKeyListener" removeListenerMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.removeMenuKeyListener(javax.swing.event.MenuKeyListener">
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396887" name="menuKeyPressed" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuKeyListener.menuKeyPressed(javax.swing.event.MenuKeyEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396888" shortDescription="Event fired when a menu key is pressed" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396888" implicitlySetBits="2017612633061982209" name="menuKeyEvent"/>
+        </eAnnotations>
+      </serListMthd>
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396888" name="menuKeyReleased" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuKeyListener.menuKeyReleased(javax.swing.event.MenuKeyEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396889" shortDescription="Event fired when a menu key is released" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396889" implicitlySetBits="2017612633061982209" name="menuKeyEvent"/>
+        </eAnnotations>
+      </serListMthd>
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396889" name="menuKeyTyped" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuKeyListener.menuKeyTyped(javax.swing.event.MenuKeyEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396890" shortDescription="Event fired when a menu key is typed" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396890" implicitlySetBits="2017612633061982209" name="menuKeyEvent"/>
+        </eAnnotations>
+      </serListMthd>
+    </eAnnotations>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanEvent" xmi:id="BeanEvent_1272213396888" name="menuDragMouse">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:EventSetDecorator" xmi:id="EventSetDecorator_1272213396888" displayName="Menu Drag Mouse" shortDescription="All menuDragMouse events" implicitlySetBits="-2594073385365405571" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" inDefaultEventSet="true" addListenerMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.addMenuDragMouseListener(javax.swing.event.MenuDragMouseListener" listenerType="org.eclipse.jem.java:JavaClass java:/javax.swing.event#MenuDragMouseListener" removeListenerMethod="org.eclipse.jem.java:Method java:/javax.swing#JMenuItem.removeMenuDragMouseListener(javax.swing.event.MenuDragMouseListener">
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396890" name="menuDragMouseDragged" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuDragMouseListener.menuDragMouseDragged(javax.swing.event.MenuDragMouseEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396891" shortDescription="Event fired when the mouse is being dragged in a menu component's display area" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396891" implicitlySetBits="2017612633061982209" name="menuDragMouseEvent"/>
+        </eAnnotations>
+      </serListMthd>
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396891" name="menuDragMouseEntered" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuDragMouseListener.menuDragMouseEntered(javax.swing.event.MenuDragMouseEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396892" shortDescription="Event fired when the dragged mouse has entered a menu component's display area" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396892" implicitlySetBits="2017612633061982209" name="menuDragMouseEvent"/>
+        </eAnnotations>
+      </serListMthd>
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396892" name="menuDragMouseExited" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuDragMouseListener.menuDragMouseExited(javax.swing.event.MenuDragMouseEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396893" shortDescription="Event fired when the dragged mouse has left a menu component's display area" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396893" implicitlySetBits="2017612633061982209" name="menuDragMouseEvent"/>
+        </eAnnotations>
+      </serListMthd>
+      <serListMthd xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodProxy" xmi:id="MethodProxy_1272213396893" name="menuDragMouseReleased" method="org.eclipse.jem.java:Method java:/javax.swing.event#MenuDragMouseListener.menuDragMouseReleased(javax.swing.event.MenuDragMouseEvent">
+        <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:MethodDecorator" xmi:id="MethodDecorator_1272213396894" shortDescription="Event fired when the dragged mouse is released in a menu component's display area" implicitlySetBits="6629298651489370113">
+          <serParmDesc xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:ParameterDecorator" xmi:id="ParameterDecorator_1272213396894" implicitlySetBits="2017612633061982209" name="menuDragMouseEvent"/>
+        </eAnnotations>
+      </serListMthd>
+    </eAnnotations>
+  </objectsToAttach>
+</change:ChangeDescription>

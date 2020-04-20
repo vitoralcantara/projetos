@@ -1,0 +1,42 @@
+import java.io.File;
+import java.util.ArrayList;
+
+import org.eventb.core.EventBPlugin;
+import org.eventb.core.IEventBRoot;
+import org.eventb.core.IMachineRoot;
+import org.eventb.core.IPORoot;
+import org.eventb.core.IPOSequent;
+import org.eventb.core.pm.IProofComponent;
+import org.eventb.core.pm.IProofManager;
+import org.rodinp.core.IInternalElement;
+import org.rodinp.core.IRodinElement;
+import org.rodinp.core.IRodinFile;
+import org.rodinp.core.IRodinProject;
+import org.rodinp.core.RodinCore;
+import org.rodinp.core.RodinDBException;
+
+
+public class TesteVitor {
+	
+	public static IMachineRoot[] getMachineRootChildren(IRodinProject project) throws RodinDBException {
+        ArrayList<IMachineRoot> result = new ArrayList<IMachineRoot>();
+        for (IRodinElement element : project.getChildren()) {
+              if (element instanceof IRodinFile) {
+                    IInternalElement root = ((IRodinFile) element).getRoot();
+                    if (root instanceof IMachineRoot) {
+                          result.add((IMachineRoot) root);
+                    }
+              }
+        }
+        return result.toArray(new IMachineRoot[result.size()]);
+  }	
+	
+	public TesteVitor()
+	{
+		IRodinProject rp =  RodinCore.getRodinDB().getRodinProject();
+		IMachineRoot[] im = getMachineRootChildren(rp);
+		
+		
+	}
+
+}

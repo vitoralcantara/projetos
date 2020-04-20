@@ -1,0 +1,223 @@
+package game.forum;
+
+import game.data.ServidorDados;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.ArrayList;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.os.Environment;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuItem.OnMenuItemClickListener;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Gallery;
+import android.widget.ImageView;
+import android.widget.Toast;
+
+//TODO Por indices das imagens
+//FIXME Verificar por que nem todas as imagens e nem todos os vídeos estão aparecendo
+//FIXME Encontrar uma solução para evitar o vazamento de memória
+public class JogoImagensActivity extends Activity {
+
+	// private ImageView imageView;
+	private Gallery gallery;
+	private String jogoIndex;
+	private ArrayList<Drawable> drawables;
+	private String[] fotosURLs;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.fotos);
+		gallery = (Gallery) findViewById(R.id.galleryFotos);
+
+		Intent intent = getIntent();
+		jogoIndex = intent.getStringExtra(JogoPerfilActivity.JOGO);
+		if (jogoIndex == null || jogoIndex.equals("")) {
+			Toast.makeText(this,
+					"Houve um problema, por favor, retorne à página anterior",
+					Toast.LENGTH_SHORT);
+		} else {
+			calculateBitmaps();
+			gallery.setAdapter(new FotosAdapter(this));
+		}
+	}
+
+	private void calculateBitmaps() {
+		drawables = new ArrayList<Drawable>();
+		fotosURLs = ServidorDados.getImagensDeJogo(jogoIndex);
+		for (String string : fotosURLs) {
+			Drawable image = ServidorDados.ImageOperations(this, string);
+			drawables.add(image);
+		}
+	}
+
+	public class FotosAdapter extends BaseAdapter {
+		Context c;
+
+		public FotosAdapter(Context c) {
+			this.c = c;
+		}
+
+		@Override
+		public int getCount() {
+			return drawables.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+			return drawables.get(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			return position;
+		}
+
+		@Override
+		public View getView(int position, View arg1, ViewGroup arg2) {
+			ImageView im = new ImageView(c);
+			im.setImageDrawable(drawables.get(position));
+			return im;
+		}
+	}
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuItem menuRequisitos = menu.add("Requisitos");
+		MenuItem menuVideos = menu.add("Videos");
+		MenuItem menuSobre = menu.add("Sobre o jogo");
+		MenuItem menuPesquisa = menu.add("Pesquisa");
+		MenuItem menuSalvarVideo = menu.add("Salvar video");
+
+		menuSalvarVideo
+				.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+					@Override
+					public boolean onMenuItemClick(MenuItem item) {
+						try {
+							Socket s;
+							try {
+								s = new Socket(
+										"http://vitor.netne.net/fotos/0/cod1.jpg",
+										4950);
+								ins = s.getInputStream();
+							} catch (UnknownHostException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							} catch (IOException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+							InputStream ins;
+							try {
+								
+							} catch (IOException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+
+							DataInputStream dis = new DataInputStream(
+									new BufferedInputStream(ins));
+
+							File outputFile = new File("/sdcard/documents/",
+									"algumaCoisaFuncione.jpg");
+
+							DataOutputStream dos = new DataOutputStream(
+									new BufferedOutputStream(
+											new FileOutputStream(outputFile)));
+
+							if (outputFile.canWrite()) {
+								try {
+									while (dis.available() > 0) {
+										dos.write(dis.read());
+									}
+									Toast.makeText(JogoImagensActivity.this,
+											"O Video foi gravado com sucesso",
+											Toast.LENGTH_SHORT);
+									return true;
+								} catch (IOException e) {
+								}
+							}
+
+						} catch (FileNotFoundException e) {
+							e.printStackTrace();
+						}
+
+						Toast.makeText(
+								JogoImagensActivity.this,
+								"Houve um erro ao tentar salvar o arquivo. Peço desculpas pelo inconveniente",
+								Toast.LENGTH_SHORT);
+
+						return false;
+					}
+				});
+
+		menuSobre.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						JogoSobreActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+
+		menuVideos.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						JogoVideosActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+
+		menuRequisitos
+				.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+					@Override
+					public boolean onMenuItemClick(MenuItem item) {
+						Intent intent = new Intent(getApplicationContext(),
+								RequisitosSistemaActivity.class);
+						intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+						startActivity(intent);
+						return true;
+					}
+				});
+
+		menuPesquisa.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						GameForumActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+		return true;
+	}
+}

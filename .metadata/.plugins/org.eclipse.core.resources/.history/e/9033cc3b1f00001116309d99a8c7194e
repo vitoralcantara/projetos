@@ -1,0 +1,404 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class CorteMaximoGrasp {
+
+	/**
+	 * Esta lista armazena o conjunto de vértices do grafo. A estrutura de dados
+	 * para armazenar o elemento é um vetor.
+	 */
+	final List<Vertice> conjuntoDeVertices;
+
+	/**
+	 * Esta lista armazena o conjunto de arestas do grafo. A estrutura de dados
+	 * para armazenar o elemento é um vetor.
+	 */
+	final List<Aresta> conjuntoDeArestas;
+
+	private class ConjuntoVertices {
+		List<Vertice> conjuntoPrimeiro;
+		List<Vertice> conjuntoSegundo;
+	}
+
+	ConjuntoVertices solucao;
+
+	/**
+	 * Esta classe representa um vértice. Ela possui um identificador, uma lista
+	 * de arestas que se ligam a este vértice e um método que retorna uma string
+	 * representando o vértice.
+	 */
+	static class Vertice {
+		int id;
+		int pos;
+		List<Aresta> arestas = new ArrayList<Aresta>();
+
+		@Override
+		public String toString() {
+			return "Vertice [id=" + id + ", arestas=" + arestas + "]";
+		}
+	}
+
+	/**
+	 * Esta classe representa uma aresta. Ela possui um identificador, os dois
+	 * vértices que são ligadas pela aresta, e um método que retorna uma string
+	 * representando a aresta.
+	 */
+	static class Aresta {
+		int id;
+		Vertice v1;
+		Vertice v2;
+
+		@Override
+		public String toString() {
+			return "Aresta [id=" + id + ", v1=" + v1 + ", v2=" + v2 + "]";
+		}
+	}
+
+	/**
+	 * 
+	 * Esta classe representa um grafo. Ela possui uma lista de arestas e uma
+	 * lista de arestas.
+	 */
+	static class Grafo {
+		List<Vertice> nos = new ArrayList<Vertice>();
+		List<Aresta> arestas = new ArrayList<Aresta>();
+	}
+
+	public CorteMaximoGrasp(Grafo g) {
+		this.conjuntoDeArestas = g.arestas;
+		this.conjuntoDeVertices = g.nos;
+	}
+
+	public void procedimentoGRASP(int maximoIteracoes) {
+		ConjuntoVertices xEstrela = new ConjuntoVertices();
+		for (int i = 0; i < maximoIteracoes; i++) {
+			ConjuntoVertices x = construirSolucaoRandomicaGulosa();
+			x = buscaLocal(x);
+			if (i == 1) {
+				xEstrela = x;
+			} else if (w(x) > w(xEstrela)) {
+				xEstrela = x;
+			}
+		}
+		solucao = xEstrela;
+		calcularArestasdoCorte(solucao);
+		
+		
+	}
+
+	private void calcularArestasdoCorte(ConjuntoVertices solucao2) {
+		
+		
+	}
+
+	private ConjuntoVertices buscaLocal(ConjuntoVertices x) {
+		List<Vertice> S = x.conjuntoPrimeiro;
+		List<Vertice> Slinha = x.conjuntoSegundo;
+		boolean change = true;
+		while (change) {
+			change = false;
+			for (Vertice v : conjuntoDeVertices) {
+				if (S.contains(v) && ro(S, v) - ro(Slinha, v) > 0) {
+					S.remove(v);
+					Slinha.add(v);
+					change = true;
+				} else if (Slinha.contains(v) && ro(Slinha, v) - ro(S, v) > 0) {
+					Slinha.remove(v);
+					S.add(v);
+					change = true;
+				}
+				if (change)
+					break;
+			}
+		}
+		return x;
+	}
+
+	private ConjuntoVertices construirSolucaoRandomicaGulosa() {
+		List<Vertice> listaDeVerticesAleatorio = randomizar(conjuntoDeVertices);
+		List<Vertice> x = new ArrayList<CorteMaximoGrasp.Vertice>();
+		List<Vertice> y = new ArrayList<CorteMaximoGrasp.Vertice>();
+		x.add(listaDeVerticesAleatorio.get(0));
+		for (int i = 1; i < listaDeVerticesAleatorio.size(); i++) {
+			Vertice v = listaDeVerticesAleatorio.get(i);
+			if (beta(v, y) >= beta(v, x)) {
+				executarLinha4(x, v, y);
+			} else {
+				executarLinha5(x, v, y);
+			}
+		}
+		ConjuntoVertices c = new ConjuntoVertices();
+		c.conjuntoPrimeiro = x;
+		c.conjuntoSegundo = y;
+
+		return c;
+	}
+
+	private void executarLinha5(List<Vertice> x, Vertice v, List<Vertice> y) {
+		x.add(v);
+		y.remove(v);
+	}
+
+	private void executarLinha4(List<Vertice> x, Vertice v, List<Vertice> y) {
+		x.remove(v);
+		y.add(v);
+	}
+
+	private int ro(List<Vertice> s, Vertice v) {
+		int count = 0;
+		for (Aresta a : v.arestas) {
+			Vertice outroVertice = null;
+			if (a.v1 == v) {
+				outroVertice = a.v2;
+			} else if (a.v2 == v) {
+				outroVertice = a.v1;
+			} else {
+				try {
+					throw new Exception();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			if (s.contains(outroVertice)) {
+				++count;
+			}
+		}
+		return count;
+	}
+
+	private int beta(Vertice v, List<Vertice> x) {
+		return ro(x, v);
+	}
+
+	private int w(ConjuntoVertices x) {
+		int count = 0;
+		for (Aresta a : conjuntoDeArestas) {
+			Vertice v1 = a.v1;
+			Vertice v2 = a.v2;
+			if (x.conjuntoPrimeiro.contains(v1)
+					&& x.conjuntoSegundo.contains(v2)) {
+				// Teste
+				if (x.conjuntoPrimeiro.contains(v2)
+						|| x.conjuntoSegundo.contains(v1)) {
+					try {
+						throw new Exception();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+				++count;
+			} else if (x.conjuntoPrimeiro.contains(v2)
+					&& x.conjuntoSegundo.contains(v1)) {
+				// Teste
+				if (x.conjuntoPrimeiro.contains(v1)
+						|| x.conjuntoSegundo.contains(v2)) {
+					try {
+						throw new Exception();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+				++count;
+			} else {
+				// Teste
+				try {
+					throw new Exception();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return count;
+	}
+
+	private List<Vertice> randomizar(List<Vertice> conjuntoDeVertices) {
+		List<Vertice> outroConjunto = new ArrayList<CorteMaximoGrasp.Vertice>();
+		for (Vertice v : conjuntoDeVertices) {
+			outroConjunto.add(v);
+		}
+		List<Vertice> conjuntoFinal = new ArrayList<CorteMaximoGrasp.Vertice>();
+		while (!outroConjunto.isEmpty()) {
+			int escolhido = (int) (Math.random() * (outroConjunto.size() - 1));
+			conjuntoFinal.add(outroConjunto.get(escolhido));
+		}
+		return conjuntoFinal;
+	}
+
+	/**
+	 * Este método cria o grafo a partir do arquivo especificado. Ele armazena
+	 * os vértices e arestas em dois vetores distintos, armazena em cada aresta
+	 * a refeferência aos dois vértices que ela liga e em cada vértice as
+	 * arestas que se ligam a ele.
+	 * <p>
+	 * O arquivo que será lido deve ter o seguinte formato:
+	 * 
+	 * <numero de vertices> <numero de arestas> <id de vertice> <id de vertice>
+	 * <id de vertice> <id de vertice> ...
+	 * 
+	 * @param arquivo
+	 *            O arquivo onde se encontra o grafo a ser processado
+	 * @return A estrutura {@link Grafo} que contém o vetor de vértices e de
+	 *         arestas
+	 * @throws FileNotFoundException
+	 *             Se o arquivo não foi encontrado no sistema
+	 */
+	public static Grafo extrairGrafoDeArquivo(String arquivo)
+			throws FileNotFoundException {
+		Scanner scanner = new Scanner(new FileReader(new File(arquivo)));
+		int numeroDeVertices = scanner.nextInt();
+		int numeroDeArestas = scanner.nextInt();
+		List<Vertice> nos = new ArrayList<Vertice>(numeroDeVertices);
+		List<Aresta> arestas = new ArrayList<Aresta>(numeroDeArestas);
+		int i = 1;
+		while (scanner.hasNextInt()) {
+			int v1 = scanner.nextInt();
+			int v2 = scanner.nextInt();
+			if (scanner.hasNext())
+				scanner.nextLine();
+			Vertice no1 = null;
+			Vertice no2 = null;
+			for (Vertice no : nos) {
+				if (no.id == v1) {
+					no1 = no;
+				} else if (no.id == v2) {
+					no2 = no;
+				}
+			}
+			if (no1 == null) {
+				no1 = new Vertice();
+				no1.id = v1;
+				nos.add(no1);
+			}
+			if (no2 == null) {
+				no2 = new Vertice();
+				no2.id = v2;
+				nos.add(no2);
+			}
+			Aresta a = new Aresta();
+			a.id = i;
+			a.v1 = no1;
+			a.v2 = no2;
+			no1.arestas.add(a);
+			no2.arestas.add(a);
+			arestas.add(a);
+			++i;
+		}
+		Grafo g = new Grafo();
+		g.arestas = arestas;
+		g.nos = nos;
+		return g;
+	}
+
+	/**
+	 * O programa começa sua execução através deste método. O primeiro parâmetro
+	 * é a lista de argumentos que o usuário passa linha de comando quando se
+	 * começa a execução.
+	 * <p>
+	 * O programa pode ser ajustado com 4 parâmetros:
+	 * <p>
+	 * t - Caso este parâmetro seja adicionado, mostra-se ao final do programa o
+	 * tempo gasto na execução do mesmo. Por padrão, não mostra-se esta
+	 * informação.
+	 * <p>
+	 * a - Caso este parâmetro seja adicionado, mostra-se ao final do programa o
+	 * tempo gasto na execução apenas do algoritmo de corte. Por padrão, não
+	 * mostra-se esta informação.
+	 * <p>
+	 * d - Caso este parâmetro seja adicionado, mostra-se, além do identificador
+	 * das arestas do conjunto de corte, o identificador dos vértices que são
+	 * ligados por cada aresta. Por padrão, mostra-se apenas o identificador das
+	 * arestas do conjunto de corte.
+	 * <p>
+	 * i - Caso este parâmetro seja adicionado, mostra-se a quantidade de
+	 * cálculos de corte que foram feitos (cálculos de corte ao chegar na raiz
+	 * da árvore). Por padrão, esta informação não é mostrada.
+	 * <p>
+	 * Um exemplo de execução do algoritmo é:
+	 * <p>
+	 * 3 parâmetros:
+	 * <p>
+	 * <code>java CorteMaximo adt "C:\Users\g70.n"</code>
+	 * <p>
+	 * Nenhum parâmetro:
+	 * <p>
+	 * <code>java CorteMaximo "C:\Users\g70.n"</code>
+	 * <p>
+	 * O segundo parâmetro é o caminho do arquivo a ser a processado.
+	 * 
+	 * @param args
+	 *            Os argumentos que são passados pela linha de comando
+	 * 
+	 *            FIXME O método todo
+	 */
+	public static void main(String[] args) {
+		boolean calcularTempoTotal = false;
+		boolean calcularTempoAlgoritmo = false;
+		// boolean mostrarVerticesLigados = false;
+		int i = 0;
+		if (args.length == 0) {
+			System.out
+					.println("Este programa deve ser iniciado com o caminho do arquivo que especifica o grafo no primeiro argumento. Peco desculpas pelo incomodo.");
+			return;
+		}
+		if (args.length == 2) {
+			String options = args[0];
+			if (options.contains("t")) {
+				calcularTempoTotal = true;
+			}
+			if (options.contains("a")) {
+				calcularTempoAlgoritmo = true;
+			}
+			// if (options.contains("d")) {
+			// mostrarVerticesLigados = true;
+			// }
+			i = 1;
+		}
+
+		long tempoInicialTotal = System.currentTimeMillis();
+		Grafo g;
+		try {
+			g = extrairGrafoDeArquivo(args[i]);
+			CorteMaximoGrasp c = new CorteMaximoGrasp(g);
+			long tempoInicialAlgoritmo = System.currentTimeMillis();
+			// TODO Definir a entrada para este número
+			c.procedimentoGRASP(10);
+			long tempoFinalAlgoritmo = System.currentTimeMillis();
+
+			// FIXME
+			// System.out.println("Tamanho do corte maximo: "
+			// + c.corteMaximo.size()
+			// + ". ID das arestas do corte máximo:");
+			// if (mostrarVerticesLigados) {
+			// for (Aresta aresta : c.corteMaximo) {
+			// System.out.println("Aresta " + aresta.id
+			// + ": liga vertice " + aresta.v1.id + " ao vertice "
+			// + aresta.v2.id);
+			// }
+			// } else {
+			// for (Aresta aresta : c.corteMaximo) {
+			// System.out.print(aresta.id + " ");
+			// }
+			// }
+			long tempoFinalTotal = System.currentTimeMillis();
+			System.out.println();
+			if (calcularTempoAlgoritmo) {
+				long tempoDecorrido = tempoFinalAlgoritmo
+						- tempoInicialAlgoritmo;
+				System.out.println("Tempo decorrido do algoritmo: "
+						+ tempoDecorrido + " milisegundos.");
+			}
+			if (calcularTempoTotal) {
+				long tempoDecorrido = tempoFinalTotal - tempoInicialTotal;
+				System.out.println("Tempo decorrido do programa: "
+						+ tempoDecorrido + " milisegundos.");
+			}
+		} catch (FileNotFoundException e) {
+			System.out
+					.println("Houve um erro ao ler o arquivo. Por favor, verifique o caminho especificado do mesmo. Obrigado.");
+		}
+	}
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ll" android:orientation="vertical"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<Button android:layout_width="match_parent" android:text="@string/video"
+		android:id="@+id/buttonVideo" android:layout_height="wrap_content"></Button>
+	<Gallery android:id="@+id/gallery" android:layout_width="match_parent"
+		android:layout_height="170dp"></Gallery>
+	<ImageView android:src="@drawable/sample_0" android:id="@+id/imageView1"
+		android:layout_width="match_parent" android:layout_height="274dp"></ImageView>
+</LinearLayout>

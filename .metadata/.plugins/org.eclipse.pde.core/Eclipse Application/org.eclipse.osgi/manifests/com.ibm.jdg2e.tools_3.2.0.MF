@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Generated-from: 1279244569565;type=10
+Bundle-ManifestVersion: 2
+Bundle-Name: JDG2E: Tools
+Bundle-SymbolicName: com.ibm.jdg2e.tools
+Bundle-Version: 3.2.0
+Bundle-Vendor: The Java Developer's Guide to Eclipse
+Bundle-Localization: plugin

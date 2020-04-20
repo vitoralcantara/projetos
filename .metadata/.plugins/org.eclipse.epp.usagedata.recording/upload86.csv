@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+processors,sysinfo,,,"2",1261945226686
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1261945226686
+java.runtime.version,sysinfo,,,"1.6.0_14-b08",1261945226686
+java.specification.name,sysinfo,,,"Java Platform API Specification",1261945226686
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1261945226686
+java.specification.version,sysinfo,,,"1.6",1261945226686
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1261945226686
+java.version,sysinfo,,,"1.6.0_14",1261945226686
+java.vm.info,sysinfo,,,"mixed mode",1261945226686
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1261945226686
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1261945226686
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1261945226686
+java.vm.specification.version,sysinfo,,,"1.0",1261945226686
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1261945226686
+java.vm.version,sysinfo,,,"14.0-b16",1261945226686
+started,bundle,org.eclipse.mylyn.tasks.ui,3.3.1.v20091215-0000-e3x,"org.eclipse.mylyn.tasks.ui",1261945226798
+started,bundle,org.eclipse.mylyn.team.ui,3.3.1.v20091215-0000-e3x,"org.eclipse.mylyn.team.ui",1261945227233
+started,bundle,org.eclipse.dltk.core,1.0.1.v20090910-1601,"org.eclipse.dltk.core",1261945227462
+started,bundle,org.eclipse.dltk.launching,1.0.1.v20090910-1601,"org.eclipse.dltk.launching",1261945227502
+started,bundle,org.eclipse.dltk.ui,1.0.1.v20090903-2153,"org.eclipse.dltk.ui",1261945227506
+started,bundle,org.eclipse.team.svn.ui,0.7.8.I20091023-1300,"org.eclipse.team.svn.ui",1261945227590
+started,bundle,org.eclipse.team.svn.mylyn,0.7.8.I20091023-1300,"org.eclipse.team.svn.mylyn",1261945227605
+started,bundle,org.eclipse.jsch.core,1.1.100.I20090430-0408,"org.eclipse.jsch.core",1261945227857
+started,bundle,org.eclipse.team.cvs.core,3.3.200.I20090430-0408,"org.eclipse.team.cvs.core",1261945227859
+started,bundle,org.eclipse.team.cvs.ui,3.3.201.R35x_v20090826-0905,"org.eclipse.team.cvs.ui",1261945228518

@@ -1,0 +1,45 @@
+package game.data;
+
+public class Elemento {
+
+	private final String nome;
+	private final String chave;
+	
+	public Elemento(String nome, String chave) {
+		super();
+		this.nome = nome;
+		this.chave = chave;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+ 
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getChave() {
+		return chave;
+	}
+
+
+
+
+
+
+	public void setChave(String chave) {
+		this.chave = chave;
+	}
+
+
+
+
+
+
+	@Override
+	public String toString() {
+		return nome;
+	}
+
+}

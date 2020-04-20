@@ -1,0 +1,28 @@
+package android.twitter;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+
+public class SeeTweetActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		this.setContentView(R.layout.visualizartweet);
+	}
+
+	public void deleteItem(View v) {
+		setResult(TweetListActivity.DELETAR_TWEET);
+		Uri uri = Uri.parse("");
+		Intent result = new Intent(null, uri);
+
+	}
+
+	public void fazerNada(View v) {
+		finish();
+	}
+
+}

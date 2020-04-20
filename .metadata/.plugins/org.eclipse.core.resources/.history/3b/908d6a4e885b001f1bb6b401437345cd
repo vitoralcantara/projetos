@@ -1,0 +1,24 @@
+import java.io.File;
+
+import org.eventb.core.EventBPlugin;
+import org.eventb.core.IEventBRoot;
+import org.eventb.core.IMachineRoot;
+import org.eventb.core.IPORoot;
+import org.eventb.core.IPOSequent;
+import org.eventb.core.pm.IProofComponent;
+import org.eventb.core.pm.IProofManager;
+import org.rodinp.core.RodinCore;
+
+
+public class TesteVitor {
+	
+	//final IProofManager pm = EventBPlugin.getProofManager();
+	//final IProofComponent pc = pm.getProofComponent("casa");
+	//IProofManager pm = EventBPlugin.getProofManager();
+	//IEventBRoot ie = EventBPlugin.;
+	//IPORoot eb = pm. 
+	//IProofComponent pc = //pm.getProofComponent(file)
+	//IPOSequent sequent
+	RodinCore.getRodinDB()
+
+}

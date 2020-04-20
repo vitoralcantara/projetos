@@ -1,0 +1,64 @@
+package senha.core;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Adivinho extends Jogador {
+	
+	private boolean emTeste;
+	
+	public Adivinho() {
+		setEmTeste(false);
+	}
+	
+	public boolean isEmTeste() {
+		return emTeste;
+	}
+
+	public void setEmTeste(boolean emTeste) {
+		this.emTeste = emTeste;
+	}
+	
+	public Tentativa testeTentativa() {
+		Tentativa t = new Tentativa();
+		ArrayList<Integer> valores = new ArrayList<Integer>();
+		valores.add(0);
+		valores.add(1);
+		valores.add(2);
+		valores.add(3);
+		t.setTentativa(valores);
+		return t;
+	}
+
+	public Tentativa lerTentativa() throws QuantidadePinosException,
+			PinoJaExisteException, PinoInvalidoException {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Digite sua tentativa");
+		String line = scanner.nextLine();
+		return processarEntrada(line);
+	}
+
+	public Tentativa processarEntrada(String line)
+			throws QuantidadePinosException, PinoInvalidoException,
+			PinoJaExisteException {
+		ArrayList<Integer> tentativa = new ArrayList<Integer>();
+		StringTokenizer st = new StringTokenizer(line);
+		int count = st.countTokens();
+		if (count != 4) {
+			throw new QuantidadePinosException();
+		}
+		while (st.hasMoreTokens()) {
+			int v = Integer.valueOf(st.nextToken());
+			if (v < 0 || v > 6) {
+				throw new PinoInvalidoException();
+			}
+			if (tentativa.contains(v)) {
+				throw new PinoJaExisteException();
+			} else {
+				tentativa.add(v);
+			}
+		}
+		return new Tentativa(tentativa);
+	}
+}

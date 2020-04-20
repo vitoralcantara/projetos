@@ -1,0 +1,52 @@
+package senha.core;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Adivinho extends Jogador {
+
+	Scanner scanner = new Scanner(is);
+
+	public Adivinho(InputStream is) {
+		scanner = new Scanner(is);
+	}
+
+	public Tentativa lerTentativa(InputStream is)
+			throws QuantidadePinosException, PinoJaExisteException,
+			PinoInvalidoException {
+		Scanner scanner = new Scanner(is);
+
+		System.out.println("Digite sua tentativa.");
+		String line = scanner.nextLine();
+		String line2 = scanner.nextLine();
+		String line3 = scanner.nextLine();
+		scanner.close();
+		return processarEntrada(line);
+	}
+
+	public Tentativa processarEntrada(String line)
+			throws QuantidadePinosException, PinoInvalidoException,
+			PinoJaExisteException {
+		ArrayList<Integer> tentativa = new ArrayList<Integer>();
+		StringTokenizer st = new StringTokenizer(line);
+		int count = st.countTokens();
+		if (count != 4) {
+			throw new QuantidadePinosException("Devem ser inseridos 4 pinos.");
+		}
+		while (st.hasMoreTokens()) {
+			int v = Integer.valueOf(st.nextToken());
+			if (v < 0 || v > 6) {
+				throw new PinoInvalidoException(
+						"Este valor não é um pino válido");
+			}
+			if (tentativa.contains(v)) {
+				throw new PinoJaExisteException("O pino adicionado já existe.");
+			} else {
+				tentativa.add(v);
+			}
+		}
+		return new Tentativa(tentativa);
+	}
+}

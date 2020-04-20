@@ -1,0 +1,5 @@
+package br.edu.ifrn.tads.psd.chatgui.gui;
+
+public interface ChatRMIGuiInterface extends Remote  {
+
+}

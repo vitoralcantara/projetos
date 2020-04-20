@@ -1,2 +1,19 @@
+additional_locations=
+checkedPlugins=[savedAll]
 eclipse.preferences.version=1
-workspace_target_handle=local\:1552586274639.target
+org.eclipse.pde.ui.arch=x86
+org.eclipse.pde.ui.nl=pt_BR
+org.eclipse.pde.ui.os=win32
+org.eclipse.pde.ui.ws=win32
+platform_path=/usr/lib/eclipse
+pooled_bundles=
+program_args=
+saved_platform0=C\:\\Users\\Vitor\\Documents\\Bolsa CNPQ\\rodin-1.1-win32\\rodin
+saved_platform1=C\:\\Program Files\\eclipse
+saved_platform2=
+saved_platform3=
+target.profile=
+target_mode=useThis
+target_platform_realization=true
+vm_args=-Dosgi.requiredJavaVersion\=1.5 -Xms40m -Xmx512m
+workspace_target_handle=local\:1265905886055.target

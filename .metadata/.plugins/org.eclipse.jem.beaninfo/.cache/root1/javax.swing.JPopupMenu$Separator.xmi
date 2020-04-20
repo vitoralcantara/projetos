@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213396976">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213396976" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JPopupMenu$Separator">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396976" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396976" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JPopupMenu$Separator.xmi#BeanDecorator_1272213396976"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396977" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396977" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JPopupMenu$Separator.xmi#EReference_1272213396976"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213396976" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396976" name="UIClassID" eType="org.eclipse.jem.java:JavaClass java:/java.lang#String" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396976" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" bound="true" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JPopupMenu$Separator.getUIClassID("/>
+  </objectsToAttach>
+</change:ChangeDescription>

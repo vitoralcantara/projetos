@@ -1,0 +1,27 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class TestConnectionTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		String[] fotos = TestConnection.getImagensDeJogo("0");
+		assertEquals(fotos.length, 5);
+		cod1.jpg | cod2.jpg | cod3.jpg | cod4.jpg | cod5.jpg
+		assertEqual()
+		
+	}
+
+}

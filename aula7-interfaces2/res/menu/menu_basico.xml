@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	   
+	<item android:id="@+id/add"
+		  android:icon="@drawable/add_icon"
+		  android:title="@string/add" />
+	   
+	<item android:id="@+id/refresh" 
+		  android:icon="@drawable/refresh_icon"
+		  android:title="@string/refresh" />
+</menu> 

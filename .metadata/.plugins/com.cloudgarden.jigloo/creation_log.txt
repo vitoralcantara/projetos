@@ -1,0 +1,11 @@
+Creating elements for AgendaAnotacoesSwing.java
+
+
+>>>  about to create class org.eclipse.swt.layout.GridLayout, constructor=public org.eclipse.swt.layout.GridLayout()
+<<< created class org.eclipse.swt.layout.GridLayout
+
+>>>  about to create class com.cloudgarden.jigloo.controls.OrderableComposite, constructor=public com.cloudgarden.jigloo.controls.OrderableComposite(org.eclipse.swt.widgets.Composite,int)
+
+    >>>  about to create class com.cloudgarden.jigloo.controls.OrderableComposite
+    <<< error creating class com.cloudgarden.jigloo.controls.OrderableComposite, java.lang.NoSuchMethodException: com.cloudgarden.jigloo.controls.OrderableComposite.<init>()
+<<< created class com.cloudgarden.jigloo.controls.OrderableComposite

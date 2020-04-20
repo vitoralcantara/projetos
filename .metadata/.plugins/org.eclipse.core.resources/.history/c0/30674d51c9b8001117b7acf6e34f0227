@@ -1,0 +1,9 @@
+package br.edu.ifrn.tads.psd.chatgui.gui;
+
+import java.rmi.Remote;
+
+public interface ChatRMIInterface extends Remote {
+
+	
+		
+}

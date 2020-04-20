@@ -1,0 +1,94 @@
+import java.util.Comparator;
+
+import arvore.Position;
+import arvore.binaria.BTNode;
+import arvore.binaria.BTPosition;
+import arvore.binaria.LinkedBinaryTree;
+
+public class AdaptadorArvoreBinaria<T extends Comparable<T>> extends
+		LinkedBinaryTree<T> implements AlvoArvoreBinaria<T> {
+	protected Comparator<T> comp;
+
+	public AdaptadorArvoreBinaria(T element) {
+		super(element);
+		comp = new DefaultComparator<T>();
+	}
+
+	public AdaptadorArvoreBinaria() {
+		super();
+		comp = new DefaultComparator<T>();
+	}
+
+	public AdaptadorArvoreBinaria(Comparator<T> comp) {
+		this.comp = comp;
+	}
+
+	protected T insertAtExternal(Position<T> p, T e) {
+		super.expandExternal(p, null, null);
+		super.replace(p, e);
+		return e;
+	}
+
+	@Override
+	public Position<T> pesquisaBinaria(T element, Position<T> p) {
+		return pesquisar(element, root);
+		// pesquisa binaria se o novo no for menor-esquerda maior direita
+	}
+
+	private Position<T> pesquisar(T element, Position<T> p) {
+		if (p == null) {
+			return null;
+		}
+		BTPosition<T> btp = checkPosition(p);
+		if (btp.element().equals(element)) {
+			return p;
+		} else {
+			Position<T> x = pesquisar(element, btp.getLeft());
+			if (x != null) {
+				return x;
+			} else {
+				return pesquisar(element, btp.getRight());
+			}
+		}
+	}
+//use o insertAtExternal**
+	private Position<T> inserirNo(T element, Position<T> p) {
+		BTPosition<T> btp = checkPosition(p);
+		if (element.compareTo(btp.element()) == 0) {
+			return btp;
+		} else if (element.compareTo(btp.element()) > 0) {
+			if (btp.getRight() == null) {
+				BTPosition<T> newNode = new BTNode<T>();
+				insertAtExternal(btp, element);
+				newNode.setElement(element);
+				newNode.setParent(btp);
+				btp.setRight(newNode);
+				return newNode;
+			} else {
+				return inserirNo(element, btp.getRight());
+			}
+		} else {
+			if (btp.getLeft() == null) {
+				BTPosition<T> newNode = new BTNode<T>();
+				newNode.setElement(element);
+				newNode.setParent(btp);
+				btp.setLeft(newNode);
+				return newNode;
+			} else {
+				return inserirNo(element, btp.getLeft());
+			}
+		}
+	}
+
+	@Override
+	public Position<T> insertNode(T element) {
+		// inserir como a persquisa para um lado menor e para o outro maior
+		// utilizar insertAtExternal para inserir o elemento
+		if (root == null) {
+			root = new BTNode<T>();
+			root.setElement(element);
+			return root;
+		}
+		return inserirNo(element, root);
+	}
+}

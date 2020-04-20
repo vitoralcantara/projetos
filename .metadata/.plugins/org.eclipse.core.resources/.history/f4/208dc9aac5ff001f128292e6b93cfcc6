@@ -1,0 +1,275 @@
+mport static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class InterfaceFachadaUnoTest {
+	
+	InterfaceFachadaUno uno;
+
+	@Before
+	public void setUp() throws Exception {
+		uno = new FachadaUno();
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testInicializaJogoSucess() {
+		String[] nomes = {"Maria"};
+		uno.inicializaJogo(nomes, 0);				
+	}
+	
+	@Test(expected=NullPointerException.class)
+	public void testInicializaJogoFailure1() {
+		uno.inicializaJogo(null, 0);				
+	}
+	
+	@Test(expected=FalhaNaOperacao.class)
+	public void testInicializaJogoFailureLength() {
+		String[] nomes = {"123456789012345678901234567890"};
+		uno.inicializaJogo(nomes, 0);				
+	}
+		
+	@Test
+	public void testDistribuiCartasSuccess() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(10);
+	}
+	
+	@Test(expected=NumInsuficienteException.class)
+	public void testDistribuiCartasFailure() throws NumInsuficienteException
+	{
+		String[] nomes = {"Maria","Joao","Roberta","Almeidinha"};
+		uno.inicializaJogo(nomes, 5);
+		
+		//Supondo que são 108 cartas (como no UNO original)
+		uno.distribuiCartas(30);		
+	}	
+
+	@Test
+	public void testGetProxJogadorSuccess() {
+		String[] nomes = {"Maria","Joao","Roberta","Almeidinha"};
+		uno.inicializaJogo(nomes, 0);
+		assertTrue(uno.getProxJogador()>=0);		
+	}
+
+	@Test
+	public void testJogadorBaixaCartaEspecial1CorPassaVez() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		Carta carta = uno.getCartaTopoMesa();
+		int jogadorAtual = uno.getProxJogador();
+		if(carta.getCor() == InterfaceFachadaUno.VERMELHO)
+		{
+			
+			if(uno.getCartasPorJogador(2).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERMELHO, InterfaceFachadaUno.PASSAVEZ, true));
+				assertEquals(jogadorAtual,uno.getProxJogador());			
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERMELHO, InterfaceFachadaUno.PASSAVEZ, true));
+				assertTrue(jogadorAtual != uno.getProxJogador());
+			}
+		}
+		else if(carta.getTipo() == InterfaceFachadaUno.PASSAVEZ)
+		{
+			
+			if(uno.getCartasPorJogador(2).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERMELHO, InterfaceFachadaUno.PASSAVEZ, true));
+				assertEquals(jogadorAtual,uno.getProxJogador());			
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERMELHO, InterfaceFachadaUno.PASSAVEZ, true));
+				assertTrue(jogadorAtual != uno.getProxJogador());
+			}
+		}
+		else
+		{
+			assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERMELHO, InterfaceFachadaUno.PASSAVEZ, true));
+			assertTrue(jogadorAtual != uno.getProxJogador());
+		}		
+		
+		
+	}
+	
+	public void testJogadorBaixaCartaEspecial1CorInverte() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao","Pedro","Jose"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		Carta carta = uno.getCartaTopoMesa();
+		int jogadorAtual = uno.getProxJogador();
+		if(carta.getCor() == InterfaceFachadaUno.AZUL)
+		{
+			
+			if(uno.getCartasPorJogador(2).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.AZUL, InterfaceFachadaUno.INVERTE, true));
+				assertEquals(jogadorAtual,uno.getProxJogador());			
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.AZUL, InterfaceFachadaUno.INVERTE, true));
+				assertTrue(jogadorAtual != uno.getProxJogador());
+			}
+		}
+		else if(carta.getTipo() == InterfaceFachadaUno.INVERTE)
+		{
+			
+			if(uno.getCartasPorJogador(2).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.AZUL, InterfaceFachadaUno.INVERTE, true));
+				assertEquals(jogadorAtual,uno.getProxJogador());			
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.AZUL, InterfaceFachadaUno.INVERTE, true));
+				assertTrue(jogadorAtual != uno.getProxJogador());
+			}
+		}
+		else
+		{
+			assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.AZUL, InterfaceFachadaUno.INVERTE, true));
+			assertTrue(jogadorAtual != uno.getProxJogador());
+		}		
+				
+	}
+	
+	public void testJogadorBaixaCartaEspecial1CorPesca2() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao","Pedro","Jose"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		Carta carta = uno.getCartaTopoMesa();
+		if(carta.getCor() == InterfaceFachadaUno.VERDE)
+		{
+			
+			if(uno.getCartasPorJogador(2).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERDE, InterfaceFachadaUno.PESCA2, true));
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERDE, InterfaceFachadaUno.PESCA2, true));
+
+			}
+		}
+		else if(carta.getTipo() == InterfaceFachadaUno.PESCA2)
+		{
+			
+			if(uno.getCartasPorJogador(2).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERDE, InterfaceFachadaUno.PESCA2, true));
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERDE, InterfaceFachadaUno.PESCA2, true));
+			}
+		}
+		else
+		{
+			assertEquals(false,uno.jogadorBaixaCartaEspecial1Cor(2, InterfaceFachadaUno.VERDE, InterfaceFachadaUno.PESCA2, true));
+		}			
+	}
+	
+	@Test
+	public void testJogadorBaixaCartaNumerica1() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		Carta carta = uno.getCartaTopoMesa();
+		
+		if(carta.getCor() == InterfaceFachadaUno.VERDE)
+		{
+			if(uno.getCartasPorJogador(1).length > 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,0,false));
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,0,false));
+			}
+		}
+		else if(carta.getTipo() == 0)
+		{
+			if(uno.getCartasPorJogador(1).length > 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,0,false));
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,0,false));
+			}
+		}
+		else
+		{
+			assertEquals(false,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,0,false));
+		}
+	}
+	
+	@Test
+	public void testJogadorBaixaCartaNumerica2() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		Carta carta = uno.getCartaTopoMesa();
+		
+		if(carta.getCor() == InterfaceFachadaUno.VERDE)
+		{
+			if(uno.getCartasPorJogador(1).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaNumerica(2,InterfaceFachadaUno.VERDE,9,true));
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaNumerica(2,InterfaceFachadaUno.VERDE,9,false));
+			}
+		}
+		else if(carta.getTipo() == 9)
+		{
+			if(uno.getCartasPorJogador(1).length == 1)
+			{
+				assertEquals(true,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,9,true));
+			}
+			else
+			{
+				assertEquals(false,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,9,false));
+			}
+		}
+		else
+		{
+			assertEquals(false,uno.jogadorBaixaCartaNumerica(1,InterfaceFachadaUno.VERDE,9,false));
+		}
+	}
+
+	@Test
+	public void testJogadorBaixaCartaEspecialMultiCor() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao","Pedro","Jose"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		Carta carta = uno.getCartaTopoMesa();
+		int jogadorAtual = uno.getProxJogador();
+		if(uno.getCartasPorJogador(1).length > 1)
+			assertEquals(true,uno.jogadorBaixaCartaEspecialMultiCor(1, InterfaceFachadaUno.CORINGAPESCA4,InterfaceFachadaUno.VERMELHO,InterfaceFachadaUno.AZUL,false));
+		else
+			assertEquals(false,uno.jogadorBaixaCartaEspecialMultiCor(1, InterfaceFachadaUno.CORINGAPESCA4,InterfaceFachadaUno.VERMELHO,InterfaceFachadaUno.AZUL,false));
+	}
+
+	@Test
+	public void testGetCartasPorJogador() throws NumInsuficienteException {
+		String[] nomes = {"Maria","Joao","Pedro","Jose"};
+		uno.inicializaJogo(nomes, 0);
+		uno.distribuiCartas(4);
+		assertTrue(uno.getCartasPorJogador(3).length >= 0);
+	}
+
+}

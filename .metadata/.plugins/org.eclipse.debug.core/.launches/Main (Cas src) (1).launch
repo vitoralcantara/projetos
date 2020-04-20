@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="net.sf.eclipsefp.haskell.debug.core.internal.launch.HaskellLaunchDelegate">
+<stringAttribute key="ARGUMENTS" value="&quot;C:\Users\Vitor\workspace\Cas\src\Main.hs&quot;"/>
+<stringAttribute key="DELEGATE" value="net.sf.eclipsefp.haskell.hugs.ui.launch.HugsLaunchOperationDelegate"/>
+<stringAttribute key="EXECUTABLE" value="hugs"/>
+<listAttribute key="FILES">
+<listEntry value="src/Main.hs"/>
+</listAttribute>
+<stringAttribute key="FIRST_SELECTED_RESOURCE" value="Main.hs"/>
+<stringAttribute key="PROJECT_NAME" value="Cas"/>
+<stringAttribute key="RELOAD_COMMAND" value=":reload"/>
+<booleanAttribute key="SYNC_STREAMS" value="true"/>
+<stringAttribute key="WORKING_DIRECTORY" value="C:\Users\Vitor\workspace\Cas"/>
+</launchConfiguration>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:codeGenHelpers="platform:/plugin/org.eclipse.ve.java.core/overrides/codegenHelpers.ecore" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.java="java.xmi" xmlns:org.eclipse.ve.internal.cde.decorators="http:///org/eclipse/ve/internal/cde/decorators.ecore" xmlns:org.eclipse.ve.internal.cde.utility="http:///org/eclipse/ve/internal/cde/utility.ecore" xmlns:org.eclipse.ve.internal.jcm="http:///org/eclipse/ve/internal/jcm.ecore" xmi:id="ChangeDescription_1272764627180">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627180" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JMenuBar">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627180" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627180" referenceValues="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuBar.override.xmi#ClassDescriptorDecorator_1272764627180"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627181" referenceValues="org.eclipse.ve.internal.jcm:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuBar.override.xmi#BeanDecorator_1272764627180"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627182" referenceValues="codeGenHelpers:CodeGenHelperClass file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuBar.override.xmi#CodeGenHelperClass_1272764627180"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627181" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627183" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JMenuBar.override.xmi#EReference_1272764627180"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator" xmi:id="ClassDescriptorDecorator_1272764627180" treeViewClassname="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.JMenuBarTreeEditPart" graphViewClassname="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.JMenuBarGraphicalEditPart" modelAdapterClassname="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.JMenuBarRootPaneOnlyModelAdapter">
+    <graphic xmi:type="org.eclipse.ve.internal.cde.utility:GIFFileGraphic" xmi:id="GIFFileGraphic_1272764627181" resourceName="platform:/plugin/org.eclipse.ve.jfc/icons/full/clcl16/menubar_obj.gif"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.jcm:BeanDecorator" xmi:id="BeanDecorator_1272764627180" beanProxyClassName="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.JMenuBarProxyAdapter"/>
+  <objectsToAttach xmi:type="codeGenHelpers:CodeGenHelperClass" xmi:id="CodeGenHelperClass_1272764627180" source="codegen.CodeGenHelperClass" expDecoder="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.codegen.JMenuBarDecoder"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627180" name="menus" upperBound="-1" eType="org.eclipse.jem.java:JavaClass java:/javax.swing#JMenu">
+    <eAnnotations xmi:type="org.eclipse.ve.internal.cde.decorators:PropertyDescriptorDecorator" xmi:id="PropertyDescriptorDecorator_1272764627181" hidden="true"/>
+    <eAnnotations xmi:type="org.eclipse.ve.internal.jcm:BeanFeatureDecorator" xmi:id="BeanFeatureDecorator_1272764627181" linkType="CHILD"/>
+  </objectsToAttach>
+</change:ChangeDescription>

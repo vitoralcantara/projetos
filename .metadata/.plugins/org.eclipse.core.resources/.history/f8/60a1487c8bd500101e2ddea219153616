@@ -1,0 +1,7 @@
+public class ParametroInconsistenteException extends Exception {
+
+	public ParametroInconsistenteException(String string) {
+		super(string);
+	}
+
+}

@@ -1,0 +1,20 @@
+package client;
+
+public class client {
+
+	public static void main(String[] args) {
+		String name = "Helloworld";
+		Registry registry;
+		try {
+			registry = LocateRegistry.getRegistry("localhost");
+			Helloworld hello = (Helloworld) registry.lookup(name);
+			String s = hello.sayHello();
+			System.out.println("Mensagem do servidor: " + s);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		} catch (NotBoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

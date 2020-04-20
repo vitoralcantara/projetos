@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Downloads" key="LAST_PATH_SETTING"/>
+	<item value="80" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
+	<item value="1" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.sortColumn"/>
+	<item value="153" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth1"/>
+	<item value="82" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth2"/>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=XML-To-SMT-Translator/src&amp;lt;visual{VisualOpening.java[VisualOpening&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=rodin-b-sharp/\/rodin-b-sharp\/branches\/RodinCore\/2.0\/org.eventb.core.ast\/tools\/jtom-2.2\/lib\/apigen.jar&amp;lt;apigen.gen.java(Main.class[Main&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=rodin-b-sharp/\/rodin-b-sharp\/trunk\/ReqsManagement\/fr.systerel.docgenerator\/xalan.jar&amp;lt;org.apache.xalan.xsltc.cmdline(Compile.class[Compile&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Ants/C:\/Users\/Vitor\/Dropbox\/UFRN2012.1\/Sistemas Multi-Agentes\/Trabalho JADE\/Ants\/jade.jar&amp;lt;jade(Boot.class[Boot&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Ants/C:\/Users\/Vitor\/Dropbox\/UFRN2012.1\/Sistemas Multi-Agentes\/Trabalho JADE\/Ants\/jade.jar&amp;lt;jade.tools.testagent(TestAgent.class[TestAgent&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="55" key="DIALOG_Y_ORIGIN"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="348" key="DIALOG_X_ORIGIN"/>
+			<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		</section>
+	</section>
+	<section name="EXPRESSION_INPUT_DIALOG">
+		<item value="488" key="DIALOG_WIDTH"/>
+		<item value="159" key="DIALOG_Y_ORIGIN"/>
+		<item value="404" key="DIALOG_X_ORIGIN"/>
+		<item value="344" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="500" key="SashWeightDetails"/>
+		<item value="500" key="SashWeightTree"/>
+		<item value="194" key="HEIGHT"/>
+		<item value="614" key="WIDTH"/>
+	</section>
+	<section name="AddExceptionDialog">
+		<item value="true" key="uncaughtChecked"/>
+		<item value="true" key="caughtChecked"/>
+	</section>
+</section>

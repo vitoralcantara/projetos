@@ -1,0 +1,50 @@
+package principal;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class GenomaTest {
+
+	Genoma g;
+	Genoma j;
+	
+	@Before
+	public void setUp() throws Exception {
+		g = new Genoma(4,25);
+		assertEquals(4, g.getpComp());
+		assertEquals(25, g.gettComp());
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testGenoma() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSetCadeias() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSomenteValoresValidos() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testChecarOcorrenciasPemT() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testChecarOcorrenciasPemT_Invertida() {
+		fail("Not yet implemented");
+	}
+
+}

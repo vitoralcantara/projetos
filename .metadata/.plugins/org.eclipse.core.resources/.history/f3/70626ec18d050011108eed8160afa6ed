@@ -1,0 +1,86 @@
+package game.forum;
+
+import game.data.Jogos;
+import game.data.ServidorDados;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+public class GameForumActivity extends Activity {
+	/** Called when the activity is first created. */
+
+	Button buttonPesquisarJogo;
+	ListView listViewJogosPesquisados;
+	EditText editTestPesquisarJogos;
+	public static Map<String, String> jogos;
+
+	// LIST OF ARRAY STRINGS WHICH WILL SERVE AS LIST ITEMS
+	List<String> listGames = new ArrayList<String>();
+
+	// DEFINING STRING ADAPTER WHICH WILL HANDLE DATA OF LISTVIEW
+	ArrayAdapter<String> adapter;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		jogos = ServidorDados.obterListaDeJogos();
+		listGames.addAll(jogos.keySet());
+
+		buttonPesquisarJogo = (Button) findViewById(R.id.buttonPesquisarJogo);
+		listViewJogosPesquisados = (ListView) findViewById(R.id.listViewJogosPesquisados);
+		editTestPesquisarJogos = (EditText) findViewById(R.id.editTextPesquisarJogo);
+
+		buttonPesquisarJogo.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				String search = editTestPesquisarJogos.getText().toString();
+				if (search.length() == 0) {
+					listGames.clear();
+					listGames.addAll(jogos.keySet());
+				} else {
+					listGames.clear();
+					for (String string : jogos.keySet()) {
+						if (string.toLowerCase().contains(search.toLowerCase())) {
+							listGames.add(string);
+						}
+					}
+				}
+				adapter.notifyDataSetChanged();
+			}
+		});
+
+		listViewJogosPesquisados
+				.setOnItemClickListener(new OnItemClickListener() {
+
+					@Override
+					public void onItemClick(AdapterView<?> parent, View view,
+							int position, long id) {
+						Intent intent = new Intent(parent.getContext(),
+								JogoPerfilActivity.class);
+						intent.putExtra(JogoPerfilActivity.JOGO, position);
+						startActivity(intent);
+					}
+				});
+
+		adapter = new ArrayAdapter<String>(this,
+				android.R.layout.simple_list_item_1, listGames);
+
+		listViewJogosPesquisados.setAdapter(adapter);
+
+	}
+}

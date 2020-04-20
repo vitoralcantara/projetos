@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:gridbagpreference="platform:/plugin/org.eclipse.ve.jfc/overrides/java/awt/gridbagpreference.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmlns:org.eclipse.ve.internal.cde.decorators="http:///org/eclipse/ve/internal/cde/decorators.ecore" xmlns:org.eclipse.ve.internal.cde.utility="http:///org/eclipse/ve/internal/cde/utility.ecore" xmlns:org.eclipse.ve.internal.jcm="http:///org/eclipse/ve/internal/jcm.ecore" xmi:id="ChangeDescription_1272764627318">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627319" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JScrollBar">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627320" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627320" referenceValues="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JScrollBar.override.xmi#ClassDescriptorDecorator_1272764627320"/>
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627321" referenceValues="org.eclipse.ve.internal.jcm:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JScrollBar.override.xmi#BeanDecorator_1272764627320"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator" xmi:id="ClassDescriptorDecorator_1272764627320">
+    <graphic xmi:type="org.eclipse.ve.internal.cde.utility:GIFFileGraphic" xmi:id="GIFFileGraphic_1272764627320" resourceName="platform:/plugin/org.eclipse.ve.jfc/icons/full/clcl16/scrollbar_obj.gif"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.jcm:BeanDecorator" xmi:id="BeanDecorator_1272764627320">
+    <keyedValues xmi:type="gridbagpreference:Preference" xmi:id="Preference_1272764627320" typedValue="vertical"/>
+  </objectsToAttach>
+</change:ChangeDescription>

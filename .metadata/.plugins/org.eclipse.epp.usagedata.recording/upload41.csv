@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261610883065
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261610883253
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261610987257
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261610990300
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261610994258
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611001973
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611021867
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611026136
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611030722
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1261611033809
+activated,view,org.eclipse.ui.ide,3.5.1.M20090826-0800,"org.eclipse.ui.views.AllMarkersView",1261611037989
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.0.v20090513-2000,"org.eclipse.ltk.core.refactoring",1261611040124
+started,bundle,org.eclipse.jdt.junit,3.5.1.r351_v20090708-0800,"org.eclipse.jdt.junit",1261611040203
+no handler,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1261611049494
+activated,view,org.eclipse.ui.navigator.resources,3.4.1.M20090826-0800,"org.eclipse.ui.navigator.ProjectExplorer",1261611054281
+started,bundle,org.eclipse.wst.ws.service.policy,1.0.103.v200905151848,"org.eclipse.wst.ws.service.policy",1261611054679
+started,bundle,org.eclipse.wst.command.env,1.0.408.v200903110045,"org.eclipse.wst.command.env",1261611054859
+started,bundle,org.eclipse.wst.ws,1.1.103.v200903111822,"org.eclipse.wst.ws",1261611054867
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.refresh",1261611059149
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611069928
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611070041
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611070702
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611085513
+executed,command,org.eclipse.team.svn.ui,0.7.8.I20091023-1300,"org.eclipse.team.svn.ui.command.CommitCommand",1261611085582
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261611090795

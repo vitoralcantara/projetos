@@ -1,0 +1,12 @@
+#Sun Sep 11 00:56:03 GFT 2011
+teamContentDescriptors/org.eclipse.egit.ui.changeSetModel/enabled=false
+org.eclipse.team.ui.sychronizing_default_participant=org.eclipse.team.svn.ui.synchronize.update.SynchronizeModelParticipant
+teamContentDescriptors/org.eclipse.team.svn.core.svnChangeSetModel/enabled=true
+teamContentDescriptors/org.eclipse.core.resources.modelProvider/enabled=true
+teamContentDescriptors/org.eclipse.team.ui.patchModelProvider/enabled=false
+teamContentDescriptors/org.eclipse.jdt.ui.modelProvider/enabled=true
+org.eclipse.team.ui.sychronizing_default_participant_sec_id=1315713238724
+teamContentDescriptors/org.eclipse.team.cvs.core.changeSetModel/enabled=false
+eclipse.preferences.version=1
+org.eclipse.team.ui.sychronizing_default_perspective_to_show=never
+org.eclipse.team.ui.first_time=false

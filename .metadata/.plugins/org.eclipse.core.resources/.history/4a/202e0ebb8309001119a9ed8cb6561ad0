@@ -1,0 +1,113 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=2340, tid=3256
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x018fa400):  JavaThread "Unknown thread" [_thread_in_vm, id=3256, stack(0x01270000,0x012c0000)]
+
+Stack: [0x01270000,0x012c0000],  sp=0x012bf5c8,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x4ed6c]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x637f5]  RtlInitializeExceptionChain+0xef
+C  [ntdll.dll+0x637c8]  RtlInitializeExceptionChain+0xc2
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x018fa400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3256, stack(0x01270000,0x012c0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x01390000 - 0x013bf000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x77ce0000 - 0x77e1c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x77090000 - 0x77164000 	C:\Windows\system32\kernel32.dll
+0x75fc0000 - 0x7600a000 	C:\Windows\system32\KERNELBASE.dll
+0x64d00000 - 0x64d34000 	C:\Program Files\AVAST Software\Avast\snxhk.dll
+0x77c40000 - 0x77ce0000 	C:\Windows\system32\ADVAPI32.dll
+0x774d0000 - 0x7757c000 	C:\Windows\system32\msvcrt.dll
+0x761d0000 - 0x761e9000 	C:\Windows\SYSTEM32\sechost.dll
+0x761f0000 - 0x76291000 	C:\Windows\system32\RPCRT4.dll
+0x77e40000 - 0x77f09000 	C:\Windows\system32\USER32.dll
+0x76180000 - 0x761ce000 	C:\Windows\system32\GDI32.dll
+0x777b0000 - 0x777ba000 	C:\Windows\system32\LPK.dll
+0x778e0000 - 0x7797d000 	C:\Windows\system32\USP10.dll
+0x75240000 - 0x753de000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x77a20000 - 0x77a77000 	C:\Windows\system32\SHLWAPI.dll
+0x77e20000 - 0x77e3f000 	C:\Windows\system32\IMM32.DLL
+0x76fc0000 - 0x7708c000 	C:\Windows\system32\MSCTF.dll
+0x644d0000 - 0x6458e000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x67350000 - 0x67671000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x71fb0000 - 0x71fb7000 	C:\Windows\system32\WSOCK32.dll
+0x762a0000 - 0x762d5000 	C:\Windows\system32\WS2_32.dll
+0x777a0000 - 0x777a6000 	C:\Windows\system32\NSI.dll
+0x74020000 - 0x74052000 	C:\Windows\system32\WINMM.dll
+0x77980000 - 0x77985000 	C:\Windows\system32\PSAPI.DLL
+0x730a0000 - 0x730ac000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x73080000 - 0x730a0000 	C:\Program Files\Java\jre7\bin\java.dll
+0x73060000 - 0x73073000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\Vitor\Documents\android-sdk-windows\platforms\android-8\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 57243 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames game.data.ServidorDadosTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\Program Files\PHP\;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\MiKTeX 2.9\miktex\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows Live\Shared;C:\Program Files\GtkSharp\2.12\bin;"C:\Program Files\Graphviz2.16\Bin";C:\apache-ant-1.8.2\bin;C:\Program Files\Java\jdk1.7.0\bin;C:\Users\Vitor\Dropbox\bolsa_CNPQ\E\PROVER;C:\Users\Vitor\Dropbox\bolsa_CNPQ\VeriTSource;;C:\Users\Vitor\Searches\eclipse;
+USERNAME=Vitor
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 3075032k(943012k free), swap 6148308k(3272684k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Fri Nov 04 17:53:19 2011
+elapsed time: 0 seconds
+

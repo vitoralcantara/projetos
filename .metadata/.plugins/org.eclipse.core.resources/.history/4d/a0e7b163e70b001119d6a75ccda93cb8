@@ -1,0 +1,32 @@
+package senha.core;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Adivinho extends Jogador {
+
+	public Tentativa lerTentativa() {
+		Scanner scanner = new Scanner(System.in);
+		List<Integer> tentativa = new ArrayList<Integer>();
+		int count = 0;
+		
+		while (scanner.hasNext()) {
+			int valor = scanner.nextInt();
+			if (valor >= 0 && valor <= 7) {
+				tentativa.add(scanner.nextInt());
+			} else {
+				try {
+					throw new Exception("Número para cor inválido");
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		Tentativa t = new Tentativa();
+		t.setTentativa(tentativa);
+		return t;
+	}
+
+}

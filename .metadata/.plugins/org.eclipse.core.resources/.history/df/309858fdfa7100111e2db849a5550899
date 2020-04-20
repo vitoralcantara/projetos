@@ -1,0 +1,96 @@
+
+
+import arvore.Position;
+import junit.framework.TestCase;
+
+public class TestesArvoreGenerica extends TestCase {
+	protected void setUp() {
+	}
+	public void testePrimos1() {
+		
+		AdaptadoArvoreGenerica<String> ag = new AdaptadoArvoreGenerica<String>();
+		Position<String> p;
+		Position<String> jailton;
+		ag.replace(ag.root(), "Maria Amélia");
+		p = ag.addChildren(ag.root(), "Luca");
+
+		p = ag.addChildren(p, "Jailton");
+		jailton = p;
+		ag.addChildren(p, "Cecília");	
+
+		p = ag.parent(p);
+		p = ag.addChildren(p, "Junior");
+		ag.addChildren(p, "Netinho");
+		ag.addChildren(p, "Eclécio");
+		
+		p = ag.addChildren(ag.root(), "Luci");
+		ag.addChildren(p, "Mackson");
+		ag.addChildren(p, "Walison");
+
+		p = ag.addChildren(ag.root(), "Nice");
+		ag.addChildren(p, "Leonaria");
+		ag.addChildren(p, "Leonikeli");
+		ag.addChildren(p, "Alerson");
+		
+		
+		String a[] = {"Mackson","Walison","Leonaria","Leonikeli","Alerson"};
+
+		boolean ok =true;
+		int i=0;
+		for (Position<String> primo : ag.primos(jailton)) {
+			if (!primo.element().equals(a[i])) {
+				ok =false;
+			}
+			i++;
+		}
+		assertEquals(ok, true);		
+	}
+	public void testePrimos2() {		
+		AdaptadoArvoreGenerica<String> ag = new AdaptadoArvoreGenerica<String>();
+		Position<String> p;
+		Position<String> pr;
+		ag.replace(ag.root(), "Maria Amélia");
+
+		p = ag.addChildren(ag.root(), "Luca");
+		pr = p;
+		p = ag.addChildren(p, "Jailton");
+		ag.addChildren(p, "Cecília");	
+
+		p = ag.parent(p);
+		p = ag.addChildren(p, "Junior");
+		ag.addChildren(p, "Netinho");
+		ag.addChildren(p, "Eclécio");
+		
+		p = ag.addChildren(ag.root(), "Luci");
+		ag.addChildren(p, "Mackson");
+		ag.addChildren(p, "Walison");
+
+		p = ag.addChildren(ag.root(), "Nice");
+		ag.addChildren(p, "Leonaria");
+		ag.addChildren(p, "Leonikeli");
+		ag.addChildren(p, "Alerson");
+		
+		
+		String a[] = {"Mackson","Walison","Leonaria","Leonikeli","Alerson"};
+
+		boolean ok =true;
+		int i=0;
+		try {
+			for (Position<String> primo : ag.primos(pr)) {
+				if (!primo.element().equals(a[i])) {
+					ok =false;
+				}
+				i++;
+			}
+			if(i != a.length){
+				throw new CoursinNotFoundException("");
+			}
+			assertEquals(true, false);		
+		}catch (CoursinNotFoundException err) {
+			assertEquals(true, true);
+		}
+	}
+
+	protected void tearDown() {
+	}
+}

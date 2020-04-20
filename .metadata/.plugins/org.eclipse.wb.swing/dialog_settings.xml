@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.utils.ui.dialogs.StringsDialog">
+		<item value="330" key="height"/>
+		<item value="433" key="width"/>
+		<item value="261" key="y"/>
+		<item value="449" key="x"/>
+	</section>
+</section>

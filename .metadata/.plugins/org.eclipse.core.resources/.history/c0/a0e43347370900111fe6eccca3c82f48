@@ -1,0 +1,134 @@
+package game.forum;
+
+import game.data.JogoData;
+import game.data.Requisitos;
+import game.data.ServidorDados;
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MenuItem.OnMenuItemClickListener;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class RequisitosSistemaActivity extends Activity {
+
+	private TextView textViewNomeDoJogo;
+	private TextView textViewPlataforma;
+	private TextView textViewProcessador;
+	private TextView textViewMemoria;
+	private TextView textViewDiscoRigido;
+	private TextView textViewDirectx;
+	private TextView textViewPlacaVideo;
+	private ImageView imageViewFotoJogo;
+	private String jogoIndex;
+
+	private static final String PROCESSADOR = "Processador: ";
+	private static final String MEMORIA = "Memória: ";
+	private static final String DISCO_RIGIDO = "Disco Rígido: ";
+	private static final String DIRECTX = "Versão Directx: ";
+	private static final String PLACA_VIDEO = "Placa de Vídeo: ";
+
+	private void definirCabecalho() {
+		textViewNomeDoJogo = (TextView) findViewById(R.id.TextViewNomeDoJogo);
+		textViewPlataforma = (TextView) findViewById(R.id.textViewPlataforma);
+	}
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.requisitos_sistema);
+
+		textViewProcessador = (TextView) findViewById(R.id.TextViewProcessador);
+		textViewMemoria = (TextView) findViewById(R.id.TextViewMemoria);
+		textViewDiscoRigido = (TextView) findViewById(R.id.TextViewDiscoRigido);
+		textViewDirectx = (TextView) findViewById(R.id.textViewDirectx);
+		textViewPlacaVideo = (TextView) findViewById(R.id.TextViewPlacaVideo);
+		imageViewFotoJogo = (ImageView) findViewById(R.id.imageViewFotoJogo);
+
+		Intent intent = getIntent();
+		jogoIndex = intent.getStringExtra(JogoPerfilActivity.JOGO);
+		if (jogoIndex == null || jogoIndex == "") {
+			Toast.makeText(this,
+					"Houve um problema, por favor, retorne à página anterior",
+					Toast.LENGTH_SHORT);
+		} else {
+			JogoData jd = ServidorDados.getDadosDeJogo(jogoIndex);
+			setImageIcon(jd);
+			textViewNomeDoJogo.setText(jd.getNomeDoJogo());
+			textViewPlataforma.setText(jd.getPlataformasToString());
+			Requisitos r = jd.getRequisitos();
+			textViewProcessador.setText(PROCESSADOR + r.getProcessador());
+			textViewMemoria.setText(MEMORIA + r.getMemória());
+			textViewDiscoRigido.setText(DISCO_RIGIDO + r.getDirectX());
+			textViewDirectx.setText(DIRECTX + r.getDirectX());
+			textViewPlacaVideo.setText(PLACA_VIDEO + r.getPlacaVideo());
+		}
+	}
+
+	private void setImageIcon(JogoData jd) {
+		Drawable image = ServidorDados.ImageOperations(this, jd.getIconeURL());
+		imageViewFotoJogo.setImageDrawable(image);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuItem menuImagens = menu.add("Imagens");
+		MenuItem menuVideos = menu.add("Videos");
+		MenuItem menuSobre = menu.add("Sobre o jogo");
+		MenuItem menuPesquisa = menu.add("Pesquisa");
+
+		menuSobre.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						JogoSobreActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+
+		menuVideos.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						JogoVideosActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+
+		menuImagens.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						JogoImagensActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+
+		menuPesquisa.setOnMenuItemClickListener(new OnMenuItemClickListener() {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				Intent intent = new Intent(getApplicationContext(),
+						GameForumActivity.class);
+				intent.putExtra(JogoPerfilActivity.JOGO, jogoIndex);
+				startActivity(intent);
+				return true;
+			}
+		});
+		return true;
+	}
+
+}

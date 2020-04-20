@@ -1,0 +1,28 @@
+
+
+import arvore.Position;
+import junit.framework.TestCase;
+
+public class TestesArvoreBinaria extends TestCase {
+
+	public void testeEhBinariaPesquisa() {
+		AdaptadorArvoreBinaria<Integer> abp = new AdaptadorArvoreBinaria<Integer>(6);
+		abp.expandExternal(abp.root(), null,null);
+		abp.insertNode(2);
+		abp.insertNode(9);
+		abp.insertNode(1);
+		abp.insertNode(4);
+		abp.insertNode(8);
+		
+		Integer a[] = {1,2,4,6,8,9};
+
+		boolean ok =true;
+		int i=0;
+		for (Position<Integer> p : abp.positions()) {
+			if (!p.element().equals(a[i]))
+				ok =false;
+			i++;
+		}
+		assertEquals(ok, true,"falhou aqui");		
+	}
+}

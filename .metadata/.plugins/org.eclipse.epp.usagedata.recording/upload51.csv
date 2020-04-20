@@ -1,0 +1,15 @@
+what,kind,bundleId,bundleVersion,description,time
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261671753163
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261671761265
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261671774238
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261671779502
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261671782049
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672045514
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672046115
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672305739
+executed,command,org.eclipse.ui,3.5.1.M20090902-1000,"org.eclipse.ui.file.save",1261672309773
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672311489
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672328480
+deactivated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672329412
+activated,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672331278
+closed,workbench,org.eclipse.ui.workbench,3.5.1.M20090826-0800a,"",1261672331506

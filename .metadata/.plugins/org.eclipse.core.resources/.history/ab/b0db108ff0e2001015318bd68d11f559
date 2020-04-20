@@ -1,0 +1,29 @@
+
+public class Quicksort {
+	
+	void quicksort(int a[], int lo0, int hi0 ) {
+		int lo= lo0;
+		int hi = hi0 ;
+		i n t m i d ;
+		/ / p a u s e f o r r e d r a w
+		i f ( h i 0 > l o 0 ) {
+		 m i d = a [ ( l o 0 + h i 0 ) / 2 ] ;
+		w h i l e ( l o <= h i ) {
+		w h i l e ( ( l o < h i 0 ) && ( a [ l o ] < m i d ) )
+		 ++ l o ;
+		w h i l e ( ( h i > l o 0 ) && ( a [ h i ] > m i d ) )
+		−− h i ;
+		i f ( l o <= h i ) {
+		 s w a p ( a , l o , h i ) ;
+		 ++ l o ;
+		−− h i ;
+		}
+		}
+		i f ( l o 0 < h i )
+		 q u i c k s o r t ( a , l o 0 , h i ) ;
+		i f ( l o < h i 0 )
+		 q u i c k s o r t ( a , l o , h i 0 ) ;
+		}
+		}
+
+}

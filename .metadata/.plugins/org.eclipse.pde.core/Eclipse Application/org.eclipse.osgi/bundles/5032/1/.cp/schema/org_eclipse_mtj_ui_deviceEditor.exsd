@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.me.ui" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="org.eclipse.me.ui" id="deviceeditor" name="Device Editor"/>
+      </appinfo>
+      <documentation>
+         Provides an extension point for registering an editor for use in editing a device from the device management user interface.  Device types that do not have a registered editor will not be enabled for editing.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+      </annotation>
+      <complexType>
+         <sequence>
+            <element ref="editor"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  a fully qualified identifier of the target extension point
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  an optional identifier of the extension instance
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  an optional name of the extension instance
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="editor">
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  a required fully-qualified identifier for this particular device editor extension
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  an optional displayable name for this particular device editor extension
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="class" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the required implementation class for the &lt;code&gt;org.eclipse.ui.IActionDelegate&lt;/code&gt; interface that will launch the edit function for the type of device.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn="org.eclipse.ui.IActionDelegate"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="deviceClass" type="string" use="required">
+            <annotation>
+               <documentation>
+                  the required name of the implementation class for the &lt;code&gt;eclipseme.core.model.device.IDevice&lt;/code&gt; interface implementation for which this particular editor will be used for editing.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn=":org.eclipse.mtj.core.sdk.device.IDevice"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         1.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         Example of a declaration of a &lt;code&gt;deviceeditor&lt;/code&gt; named &quot;UEI Device Editor&quot;:
+&lt;pre&gt;
+&lt;extension point=&quot;org.eclipse.mtj.ui.deviceeditor&quot;&gt;
+  &lt;editor
+        class=&quot;org.eclipse.mtj.ui.DefaultDeviceEditorActionDelegate&quot;
+        deviceClass=&quot;org.eclipse.mtj.internal.toolkit.uei.UEIDevice&quot;
+        id=&quot;org.eclipse.mtj.toolkit.uei.editor&quot;
+        name=&quot;UEI Device Editor&quot;/&gt;
+&lt;/extension&gt;
+&lt;/pre&gt;
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiInfo"/>
+      </appinfo>
+      <documentation>
+         The &lt;code&gt;&lt;b&gt;class&lt;/b&gt;&lt;/code&gt; atribute requires an implementation class of the &lt;code&gt;org.eclipse.ui.IActionDelegate&lt;/code&gt; interface.&lt;br&gt;
+The &lt;code&gt;&lt;b&gt;deviceClass&lt;/b&gt;&lt;/code&gt; atribute requires an implementation for the &lt;code&gt;&lt;b&gt;org.eclipse.mtj.core.sdk.device.IDevice&lt;/b&gt;&lt;/code&gt; interface.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="implementation"/>
+      </appinfo>
+      <documentation>
+         MTJ provides 3 implementations for the &lt;code&gt;deviceeditor&lt;/code&gt; E.P., available in the following plug-ins:
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;&lt;code&gt;org.eclipse.mtj.toolkit.uei&lt;/code&gt;&lt;/b&gt;&lt;/li&gt; responsible for editing all UEI compatible devices
+&lt;li&gt;&lt;b&gt;&lt;code&gt;org.eclipse.mtj.toolkit.mpowerplayer&lt;/code&gt;&lt;/b&gt;&lt;/li&gt; responsible for editing MPowerPlayer devices
+&lt;li&gt;&lt;b&gt;&lt;code&gt;org.eclipse.mtj.toolkit.microemu&lt;/code&gt;&lt;/b&gt;&lt;/li&gt; responsible for editing MicroEmu devices
+&lt;/ul&gt;
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="copyright"/>
+      </appinfo>
+      <documentation>
+         Copyright (c) 2003,2009 Craig Setera and others.&lt;br&gt;
+All rights reserved. This program and the accompanying materials are made available under the terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available at &lt;a 
+href=&quot;http://www.eclipse.org/legal/epl-v10.html&quot;&gt;http://www.eclipse.org/legal/epl-v10.html&lt;/a&gt;
+      </documentation>
+   </annotation>
+
+</schema>

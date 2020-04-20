@@ -1,0 +1,15 @@
+import arvore.generica.TreeNode;
+
+public class ParentescoTreeNode<T> extends TreeNode<T> {
+
+	private Parentesco parentesco;
+
+	public Parentesco getParentesco() {
+		return parentesco;
+	}
+
+	public void setParentesco(Parentesco parentesco) {
+		this.parentesco = parentesco;
+	}
+
+}

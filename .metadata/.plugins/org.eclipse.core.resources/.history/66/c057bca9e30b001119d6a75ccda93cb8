@@ -1,0 +1,27 @@
+package senha.core;
+
+public class Jogada {
+
+	private Tentativa sitTentativa;
+	private Senha sitRetorno;
+	
+	
+	
+
+	public Tentativa getSitTentativa() {
+		return sitTentativa;
+	}
+
+	public void setSitTentativa(Tentativa sitTentativa) {
+		this.sitTentativa = sitTentativa;
+	}
+
+	public Senha getSitRetorno() {
+		return sitRetorno;
+	}
+
+	public void setSitRetorno(Senha sitRetorno) {
+		this.sitRetorno = sitRetorno;
+	}
+
+}

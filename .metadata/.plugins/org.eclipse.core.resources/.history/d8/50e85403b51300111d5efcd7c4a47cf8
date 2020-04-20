@@ -1,0 +1,15 @@
+package senha.core;
+
+/**
+ * Classe inserida para fazer testes
+ * 
+ * @author ksdx
+ * 
+ */
+public class Main {
+	public static void main(String[] args) throws PinoJaExisteException,
+			PinoInvalidoException, QuantidadePinosException {
+		Jogo j = new Jogo();
+		j.iniciarJogo();
+	}
+}

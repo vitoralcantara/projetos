@@ -1,0 +1,5 @@
+import arvore.generica.TreeNode;
+
+public class ParentescoTree extends TreeNode<T> {
+
+}

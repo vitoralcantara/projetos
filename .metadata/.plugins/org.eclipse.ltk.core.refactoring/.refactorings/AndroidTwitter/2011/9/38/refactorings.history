@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AndroidTwitter/res&apos; to &apos;casa&apos;" description="Rename resource &apos;res&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res" name="casa" stamp="1315713294480" updateReferences="true"/>
+</session>

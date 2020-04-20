@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:codeGenHelpers="platform:/plugin/org.eclipse.ve.java.core/overrides/codegenHelpers.ecore" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.java="java.xmi" xmlns:org.eclipse.ve.internal.cde.decorators="http:///org/eclipse/ve/internal/cde/decorators.ecore" xmlns:org.eclipse.ve.internal.cde.utility="http:///org/eclipse/ve/internal/cde/utility.ecore">
+  <change:ChangeDescription xmi:id="ChangeDescription_1272764627374">
+    <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627374" key="org.eclipse.jem.java:JavaClass java:/javax.swing#Icon">
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627374" featureName="eStructuralFeatures">
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627374" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#EReference_1272764627374"/>
+      </value>
+    </objectChanges>
+    <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627374" name="allocation" eType="ecore:EClass http:///org/eclipse/jem/internal/instantiation.ecore#//JavaAllocation" containment="true" resolveProxies="false"/>
+  </change:ChangeDescription>
+  <change:ChangeDescription xmi:id="ChangeDescription_1272764627375">
+    <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627375" key="org.eclipse.jem.java:JavaClass java:/javax.swing#Icon">
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627375" featureName="eAnnotations">
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627375" referenceValues="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#ClassDescriptorDecorator_1272764627374"/>
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627376" referenceValues="org.eclipse.ve.internal.cde.decorators:PropertySourceAdapterInformation file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#PropertySourceAdapterInformation_1272764627374"/>
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627377" referenceValues="org.eclipse.ve.internal.cde.decorators:BasePropertyDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#BasePropertyDecorator_1272764627374"/>
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627378" referenceValues="codeGenHelpers:CodeGenHelperClass file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#CodeGenHelperClass_1272764627374"/>
+      </value>
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627376" featureName="eStructuralFeatures">
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627379" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#EReference_1272764627375"/>
+      </value>
+    </objectChanges>
+    <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627376" key="ecore:EReference java:/javax.swing#//Icon/allocation">
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627377" featureName="eAnnotations">
+        <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627380" referenceValues="org.eclipse.ve.internal.cde.decorators:PropertyDescriptorDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.Icon.override.xmi#PropertyDescriptorDecorator_1272764627375"/>
+      </value>
+    </objectChanges>
+    <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator" xmi:id="ClassDescriptorDecorator_1272764627374" treeViewClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.JavaBeanTreeEditPart" graphViewClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.JavaBeanGraphicalEditPart" labelProviderClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.DefaultJavaBeanLabelProvider">
+      <graphic xmi:type="org.eclipse.ve.internal.cde.utility:GIFFileGraphic" xmi:id="GIFFileGraphic_1272764627375" resourceName="platform:/plugin/org.eclipse.ve.java.core/icons/full/obj16/javabean_obj.gif"/>
+    </objectsToAttach>
+    <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:PropertySourceAdapterInformation" xmi:id="PropertySourceAdapterInformation_1272764627374" propertySourceAdapterClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.BeanPropertySourceAdapter"/>
+    <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:BasePropertyDecorator" xmi:id="BasePropertyDecorator_1272764627374" labelProviderClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.BeanCellRenderer"/>
+    <objectsToAttach xmi:type="codeGenHelpers:CodeGenHelperClass" xmi:id="CodeGenHelperClass_1272764627374" source="codegen.CodeGenHelperClass" expDecoder="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.ObjectDecoder" eventDecoder="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.ObjectEventDecoder" methodGenerator="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.util.DefaultMethodTextGenerator" typeVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.TypeVisitor" methodVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.MethodVisitor" eventMethodCallBackVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.EventMethodCallBackVisitor" eventMethodVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.EventMethodVisitor" eventHandlerVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.EventHandlerVisitor" returnStmtVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.ReturnStmtVisitor" expressionVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.ExpressionVisitor" eventExpressionVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.EventExpressionVisitor" eventCallBackExpressionVisitor="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.codegen.java.EventCallBackExpressionVisitor"/>
+    <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627375" name="events" upperBound="-1" eType="ecore:EClass http:///org/eclipse/ve/internal/jcm.ecore#//AbstractEventInvocation" containment="true" resolveProxies="false"/>
+    <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:PropertyDescriptorDecorator" xmi:id="PropertyDescriptorDecorator_1272764627375" hidden="true"/>
+  </change:ChangeDescription>
+  <change:ChangeDescription xmi:id="ChangeDescription_1272764627376">
+    <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627377" key="org.eclipse.ve.internal.cde.decorators:BasePropertyDecorator java:/javax.swing#//Icon/%org.eclipse.ve.internal.cde.decorators.BasePropertyDecorator%">
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627378" featureName="cellEditorClassname" dataValue="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.ImageIconCellEditor"/>
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627379" featureName="entryExpandable" dataValue="false"/>
+      <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627380" featureName="labelProviderClassname" dataValue="org.eclipse.ve.jfc/org.eclipse.ve.internal.jfc.core.ImageIconLabelProvider"/>
+    </objectChanges>
+  </change:ChangeDescription>
+</xmi:XMI>

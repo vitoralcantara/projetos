@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:weightSum="1">
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:text="@string/hello"></TextView>
+	<EditText android:id="@+id/editTextPostar"
+		android:layout_height="wrap_content" android:layout_width="match_parent"
+		android:maxLength="150" android:layout_weight="0.35"></EditText>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:orientation="vertical"
+		android:id="@+id/linearLayoutMax150Car" android:layout_gravity="right">
+		<TextView android:layout_height="wrap_content"
+			android:gravity="right" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:text="@string/max150car" android:layout_width="wrap_content"
+			android:id="@+id/textView1" android:layout_gravity="right"></TextView>
+	</LinearLayout>
+	<Button android:layout_height="wrap_content" android:onClick="addItems"
+		android:id="@+id/buttonPostar" android:layout_width="match_parent"
+		android:text="@string/postar"></Button>
+	<Button android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:text="@string/voltar"
+		android:id="@+id/buttonVoltar"></Button>
+
+</LinearLayout>

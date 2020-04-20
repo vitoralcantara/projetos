@@ -1,0 +1,78 @@
+package senha.core;
+
+public class Jogo {
+	
+	private Adivinho adivinho;
+	private FornecedorDaSenha fornecedorDaSenha;
+	private Senha senha;
+
+	public Jogo() {
+		adivinho = new Adivinho();
+		fornecedorDaSenha = new FornecedorDaSenha();
+		senha = new Senha();
+	}
+	
+	public Jogador getAdivinho() {
+		return adivinho;
+	}
+
+	public void setAdivinho(Adivinho adivinho) {
+		this.adivinho = adivinho;
+	}
+
+	public Jogador getFornecedorDaSenha() {
+		return fornecedorDaSenha;
+	}
+
+	public void setFornecedorDaSenha(FornecedorDaSenha fornecedorDaSenha) {
+		this.fornecedorDaSenha = fornecedorDaSenha;
+	}
+	
+	public Senha getSenha() {
+		return senha;
+	}
+
+	public void setSenha(Senha senha) {
+		this.senha = senha;
+	}
+
+	public void iniciarJogo() throws QuantidadePinosException {
+		fornecedorDaSenha.gerarNovaSenha();
+		senha = fornecedorDaSenha.getSenha();
+		
+		int i;
+		
+		for(i = 0; i < 10; ++i) {
+			System.out.println("\nJogada " + (i+1));
+			try {
+				Tentativa t = adivinho.lerTentativa();
+				Jogada j = new Jogada(t);
+				j.calcularRetorno(senha);
+				Retorno r = j.getSitRetorno();
+				int resultado = r.printRetorno();
+				
+				if(resultado == 4) {
+					System.out.println("Parabéns! Você ganhou!");
+					System.out.print("As cores eram: ");
+					senha.printSenha();
+					i = 11;
+				}
+			}
+			catch (PinoInvalidoException p) {
+				System.out.println(p.getMessage());
+				--i;
+			}
+			catch (PinoJaExisteException p) {
+				System.out.println(p.getMessage());
+				--i;
+			}
+		}
+		
+		if(i == 10) {
+			System.out.println("Você perdeu! A senha era: ");
+			senha.printSenha();
+		}
+		
+	}
+
+}

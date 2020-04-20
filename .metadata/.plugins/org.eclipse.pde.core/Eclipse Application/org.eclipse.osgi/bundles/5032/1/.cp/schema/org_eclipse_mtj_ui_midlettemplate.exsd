@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.eclipse.mtj.ui" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appinfo>
+         <meta.schema plugin="org.eclipse.mtj.ui" id="midlettemplate" name="MTJ Template"/>
+      </appinfo>
+      <documentation>
+         By extending this extension point third party plugins are able to add mobile application templates to the templates wizard.
+
+&lt;h3&gt;Developers aiming to contribute with templates will need to do the following tasks:&lt;/h3&gt;
+&lt;ul&gt;
+ &lt;li&gt;Extend the extension point;&lt;/li&gt;
+ &lt;li&gt;Create a folder structure as described bellow;&lt;/li&gt;
+ &lt;li&gt;Implement ITemplateProvider to build the UI and provide a dictionary of tags and values;&lt;/li&gt;
+&lt;/ul&gt;
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appinfo>
+            <meta.element />
+         </appinfo>
+         <documentation>
+            MTJ Template extension point defines a way for adding templates to MTJ.
+         </documentation>
+      </annotation>
+      <complexType>
+         <sequence>
+            <element ref="template" minOccurs="1" maxOccurs="unbounded"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="template">
+      <complexType>
+         <attribute name="id" type="string" use="required">
+            <annotation>
+               <documentation>
+                  ID of the template. It must be the same name as the template&apos;s folder inside a &quot;templates&quot; folder within the extending plugin&apos;s root directory.
+
+Example:
+
+[plugin-root] (Plugin root folder)
+ [templates] (Templates folder)
+  [id] (template &quot;id&quot; folder)
+   [java] (template classes)
+   [resources] (other resources)
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Template Name. It will be displayed on the Template Wizard Page Title.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="overview" type="string" use="required">
+            <annotation>
+               <documentation>
+                  This is a short description for the template. It will be displayed on the Template Wizard Page Description.
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="description" type="string" use="required">
+            <annotation>
+               <documentation>
+                  Template Description. Describes the template usage and the features the template implements.
+               </documentation>
+               <appinfo>
+                  <meta.attribute translatable="true"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+         <attribute name="permissions" type="string">
+            <annotation>
+               <documentation>
+                  A comma separated list with the required permissions&apos; names defined by the APIs.
+
+&lt;p&gt;&lt;code&gt;permission1,permission2,...,permissionN&lt;/code&gt;&lt;/p&gt;
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="page" type="string" use="required">
+            <annotation>
+               <documentation>
+                  AbstractTemplateWizardPage class provides an abstract wizard page to be extended in order to add a custom template page with template specific fields.
+               </documentation>
+               <appinfo>
+                  <meta.attribute kind="java" basedOn="org.eclipse.mtj.ui.templates.AbstractTemplateWizardPage:"/>
+               </appinfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="since"/>
+      </appinfo>
+      <documentation>
+         1.0.0
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="examples"/>
+      </appinfo>
+      <documentation>
+         &lt;h3&gt;Template Creation:&lt;/h3&gt;
+&lt;br&gt;
+Templates are regular Java source files with special tags in the form $&amp;lt;tag-name&amp;gt;$. These tags will be replaced by the ITemplateProvider instance provided in the extension as described bellow. MTJ will collect all template files and use the ITemplateProvider instance&apos;s dictionary to replace all template tags by the dictionary values. The dictionary will usually have values for custom fields on the wizard. 
+
+&lt;pre&gt;
+package $package_name$;
+
+import javax.microedition.midlet.MIDlet;
+import javax.microedition.midlet.MIDletStateChangeException;
+
+public class $class_name$ extends MIDlet {
+
+ public $class_name$() {
+ }
+
+ protected void destroyApp(boolean arg0) throws MIDletStateChangeException {
+
+ }
+
+ protected void pauseApp() {
+
+ }
+
+ protected void startApp() throws MIDletStateChangeException {
+
+ }
+}
+&lt;/pre&gt;
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="apiinfo"/>
+      </appinfo>
+      <documentation>
+         [Enter API information here.]
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appinfo>
+         <meta.section type="implementation"/>
+      </appinfo>
+      <documentation>
+         [Enter information about supplied implementation of this extension point.]
+      </documentation>
+   </annotation>
+
+
+</schema>

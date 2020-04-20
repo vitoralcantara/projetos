@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;org.eventb.core.ast/src/org/eventb/internal/core/typecheck/TypeUnifier.t&apos; to &apos;TypeUnifier.java&apos;" description="Rename resource &apos;TypeUnifier.t&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/org/eventb/internal/core/typecheck/TypeUnifier.t" name="TypeUnifier.java" stamp="1273670147178" updateReferences="true"/>
+</session>

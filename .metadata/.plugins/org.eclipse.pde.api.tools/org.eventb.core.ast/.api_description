@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.eventb.core.ast" modificationStamp="1" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{ProductType.java[ProductType" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BinaryPredicate.java[BinaryPredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BecomesSuchThat.java[BecomesSuchThat" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{UnaryPredicate.java[UnaryPredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{Identifier.java[Identifier" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{PowerSetType.java[PowerSetType" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IFormulaRewriter.java[IFormulaRewriter" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{Type.java[Type" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{SetExtension.java[SetExtension" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BecomesEqualTo.java[BecomesEqualTo" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{AssociativeExpression.java[AssociativeExpression" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{QuantifiedPredicate.java[QuantifiedPredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{DefaultRewriter.java[DefaultRewriter" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BinaryExpression.java[BinaryExpression" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{ITypeCheckResult.java[ITypeCheckResult" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IntegerType.java[IntegerType" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IUpgradeResult.java[IUpgradeResult" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{SimplePredicate.java[SimplePredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{AssociativePredicate.java[AssociativePredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{Expression.java[Expression" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{ISimpleVisitor2.java[ISimpleVisitor2" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{DefaultSimpleVisitor.java[DefaultSimpleVisitor" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{RelationalPredicate.java[RelationalPredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BoolExpression.java[BoolExpression" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BooleanType.java[BooleanType" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{AtomicExpression.java[AtomicExpression" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IVisitor.java[IVisitor" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{FormulaFactory.java[FormulaFactory" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IntegerLiteral.java[IntegerLiteral" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IFormulaFilter2.java[IFormulaFilter2" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{QuantifiedExpression.java[QuantifiedExpression" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{LiteralPredicate.java[LiteralPredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IParseResult.java[IParseResult" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{DefaultFilter.java[DefaultFilter" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BoundIdentifier.java[BoundIdentifier" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{FreeIdentifier.java[FreeIdentifier" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{DefaultVisitor.java[DefaultVisitor" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IResult.java[IResult" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IVisitor2.java[IVisitor2" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{MultiplePredicate.java[MultiplePredicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IFormulaFilter.java[IFormulaFilter" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BecomesMemberOf.java[BecomesMemberOf" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{PredicateVariable.java[PredicateVariable" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{ISimpleVisitor.java[ISimpleVisitor" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{BoundIdentDecl.java[BoundIdentDecl" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{Formula.java[Formula" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{GivenType.java[GivenType" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{Assignment.java[Assignment" modificationStamp="3" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{Predicate.java[Predicate" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{IFormulaRewriter2.java[IFormulaRewriter2" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast{UnaryExpression.java[UnaryExpression" modificationStamp="1" restrictions="0" visibility="0"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.eventb.core.ast/src&lt;org.eventb.core.ast.expanders"/>
+    </package>
+</component>

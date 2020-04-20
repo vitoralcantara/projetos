@@ -1,0 +1,48 @@
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class QuicksortTest {
+
+	@Before
+	public void setUp() throws Exception {
+
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	// Testes critério todos os nós
+
+	@Test
+	public void testNos1() {
+		int[] a = { 4, 3, 5, 2, 1 };
+		int[] expected = { 1, 2, 3, 4, 5 };
+		Quicksort q = new Quicksort();
+		q.sort(a);
+		Assert.assertArrayEquals(expected, a);
+	}
+
+	@Test
+	public void testNos2() {
+		int[] a = {};
+		int[] expected = {};
+		Quicksort q = new Quicksort();
+		q.sort(a);
+		Assert.assertArrayEquals(expected, a);
+	}
+
+	// Testes critério todas as arestas
+
+	@Test
+	public void testArestas1() {
+		int[] a = { 4, 3, 5, 2, 1 };
+		int[] expected = { 1, 2, 3, 4, 5 };
+		Quicksort q = new Quicksort();
+		q.sort(a);
+		Assert.assertArrayEquals(expected, a);
+	}
+
+}

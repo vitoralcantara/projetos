@@ -1,0 +1,7 @@
+1320499214869	Rename method 'construirSolucaoRandomicaGulosa'
+1320501226433	Extract method 'calcularCustoIncrementaldosElementosCandidatos'
+1320504864928	Rename method 'adicionarElementoDaListaDeCandidatosASolocao'
+1320504877352	Rename method 'construirListaDeCandidatosRestritos'
+1320504882531	Rename local variable 'listaDeCandidatosRestritos'
+1320504893858	Rename method 'calcularCustoIncrementaldosElementosCandidatos'
+1320505491185	Delete element

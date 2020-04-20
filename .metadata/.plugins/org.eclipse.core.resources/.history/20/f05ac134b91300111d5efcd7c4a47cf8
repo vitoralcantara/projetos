@@ -1,0 +1,121 @@
+package senha.testes;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.io.ByteArrayInputStream;
+import java.io.OutputStream;
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import senha.core.Adivinho;
+import senha.core.FornecedorDaSenha;
+import senha.core.Jogada;
+import senha.core.Jogo;
+import senha.core.PinoInvalidoException;
+import senha.core.PinoJaExisteException;
+import senha.core.QuantidadePinosException;
+import senha.core.Retorno;
+import senha.core.Senha;
+import senha.core.Tentativa;
+
+public class TesteSenhaAutomatico {
+
+	private Jogo j;
+
+	@Before
+	public void setUp() throws Exception {
+		j = new Jogo(System.in);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test(expected = QuantidadePinosException.class)
+	public void testQuantidadePinosException() throws QuantidadePinosException,
+			PinoInvalidoException, PinoJaExisteException {
+		Adivinho adivinho = new Adivinho();
+		adivinho.processarEntrada("1 2 3");
+	}
+
+	@Test
+	public void testTentativaSuccess() throws QuantidadePinosException,
+			PinoInvalidoException, PinoJaExisteException {
+		Integer l[] = { 1, 2, 3, 4 };
+		List<Integer> lista = Arrays.asList(l);
+		Adivinho adivinho = new Adivinho();
+		Tentativa tentativa = adivinho.processarEntrada("1 2 3 4");
+		assertTrue(lista.equals(tentativa.getTentativa()));
+
+	}
+
+	@Test(expected = PinoInvalidoException.class)
+	public void testPinoInvalidoException() throws QuantidadePinosException,
+			PinoInvalidoException, PinoJaExisteException {
+		Adivinho adivinho = new Adivinho();
+		adivinho.processarEntrada("1 2 7 4");
+	}
+
+	@Test(expected = PinoJaExisteException.class)
+	public void testPinoJaExisteException() throws QuantidadePinosException,
+			PinoInvalidoException, PinoJaExisteException {
+		Adivinho adivinho = new Adivinho();
+		adivinho.processarEntrada("1 2 2 4");
+	}
+
+	@Test
+	public void testSenhaCorreta() {
+		Integer l[] = { 0, 1, 2, 3 };
+		List<Integer> lista = Arrays.asList(l);
+		Senha s = new Senha(lista);
+		FornecedorDaSenha fs = (FornecedorDaSenha) j.getFornecedorDaSenha();
+		fs.setSenha(s);
+		Tentativa t = new Tentativa(lista);
+		assertEquals(4, j.processarPartida(t, s));
+	}
+
+	@Test
+	public void testGerarNovaSenha() {
+		FornecedorDaSenha fs = (FornecedorDaSenha) j.getFornecedorDaSenha();
+		fs.gerarNovaSenha();
+		Senha senha = fs.getSenha();
+		assertEquals(4, senha.getSenha().size());
+		for (int i : senha.getSenha()) {
+			assertTrue(i >= 0 && i <= 6);
+		}
+	}
+
+	@Test
+	public void testLerTentativa() throws QuantidadePinosException,
+			PinoJaExisteException, PinoInvalidoException {
+		Integer l[] = { 0, 1, 2, 3 };
+		List<Integer> lista = Arrays.asList(l);
+		String string = "0 1 2 3";
+		Adivinho a = new Adivinho();
+		Tentativa t = a
+				.lerTentativa(new ByteArrayInputStream(string.getBytes()));
+		assertTrue(lista.equals(t.getTentativa()));
+	}
+
+	@Test
+	public void testJogadaCalcularRetorno() {
+		Integer l1[] = { 0, 1, 2, 3 };
+		List<Integer> lista1 = Arrays.asList(l1);
+		Integer l2[] = { 2, 3, 1, 0 };
+		List<Integer> lista2 = Arrays.asList(l2);
+		Tentativa t = new Tentativa(lista1);
+		Jogada j = new Jogada(t);
+		Senha senha = new Senha(lista2);
+		j.calcularRetorno(senha);
+		Retorno r = j.getSitRetorno();
+		List<Integer> retorno = r.getRetorno();
+		Integer l3[] = { 1, 1, 1, 1 };
+		List<Integer> esperado = Arrays.asList(l3);
+		assertTrue(esperado.equals(retorno));
+	}
+}

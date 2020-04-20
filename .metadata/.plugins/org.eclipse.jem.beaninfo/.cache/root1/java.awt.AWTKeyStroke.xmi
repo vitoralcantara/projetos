@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213397107">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213397107" key="org.eclipse.jem.java:JavaClass java:/java.awt#AWTKeyStroke">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397107" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397107" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.AWTKeyStroke.xmi#BeanDecorator_1272213397107"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397108" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397108" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.AWTKeyStroke.xmi#EReference_1272213397108 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.AWTKeyStroke.xmi#EReference_1272213397109 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.AWTKeyStroke.xmi#EReference_1272213397110 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.AWTKeyStroke.xmi#EReference_1272213397111 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/java.awt.AWTKeyStroke.xmi#EReference_1272213397112"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213397107" implicitDecoratorFlag="IMPLICIT_DECORATOR"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397108" name="keyCode" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397108" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#AWTKeyStroke.getKeyCode("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397109" name="onKeyRelease" eType="org.eclipse.jem.java:JavaDataType java:/#boolean" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397109" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#AWTKeyStroke.isOnKeyRelease("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397110" name="keyEventType" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397110" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#AWTKeyStroke.getKeyEventType("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397111" name="modifiers" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397111" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#AWTKeyStroke.getModifiers("/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397112" name="keyChar" eType="org.eclipse.jem.java:JavaDataType java:/#char" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397112" implicitlySetBits="52" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#AWTKeyStroke.getKeyChar("/>
+  </objectsToAttach>
+</change:ChangeDescription>

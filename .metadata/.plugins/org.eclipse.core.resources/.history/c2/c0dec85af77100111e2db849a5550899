@@ -1,0 +1,6 @@
+import arvore.generica.TreePosition;
+
+
+public class ParentescoTree implements TreePosition<T>{
+
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213396971">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213396971" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JSeparator">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396971" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396971" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JSeparator.xmi#BeanDecorator_1272213396971"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213396972" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213396972" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JSeparator.xmi#EReference_1272213396971 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JSeparator.xmi#EReference_1272213396972 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JSeparator.xmi#EReference_1272213396973"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213396971" shortDescription="Separates menu items into logical groupings" implicitlySetBits="6773413839565225998" implicitDecoratorFlag="IMPLICIT_DECORATOR" mergeSuperMethods="false">
+    <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213396971" key="ICON_COLOR_32x32" value="implicit,&quot;icons/msepar32.gif&quot;"/>
+    <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213396972" key="ICON_COLOR_16x16" value="implicit,&quot;icons/msepar16.gif&quot;"/>
+    <notInheritedPropertyNames>layout</notInheritedPropertyNames>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396971" name="UI" eType="org.eclipse.jem.java:JavaClass java:/javax.swing.plaf#SeparatorUI" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396971" shortDescription="Separator UI" expert="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" bound="true" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JSeparator.getUI(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JSeparator.setUI(javax.swing.plaf.SeparatorUI"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396972" name="layout" eType="org.eclipse.jem.java:JavaClass java:/java.awt#LayoutManager" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396972" shortDescription="Layout for container" hidden="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/java.awt#Container.getLayout(" writeMethod="org.eclipse.jem.java:Method java:/java.awt#Container.setLayout(java.awt.LayoutManager"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213396973" name="orientation" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213396973" shortDescription="Orientation of the separator" implicitlySetBits="6773413839565226044" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JSeparator.getOrientation(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JSeparator.setOrientation(int">
+      <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213396973" key="enumerationValues" value="implicit,[6]{&quot;HORIZONTAL&quot;,0,&quot;javax.swing.SwingConstants.HORIZONTAL&quot;,&quot;VERTICAL&quot;,1,&quot;javax.swing.SwingConstants.VERTICAL&quot;}"/>
+    </eAnnotations>
+  </objectsToAttach>
+</change:ChangeDescription>

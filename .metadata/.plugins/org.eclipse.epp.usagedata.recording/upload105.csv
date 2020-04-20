@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1262088487454
+java.version,sysinfo,,,"1.6.0_14",1262088487454
+java.vm.info,sysinfo,,,"mixed mode",1262088487454
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1262088487454
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1262088487454
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1262088487454
+java.vm.specification.version,sysinfo,,,"1.0",1262088487454
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1262088487454
+java.vm.version,sysinfo,,,"14.0-b16",1262088487454
+started,bundle,org.eclipse.equinox.p2.engine,1.0.101.R35x_v20090825,"org.eclipse.equinox.p2.engine",1262088487563
+started,bundle,org.eclipse.equinox.p2.director,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.director",1262088487629
+started,bundle,org.eclipse.equinox.p2.repository,1.0.1.v20090901-1041,"org.eclipse.equinox.p2.repository",1262088487889
+started,bundle,org.eclipse.team.svn.core,0.7.8.I20091023-1300,"org.eclipse.team.svn.core",1262088488169
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.0.101.R35x_v20090812,"org.eclipse.equinox.p2.metadata.repository",1262088488203
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.garbagecollector",1262088488429
+started,bundle,org.eclipse.equinox.p2.exemplarysetup,1.0.100.v20090520-1905,"org.eclipse.equinox.p2.exemplarysetup",1262088488430
+started,bundle,org.eclipse.epp.usagedata.ui,1.1.0.R200906100410,"org.eclipse.epp.usagedata.ui",1262088488585
+started,bundle,org.eclipse.equinox.frameworkadmin,1.0.100.v20090520-1905,"org.eclipse.equinox.frameworkadmin",1262088488602
+started,bundle,org.eclipse.equinox.frameworkadmin.equinox,1.0.100.v20090520-1905,"org.eclipse.equinox.frameworkadmin.equinox",1262088488603
+started,bundle,org.eclipse.equinox.simpleconfigurator.manipulator,1.0.100.v20090520-1905,"org.eclipse.equinox.simpleconfigurator.manipulator",1262088488716
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.0.v20090520-1905,"org.eclipse.equinox.p2.updatechecker",1262088488748
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.0.v20090520-1905,"org.eclipse.equinox.p2.ui.sdk.scheduler",1262088488759
+started,bundle,org.eclipse.ui.console,3.4.0.v20090513,"org.eclipse.ui.console",1262088488915
+started,bundle,org.eclipse.update.scheduler,3.2.200.v20081127,"org.eclipse.update.scheduler",1262088489257
+started,bundle,org.eclipse.ui.forms,3.4.1.v20090714_35x,"org.eclipse.ui.forms",1262088489339

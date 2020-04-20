@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">O que está acontecendo?</string>
+    <string name="app_name">AndroidTwitter</string>
+    <string name="postar">postar</string>
+    <string name="novotweet">Novo tweet</string>
+    <string name="voltar">Voltar</string>
+    <string name="deletar">Deletar</string>
+</resources>

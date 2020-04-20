@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-    <entry loc="C:\Program Files\Java\jdk-11.0.2" stamp="1552270659379"/>
+<entry loc="C:\Program Files\Java\jre6" stamp="1309468624686"/>
+<entry loc="C:\Program Files\Java\jre7" stamp="1337178222972"/>
+<entry loc="/usr/lib/jvm/java-6-openjdk-i386" stamp="1337732324000"/>
 </dirs>

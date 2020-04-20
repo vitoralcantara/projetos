@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.internal.beaninfo.beaninfo="http:///org/eclipse/jem/internal/beaninfo/beaninfo.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272213397032">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213397032" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JDialog">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397032" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397032" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#BeanDecorator_1272213397032"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397033" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397033" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#EReference_1272213397032 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#EReference_1272213397033 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#EReference_1272213397034 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#EReference_1272213397035 ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#EReference_1272213397036"/>
+    </value>
+  </objectChanges>
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213397033" key="ecore:EReference java:/javax.swing#JDialog/contentPane">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397034" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397034" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#PropertyDecorator_1272213397032"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397035" featureName="name" dataValue="contentPane"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397036" featureName="transient" dataValue="false"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397037" featureName="volatile" dataValue="false"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397038" featureName="changeable" dataValue="true"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397039" featureName="eType" referenceValue="org.eclipse.jem.java:JavaClass java:/java.awt#Container"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397040" featureName="lowerBound" dataValue="0"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397041" featureName="upperBound" dataValue="1"/>
+  </objectChanges>
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272213397034" key="ecore:EReference java:/javax.swing#JDialog/JMenuBar">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397042" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272213397035" referenceValues="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JDialog.xmi#PropertyDecorator_1272213397033"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397043" featureName="name" dataValue="JMenuBar"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397044" featureName="transient" dataValue="false"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397045" featureName="volatile" dataValue="false"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397046" featureName="changeable" dataValue="true"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397047" featureName="eType" referenceValue="org.eclipse.jem.java:JavaClass java:/javax.swing#JMenuBar"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397048" featureName="lowerBound" dataValue="0"/>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272213397049" featureName="upperBound" dataValue="1"/>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:BeanDecorator" xmi:id="BeanDecorator_1272213397032" shortDescription="JFC Dialog Window" implicitlySetBits="6773413839565225998" implicitDecoratorFlag="IMPLICIT_DECORATOR" mergeSuperMethods="false">
+    <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213397033" key="ICON_COLOR_32x32" value="implicit,&quot;icons/dialog32.gif&quot;"/>
+    <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213397034" key="ICON_COLOR_16x16" value="implicit,&quot;icons/dialog16.gif&quot;"/>
+    <notInheritedPropertyNames>layout</notInheritedPropertyNames>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397032" shortDescription="Client area of the dialog" hidden="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.getContentPane(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.setContentPane(java.awt.Container"/>
+  <objectsToAttach xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397033" shortDescription="Menu bar for the dialog" expert="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.getJMenuBar(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.setJMenuBar(javax.swing.JMenuBar"/>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397032" name="defaultCloseOperation" eType="org.eclipse.jem.java:JavaDataType java:/#int" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397034" shortDescription="Do nothing, hide or dispose on close" preferred="true" implicitlySetBits="6773413839565226044" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.getDefaultCloseOperation(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.setDefaultCloseOperation(int">
+      <attributes xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:FeatureAttributeMapEntry" xmi:id="FeatureAttributeMapEntry_1272213397035" key="enumerationValues" value="implicit,[9]{&quot;DO_NOTHING_ON_CLOSE&quot;,0,&quot;javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE&quot;,&quot;HIDE_ON_CLOSE&quot;,1,&quot;javax.swing.WindowConstants.HIDE_ON_CLOSE&quot;,&quot;DISPOSE_ON_CLOSE&quot;,2,&quot;javax.swing.WindowConstants.DISPOSE_ON_CLOSE&quot;}"/>
+    </eAnnotations>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397033" name="glassPane" eType="org.eclipse.jem.java:JavaClass java:/java.awt#Component" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397035" shortDescription="Transparent pane for menu rendering" hidden="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.getGlassPane(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.setGlassPane(java.awt.Component"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397034" name="layeredPane" eType="org.eclipse.jem.java:JavaClass java:/javax.swing#JLayeredPane" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397036" shortDescription="LayeredPane component for the dialog" hidden="true" implicitlySetBits="6629298651489370172" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.getLayeredPane(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.setLayeredPane(javax.swing.JLayeredPane"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397035" name="layout" eType="org.eclipse.jem.java:JavaClass java:/java.awt#LayoutManager" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397037" shortDescription="Layout manager" implicitlySetBits="6629298651489370236" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" designTime="false" readMethod="org.eclipse.jem.java:Method java:/java.awt#Container.getLayout(" writeMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.setLayout(java.awt.LayoutManager"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272213397036" name="rootPane" eType="org.eclipse.jem.java:JavaClass java:/javax.swing#JRootPane" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.jem.internal.beaninfo.beaninfo:PropertyDecorator" xmi:id="PropertyDecorator_1272213397038" shortDescription="RootPane component for the dialog" hidden="true" implicitlySetBits="6629298651489370164" implicitDecoratorFlag="IMPLICIT_DECORATOR_AND_FEATURE" readMethod="org.eclipse.jem.java:Method java:/javax.swing#JDialog.getRootPane("/>
+  </objectsToAttach>
+</change:ChangeDescription>

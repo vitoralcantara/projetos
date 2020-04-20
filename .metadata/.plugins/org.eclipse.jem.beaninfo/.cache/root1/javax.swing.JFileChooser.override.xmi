@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:ecore="ecore.xmi" xmlns:org.eclipse.jem.java="java.xmi" xmlns:org.eclipse.ve.internal.cde.decorators="http:///org/eclipse/ve/internal/cde/decorators.ecore" xmlns:org.eclipse.ve.internal.cde.utility="http:///org/eclipse/ve/internal/cde/utility.ecore" xmi:id="ChangeDescription_1272764627182">
+  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627182" key="org.eclipse.jem.java:JavaClass java:/javax.swing#JFileChooser">
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627182" featureName="eAnnotations">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627183" referenceValues="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JFileChooser.override.xmi#ClassDescriptorDecorator_1272764627183"/>
+    </value>
+    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627183" featureName="eStructuralFeatures">
+      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627184" referenceValues="ecore:EReference file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.JFileChooser.override.xmi#EReference_1272764627183"/>
+    </value>
+  </objectChanges>
+  <objectsToAttach xmi:type="org.eclipse.ve.internal.cde.decorators:ClassDescriptorDecorator" xmi:id="ClassDescriptorDecorator_1272764627183">
+    <graphic xmi:type="org.eclipse.ve.internal.cde.utility:GIFFileGraphic" xmi:id="GIFFileGraphic_1272764627183" resourceName="platform:/plugin/org.eclipse.ve.jfc/icons/full/clcl16/dialog_obj.gif"/>
+  </objectsToAttach>
+  <objectsToAttach xmi:type="ecore:EReference" xmi:id="EReference_1272764627183" name="approveButtonMnemonic" unsettable="true">
+    <eAnnotations xmi:type="org.eclipse.ve.internal.cde.decorators:BasePropertyDecorator" xmi:id="BasePropertyDecorator_1272764627183" labelProviderClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.BeanCellRenderer:org.eclipse.ve.internal.jfc.beaninfo.MnemonicEditor" cellEditorClassname="org.eclipse.ve.java.core/org.eclipse.ve.internal.java.core.BeanFeatureEditor:org.eclipse.ve.internal.jfc.beaninfo.MnemonicEditor"/>
+  </objectsToAttach>
+</change:ChangeDescription>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GameForumActivity!</string>
+    <string name="app_name">GameForum</string>
+    <string name="bem">Bem vindo, visitante! Clique em Login para registrar-se</string>
+    <string name="inicio">Inicio</string>
+    <string name="games">Games</string>
+    <string name="noticias">Noticias</string>
+    <string name="login_registrar">Login/Registrar</string>
+    <string name="ultimas_noticias">Últimas notícias</string>
+    <string name="jogos">Jogos</string>
+    <string name="ultimos_jogos">Últimos Jogos</string>
+    <string name="titulo">Título</string>
+    <string name="corpo_do_texto">Corpo do Texto</string>
+</resources>

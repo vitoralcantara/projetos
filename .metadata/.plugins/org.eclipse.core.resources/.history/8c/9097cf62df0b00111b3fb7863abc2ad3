@@ -1,0 +1,22 @@
+package senha.core;
+
+public class FornecedorDaSenha extends Jogador {
+	private Senha senha;
+	
+	public void gerarNovaSenha(){
+		
+		
+		
+		
+		
+	}
+	
+
+	public Senha getSenha() {
+		return senha;
+	}
+
+	public void setSenha(Senha senha) {
+		this.senha = senha;
+	}
+}

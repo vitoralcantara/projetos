@@ -1,0 +1,53 @@
+package senha.core;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Jogo {
+
+	public void iniciarJogo() {
+
+		List<Jogada> jogadas = new ArrayList<Jogada>();
+
+		imprimirInformacoesJogo();
+		FornecedorDaSenha fds = new FornecedorDaSenha();
+		fds.gerarNovaSenha();
+		Senha senha = fds.getSenha();
+
+		Adivinho adivinho = new Adivinho();
+		Tentativa tentativa = adivinho.lerTentativa();
+		Jogada jogada = new Jogada();
+		jogada.setSitRetorno(senha);
+		jogada.setSitTentativa(tentativa);
+		jogada.calcularRetorno();
+
+	}
+
+	public void imprimirResultado(Jogada jogada) {
+		Retorno retorno = jogada.getRetorno();
+		
+		imprimirMensagemDeResultado();
+		
+		for (int i = 0; i < retorno.size(); i++) {
+			System.out.print("| " + retorno.get(i));
+		}
+		System.out.println();
+	}
+
+	private void imprimirMensagemDeResultado() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void imprimirInformacoesJogo() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public static void main(String[] args) {
+		Jogo jogo = new Jogo();
+		jogo.iniciarJogo();
+		System.out.println("1: P | B | P | B");
+		System.out.println("2: P | B | P | B");
+	}
+}

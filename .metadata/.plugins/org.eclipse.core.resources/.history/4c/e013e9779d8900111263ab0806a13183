@@ -1,0 +1,108 @@
+package agents;
+
+import java.awt.Point;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Vector;
+
+import jade.core.Agent;
+import ant.*;
+import ant.Perceive.Type;
+
+import jade.core.behaviours.Behaviour;
+
+@SuppressWarnings("serial")
+public class AgenteReativo extends Agent {
+
+	@Override
+	protected void setup() {
+		addBehaviour(new Behaviour_AgReativo(getLocalName()));
+		super.setup();
+	}
+
+	@Override
+	protected void takeDown() {
+
+		super.takeDown();
+	}
+}
+
+@SuppressWarnings("serial")
+class Behaviour_AgReativo extends Behaviour {
+
+	String nameAgent;
+	boolean flag;
+	
+	public Behaviour_AgReativo(String n){
+		nameAgent=n;
+		flag=false;
+	}
+	
+	@Override
+	public void action() {
+		
+		//percebe o mundo
+		HashSet<Perceive> listPerc = World.getInstance().perceive(nameAgent);
+		
+		if(!listPerc.isEmpty()){
+			
+			Iterator<Perceive> it =listPerc.iterator();
+			HashSet<Point> obstacles = new HashSet<Point>();
+			Point posInicial=new Point(0,0),posFinal=null;
+			Vector<Point> travel ;
+			
+			
+			while(it.hasNext()){
+				
+				Perceive nextPerc= (Perceive)it.next();
+				
+				//captura a posição inicial do agente
+				if (nextPerc.type == Type.Position){
+					posInicial =nextPerc.local;
+				} else
+				
+				//captura o destinno do agente (recurso)
+				if (nextPerc.type== Type.Resource){
+					posFinal = nextPerc.local;
+				}else
+				
+				//captura os obstaculos
+				if(nextPerc.type == Type.Obstacle){
+					obstacles.add(nextPerc.local);
+				}
+				it = (Iterator<Perceive>) it.next();
+			}
+			
+			if (posFinal!=null){
+			
+				//realiza a busca A* com os dados da posicao inicial, final, obstaculos e a dimensao do mundo
+				travel = SearchAStar.search(posInicial, posFinal, obstacles, new Point(World.getInstance().dimension,World.getInstance().dimension));
+	
+				if(!travel.isEmpty()){
+					//percorre o vetor gerado pela busca A*, fazendo com que o agente se mova
+					for(int i=1; i<travel.size();i++){
+						World.getInstance().move( nameAgent, travel.get(i).x,travel.get(i).y);
+					}
+					
+					//coleta o recurso
+					World.getInstance().collect(nameAgent);
+					
+					//volta à base, percorrendo o caminho contrario da ida
+					for(int i=travel.size()-2; i>=0;i--){
+						World.getInstance().move( nameAgent, travel.get(i).x,travel.get(i).y);
+					}
+					
+					//entrega o recurso à colonia
+					World.getInstance().dellivery(nameAgent);
+				}
+			}else{
+				flag=true;
+			}
+		}
+	}
+
+	@Override
+	public boolean done() {
+		return flag;
+	}
+}

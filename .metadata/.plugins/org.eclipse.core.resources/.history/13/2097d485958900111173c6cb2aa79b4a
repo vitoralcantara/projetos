@@ -1,0 +1,409 @@
+package ant;
+
+import java.awt.Point;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Observable;
+import java.util.Random;
+import java.util.Vector;
+
+import ant.Perceive.Type;
+
+/**
+ * Representação do ambiente dos agentes.
+ * Não devem ser efetuadas modificações nessa classe.
+ * 
+ * <p>Singleton.</p>
+ * 
+ * @author antonino
+ */
+public class World extends Observable {
+
+	private static World instance;
+
+	public static World getInstance() {
+		if (instance == null)
+			instance = new World();
+		return instance;
+	}
+
+	/**
+	 * <p>Pode ser alterado antes da primeira invocação do singleton para que as posições iniciais da colônia e dos recursos sejam fixas.
+	 * </p>
+	 * 
+	 * <p>O comportamento padrão é iniciar as posições iniciais da colônia e dos recursos em células pseudoaleatorias.
+	 * </p>
+	 */
+	public static long seed = System.currentTimeMillis();
+
+	/**
+	 * <p>Caso necessário {@code speed} pode ser alterado para aumentar ou diminuir a velocidade de execução dos agentes.
+	 * </p>
+	 * 
+	 * <p>Representa o tempo de execução de uma ação em milisegundos.
+	 * </p>
+	 */
+	public long speed = 300;
+
+	/**
+	 * <p>Dimensões do ambiente. Essa informação pode ser acessada diretamente pelos agentes.
+	 * </p>
+	 * 
+	 * <p>As posições no ambiente são dispostas no eixo {@code X} entre {@code 0} e dimension e no eixo {@code Y} entre {@code 0} e dimension. Onde o canto superior esquerdo do ambiente corresponde a coordenada {@code (0,0)} e o canto inferior direito a {@code (dimension-1, dimension-1)}.
+	 * </p>
+	 * 
+	 * <p>Ela não é provida nas percepções do agente. No entanto ela pode ser inferida, por exemplo, verificando as posições dinsponíveis para movimento.
+	 * </p>
+	 */
+	public final int dimension = 20;
+
+	protected int step;
+	private int stepDelta = 1;
+
+	private int infect = 100;
+	private int maxConsume = 5;
+
+	protected int[][] aInfect;
+	protected int[][] rInfect;
+
+	private Vector<Point> pStart;
+	private Vector<Point> pResources;
+
+	private HashSet<Point> obstacles;
+	private Point start;
+	private HashSet<Point> resources;
+	private Hashtable<Point, Integer> consumes;
+
+	private Hashtable<String, Point> agents;
+	private HashSet<String> agentsWithResource;
+
+	private Random random;
+
+	private static int nX[] = { -1, -1, -1, 0, 0, +1, +1, +1 };
+	private static int nY[] = { -1, 0, 1, -1, 1, -1, 0, 1 };
+
+	private static int n2X[] = { -2, -2, -2, -2, -2, +2, +2, +2, +2, +2, -1, 0, +1, -1, 0, +1 };
+	private static int n2Y[] = { -2, -1, 0, +1, +2, -2, -1, 0, +1, +2, -2, -2, -2, +2, +2, +2 };
+
+	private World() {
+		random = new Random(seed);
+
+		agents = new Hashtable<String, Point>();
+		agentsWithResource = new HashSet<String>();
+
+		pStart = new Vector<Point>();
+		pResources = new Vector<Point>();
+		obstacles = new HashSet<Point>();
+		fillObstacles(obstacles);
+		fillStart(pStart);
+		fillResources(pResources);
+
+		aInfect = new int[dimension][dimension];
+		rInfect = new int[dimension][dimension];
+		for (int i = 0; i < dimension; i++) {
+			Arrays.fill(aInfect[i], 0);
+			Arrays.fill(rInfect[i], 0);
+		}
+
+		start = pStart.get(random.nextInt(pStart.size()));
+		step = 0;
+
+		resources = new HashSet<Point>();
+		consumes = new Hashtable<Point, Integer>();
+		if (pResources.size() > 1) {
+			int numResources = 1 + random.nextInt(pResources.size() - 1);
+			Collections.shuffle(pResources, random);
+			for (int i = 0; i < numResources; i++) {
+				Point l = pResources.get(i);
+				resources.add(l);
+				consumes.put(l, maxConsume);
+			}
+		}
+	}
+
+	/**
+	 * Insere uma representação de uma agente de nome {@code name} no ambiente.
+	 * 
+	 * @param	name	Nome do agente.
+	 * 					É necessário informar o identificador {@code name} para que o agente execute uma ação.
+	 */
+	public synchronized void insertAgent(String name) {
+		agents.put(name, start);
+		infect(aInfect, start.x, start.y);
+		super.setChanged();
+		super.notifyObservers();
+	}
+
+	/**
+	 * Efetua uma percepção para o agente de nome {@code name} retornado um conjunto de percepções {@code HashSet<Perceive>}.
+	 * 
+	 * <p>
+	 * Esse conjunto de percepções contêm as seguintes informações:
+	 * <ul>
+	 * <il> A posição do agente {@link Type#Position}.</il><br/>
+	 * 
+	 * <il> A posição das células vizinhas ao agente que não são obstáculos {@code Type#Neighboor}.
+	 * 		Vizinhança {@code 8} no contexto de processamento de imagens.</il><br/>
+	 * 
+	 * <il> A posição dos obstáculos do ambiente {@link Type#Obstacle}.</il><br/>
+	 * 
+	 * <il> A posição dos recursos do ambiente {@link Type#Resource}.</il><br/>
+	 * 
+	 * <il> A posição da colônia {@link Type#Colony}.</il><br/>
+	 * </ul>
+	 * Elementos nesse conjunto são representados pela classe {@link Perceive}.
+	 * </p>
+	 * 
+	 * @param	name Nome do agente que esta solicitando a percepção.
+	 * @return	Conjunto de percepções do correspondente agente.
+	 * @see		Perceive
+	 * @see		Perceive#type
+	 * @see		Type
+	 */
+	public synchronized HashSet<Perceive> perceive(String name) {
+		HashSet<Perceive> perceives = new HashSet<Perceive>();
+
+		if (agents.get(name) != null) {
+			Point p = agents.get(name);
+			boolean hasResource = agentsWithResource.contains(name);
+			perceives.add(new Perceive(Type.Position, p.x, p.y, hasResource ? 0 : 1, hasResource ? 1 : 0));
+
+			for (int i = 0; i < nX.length; i++) {
+				if (p.x + nX[i] < dimension && p.x + nX[i] >= 0 && p.y + nY[i] < dimension && p.y + nY[i] >= 0) {
+					Point l = new Point(p.x + nX[i], p.y + nY[i]);
+					int a = (int) Math.max(aInfect[l.y][l.x] - step, 0);
+					int r = (int) Math.max(rInfect[l.y][l.x] - step, 0);
+
+					if (!obstacles.contains(l))
+						perceives.add(new Perceive(Type.Neighboor, l.x, l.y, a, r));
+				}
+			}
+
+			for (Point l : obstacles) {
+				perceives.add(new Perceive(Type.Obstacle, l.x, l.y));
+			}
+			for (Point l : resources) {
+				perceives.add(new Perceive(Type.Resource, l.x, l.y));
+			}
+			perceives.add(new Perceive(Type.Colony, start.x, start.y));
+		}
+
+		return perceives;
+	}
+
+	/**
+	 * <p>O agente de nome {@code name} solicita ao ambiente o movimento para a posição vizinha {@code (x,y)}.
+	 * 
+	 * Deve ser informada as posições {@code x} e {@code y} da célula de destino.
+	 * </p>
+	 * 
+	 * <p>Um agente só pode se mover para uma célula vizinha que não seja ocupada por um obstáculo e que esteja dentro dos limites do ambiente. Vizinhança 8 no contexto de processamento de imagens.
+	 * Os limites correspondem a {@code [0,dimension-1]} em X e a {@code [0,dimension-1]} em Y, os valores .
+	 * 
+	 * As posições dos obstáculos pode ser obtidas através de {@link #perceive(String)}.
+	 * Compare o tipo da percepção com {@link Type#Obstacle} para verificar se a mesma corresponde a um obstáculo.
+	 * Isto é, {@code perceiveInstance.Type == Type#Obstacle}.
+	 * A posição pode ser recuperada por {@link Perceive#local}.
+	 * </p>
+	 * 
+	 * @param name Nome do agente que está solicitando a ação.
+	 * @param x Posição final na coordenada X.
+	 * @param y Posição final na coordenada Y.
+	 * @return retorna true caso a execução seja efetuada com sucesso e false em caso contrário. Caso a execução seja efetuada com sucesso a nova posição do agente passa a corresponder as corrdenadas (X,Y).
+	 * @see World#dimension 
+	 * @see World#perceive
+	 */
+	public synchronized boolean move(String name, int x, int y) {
+		boolean result = false;
+
+		Point o = agents.get(name);
+		if (o != null) {
+
+			Point p = new Point(x, y);
+			boolean isValid = false;
+			for (int i = 0; i < nX.length; i++) {
+				if (p.x == o.x + nX[i] && p.y == o.y + nY[i])
+					if (p.x < dimension && p.x >= 0 && p.y < dimension && p.y >= 0)
+						isValid = true;
+			}
+
+			if (isValid) {
+				agents.put(name, p);
+				result = true;
+			}
+		}
+
+		if (!result)
+			System.out.println("Agent [" + name + "]: Move FAIL !!!");
+
+		updateWorld();
+		return result;
+	}
+
+	/**
+	 * O agente de nome {@code name} solicita que deseja coletar um recurso do ambiente.
+	 * Um agente só pode coletar um recurso se
+	 * estiver na mesma célula que o recurso
+	 * e não ter efetuado a ação {@code World#collect(String)} com sucesso
+	 * ou ter efetuado a ação {@link #dellivery(String)} com sucesso e nenhum ação de coletar com sucesso desde então.
+	 * 
+	 * @param	name	Nome do agente que irá coletar o recurso.
+	 * @return	true caso o recurso seja coletado e false em caso contrário.
+	 * 			A ação falha se o agente não estiver na mesma célula que o recurso ou
+	 * 			ter efetuado a ação coletar com sucesso e nenhuma ação de entregar com sucesso desde então.
+	 * @see 	#dellivery(String)
+	 */
+	public synchronized boolean collect(String name) {
+		boolean result = false;
+		Point agt = agents.get(name);
+		if (agt != null && !agentsWithResource.contains(name) && resources.contains(agt)) {
+			agentsWithResource.add(name);
+			infect(rInfect, agt.x, agt.y);
+
+			int current = consumes.get(agt);
+			current--;
+			if (current <= 0) {
+				resources.remove(agt);
+				consumes.remove(agt);
+			} else {
+				consumes.put(agt, current);
+			}
+
+			result = true;
+		} else {
+			System.out.println("Agent [" + name + "]: Collect FAIL !!!");
+		}
+		updateWorld();
+		return result;
+	}
+
+	/**
+	 * O agente de nome {@code name} solicita que deseja entregar um recurso na colônia.
+	 * Um agente só pode entregar um recurso se
+	 * estiver na mesma célula que a colônia,
+	 * ter efetuado a ação de {@link #collect(String)} com sucesso
+	 * e não ter efetuado com sucesso nenhuma ação de {@code #delivery(String)} desde então.
+	 * 
+	 * @param		name	Nome do agente que deseja entregar o recurso.
+	 * @return		true caso o recurso seja entregue ou false em caso contrário.
+	 * 				A ação falha se o agente não estiver na mesmoa célula que a colônia ou
+	 * 				não ter efetuado com sucesso uma ação de {@link #collect(String)} ou
+	 * 				ter efetuado com sucesso uma ação de {@link #collect(String)} e
+	 * 				ter efetuado com sucesso uma ação de {@link #dellivery(String)} desde então.
+	 */
+	public synchronized boolean dellivery(String name) {
+		boolean result = false;
+		Point agt = agents.get(name);
+		if (agt != null && agentsWithResource.contains(name) && start.equals(agt)) {
+			agentsWithResource.remove(name);
+			infect(aInfect, agt.x, agt.y);
+			result = true;
+		} else {
+			System.out.println("Agent [" + name + "]: Delivery FAIL !!!");
+		}
+		updateWorld();
+		return result;
+	}
+
+	/**
+	 * Atualiza o estado do mundo.
+	 * Atualiza as contaminações dos agentes e dos recursos na célula do ambiente.
+	 * Atualiza a visualização do ambiente.
+	 * Espera a quantidade de tempo informada por speed para executar apróxima ação.
+	 */
+	private void updateWorld() {
+		step += stepDelta;
+
+		for (String name : agents.keySet()) {
+			Point p = agents.get(name);
+			infect(agentsWithResource.contains(name) ? rInfect : aInfect, p.x, p.y);
+		}
+
+		super.setChanged();
+		super.notifyObservers();
+
+		try {
+			this.wait(speed);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+	protected synchronized Point getStartPoint() {
+		return (Point) start.clone();
+	}
+
+	@SuppressWarnings("unchecked")
+	protected synchronized HashSet<Point> getResources() {
+		return (HashSet<Point>) resources.clone();
+	}
+
+	@SuppressWarnings("unchecked")
+	protected synchronized HashSet<Point> getObstacles() {
+		return (HashSet<Point>) obstacles.clone();
+	}
+
+	@SuppressWarnings("unchecked")
+	protected synchronized Hashtable<String, Point> getAgents() {
+		return (Hashtable<String, Point>) agents.clone();
+	}
+
+	@SuppressWarnings("unchecked")
+	protected synchronized HashSet<String> getAgentsWithResources() {
+		return (HashSet<String>) agentsWithResource.clone();
+	}
+
+	private void infect(int[][] cells, int x, int y) {
+		int old = Math.max(cells[y][x] - step, 0);
+		cells[y][x] = infect + step + old;
+
+		for (int i = 0; i < nX.length; i++) {
+			if (x + nX[i] >= 0 && x + nX[i] < dimension && y + nY[i] >= 0 && y + nY[i] < dimension) {
+				old = Math.max(cells[y + nY[i]][x + nX[i]] - step, 1);
+				cells[y + nY[i]][x + nX[i]] = step + old + infect / 10;
+			}
+		}
+
+		for (int i = 0; i < n2X.length; i++) {
+			if (x + n2X[i] >= 0 && x + n2X[i] < dimension && y + n2Y[i] >= 0 && y + n2Y[i] < dimension) {
+				old = Math.max(cells[y + n2Y[i]][x + n2X[i]] - step, 1);
+				cells[y + n2Y[i]][x + n2X[i]] = step + old + infect / 20;
+			}
+		}
+	}
+
+	private void fillObstacles(HashSet<Point> obstacles) {
+		for (int i = 3; i < 13; i++) {
+			obstacles.add(new Point(i, 3));
+			obstacles.add(new Point(16, i));
+		}
+		for (int i = 7; i < 17; i++) {
+			obstacles.add(new Point(i, 16));
+			obstacles.add(new Point(3, i));
+		}
+		for (int i = 7; i < 13; i++) {
+			obstacles.add(new Point(7, i));
+			obstacles.add(new Point(i, 7));
+		}
+	}
+
+	private void fillStart(Vector<Point> start) {
+		start.add(new Point(1, 1));
+		start.add(new Point(18, 18));
+		start.add(new Point(18, 1));
+		start.add(new Point(1, 18));
+	}
+
+	private void fillResources(Vector<Point> resources) {
+		resources.add(new Point(1, 10));
+		resources.add(new Point(10, 1));
+		resources.add(new Point(10, 18));
+		resources.add(new Point(18, 10));
+		resources.add(new Point(5, 9));
+		resources.add(new Point(9, 9));
+		resources.add(new Point(9, 5));
+		resources.add(new Point(13, 13));
+	}
+}

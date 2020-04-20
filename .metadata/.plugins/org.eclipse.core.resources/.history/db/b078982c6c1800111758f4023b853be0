@@ -1,0 +1,1014 @@
+
+Options: -L 0.003 -M 0.8 -N 10000 -V 0 -S 0 -E 20 -H 12 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.8147818063713899
+    Node 18    -0.4955028935971488
+    Node 19    -0.5186328247041712
+    Node 20    -1.6458978466954404
+    Node 21    -0.8563935941245475
+    Node 22    -0.8722366975641737
+    Node 23    -0.694388913303046
+    Node 24    -0.8593292129370723
+    Node 25    -1.0247468796266503
+    Node 26    -1.1999341539496402
+    Node 27    -0.723283149277975
+    Node 28    -0.8761682332065291
+    Node 29    -0.6851581129394955
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.8281695564029674
+    Node 18    -0.4962426465513164
+    Node 19    -0.567674075629172
+    Node 20    -1.614707574863378
+    Node 21    -0.8531873552246545
+    Node 22    -0.6885834057347134
+    Node 23    -0.7950195240814504
+    Node 24    -0.9938125565307573
+    Node 25    -1.0096653875587835
+    Node 26    -1.3095567281807323
+    Node 27    -0.8756770361478663
+    Node 28    -0.7889413348926734
+    Node 29    -0.776581954572627
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.77881358061717
+    Node 18    -4.940732648707194
+    Node 19    -0.9312965889421748
+    Node 20    -8.221078835265631
+    Node 21    -2.69202561920236
+    Node 22    2.6053183540409166
+    Node 23    0.24460719539066184
+    Node 24    -3.064119354486306
+    Node 25    0.06853763015202435
+    Node 26    1.6519892426844143
+    Node 27    1.4275975296539491
+    Node 28    1.4802646013226446
+    Node 29    6.627295009435181
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.8101306890577582
+    Node 18    -0.48077762667157065
+    Node 19    -0.47414487780440867
+    Node 20    -1.7184524596891149
+    Node 21    -0.7271226180021237
+    Node 22    -0.6957622258471184
+    Node 23    -0.6700200451178809
+    Node 24    -0.894352738800638
+    Node 25    -0.9765010236780856
+    Node 26    -1.2102924256633572
+    Node 27    -0.7966757592618218
+    Node 28    -0.730715123500221
+    Node 29    -0.6182831089480192
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -7.485469799810178
+    Node 18    -1.0816969769886595
+    Node 19    -1.853532650300881
+    Node 20    -5.6464143722307
+    Node 21    3.409502722439166
+    Node 22    2.813790217613688
+    Node 23    2.2686742302908276
+    Node 24    -2.317346315024501
+    Node 25    1.1745734168464015
+    Node 26    -0.6501801178400187
+    Node 27    -0.6005241319530933
+    Node 28    -0.24183981459992265
+    Node 29    1.9336997828668856
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -10.823938635240493
+    Node 18    0.9971265031927955
+    Node 19    -4.345415423160237
+    Node 20    -11.29962909294487
+    Node 21    3.613009528194585
+    Node 22    3.381878460949246
+    Node 23    5.540947177800016
+    Node 24    -4.5471028764515635
+    Node 25    -3.784957876742674
+    Node 26    2.2558089613387793
+    Node 27    1.2043152719631236
+    Node 28    8.138181818107956
+    Node 29    -1.27903361571362
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -3.7112658454578353
+    Node 18    1.2092789549282223
+    Node 19    1.705681688640202
+    Node 20    -4.442761357522961
+    Node 21    1.623056082990281
+    Node 22    -8.396632648688291
+    Node 23    4.748194006528018
+    Node 24    -2.430795996806804
+    Node 25    -1.255110892467108
+    Node 26    -2.6452972369251513
+    Node 27    -0.30086074184497524
+    Node 28    -1.9880708917059606
+    Node 29    0.9823890461825981
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -8.001598413895222
+    Node 18    -2.215677237425387
+    Node 19    0.2485250522200739
+    Node 20    -0.9402229507650034
+    Node 21    2.1554129702635083
+    Node 22    -1.969490604843674
+    Node 23    4.383877642237437
+    Node 24    -1.0969189487808777
+    Node 25    0.09833464287793277
+    Node 26    2.0174720416356404
+    Node 27    -0.3831752525705591
+    Node 28    0.43796986716695496
+    Node 29    -0.3117776506733137
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -4.321218608734069
+    Node 18    0.2917630230850309
+    Node 19    1.4308418641285034
+    Node 20    -3.289138470605526
+    Node 21    -0.9132310248364209
+    Node 22    -0.5958762016096563
+    Node 23    0.9245037151414367
+    Node 24    2.197894835574468
+    Node 25    0.3906765073288803
+    Node 26    -1.074586192671912
+    Node 27    0.27976543597887366
+    Node 28    -0.25425584169449233
+    Node 29    -0.28850797995150984
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -12.732808837681931
+    Node 18    0.6263678245325159
+    Node 19    6.779344534720411
+    Node 20    -1.7283548561400628
+    Node 21    -1.896832495551464
+    Node 22    -0.7594473569412717
+    Node 23    -2.1749300363019577
+    Node 24    4.813631676380679
+    Node 25    3.434667083640925
+    Node 26    0.08033273059231594
+    Node 27    -1.6819405072493967
+    Node 28    0.4604899846262197
+    Node 29    -0.15500822240855744
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -16.481744677794037
+    Node 18    0.830487603318918
+    Node 19    13.442967728679116
+    Node 20    -0.18641097630796732
+    Node 21    -0.7652784047870104
+    Node 22    -0.3340222009365292
+    Node 23    -1.5891156239659343
+    Node 24    0.5683854149452375
+    Node 25    1.0899503643061006
+    Node 26    0.09510325096399982
+    Node 27    1.919787780373752
+    Node 28    0.10598312594715417
+    Node 29    -0.8782630372244726
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -9.219851217408259
+    Node 18    -0.6486791342233933
+    Node 19    10.600793141695945
+    Node 20    2.3223753002826064
+    Node 21    -0.5316318582153767
+    Node 22    -0.8982781634905047
+    Node 23    -1.8283509787783683
+    Node 24    -1.5915297935836334
+    Node 25    -1.2518602564199253
+    Node 26    0.4766849729916803
+    Node 27    -0.06907404272222517
+    Node 28    0.8822251096159385
+    Node 29    -0.8229592482362855
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -20.82153833319816
+    Node 18    -0.27998193355831946
+    Node 19    0.5869086486061627
+    Node 20    17.122212578231903
+    Node 21    1.090071016011585
+    Node 22    -1.6037299269771277
+    Node 23    -1.0506159333121061
+    Node 24    4.004679579764897
+    Node 25    -1.71369021625422
+    Node 26    0.5209695612859662
+    Node 27    1.106712706075731
+    Node 28    1.0545230067517626
+    Node 29    -1.5265533262007418
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -7.051549779346209
+    Node 18    -0.7338800273639001
+    Node 19    -7.016047894054673
+    Node 20    1.5444220746761783
+    Node 21    0.9346047257381394
+    Node 22    -1.0729971480639002
+    Node 23    -1.6296719521081702
+    Node 24    1.6854690093299158
+    Node 25    6.871043252627701
+    Node 26    0.9141369548634604
+    Node 27    -1.7557218276946136
+    Node 28    1.6840303657200966
+    Node 29    -3.0574090485869037
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -7.586028894184194
+    Node 18    -23.13103469802577
+    Node 19    -1.7865767325096646
+    Node 20    5.9167529861495884
+    Node 21    -8.02349804819122
+    Node 22    -2.663784431002472
+    Node 23    -3.728338099419051
+    Node 24    -11.141465282159537
+    Node 25    -7.240303119330692
+    Node 26    4.337144897462787
+    Node 27    8.568922190891989
+    Node 28    4.236640015322131
+    Node 29    10.133980268072898
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -7.167026940477743
+    Node 18    8.582132275442468
+    Node 19    -12.00486625737272
+    Node 20    -2.7456042326198298
+    Node 21    -3.5229265124540086
+    Node 22    -1.9344651091103942
+    Node 23    -0.9857711559935087
+    Node 24    -3.407361118899683
+    Node 25    -1.3599259663886052
+    Node 26    1.6357177679103567
+    Node 27    -4.5952079885032076
+    Node 28    2.1258348315826723
+    Node 29    9.490178561659429
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -12.009851794932594
+    Node 18    11.288522947269682
+    Node 19    -6.863869850703228
+    Node 20    -3.485858952339618
+    Node 21    -3.20905694552342
+    Node 22    -0.7124575585255188
+    Node 23    -2.8913278786132635
+    Node 24    5.44276189603989
+    Node 25    2.386333683900414
+    Node 26    1.0282802164436247
+    Node 27    1.7156189015072556
+    Node 28    3.067414318155314
+    Node 29    -5.85854290442791
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -15.012597993029615
+    Node 18    -1.3500464543194959
+    Node 19    -0.134349696372424
+    Node 20    0.525300300629035
+    Node 21    0.8718731291300664
+    Node 22    24.955518351405978
+    Node 23    26.983620756425445
+    Node 24    4.946917216964929
+    Node 25    2.2229031943786226
+    Node 26    -23.07045193836201
+    Node 27    -1.8157332568267215
+    Node 28    -31.859194301783813
+    Node 29    -0.18278884558802963
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -1.2626597850321466
+    Attrib White King file (column)=a    8.027161251122477
+    Attrib White King file (column)=b    1.6550621578712583
+    Attrib White King file (column)=c    -3.098574890873937
+    Attrib White King file (column)=d    -4.1825579097433465
+    Attrib White King file (column)=e    0.007419335177435482
+    Attrib White King file (column)=f    -0.04372589722845416
+    Attrib White King file (column)=g    0.024357930750958462
+    Attrib White King file (column)=h    -0.03155662106097338
+    Attrib White King rank (row)=1    8.896699777207159
+    Attrib White King rank (row)=2    2.3776582532216644
+    Attrib White King rank (row)=3    -7.57443611597055
+    Attrib White King rank (row)=4    -1.2553062501198708
+    Attrib White King rank (row)=5    -0.026596473060289616
+    Attrib White King rank (row)=6    -0.03770900916684886
+    Attrib White King rank (row)=7    -0.008614365941515566
+    Attrib White King rank (row)=8    0.029403282745286682
+    Attrib White Rook file=a    -3.113147686327824
+    Attrib White Rook file=b    2.954116633920313
+    Attrib White Rook file=c    3.0961404045047947
+    Attrib White Rook file=d    2.5642525665148757
+    Attrib White Rook file=e    -6.051891589709512
+    Attrib White Rook file=f    4.9132003834177365
+    Attrib White Rook file=g    3.221627347010999
+    Attrib White Rook file=h    -0.20327897764460082
+    Attrib White Rook rank=1    2.1694649873842735
+    Attrib White Rook rank=2    2.8760237290593036
+    Attrib White Rook rank=3    0.7612430504106584
+    Attrib White Rook rank=4    -1.9246245435134204
+    Attrib White Rook rank=5    -5.441529385020143
+    Attrib White Rook rank=6    3.803273298594971
+    Attrib White Rook rank=7    3.3382332929941825
+    Attrib White Rook rank=8    1.8661677267295194
+    Attrib Black King file=a    -12.236309930185769
+    Attrib Black King file=b    0.08504122033971936
+    Attrib Black King file=c    5.122923692047755
+    Attrib Black King file=d    6.319597220640051
+    Attrib Black King file=e    6.402532138249902
+    Attrib Black King file=f    6.066592689457308
+    Attrib Black King file=g    3.995208323207826
+    Attrib Black King file=h    -8.388042803007696
+    Attrib Black King rank=1    15.380998812380838
+    Attrib Black King rank=2    -2.0626251783540535
+    Attrib Black King rank=3    1.6300155649039623
+    Attrib Black King rank=4    1.78928546671607
+    Attrib Black King rank=5    1.8236682201811794
+    Attrib Black King rank=6    1.8751543106912532
+    Attrib Black King rank=7    -6.41129178483487
+    Attrib Black King rank=8    -6.758373294250323
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    0.2690329423621695
+    Attrib White King file (column)=a    -1.517916883593863
+    Attrib White King file (column)=b    -1.914901230319038
+    Attrib White King file (column)=c    1.1487720475686185
+    Attrib White King file (column)=d    1.6473580010710107
+    Attrib White King file (column)=e    0.019722822356292274
+    Attrib White King file (column)=f    -0.04803579539890876
+    Attrib White King file (column)=g    0.006238665401222622
+    Attrib White King file (column)=h    0.009656440728813588
+    Attrib White King rank (row)=1    -5.014241760946392
+    Attrib White King rank (row)=2    -0.8404660465127941
+    Attrib White King rank (row)=3    0.48780977599264713
+    Attrib White King rank (row)=4    4.808287842274535
+    Attrib White King rank (row)=5    0.048859271093569676
+    Attrib White King rank (row)=6    -0.04582540074859032
+    Attrib White King rank (row)=7    0.03670172186724348
+    Attrib White King rank (row)=8    0.019535761896684517
+    Attrib White Rook file=a    -0.29147652512479344
+    Attrib White Rook file=b    -0.6510912975733542
+    Attrib White Rook file=c    -0.9254843040090951
+    Attrib White Rook file=d    0.18984104883717312
+    Attrib White Rook file=e    1.5117010594003788
+    Attrib White Rook file=f    0.05267507621904386
+    Attrib White Rook file=g    -1.484406984886565
+    Attrib White Rook file=h    -0.05043600182509748
+    Attrib White Rook rank=1    -0.5064703062933983
+    Attrib White Rook rank=2    -0.8339509084942346
+    Attrib White Rook rank=3    -0.36645364999722246
+    Attrib White Rook rank=4    0.2293790081807676
+    Attrib White Rook rank=5    0.8818378464708292
+    Attrib White Rook rank=6    0.04011443184931391
+    Attrib White Rook rank=7    -0.6907505496138325
+    Attrib White Rook rank=8    -0.44626969101704217
+    Attrib Black King file=a    11.425655366450322
+    Attrib Black King file=b    -0.276127081024099
+    Attrib Black King file=c    -2.7001563699815643
+    Attrib Black King file=d    -2.8125592529156695
+    Attrib Black King file=e    -2.9817436463323412
+    Attrib Black King file=f    -2.820659313261112
+    Attrib Black King file=g    -1.8638259134313644
+    Attrib Black King file=h    0.46041590502784907
+    Attrib Black King rank=1    8.789112818454267
+    Attrib Black King rank=2    4.780454437879456
+    Attrib Black King rank=3    -2.020470758605882
+    Attrib Black King rank=4    -3.0942317422640153
+    Attrib Black King rank=5    -3.6705556510221333
+    Attrib Black King rank=6    -2.9414938628302503
+    Attrib Black King rank=7    -2.285830534446077
+    Attrib Black King rank=8    -1.2449820219218661
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    0.5454895357260622
+    Attrib White King file (column)=a    3.2547782790162003
+    Attrib White King file (column)=b    3.0573275114817866
+    Attrib White King file (column)=c    -2.471899822828592
+    Attrib White King file (column)=d    -4.90930318475065
+    Attrib White King file (column)=e    0.027631117194395483
+    Attrib White King file (column)=f    -0.042754347843068564
+    Attrib White King file (column)=g    0.018800665910077702
+    Attrib White King file (column)=h    -0.009280353685265252
+    Attrib White King rank (row)=1    3.0156717896883727
+    Attrib White King rank (row)=2    -0.19174501042570008
+    Attrib White King rank (row)=3    -1.4983831314979639
+    Attrib White King rank (row)=4    -2.39027161984449
+    Attrib White King rank (row)=5    0.04525614035371782
+    Attrib White King rank (row)=6    -0.04742374698486174
+    Attrib White King rank (row)=7    -0.04082425614503596
+    Attrib White King rank (row)=8    -0.0021056908454386986
+    Attrib White Rook file=a    -0.12220235773347272
+    Attrib White Rook file=b    -0.5244882398028138
+    Attrib White Rook file=c    -0.31424457490774316
+    Attrib White Rook file=d    -0.517317708070377
+    Attrib White Rook file=e    -0.9489375043182189
+    Attrib White Rook file=f    -0.7588611964288968
+    Attrib White Rook file=g    0.17925326046426723
+    Attrib White Rook file=h    -0.1524334860765809
+    Attrib White Rook rank=1    -0.8043458984378872
+    Attrib White Rook rank=2    -0.5134784782459647
+    Attrib White Rook rank=3    -0.6671014099518114
+    Attrib White Rook rank=4    -1.6682609066737204
+    Attrib White Rook rank=5    -0.22314655881206932
+    Attrib White Rook rank=6    0.2515535896393916
+    Attrib White Rook rank=7    0.2453242659736763
+    Attrib White Rook rank=8    0.20517018434461848
+    Attrib Black King file=a    -2.402822801422318
+    Attrib Black King file=b    -1.099130706591895
+    Attrib Black King file=c    0.7318706606965087
+    Attrib Black King file=d    1.141199022349604
+    Attrib Black King file=e    0.42163722611055565
+    Attrib Black King file=f    0.7641439106476846
+    Attrib Black King file=g    -0.5271012546900885
+    Attrib Black King file=h    -2.2763502676935228
+    Attrib Black King rank=1    -6.616682855827522
+    Attrib Black King rank=2    -3.4357073368177553
+    Attrib Black King rank=3    0.2880831793388935
+    Attrib Black King rank=4    1.5595766525094346
+    Attrib Black King rank=5    1.8189653526658853
+    Attrib Black King rank=6    1.946195109654534
+    Attrib Black King rank=7    1.390982738742587
+    Attrib Black King rank=8    -0.17889003470121748
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    -0.7464261767252475
+    Attrib White King file (column)=a    -11.74332406107489
+    Attrib White King file (column)=b    3.2733527108007965
+    Attrib White King file (column)=c    2.3747425541270495
+    Attrib White King file (column)=d    7.612984524092997
+    Attrib White King file (column)=e    -0.018877472169116796
+    Attrib White King file (column)=f    0.021277767140735065
+    Attrib White King file (column)=g    0.016736750221724064
+    Attrib White King file (column)=h    -0.030583339715101677
+    Attrib White King rank (row)=1    -0.5503598651936745
+    Attrib White King rank (row)=2    4.8073955055327104
+    Attrib White King rank (row)=3    1.5198552314282485
+    Attrib White King rank (row)=4    -4.226091255264272
+    Attrib White King rank (row)=5    0.015223523910547446
+    Attrib White King rank (row)=6    0.013088522993184915
+    Attrib White King rank (row)=7    0.0361877942996585
+    Attrib White King rank (row)=8    0.04782621204882105
+    Attrib White Rook file=a    -3.50822482441645
+    Attrib White Rook file=b    1.8158105485337075
+    Attrib White Rook file=c    -0.39846978417851586
+    Attrib White Rook file=d    0.10880774308444054
+    Attrib White Rook file=e    2.4537205427736746
+    Attrib White Rook file=f    -0.3094295150514294
+    Attrib White Rook file=g    4.02433480788121
+    Attrib White Rook file=h    0.542969892977809
+    Attrib White Rook rank=1    7.604873409773756
+    Attrib White Rook rank=2    7.278653256119916
+    Attrib White Rook rank=3    7.46433850448006
+    Attrib White Rook rank=4    0.6870296491490928
+    Attrib White Rook rank=5    -6.041039346594361
+    Attrib White Rook rank=6    -1.6216379992988885
+    Attrib White Rook rank=7    -6.83698155517845
+    Attrib White Rook rank=8    -3.9033654085846585
+    Attrib Black King file=a    7.059858364233524
+    Attrib Black King file=b    6.144403119409164
+    Attrib Black King file=c    -3.337665910921938
+    Attrib Black King file=d    -2.9807000363316383
+    Attrib Black King file=e    -6.8231743901967095
+    Attrib Black King file=f    -4.5800999274925065
+    Attrib Black King file=g    4.0441082106944926
+    Attrib Black King file=h    5.242296374583563
+    Attrib Black King rank=1    5.233074241940348
+    Attrib Black King rank=2    -0.8397950867080736
+    Attrib Black King rank=3    -1.4061053792095415
+    Attrib Black King rank=4    -4.000843622111912
+    Attrib Black King rank=5    -5.412974939940023
+    Attrib Black King rank=6    0.6469347581627084
+    Attrib Black King rank=7    5.805537986697428
+    Attrib Black King rank=8    4.656844757359628
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    0.15910798645882537
+    Attrib White King file (column)=a    -0.04326020848237266
+    Attrib White King file (column)=b    -0.04003099821501335
+    Attrib White King file (column)=c    -0.15062524950043713
+    Attrib White King file (column)=d    -0.04383697245222881
+    Attrib White King file (column)=e    -0.024012290513811242
+    Attrib White King file (column)=f    -0.04427590270200489
+    Attrib White King file (column)=g    0.027165313510684172
+    Attrib White King file (column)=h    -0.0354984133210688
+    Attrib White King rank (row)=1    -0.05551750479758916
+    Attrib White King rank (row)=2    -0.09435474880865262
+    Attrib White King rank (row)=3    -0.1637975901360729
+    Attrib White King rank (row)=4    -0.008647333846419929
+    Attrib White King rank (row)=5    0.048496679569555584
+    Attrib White King rank (row)=6    0.020029022545369507
+    Attrib White King rank (row)=7    0.008712532701479161
+    Attrib White King rank (row)=8    0.016631118959271357
+    Attrib White Rook file=a    -4.859277399031906
+    Attrib White Rook file=b    -3.6131668187323585
+    Attrib White Rook file=c    -1.7174578610692675
+    Attrib White Rook file=d    -0.6684837715711857
+    Attrib White Rook file=e    0.8648429416650444
+    Attrib White Rook file=f    2.024098449460674
+    Attrib White Rook file=g    3.307840470552659
+    Attrib White Rook file=h    3.580070808613363
+    Attrib White Rook rank=1    2.091654277646738
+    Attrib White Rook rank=2    1.9143483507678993
+    Attrib White Rook rank=3    0.49873127997100875
+    Attrib White Rook rank=4    -0.3448618923233692
+    Attrib White Rook rank=5    -1.389558224650268
+    Attrib White Rook rank=6    -0.4432877101861698
+    Attrib White Rook rank=7    -1.3803324750382144
+    Attrib White Rook rank=8    -1.9122325008880159
+    Attrib Black King file=a    4.663192307615202
+    Attrib Black King file=b    3.774684754829989
+    Attrib Black King file=c    2.2159087582890913
+    Attrib Black King file=d    0.2557993130249539
+    Attrib Black King file=e    -1.035482984615195
+    Attrib Black King file=f    -2.525117443429508
+    Attrib Black King file=g    -3.460563831571419
+    Attrib Black King file=h    -4.9274699604200345
+    Attrib Black King rank=1    -3.065870431492999
+    Attrib Black King rank=2    -1.778107751182382
+    Attrib Black King rank=3    -0.8252920118522087
+    Attrib Black King rank=4    0.41480296758031127
+    Attrib Black King rank=5    0.19995262197390767
+    Attrib Black King rank=6    0.8534381289525779
+    Attrib Black King rank=7    1.5317037469855974
+    Attrib Black King rank=8    1.589307132698508
+Sigmoid Node 23
+    Inputs    Weights
+    Threshold    0.25911018995862106
+    Attrib White King file (column)=a    -0.3209421158537414
+    Attrib White King file (column)=b    0.01187017750147504
+    Attrib White King file (column)=c    -0.06787183419799662
+    Attrib White King file (column)=d    -0.14332675494661437
+    Attrib White King file (column)=e    -0.039574989603528565
+    Attrib White King file (column)=f    -0.04829156427889515
+    Attrib White King file (column)=g    -0.007393132289526004
+    Attrib White King file (column)=h    -0.04493016669639238
+    Attrib White King rank (row)=1    0.04773711794696124
+    Attrib White King rank (row)=2    -0.1053365086456634
+    Attrib White King rank (row)=3    -0.3632330623444559
+    Attrib White King rank (row)=4    -0.04139723265615902
+    Attrib White King rank (row)=5    -0.004374094026302344
+    Attrib White King rank (row)=6    0.045548308664275006
+    Attrib White King rank (row)=7    0.047124565305461
+    Attrib White King rank (row)=8    0.026151778134685152
+    Attrib White Rook file=a    -0.26586721184992756
+    Attrib White Rook file=b    -0.4912947609339074
+    Attrib White Rook file=c    -0.7578653725267589
+    Attrib White Rook file=d    -0.633532528687426
+    Attrib White Rook file=e    -0.5541333321246398
+    Attrib White Rook file=f    0.23820338171256955
+    Attrib White Rook file=g    0.4293435100944718
+    Attrib White Rook file=h    0.64592973092216
+    Attrib White Rook rank=1    -4.575352811018836
+    Attrib White Rook rank=2    -3.815216484636141
+    Attrib White Rook rank=3    -2.78036102212959
+    Attrib White Rook rank=4    -1.4926008741171561
+    Attrib White Rook rank=5    1.3521603874592327
+    Attrib White Rook rank=6    0.9710693331975161
+    Attrib White Rook rank=7    4.678842300542498
+    Attrib White Rook rank=8    4.277587444504845
+    Attrib Black King file=a    -0.012303003066241687
+    Attrib Black King file=b    0.05440596639068747
+    Attrib Black King file=c    -0.15452786496903576
+    Attrib Black King file=d    0.3004768760506187
+    Attrib Black King file=e    0.0066926380384958436
+    Attrib Black King file=f    -0.148965819625202
+    Attrib Black King file=g    -0.5415176697314773
+    Attrib Black King file=h    -0.9431731508516409
+    Attrib Black King rank=1    5.774977304540909
+    Attrib Black King rank=2    2.5037849260941805
+    Attrib Black King rank=3    0.9547277136167035
+    Attrib Black King rank=4    0.11357844345524613
+    Attrib Black King rank=5    -0.8718826556082846
+    Attrib Black King rank=6    -2.3782631925852873
+    Attrib Black King rank=7    -3.014165214853912
+    Attrib Black King rank=8    -4.387011423301345
+Sigmoid Node 24
+    Inputs    Weights
+    Threshold    1.0536480252009384
+    Attrib White King file (column)=a    3.5637390385819576
+    Attrib White King file (column)=b    -1.217925467140051
+    Attrib White King file (column)=c    -1.9786615476205907
+    Attrib White King file (column)=d    -2.487492866159232
+    Attrib White King file (column)=e    -0.033452404313175005
+    Attrib White King file (column)=f    -0.023396920186872595
+    Attrib White King file (column)=g    0.01029798214301915
+    Attrib White King file (column)=h    -0.047667865369251584
+    Attrib White King rank (row)=1    -4.46448205416456
+    Attrib White King rank (row)=2    -4.3039465341233205
+    Attrib White King rank (row)=3    7.660639258810843
+    Attrib White King rank (row)=4    -1.09540785188719
+    Attrib White King rank (row)=5    -0.03443188846765121
+    Attrib White King rank (row)=6    -0.011026326735889956
+    Attrib White King rank (row)=7    -0.012831163131704619
+    Attrib White King rank (row)=8    -0.04666920550824223
+    Attrib White Rook file=a    -3.860350284865079
+    Attrib White Rook file=b    -2.8735090866011284
+    Attrib White Rook file=c    -2.5434806696171313
+    Attrib White Rook file=d    -1.1246184475998517
+    Attrib White Rook file=e    8.580919056851593
+    Attrib White Rook file=f    -1.105297747035185
+    Attrib White Rook file=g    -2.101846147165853
+    Attrib White Rook file=h    -1.3319619311433406
+    Attrib White Rook rank=1    -6.186140719677899
+    Attrib White Rook rank=2    -3.0703114796744257
+    Attrib White Rook rank=3    -2.6080379290091527
+    Attrib White Rook rank=4    1.9482617409676983
+    Attrib White Rook rank=5    4.958717595892065
+    Attrib White Rook rank=6    1.1164469332472797
+    Attrib White Rook rank=7    -0.3627295925819329
+    Attrib White Rook rank=8    -2.1774171275936163
+    Attrib Black King file=a    7.9059906066317405
+    Attrib Black King file=b    1.9506172931518475
+    Attrib Black King file=c    -2.6666396109751282
+    Attrib Black King file=d    -3.733887310531351
+    Attrib Black King file=e    -3.8707842680236593
+    Attrib Black King file=f    -4.312947394816885
+    Attrib Black King file=g    -4.650646333474726
+    Attrib Black King file=h    2.949086122785801
+    Attrib Black King rank=1    4.806848396779334
+    Attrib Black King rank=2    8.410672835224764
+    Attrib Black King rank=3    -4.185510474303487
+    Attrib Black King rank=4    -4.060030481477088
+    Attrib Black King rank=5    -3.5543979331834725
+    Attrib Black King rank=6    -3.4602071659997433
+    Attrib Black King rank=7    -3.2463793320716547
+    Attrib Black King rank=8    -1.0179159529633277
+Sigmoid Node 25
+    Inputs    Weights
+    Threshold    0.911617120741645
+    Attrib White King file (column)=a    2.032771499405499
+    Attrib White King file (column)=b    -0.07676332835370529
+    Attrib White King file (column)=c    -1.0450521948832368
+    Attrib White King file (column)=d    -2.714631585232225
+    Attrib White King file (column)=e    0.023264327660417167
+    Attrib White King file (column)=f    0.04182967445506032
+    Attrib White King file (column)=g    0.005348077149367025
+    Attrib White King file (column)=h    0.04708434444435318
+    Attrib White King rank (row)=1    -4.118306113515735
+    Attrib White King rank (row)=2    4.097264835918155
+    Attrib White King rank (row)=3    -2.8397708914547235
+    Attrib White King rank (row)=4    1.0300981892221543
+    Attrib White King rank (row)=5    0.023986417783078376
+    Attrib White King rank (row)=6    -0.02457915532257217
+    Attrib White King rank (row)=7    -0.037123198180053475
+    Attrib White King rank (row)=8    0.003973012472029115
+    Attrib White Rook file=a    -3.552051709122456
+    Attrib White Rook file=b    -3.1143023019317644
+    Attrib White Rook file=c    -1.8588571758876171
+    Attrib White Rook file=d    4.181927997654418
+    Attrib White Rook file=e    4.930567009445027
+    Attrib White Rook file=f    -1.1589920195920809
+    Attrib White Rook file=g    -2.800152490489882
+    Attrib White Rook file=h    -2.2618375980549628
+    Attrib White Rook rank=1    -2.8042818673856744
+    Attrib White Rook rank=2    -2.659275150652659
+    Attrib White Rook rank=3    -2.4254564958909755
+    Attrib White Rook rank=4    -4.194716613302439
+    Attrib White Rook rank=5    4.315929060359361
+    Attrib White Rook rank=6    4.487481799209901
+    Attrib White Rook rank=7    -0.8894559178523644
+    Attrib White Rook rank=8    -1.326287367504956
+    Attrib Black King file=a    4.894600036847904
+    Attrib Black King file=b    -0.2893703302359983
+    Attrib Black King file=c    -1.7147195498873335
+    Attrib Black King file=d    -2.201549555676667
+    Attrib Black King file=e    -1.1143194060008252
+    Attrib Black King file=f    -0.9998752308694895
+    Attrib Black King file=g    -2.8645124066426724
+    Attrib Black King file=h    -1.3516929340241512
+    Attrib Black King rank=1    -0.4737110180561719
+    Attrib Black King rank=2    4.7761410385983325
+    Attrib Black King rank=3    0.8161272298105892
+    Attrib Black King rank=4    -1.0426999307615643
+    Attrib Black King rank=5    -2.8090178223265196
+    Attrib Black King rank=6    -2.0587767269503785
+    Attrib Black King rank=7    -2.398282768288021
+    Attrib Black King rank=8    -2.447096834718968
+Sigmoid Node 26
+    Inputs    Weights
+    Threshold    0.9810663681400381
+    Attrib White King file (column)=a    -0.6122469731404966
+    Attrib White King file (column)=b    -0.22232971292411502
+    Attrib White King file (column)=c    -0.6094820090816387
+    Attrib White King file (column)=d    -0.3832282952827808
+    Attrib White King file (column)=e    0.01833156776755998
+    Attrib White King file (column)=f    -0.003716016738044836
+    Attrib White King file (column)=g    0.011256388256494401
+    Attrib White King file (column)=h    -0.00843846171985272
+    Attrib White King rank (row)=1    -2.3668994052014525
+    Attrib White King rank (row)=2    -1.9994465724802877
+    Attrib White King rank (row)=3    -2.1576076168948717
+    Attrib White King rank (row)=4    4.639000127389645
+    Attrib White King rank (row)=5    -0.021033032616892967
+    Attrib White King rank (row)=6    -0.007021415462404132
+    Attrib White King rank (row)=7    0.028653323967594083
+    Attrib White King rank (row)=8    -0.0028314203404267296
+    Attrib White Rook file=a    -4.183626779558268
+    Attrib White Rook file=b    -3.946618502373219
+    Attrib White Rook file=c    -3.20675193467119
+    Attrib White Rook file=d    -1.9060867216200483
+    Attrib White Rook file=e    -0.6115280149930881
+    Attrib White Rook file=f    1.2011138474129428
+    Attrib White Rook file=g    3.110399746061031
+    Attrib White Rook file=h    3.6492762116830373
+    Attrib White Rook rank=1    5.159966555829079
+    Attrib White Rook rank=2    3.9514987473651852
+    Attrib White Rook rank=3    0.824726567792775
+    Attrib White Rook rank=4    3.3878178007333157
+    Attrib White Rook rank=5    5.070530402458568
+    Attrib White Rook rank=6    -8.774624119124454
+    Attrib White Rook rank=7    -7.985624404152829
+    Attrib White Rook rank=8    -7.457748007708493
+    Attrib Black King file=a    4.074514094332785
+    Attrib Black King file=b    3.1369392635739684
+    Attrib Black King file=c    1.5483906789632487
+    Attrib Black King file=d    0.50931961354667
+    Attrib Black King file=e    -1.6145993684603546
+    Attrib Black King file=f    -2.841712174307107
+    Attrib Black King file=g    -4.501820387372539
+    Attrib Black King file=h    -6.175908479352278
+    Attrib Black King rank=1    2.561792635269264
+    Attrib Black King rank=2    -0.7280073260120613
+    Attrib Black King rank=3    -0.8006584280605497
+    Attrib Black King rank=4    7.834578279745755
+    Attrib Black King rank=5    -2.8332276548884274
+    Attrib Black King rank=6    -3.5087377379963636
+    Attrib Black King rank=7    -4.151823044075788
+    Attrib Black King rank=8    -4.222686021332868
+Sigmoid Node 27
+    Inputs    Weights
+    Threshold    0.9494460760550121
+    Attrib White King file (column)=a    6.03925438907221
+    Attrib White King file (column)=b    2.475719851415928
+    Attrib White King file (column)=c    -4.587720393428707
+    Attrib White King file (column)=d    -5.811591248932893
+    Attrib White King file (column)=e    0.01972652990019702
+    Attrib White King file (column)=f    -0.021976392588005645
+    Attrib White King file (column)=g    0.03733144095468709
+    Attrib White King file (column)=h    0.03913844390159364
+    Attrib White King rank (row)=1    -0.8876841509531412
+    Attrib White King rank (row)=2    -2.2948160316482413
+    Attrib White King rank (row)=3    5.6823154116622385
+    Attrib White King rank (row)=4    -4.362746783781877
+    Attrib White King rank (row)=5    -0.03501129500796908
+    Attrib White King rank (row)=6    0.009634801760459819
+    Attrib White King rank (row)=7    0.005855054026603267
+    Attrib White King rank (row)=8    -0.003417207731397809
+    Attrib White Rook file=a    -3.89538954231152
+    Attrib White Rook file=b    -6.384772359266476
+    Attrib White Rook file=c    -5.953254200428895
+    Attrib White Rook file=d    -6.679172444166272
+    Attrib White Rook file=e    12.249924691932549
+    Attrib White Rook file=f    2.4406429116542925
+    Attrib White Rook file=g    -4.661929101355867
+    Attrib White Rook file=h    7.335261379057911
+    Attrib White Rook rank=1    -3.7058126125812696
+    Attrib White Rook rank=2    0.012198984438008367
+    Attrib White Rook rank=3    -2.3637125716099003
+    Attrib White Rook rank=4    -8.748075787928776
+    Attrib White Rook rank=5    16.19986514116713
+    Attrib White Rook rank=6    -2.538261329900607
+    Attrib White Rook rank=7    -2.1444771084499075
+    Attrib White Rook rank=8    -2.3886594565674417
+    Attrib Black King file=a    -0.13614968609327666
+    Attrib Black King file=b    -1.507386770626362
+    Attrib Black King file=c    -0.9020590178994273
+    Attrib Black King file=d    1.9756121367487014
+    Attrib Black King file=e    1.9755984003910092
+    Attrib Black King file=f    1.1047378075036018
+    Attrib Black King file=g    0.6157716906446424
+    Attrib Black King file=h    -8.837550640468697
+    Attrib Black King rank=1    0.631826608247907
+    Attrib Black King rank=2    5.9119723372120285
+    Attrib Black King rank=3    2.150714343084771
+    Attrib Black King rank=4    0.8887036280765428
+    Attrib Black King rank=5    1.53393234781868
+    Attrib Black King rank=6    0.7221085697896772
+    Attrib Black King rank=7    -14.172472954308457
+    Attrib Black King rank=8    -3.2727967340832036
+Sigmoid Node 28
+    Inputs    Weights
+    Threshold    0.37887829109994614
+    Attrib White King file (column)=a    -0.3735683068888075
+    Attrib White King file (column)=b    -0.12621890826566343
+    Attrib White King file (column)=c    -0.16041835293660336
+    Attrib White King file (column)=d    -0.1598304424618064
+    Attrib White King file (column)=e    0.04816895760540732
+    Attrib White King file (column)=f    0.009870155113158328
+    Attrib White King file (column)=g    -0.03149257230110335
+    Attrib White King file (column)=h    -0.004254959774961917
+    Attrib White King rank (row)=1    -0.2539966842101872
+    Attrib White King rank (row)=2    -0.13015583290920424
+    Attrib White King rank (row)=3    -0.26824537651668573
+    Attrib White King rank (row)=4    -0.09295482292458372
+    Attrib White King rank (row)=5    0.042689570023722465
+    Attrib White King rank (row)=6    -0.012979256039149269
+    Attrib White King rank (row)=7    0.04893927400733587
+    Attrib White King rank (row)=8    0.005489266680448843
+    Attrib White Rook file=a    -3.166025581430388
+    Attrib White Rook file=b    -2.9181411448085046
+    Attrib White Rook file=c    -1.8497558038035617
+    Attrib White Rook file=d    -1.157281165271096
+    Attrib White Rook file=e    -0.2508620561392077
+    Attrib White Rook file=f    0.8343173953978231
+    Attrib White Rook file=g    2.199477410225722
+    Attrib White Rook file=h    4.13079342383126
+    Attrib White Rook rank=1    -5.516277546870855
+    Attrib White Rook rank=2    -5.219225384760071
+    Attrib White Rook rank=3    -5.050088345821015
+    Attrib White Rook rank=4    -4.793196405737921
+    Attrib White Rook rank=5    -4.1492625093821305
+    Attrib White Rook rank=6    6.368854419662186
+    Attrib White Rook rank=7    7.78941208188358
+    Attrib White Rook rank=8    8.377092228708042
+    Attrib Black King file=a    3.5169728242844815
+    Attrib Black King file=b    2.7814990794695125
+    Attrib Black King file=c    1.9861412560305363
+    Attrib Black King file=d    0.8199429513199038
+    Attrib Black King file=e    -0.36198736964011363
+    Attrib Black King file=f    -1.782981787521965
+    Attrib Black King file=g    -3.849412656662429
+    Attrib Black King file=h    -5.452801665702611
+    Attrib Black King rank=1    -0.2558426297344909
+    Attrib Black King rank=2    -0.33459840507645844
+    Attrib Black King rank=3    -0.9946267136453483
+    Attrib Black King rank=4    -1.495758036851219
+    Attrib Black King rank=5    -1.744533497966779
+    Attrib Black King rank=6    -1.8160488467345288
+    Attrib Black King rank=7    2.4562218488632652
+    Attrib Black King rank=8    1.9748243166479793
+Sigmoid Node 29
+    Inputs    Weights
+    Threshold    0.273390957009284
+    Attrib White King file (column)=a    4.904348824281032
+    Attrib White King file (column)=b    4.0245325937152305
+    Attrib White King file (column)=c    -4.059266400106536
+    Attrib White King file (column)=d    -5.2825047135777075
+    Attrib White King file (column)=e    0.04358535690328748
+    Attrib White King file (column)=f    -0.012661767052739803
+    Attrib White King file (column)=g    -0.010163366262743792
+    Attrib White King file (column)=h    -0.044323291420423384
+    Attrib White King rank (row)=1    9.375475652613602
+    Attrib White King rank (row)=2    1.7406376041790899
+    Attrib White King rank (row)=3    -4.072254874193659
+    Attrib White King rank (row)=4    -7.5209381811454294
+    Attrib White King rank (row)=5    -0.007680681272228117
+    Attrib White King rank (row)=6    -0.012864320228813918
+    Attrib White King rank (row)=7    -0.03376052019112763
+    Attrib White King rank (row)=8    0.01371572992248539
+    Attrib White Rook file=a    -4.479703401022762
+    Attrib White Rook file=b    1.0467741370855659
+    Attrib White Rook file=c    3.4293562451364936
+    Attrib White Rook file=d    3.891366836920793
+    Attrib White Rook file=e    -1.601232211492521
+    Attrib White Rook file=f    -0.9824006700496986
+    Attrib White Rook file=g    2.161981576786613
+    Attrib White Rook file=h    -4.9481047855991624
+    Attrib White Rook rank=1    -0.09038995291733465
+    Attrib White Rook rank=2    -1.7939720426219616
+    Attrib White Rook rank=3    -0.7159839540228987
+    Attrib White Rook rank=4    -0.9123897083371887
+    Attrib White Rook rank=5    -2.804834438736314
+    Attrib White Rook rank=6    4.878151441998998
+    Attrib White Rook rank=7    2.54995020550888
+    Attrib White Rook rank=8    -2.4816112881485406
+    Attrib Black King file=a    3.5050786219351506
+    Attrib Black King file=b    1.1564982990500534
+    Attrib Black King file=c    1.7003028500851995
+    Attrib Black King file=d    0.31389167638613313
+    Attrib Black King file=e    -0.9483478330927407
+    Attrib Black King file=f    -0.9717842940079762
+    Attrib Black King file=g    -4.855147217889257
+    Attrib Black King file=h    -1.2116173799502616
+    Attrib Black King rank=1    12.277142635566793
+    Attrib Black King rank=2    -1.5927644477303118
+    Attrib Black King rank=3    -3.163417248873253
+    Attrib Black King rank=4    -1.7594694507056494
+    Attrib Black King rank=5    -1.7517250636092208
+    Attrib Black King rank=6    -2.232513257128186
+    Attrib Black King rank=7    -0.6304271429930904
+    Attrib Black King rank=8    -2.523403411891924
+Class zero
+    Input
+    Node 0
+Class one
+    Input
+    Node 1
+Class two
+    Input
+    Node 2
+Class three
+    Input
+    Node 3
+Class four
+    Input
+    Node 4
+Class five
+    Input
+    Node 5
+Class six
+    Input
+    Node 6
+Class seven
+    Input
+    Node 7
+Class eight
+    Input
+    Node 8
+Class nine
+    Input
+    Node 9
+Class ten
+    Input
+    Node 10
+Class eleven
+    Input
+    Node 11
+Class twelve
+    Input
+    Node 12
+Class thirteen
+    Input
+    Node 13
+Class fourteen
+    Input
+    Node 14
+Class fifteen
+    Input
+    Node 15
+Class sixteen
+    Input
+    Node 16
+Class draw
+    Input
+    Node 17
+
+
+Time taken to build model: 1429.94 seconds
+Time taken to test model on training data: 0.22 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3298               58.7774 %
+Incorrectly Classified Instances      2313               41.2226 %
+Kappa statistic                          0.5361
+Mean absolute error                      0.0586
+Root mean squared error                  0.1782
+Relative absolute error                 58.9387 %
+Root relative squared error             79.921  %
+Total Number of Instances             5611     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   <-- classified as
+   0   0   0   0   0   0   2   1   4   0   0   0   0   0   0   0   0   0 |   a = zero
+   0   0   0   0   0  10   0   3   1   1   0   2   0   0   0   0   0   0 |   b = one
+   0   0  16   0   2  11   2   2   7   0   0   0   0   0   0   0   0   0 |   c = two
+   0   0   0   0   2   7   0   5   2   1   0   0   0   0   0   0   0   0 |   d = three
+   0   0   1   0   6  14   1   3   1   0   1   1   0   0   0   0   0   1 |   e = four
+   0   0   3   0   1  52   5  14   6   6   6   1   1   0   0   0   0   0 |   f = five
+   0   0   1   0   2  14  27  19  17   4   4   9   9   0   0   0   0   0 |   g = six
+   0   0   2   0   1   8   3  52  23   8  14  37  12   2   3   0   0   2 |   h = seven
+   0   0   2   0   3   8   8  22 106  32  24  25  21   3   5   0   0   2 |   i = eight
+   0   0   4   0   1   2   2   6  51  92  39  70  39  16   4   1   0   1 |   j = nine
+   0   0   2   0   1   2   0   4  57   8 105 126  45  22  29   2   0   2 |   k = ten
+   0   0   1   0   0   0   2   3  10  11  40 304 115  42  43   3   1   9 |   l = eleven
+   0   0   0   0   0   0   0   0   4   2  21 134 404 111  63  14   1   4 |   m = twelve
+   0   0   0   0   0   0   0   2   1   0   6  50 115 483 121  13  11   5 |   n = thirteen
+   0   0   0   0   0   0   0   0   0   0   1  12  40  46 781  34   5   3 |   o = fourteen
+   0   0   0   0   0   0   0   0   0   0   1   1  14  14  96 279  23   4 |   p = fifteen
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0  34  36   1 |   q = sixteen
+   0   0   0   0   0   0   0   0   0   0   0   3   0   2   5   0   0 555 |   r = draw
+
+
+
+=== Stratified cross-validation ===
+
+Correctly Classified Instances        2270               40.4562 %
+Incorrectly Classified Instances      3341               59.5438 %
+Kappa statistic                          0.3326
+Mean absolute error                      0.0721
+Root mean squared error                  0.2182
+Relative absolute error                 72.5127 %
+Root relative squared error             97.8819 %
+Total Number of Instances             5611     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   <-- classified as
+   0   1   1   0   0   1   1   2   0   1   0   0   0   0   0   0   0   0 |   a = zero
+   0   2   2   0   1   4   0   1   0   5   0   0   0   0   0   0   0   2 |   b = one
+   0   2   2   0   1  12   2   3   5   2  10   0   0   0   0   0   0   1 |   c = two
+   0   1   1   0   1   7   1   0   3   1   2   0   0   0   0   0   0   0 |   d = three
+   0   1   1   0   4  13   1   1   0   3   3   0   1   0   0   0   0   1 |   e = four
+   0   3   2   0   1  36  14   7   2   6  15   3   0   0   0   0   0   6 |   f = five
+   0   4   3   0   1   8  12  13  19  10  17   6   7   2   0   0   0   4 |   g = six
+   0   4   4   0   2  13  10  27  18  12  24  25  15   3   0   0   0  10 |   h = seven
+   0   1   2   0   2   9  12   9  92  33  39  22  13   6   1   0   0  20 |   i = eight
+   0   2   0   0   0   7   7  11  34  90  38  55  26  16   3   3   0  36 |   j = nine
+   0   0   0   0   1   4   3  16  43  32  56  94  78  28   9   4   3  34 |   k = ten
+   0   5   0   1   3   5   1   9  13  20  62 184 147  63  16   9   6  40 |   l = eleven
+   0   1   0   0   0   1   0   2  10   3  45 100 356 141  51  10   2  36 |   m = twelve
+   1   0   1   0   0   3   0   1   1   0  11  45 133 370 143  27  14  57 |   n = thirteen
+   0   0   0   0   0   2   0   0   3   0  14  20  39 154 517 102  10  61 |   o = fourteen
+   0   0   0   0   1   0   0   0   0   0   0   6   7  23  76 268  29  22 |   p = fifteen
+   0   0   0   0   0   0   0   0   0   0   0   0   2   2   1  38  23   5 |   q = sixteen
+   0   1   2   0   6   6   2  10   7   8  25  45  44  57  68  46   7 231 |   r = draw
+

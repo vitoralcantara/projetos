@@ -1,0 +1,7 @@
+digraph "br.com.sosimple:javaMagazine:jar:1.0-SNAPSHOT" { 
+	"br.com.sosimple:javaMagazine:jar:1.0-SNAPSHOT" -> "junit:junit:jar:4.13.1:test" ; 
+	"junit:junit:jar:4.13.1:test" -> "org.hamcrest:hamcrest-core:jar:1.3:test" ; 
+ } digraph "br.com.sosimple:javaMagazine:jar:1.0-SNAPSHOT" { 
+	"br.com.sosimple:javaMagazine:jar:1.0-SNAPSHOT" -> "junit:junit:jar:4.13.1:test" ; 
+	"junit:junit:jar:4.13.1:test" -> "org.hamcrest:hamcrest-core:jar:1.3:test" ; 
+ } 

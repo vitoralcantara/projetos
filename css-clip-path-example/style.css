@@ -1,0 +1,34 @@
+body {
+    background: #333;
+}
+
+.center {
+    position  : relative;
+    left      : 50%;
+    transform : translateX(-50%);
+    margin-top: 10%
+}
+
+h1 {
+    font-family   : 'dosis', fantasy;
+    letter-spacing: 2.3px;
+    color         : #fff;
+    text-align    : center;
+
+}
+
+.clip-path {
+    width            : 310px;
+    height           : 330px;
+    background-image : url(image.jpg);
+    background-size  : cover;
+    clip-path        : polygon(43% 0, 62% 0, 52% 26%, 69% 20%, 32% 100%, 42% 40%, 26% 46%);
+    -webkit-clip-path: polygon(43% 0, 62% 0, 52% 26%, 69% 20%, 32% 100%, 42% 40%, 26% 46%);
+    transition: all .3s;
+}
+
+.clip-path:hover {
+    clip-path        : polygon(10% 20%, 50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%);
+    -webkit-clip-path: polygon(10% 20%, 50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%);
+    transition: all .3s;
+}

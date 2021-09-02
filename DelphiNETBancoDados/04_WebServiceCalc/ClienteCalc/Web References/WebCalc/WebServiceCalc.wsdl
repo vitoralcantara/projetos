@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Soma">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SomaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SomaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Subtracao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubtracaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubtracaoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Produto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProdutoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProdutoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Divisao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DivisaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DivisaoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SomaSoapIn">
+    <wsdl:part name="parameters" element="tns:Soma" />
+  </wsdl:message>
+  <wsdl:message name="SomaSoapOut">
+    <wsdl:part name="parameters" element="tns:SomaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubtracaoSoapIn">
+    <wsdl:part name="parameters" element="tns:Subtracao" />
+  </wsdl:message>
+  <wsdl:message name="SubtracaoSoapOut">
+    <wsdl:part name="parameters" element="tns:SubtracaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProdutoSoapIn">
+    <wsdl:part name="parameters" element="tns:Produto" />
+  </wsdl:message>
+  <wsdl:message name="ProdutoSoapOut">
+    <wsdl:part name="parameters" element="tns:ProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DivisaoSoapIn">
+    <wsdl:part name="parameters" element="tns:Divisao" />
+  </wsdl:message>
+  <wsdl:message name="DivisaoSoapOut">
+    <wsdl:part name="parameters" element="tns:DivisaoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TWebService1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Soma">
+      <wsdl:input message="tns:SomaSoapIn" />
+      <wsdl:output message="tns:SomaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Subtracao">
+      <wsdl:input message="tns:SubtracaoSoapIn" />
+      <wsdl:output message="tns:SubtracaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Produto">
+      <wsdl:input message="tns:ProdutoSoapIn" />
+      <wsdl:output message="tns:ProdutoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Divisao">
+      <wsdl:input message="tns:DivisaoSoapIn" />
+      <wsdl:output message="tns:DivisaoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TWebService1Soap" type="tns:TWebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Soma">
+      <soap:operation soapAction="http://tempuri.org/Soma" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Subtracao">
+      <soap:operation soapAction="http://tempuri.org/Subtracao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Produto">
+      <soap:operation soapAction="http://tempuri.org/Produto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Divisao">
+      <soap:operation soapAction="http://tempuri.org/Divisao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TWebService1">
+    <documentation xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <wsdl:port name="TWebService1Soap" binding="tns:TWebService1Soap">
+      <soap:address location="http://127.0.0.1:8080/WebServiceApplication1/WebServiceCalc.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

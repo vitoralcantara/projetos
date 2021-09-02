@@ -1,0 +1,88 @@
+<%@ Page language="c#" Debug="true" Codebehind="RelatorioCaixa.pas" AutoEventWireup="false" Inherits="RelatorioCaixa.TRelatorioCaixa" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head runat="server">
+    <title></title>
+  </head>
+
+  <body>
+     <form runat="server">
+      <p>RelatórioCofre
+</p>
+      <div style="DISPLAY: inline; WIDTH: 70px; POSITION: relative; HEIGHT: 15px" ms_positioning="FlowLayout">Label
+</div>
+      <p>
+        <hr width="100%" size="1"></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p>
+</p>
+      <p>
+        <asp:Label id="LabelAlerta" runat="server"></asp:Label>
+      </p>
+    <p>
+      <asp:RadioButton id="RBMes" runat="server" text="Este Mês" checked="True"></asp:RadioButton>
+    </p>
+    <p>
+      <asp:RadioButton id="RBPeriodo" runat="server" text="Dentro do Período"></asp:RadioButton>
+    </p>
+      <p>Gerar Relatório: 
+</p>
+      <table cellspacing="1" cellpadding="1" width="433" border="0" style="WIDTH: 433px; HEIGHT: 50px" bordercolor="darkgray" bordercolordark="darkslategray" bgcolor="black" bordercolorlight="gainsboro">
+          <tr>
+            <td style="WIDTH: 127px; HEIGHT: 26px"><font color="#ffffff">Dia: &nbsp; </font><asp:DropDownList id="DDLDiaComeco" runat="server" width="81px"></asp:DropDownList>
+</td>
+            <td style="WIDTH: 165px; HEIGHT: 26px">
+    <p><font color="#ffffff">Mês: </font><asp:DropDownList id="DDLMesComeco" runat="server" width="117px"></asp:DropDownList>
+    
+</p></td><td style="HEIGHT: 26px">
+              <font color="#ffffff">Ano: </font><asp:DropDownList id="DDLAnoComeco" runat="server"></asp:DropDownList>
+</td>
+          </tr>
+          <tr>
+            <td style="WIDTH: 127px"><font color="#ffffff">Dia: &nbsp; </font><asp:DropDownList id="DDLDiaFim" runat="server" width="82px"></asp:DropDownList>
+</td>
+            <td style="WIDTH: 165px"><font color="#ffffff">Mês: </font><asp:DropDownList id="DDLMesFim" runat="server" width="117px"></asp:DropDownList>
+</td>
+            <td><font color="#ffffff">Ano: </font><asp:DropDownList id="DDLAnoFim" runat="server"></asp:DropDownList>
+</td>
+          </tr>
+      </table>
+      <p></p>
+      <table cellspacing="1" cellpadding="1" width="300" align="center" border="1">
+          <tr>
+            <td>
+              <asp:Button id="Button1" runat="server" text="Exibir Caixas"></asp:Button></td>
+            <td>
+              <asp:Button id="Button2" runat="server" text="Gerar Relatório"></asp:Button></td>
+          </tr>
+      </table>
+      <div align="center">
+      <asp:GridView id="GridView1" runat="server" bordercolor="#999999" cellpadding="4" width="464px" borderwidth="3px" backcolor="#CCCCCC" height="152px" forecolor="Black" borderstyle="Solid" cellspacing="2">
+        <FooterStyle backcolor="#CCCCCC"></FooterStyle>
+        <RowStyle backcolor="White"></RowStyle>
+        <SelectedRowStyle backcolor="#000099" forecolor="White" font-bold="True"></SelectedRowStyle>
+        <PagerStyle backcolor="#CCCCCC" forecolor="Black" horizontalalign="Left"></PagerStyle>
+        <HeaderStyle backcolor="Black" forecolor="White" font-bold="True"></HeaderStyle>
+      </asp:GridView>
+      </div>
+     </form>
+    <p>&nbsp;
+</p>
+    <p>
+</p>
+    <p>
+</p>
+    <p>
+</p>
+  </body>
+</html>

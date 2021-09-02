@@ -1,0 +1,137 @@
+<%@ Page language="c#" Debug="true" Codebehind="RelatorioCofre.pas" AutoEventWireup="false" Inherits="RelatorioCofre.TDefault" %>
+<%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
+<%@ Register TagPrefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head runat="server">
+    <title></title>
+  </head>
+
+  <body>
+     <form runat="server">
+      <p><strong><asp:HyperLink id="HyperLink2" runat="server" navigateurl="PagRecibo.aspx">Ir Para Página do Recibo
+</asp:HyperLink>&nbsp;<asp:HyperLink id="HyperLink1" runat="server" navigateurl="RelatorioCaixa.aspx">Ir Para Página do RelatórioCaixa
+</asp:HyperLink>
+
+
+
+
+
+
+</strong></p></strong>
+      <p></p><strong>Relatório do Cofre
+</strong>
+        <hr width="100%" size="1">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p>
+        <asp:Label id="LabelAlerta" runat="server" text="Label"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+</p>
+      <p align="left">
+        <asp:RadioButton id="RBMes" runat="server" text="Do Início do Mês até Hoje" checked="True"></asp:RadioButton></p>
+      <p>&nbsp; <asp:RadioButton id="RBPeriodo" runat="server" text="No Período:"></asp:RadioButton>
+      
+
+
+
+
+
+
+
+
+
+</p>
+      <p>
+
+
+</p>
+      <p>
+</p>
+      <div align="center">
+      <asp:Panel id="Panel2" runat="server" height="423px" width="488px">
+          <DIV align="left">
+            <table cellspacing="1" cellpadding="1" width="300" align="center" border="1">
+                <tr>
+                  <td>
+                    <p align="center">Entre</p></td>
+                  <td>
+                    <p align="center">E</p></td>
+                </tr>
+                <tr>
+                  <td>
+                    <asp:Calendar id="CalendarEntrada" runat="server"></asp:Calendar></td>
+                  <td>
+                    <asp:Calendar id="CalendarSaida" runat="server"></asp:Calendar></td>
+                </tr>
+            </table>
+          </DIV>
+          <DIV align="left">
+            <table cellspacing="1" cellpadding="1" width="300" align="center" border="1">
+                <tr>
+                  <td>
+                    <asp:Button id="Button2" runat="server" text="Realizar Pesquisa"></asp:Button></td>
+                  <td>
+                    <asp:Button id="Button1" runat="server" text="Gerar Relatório"></asp:Button></td>
+                </tr>
+            </table>
+          </DIV>
+          <DIV align="center">
+            <asp:GridView id="GridView1" runat="server" width="462px" cellpadding="4" forecolor="Black" cellspacing="2" borderwidth="3px" borderstyle="Solid" bordercolor="#999999" backcolor="#CCCCCC">
+              <FooterStyle backcolor="#CCCCCC"></FooterStyle>
+              <RowStyle backcolor="White"></RowStyle>
+              <SelectedRowStyle backcolor="#000099" forecolor="White" font-bold="True"></SelectedRowStyle>
+              <PagerStyle backcolor="#CCCCCC" forecolor="Black" horizontalalign="Left"></PagerStyle>
+              <HeaderStyle backcolor="Black" forecolor="White" font-bold="True"></HeaderStyle>
+            </asp:GridView>
+          </DIV>
+      </asp:Panel>
+      </div>
+      <asp:ImageButton id="ImageButton1" runat="server" imageurl="~/Untitled.gif"></asp:ImageButton>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+
+</p>
+      <p>
+</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:GridView id="GridView2" runat="server"></asp:GridView>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</p>
+      <p>
+</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+</p>
+      <p>
+</p>
+      <p>
+</p>
+      <p>
+</p>
+      <div align="center">
+</div>
+      <p>&nbsp;
+</p>
+      <p>&nbsp;
+</p>
+     </form>
+    <p>&nbsp;
+</p>
+    <p>&nbsp;
+</p>
+  </body>
+</html>

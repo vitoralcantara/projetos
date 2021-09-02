@@ -1,0 +1,29 @@
+<%@ Page language="c#" Debug="true" Codebehind="WebForm1.pas" AutoEventWireup="false" Inherits="WebForm1.TWebForm1" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+     <form runat="server">
+      <p></p>
+	  <p>
+        <table cellspacing="1" cellpadding="1" width="300" border="1">
+            <tr>
+              <td>
+      <ASP:RadioButtonList id="RadioButtonList1" runat="server" datasource="<%# DataTableEmployee %>" datatextfield="FirstName" datavaluefield="EmployeeID" autopostback="True"></ASP:RadioButtonList></td>
+              <td>
+                <ASP:Label id="Label1" runat="server">Label</ASP:Label></td>
+            </tr>
+            <tr>
+              <td>
+                <ASP:Button id="Button1" runat="server" text="Desmarcar"></ASP:Button></td>
+              <td>
+                <ASP:Image id="Image1" runat="server"></ASP:Image></td>
+            </tr>
+        </table>
+	 </form></p>
+  </body>
+</html>

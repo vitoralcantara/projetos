@@ -1,0 +1,195 @@
+
+unit Default;
+
+interface
+
+uses
+  System.Collections, System.ComponentModel,
+  System.Data, System.Drawing, System.Web, System.Web.SessionState,
+  System.Web.UI, System.Web.UI.WebControls, System.Web.UI.HtmlControls,
+  System.Web.Security, System.Web.UI.WebControls.WebParts, System.Configuration, 
+  System.Data.SqlClient;
+
+type
+  TDefault = class(System.Web.UI.Page)
+  {$REGION 'Designer Managed Code'}
+  strict private
+    procedure InitializeComponent;
+    //procedure DropDownList4_SelectedIndexChanged(sender: TObject; e: System.EventArgs);
+    //procedure DDLMesComeco_SelectedIndexChanged(sender: TObject; e: System.EventArgs);
+    //procedure DDLMesFim_SelectedIndexChanged(sender: TObject; e: System.EventArgs);
+    procedure Button2_Click(sender: TObject; e: System.EventArgs);
+    procedure CalendarEntrada_SelectionChanged(sender: TObject; e: System.EventArgs);
+    procedure RBMes_CheckedChanged(sender: TObject; e: System.EventArgs);
+    procedure RBPeriodo_CheckedChanged(sender: TObject; e: System.EventArgs);
+  {$ENDREGION}
+  strict private
+    procedure Page_Load(sender: System.Object; e: System.EventArgs);
+  strict protected
+    GridView1: System.Web.UI.WebControls.GridView;
+    SqlConnection1: System.Data.SqlClient.SqlConnection;
+    sqlSelectCommand1: System.Data.SqlClient.SqlCommand;
+    sqlInsertCommand1: System.Data.SqlClient.SqlCommand;
+    sqlUpdateCommand1: System.Data.SqlClient.SqlCommand;
+    sqlDeleteCommand1: System.Data.SqlClient.SqlCommand;
+    SqlDataAdapter1: System.Data.SqlClient.SqlDataAdapter;
+    DataSet1: System.Data.DataSet;
+    DataTableCofre: System.Data.DataTable;
+    Panel1: System.Web.UI.WebControls.Panel;
+    RBMes: System.Web.UI.WebControls.RadioButton;
+    RBPeriodo: System.Web.UI.WebControls.RadioButton;
+    Button2: System.Web.UI.WebControls.Button;
+    LabelAlerta: System.Web.UI.WebControls.&Label;
+    CalendarEntrada: System.Web.UI.WebControls.Calendar;
+    CalendarSaida: System.Web.UI.WebControls.Calendar;
+    Button3: System.Web.UI.WebControls.Button;
+    Label2: System.Web.UI.WebControls.&Label;
+    DropDownList1: System.Web.UI.WebControls.DropDownList;
+    DropDownList2: System.Web.UI.WebControls.DropDownList;
+    DropDownList3: System.Web.UI.WebControls.DropDownList;
+    DropDownList4: System.Web.UI.WebControls.DropDownList;
+  protected
+    procedure OnInit(e: EventArgs); override;
+    //function Bissexto(ano:integer):boolean;
+    //procedure checkMesDDL(ddl:boolean);
+  private
+    { Private Declarations }
+  public
+    { Public Declarations }
+
+  end;
+
+implementation
+
+{$REGION 'Designer Managed Code'}
+/// <summary>
+/// Required method for Designer support -- do not modify
+/// the contents of this method with the code editor.
+/// </summary>
+procedure TDefault.InitializeComponent;
+type
+  TArrayOfSystem_Data_DataTable = array of System.Data.DataTable;
+begin
+  Self.SqlConnection1 := System.Data.SqlClient.SqlConnection.Create;
+  Self.sqlSelectCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlInsertCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlUpdateCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlDeleteCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.SqlDataAdapter1 := System.Data.SqlClient.SqlDataAdapter.Create;
+  Self.DataSet1 := System.Data.DataSet.Create;
+  Self.DataTableCofre := System.Data.DataTable.Create;
+  (System.ComponentModel.ISupportInitialize(Self.DataSet1)).BeginInit;
+  (System.ComponentModel.ISupportInitialize(Self.DataTableCofre)).BeginInit;
+  Include(Self.RBMes.CheckedChanged, Self.RBMes_CheckedChanged);
+  Include(Self.RBPeriodo.CheckedChanged, Self.RBPeriodo_CheckedChanged);
+  Include(Self.CalendarEntrada.SelectionChanged, Self.CalendarEntrada_SelectionChanged);
+  Include(Self.Button2.Click, Self.Button2_Click);
+  // 
+  // SqlConnection1
+  // 
+  Self.SqlConnection1.ConnectionString := 'user id=sa;data source="CESAR-9A7' +
+  'E5DF0A\SQLEXPRESS";persist security info=True;initial catalog=AFCont;pass' +
+  'word=senha';
+  Self.SqlConnection1.FireInfoMessageEventOnUserErrors := False;
+  // 
+  // sqlSelectCommand1
+  // 
+  Self.sqlSelectCommand1.Connection := Self.SqlConnection1;
+  // 
+  // SqlDataAdapter1
+  // 
+  Self.SqlDataAdapter1.DeleteCommand := Self.sqlDeleteCommand1;
+  Self.SqlDataAdapter1.InsertCommand := Self.sqlInsertCommand1;
+  Self.SqlDataAdapter1.SelectCommand := Self.sqlSelectCommand1;
+  Self.SqlDataAdapter1.UpdateCommand := Self.sqlUpdateCommand1;
+  // 
+  // DataSet1
+  // 
+  Self.DataSet1.DataSetName := 'NewDataSet';
+  Self.DataSet1.Tables.AddRange(TArrayOfSystem_Data_DataTable.Create(Self.DataTableCofre));
+  // 
+  // DataTableCofre
+  // 
+  Self.DataTableCofre.TableName := 'Cofre';
+  Include(Self.Load, Self.Page_Load);
+  (System.ComponentModel.ISupportInitialize(Self.DataSet1)).EndInit;
+  (System.ComponentModel.ISupportInitialize(Self.DataTableCofre)).EndInit;
+end;
+{$ENDREGION}
+
+procedure TDefault.Page_Load(sender: System.Object; e: System.EventArgs);
+  begin
+  end;
+
+procedure TDefault.OnInit(e: EventArgs);
+begin
+  //
+  // Required for Designer support
+  //
+  InitializeComponent;
+  inherited OnInit(e);
+end;
+
+procedure TDefault.RBPeriodo_CheckedChanged(sender: TObject; e: System.EventArgs);
+begin
+  CalendarEntrada.Enabled := true;
+  CalendarSaida.Enabled := true;
+end;
+
+procedure TDefault.RBMes_CheckedChanged(sender: TObject; e: System.EventArgs);
+begin
+  CalendarEntrada.Enabled := false;
+  CalendarSaida.Enabled := false;
+end;
+
+procedure TDefault.CalendarEntrada_SelectionChanged(sender: TObject; e: System.EventArgs);
+  begin
+end;
+
+procedure TDefault.Button2_Click(sender: TObject; e: System.EventArgs);
+const
+  stringSearch = 'select Cofre.cod_cofre as Codigo, Usuario.nome as Funcionario,'
+  +'Cofre.data_operacao as "Data de Operação", Cofre.entrada_saida as Tipo, '
+  +'Cofre.descricao as Descrição , Cofre.valor as Valor, Day(Caixa.data_hora_abertura) as '
+  +'"Data Abertura Caixa" from Caixa, Usuario, Cofre where '
+  +'Cofre.cod_usuario = Usuario.cod_usuario and Cofre.cod_caixa = Caixa.cod_caixa '
+  +'and Cofre.data_operacao > '+Chr(39)+' {0} '+chr(39)+' and Cofre.data_operacao < '+chr(39)+' {1} '+chr(39);
+var
+  tempEntrada : string;
+  tempSaida : string;
+  data : DateTime;
+begin
+  if RBMes.Checked = true then
+    begin
+      tempEntrada := '01/'+DateTime.get_Now.Month.ToString+'/'
+      +DateTime.get_Now.year.ToString+' 00:00:00';
+      tempSaida := DateTime.get_Now.ToString;
+      LabelAlerta.text := 'RbMes Checked';
+    end
+  else
+    begin
+      if CalendarEntrada.SelectedDate > CalendarSaida.SelectedDate then
+        LabelAlerta.Text := 'Opa! Foi selecionado inversamente um intervalo para o Calendário'
+      else
+        begin
+          tempEntrada := CalendarEntrada.SelectedDate.Date.ToString;
+          tempSaida := CalendarSaida.SelectedDate.Date.ToString;
+          data := Convert.ToDateTime('02/05/2008');
+          tempEntrada := CalendarEntrada.SelectedDate.Date := data;
+  {
+  SqlConnection1.Open;
+  sqlSelectCommand1.CommandText := System.String.Format(stringSearch,CalendarEntrada.SelectedDate.ToString,CalendarSaida.SelectedDate.ToString);
+  sqlSelectCommand1.ExecuteNonQuery;
+  SqlDataAdapter1.Fill(DataSet1,'Cofre');
+  GridView1.DataSource := DataTableCofre.DefaultView;
+  databind;
+  SqlConnection1.Close;
+  }
+          LabelAlerta.Text := data.ToString;
+
+  end;
+
+
+end;
+end;
+end.

@@ -1,0 +1,171 @@
+
+unit RelatorioCaixas;
+
+interface
+
+uses
+  System.Collections, System.ComponentModel,
+  System.Data, System.Drawing, System.Web, System.Web.SessionState,
+  System.Web.UI, System.Web.UI.WebControls, System.Web.UI.HtmlControls,
+  System.Web.Security, System.Web.UI.WebControls.WebParts, System.Configuration, 
+  System.Data.SqlClient;
+
+type
+  TRelatorioCaixas = class(System.Web.UI.Page)
+  {$REGION 'Designer Managed Code'}
+  strict private
+    procedure InitializeComponent;
+    procedure GridView1_SelectedIndexChanged(sender: TObject; e: System.EventArgs);
+  {$ENDREGION}
+  strict private
+    procedure Page_Load(sender: System.Object; e: System.EventArgs);
+  strict protected
+    RadioButton1: System.Web.UI.WebControls.RadioButton;
+    RadioButton2: System.Web.UI.WebControls.RadioButton;
+    Calendar1: System.Web.UI.WebControls.Calendar;
+    CheckBox1: System.Web.UI.WebControls.CheckBox;
+    CheckBox2: System.Web.UI.WebControls.CheckBox;
+    GridView1: System.Web.UI.WebControls.GridView;
+    SqlConnection1: System.Data.SqlClient.SqlConnection;
+    DataSet1: System.Data.DataSet;
+    DataTableRel: System.Data.DataTable;
+    sqlSelectCommand1: System.Data.SqlClient.SqlCommand;
+    sqlInsertCommand1: System.Data.SqlClient.SqlCommand;
+    sqlUpdateCommand1: System.Data.SqlClient.SqlCommand;
+    sqlDeleteCommand1: System.Data.SqlClient.SqlCommand;
+    SqlDataAdapter1: System.Data.SqlClient.SqlDataAdapter;
+    Button1: System.Web.UI.WebControls.Button;
+    Button2: System.Web.UI.WebControls.Button;
+    Button3: System.Web.UI.WebControls.Button;
+    Label2: System.Web.UI.WebControls.&Label;
+    Label3: System.Web.UI.WebControls.&Label;
+    Label4: System.Web.UI.WebControls.&Label;
+    Label5: System.Web.UI.WebControls.&Label;
+    Label6: System.Web.UI.WebControls.&Label;
+    Label7: System.Web.UI.WebControls.&Label;
+    Label8: System.Web.UI.WebControls.&Label;
+    Label9: System.Web.UI.WebControls.&Label;
+    Label10: System.Web.UI.WebControls.&Label;
+    Label11: System.Web.UI.WebControls.&Label;
+    Label12: System.Web.UI.WebControls.&Label;
+    Label13: System.Web.UI.WebControls.&Label;
+    LabelExtData: System.Web.UI.WebControls.&Label;
+    LabelExtPago: System.Web.UI.WebControls.&Label;
+    SqlSelCom2: System.Data.SqlClient.SqlCommand;
+  protected
+    procedure OnInit(e: EventArgs); override;
+  private
+    { Private Declarations }
+  public
+    { Public Declarations }
+  end;
+
+implementation
+
+{$REGION 'Designer Managed Code'}
+/// <summary>
+/// Required method for Designer support -- do not modify
+/// the contents of this method with the code editor.
+/// </summary>
+procedure TRelatorioCaixas.InitializeComponent;
+type
+  TArrayOfSystem_Data_DataTable = array of System.Data.DataTable;
+  TArrayOfSystem_Data_SqlClient_SqlParameter = array of System.Data.SqlClient.SqlParameter;
+begin
+  Self.SqlConnection1 := System.Data.SqlClient.SqlConnection.Create;
+  Self.DataSet1 := System.Data.DataSet.Create;
+  Self.DataTableRel := System.Data.DataTable.Create;
+  Self.sqlSelectCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlInsertCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlUpdateCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlDeleteCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.SqlDataAdapter1 := System.Data.SqlClient.SqlDataAdapter.Create;
+  Self.SqlSelCom2 := System.Data.SqlClient.SqlCommand.Create;
+  (System.ComponentModel.ISupportInitialize(Self.DataSet1)).BeginInit;
+  (System.ComponentModel.ISupportInitialize(Self.DataTableRel)).BeginInit;
+  Include(Self.GridView1.SelectedIndexChanged, Self.GridView1_SelectedIndexChanged);
+  // 
+  // SqlConnection1
+  // 
+  Self.SqlConnection1.ConnectionString := 'user id=sa;initial catalog=AFCont' +
+  ';persist security info=True;password=senha';
+  Self.SqlConnection1.FireInfoMessageEventOnUserErrors := False;
+  // 
+  // DataSet1
+  // 
+  Self.DataSet1.DataSetName := 'NewDataSet';
+  Self.DataSet1.Tables.AddRange(TArrayOfSystem_Data_DataTable.Create(Self.DataTableRel));
+  // 
+  // DataTableRel
+  // 
+  Self.DataTableRel.TableName := 'TableRelatorio';
+  // 
+  // sqlSelectCommand1
+  // 
+  Self.sqlSelectCommand1.Connection := Self.SqlConnection1;
+  // 
+  // SqlDataAdapter1
+  // 
+  Self.SqlDataAdapter1.DeleteCommand := Self.sqlDeleteCommand1;
+  Self.SqlDataAdapter1.InsertCommand := Self.sqlInsertCommand1;
+  Self.SqlDataAdapter1.SelectCommand := Self.sqlSelectCommand1;
+  Self.SqlDataAdapter1.UpdateCommand := Self.sqlUpdateCommand1;
+  // 
+  // SqlSelCom2
+  // 
+  Self.SqlSelCom2.Parameters.AddRange(TArrayOfSystem_Data_SqlClient_SqlParameter.Create(System.Data.SqlClient.SqlParameter.Create('@' +
+          'ExtCodigo', System.Data.SqlDbType.NVarChar)));
+  Include(Self.Load, Self.Page_Load);
+  (System.ComponentModel.ISupportInitialize(Self.DataSet1)).EndInit;
+  (System.ComponentModel.ISupportInitialize(Self.DataTableRel)).EndInit;
+end;
+{$ENDREGION}
+
+procedure TRelatorioCaixas.Page_Load(sender: System.Object; e: System.EventArgs);
+const
+stringCon = 'select Conta.descricao_conta, Empresa.razao_social, '
++'tiporecdesp.descricao, Conta_Extrato.valor_pago, Operacao.operacao '
++'from conta, empresa, conta_extrato, Operacao, conta_parcela, caixa_movimento, '
++'tiporecdesp where conta_extrato.cod_conta_parcela = conta_parcela.cod_conta_parcela '
++'and conta_parcela.cod_conta = Conta.cod_conta and Caixa_movimento.cod_extrato = conta_extrato.cod_extrato '
++'and Caixa_movimento.cod_operacao = Operacao.cod_operacao and '
++'empresa.cod_empresa = Conta.cod_empresa and conta.cod_tipord = tiporecdesp.cod_tipord';
+begin
+  // TODO: Put user code to initialize the page here
+  SqlConnection1.Open;
+  sqlSelectCommand1.CommandText := stringCon;
+  sqlSelectCommand1.ExecuteNonQuery;
+  SqlDataAdapter1.Fill(DataSet1,'TableRelatorio');
+  GridView1.DataSource := DataTableRel.DefaultView;
+  databind;
+  SqlConnection1.Close;
+  end;
+
+procedure TRelatorioCaixas.OnInit(e: EventArgs);
+begin
+  //
+  // Required for Designer support
+  //
+  InitializeComponent;
+  inherited OnInit(e);
+end;
+
+procedure TRelatorioCaixas.GridView1_SelectedIndexChanged(sender: TObject; e: System.EventArgs);
+const
+stringSel = 'select conta_extrato.cod_extrato conta_extrato.valor_pago, conta_extrato.data_pagamento from conta_extrato '
++'where cod_extrato = @ExtCodigo';
+var
+  conTexto : string;
+  puxador : SqlDataReader;
+  begin
+  SqlConnection1.Open;
+  SqlSelCom2.Parameters.Item[0].Value := 16;//GridView1.SelectedRow.Cells[2].Text;
+  puxador := SqlSelCom2.ExecuteReader;
+  puxador.Read;
+  LabelExtPago.Text := puxador['valor_pago'].ToString;
+  LabelExtData.Text := puxador['data_pagamento'].ToString;
+  SqlConnection1.Close;
+end;
+
+end.
+

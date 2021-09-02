@@ -1,0 +1,108 @@
+
+unit RelatorioCaixas;
+
+interface
+
+uses
+  System.Collections, System.ComponentModel,
+  System.Data, System.Drawing, System.Web, System.Web.SessionState,
+  System.Web.UI, System.Web.UI.WebControls, System.Web.UI.HtmlControls,
+  System.Web.Security, System.Web.UI.WebControls.WebParts, System.Configuration, 
+  System.Data.SqlClient;
+
+type
+  TRelatorioCaixas = class(System.Web.UI.Page)
+  {$REGION 'Designer Managed Code'}
+  strict private
+    procedure InitializeComponent;
+  {$ENDREGION}
+  strict private
+    procedure Page_Load(sender: System.Object; e: System.EventArgs);
+  strict protected
+    RadioButton1: System.Web.UI.WebControls.RadioButton;
+    RadioButton2: System.Web.UI.WebControls.RadioButton;
+    Calendar1: System.Web.UI.WebControls.Calendar;
+    CheckBox1: System.Web.UI.WebControls.CheckBox;
+    CheckBox2: System.Web.UI.WebControls.CheckBox;
+    GridView1: System.Web.UI.WebControls.GridView;
+    SqlConnection1: System.Data.SqlClient.SqlConnection;
+    DataSet1: System.Data.DataSet;
+    DataTableRel: System.Data.DataTable;
+    sqlSelectCommand1: System.Data.SqlClient.SqlCommand;
+    sqlInsertCommand1: System.Data.SqlClient.SqlCommand;
+    sqlUpdateCommand1: System.Data.SqlClient.SqlCommand;
+    sqlDeleteCommand1: System.Data.SqlClient.SqlCommand;
+    SqlDataAdapter1: System.Data.SqlClient.SqlDataAdapter;
+  protected
+    procedure OnInit(e: EventArgs); override;
+  private
+    { Private Declarations }
+  public
+    { Public Declarations }
+  end;
+
+implementation
+
+{$REGION 'Designer Managed Code'}
+/// <summary>
+/// Required method for Designer support -- do not modify
+/// the contents of this method with the code editor.
+/// </summary>
+procedure TRelatorioCaixas.InitializeComponent;
+type
+  TArrayOfSystem_Data_DataTable = array of System.Data.DataTable;
+begin
+  Self.SqlConnection1 := System.Data.SqlClient.SqlConnection.Create;
+  Self.DataSet1 := System.Data.DataSet.Create;
+  Self.sqlSelectCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlInsertCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlUpdateCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.sqlDeleteCommand1 := System.Data.SqlClient.SqlCommand.Create;
+  Self.SqlDataAdapter1 := System.Data.SqlClient.SqlDataAdapter.Create;
+  Self.DataTableRel := System.Data.DataTable.Create;
+  (System.ComponentModel.ISupportInitialize(Self.DataSet1)).BeginInit;
+  (System.ComponentModel.ISupportInitialize(Self.DataTableRel)).BeginInit;
+  // 
+  // SqlConnection1
+  // 
+  Self.SqlConnection1.ConnectionString := 'user id=sa;initial catalog=AFCont' +
+  ';persist security info=True;password=senha';
+  Self.SqlConnection1.FireInfoMessageEventOnUserErrors := False;
+  // 
+  // DataSet1
+  // 
+  Self.DataSet1.DataSetName := 'NewDataSet';
+  Self.DataSet1.Tables.AddRange(TArrayOfSystem_Data_DataTable.Create(Self.DataTableRel));
+  // 
+  // SqlDataAdapter1
+  // 
+  Self.SqlDataAdapter1.DeleteCommand := Self.sqlDeleteCommand1;
+  Self.SqlDataAdapter1.InsertCommand := Self.sqlInsertCommand1;
+  Self.SqlDataAdapter1.SelectCommand := Self.sqlSelectCommand1;
+  Self.SqlDataAdapter1.UpdateCommand := Self.sqlUpdateCommand1;
+  // 
+  // DataTableRel
+  // 
+  Self.DataTableRel.TableName := 'TableRelatorio';
+  Include(Self.Load, Self.Page_Load);
+  (System.ComponentModel.ISupportInitialize(Self.DataSet1)).EndInit;
+  (System.ComponentModel.ISupportInitialize(Self.DataTableRel)).EndInit;
+end;
+{$ENDREGION}
+
+procedure TRelatorioCaixas.Page_Load(sender: System.Object; e: System.EventArgs);
+begin
+  // TODO: Put user code to initialize the page here
+end;
+
+procedure TRelatorioCaixas.OnInit(e: EventArgs);
+begin
+  //
+  // Required for Designer support
+  //
+  InitializeComponent;
+  inherited OnInit(e);
+end;
+
+end.
+

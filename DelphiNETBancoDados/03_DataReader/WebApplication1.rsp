@@ -1,0 +1,4 @@
+/utf8output
+/out:bin\WebApplication1.dll
+ /res:C:\inetpub\wwwroot\WebT\03_DataListImagem\WebForm1.TWebForm1.resources
+ /res:C:\inetpub\wwwroot\WebT\03_DataListImagem\WebForm2.TWebForm2.resources

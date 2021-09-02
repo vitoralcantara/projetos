@@ -1,0 +1,108 @@
+<%@ Page language="c#" Debug="true" Codebehind="RelatorioCaixas.pas" AutoEventWireup="false" Inherits="RelatorioCaixas.TRelatorioCaixas" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head runat="server">
+    <title></title>
+  </head>
+
+  <body>
+     <form runat="server">
+      <table cellspacing="1" cellpadding="1" width="300" border="0">
+          <tr>
+            <td>Relatório do Caixa 
+</td>
+          </tr>
+      </table>
+      <p></p>
+      <table cellspacing="1" cellpadding="1" width="300" border="0">
+          <tr>
+            <td>
+              <asp:RadioButton id="RadioButton1" runat="server" text="Caixa Atual"></asp:RadioButton></td>
+            <td style="WIDTH: 7px">
+              <asp:CheckBox id="CheckBox1" runat="server" text="Entradas" width="109px"></asp:CheckBox></td>
+          </tr>
+          <tr>
+            <td>
+              <asp:RadioButton id="RadioButton2" runat="server" text="Caixa do Dia:"></asp:RadioButton></td>
+            <td style="WIDTH: 7px">
+              <asp:CheckBox id="CheckBox2" runat="server" text="Saidas"></asp:CheckBox></td>
+          </tr>
+          <tr>
+            <td>
+              <asp:Calendar id="Calendar1" runat="server" bordercolor="#999999" cellpadding="4" width="189px" font-size="8pt" font-names="Verdana" backcolor="White" daynameformat="Shortest" height="83px" forecolor="Black">
+                <SelectedDayStyle backcolor="#666666" forecolor="White" font-bold="True"></SelectedDayStyle>
+                <TodayDayStyle backcolor="#CCCCCC" forecolor="Black"></TodayDayStyle>
+                <SelectorStyle backcolor="#CCCCCC"></SelectorStyle>
+                <WeekendDayStyle backcolor="#FFFFCC"></WeekendDayStyle>
+                <OtherMonthDayStyle forecolor="#808080"></OtherMonthDayStyle>
+                <NextPrevStyle verticalalign="Bottom"></NextPrevStyle>
+                <DayHeaderStyle backcolor="#CCCCCC" font-size="7pt" font-bold="True"></DayHeaderStyle>
+                <TitleStyle backcolor="#999999" bordercolor="Black" font-bold="True"></TitleStyle>
+              </asp:Calendar></td>
+            <td style="WIDTH: 7px">
+              <div align="center">
+                <asp:Button id="Button1" runat="server" text="Pesquisar"></asp:Button>
+                <asp:Button id="Button2" runat="server" text="Realizar Pesquisa"></asp:Button>
+              </div>
+              <asp:Button id="Button3" runat="server" text="Gerar Relatório"></asp:Button></td>
+          </tr>
+      </table>
+      <table cellspacing="1" cellpadding="1" width="300" border="1">
+          <tr>
+            <td>
+              <table cellspacing="1" cellpadding="1" width="300" border="1">
+                  <tr>
+                    <td><strong>Dados da Conta:</strong></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+              </table></td>
+          </tr>
+      </table>
+      <asp:GridView id="GridView1" runat="server" bordercolor="White" cellpadding="3" width="592px" backcolor="White" height="199px" borderstyle="Ridge" borderwidth="2px" gridlines="None" cellspacing="1">
+        <FooterStyle backcolor="#C6C3C6" forecolor="Black"></FooterStyle>
+        <Columns>
+          <asp:CommandField selecttext="Detalhes" showselectbutton="True"></asp:CommandField>
+        </Columns>
+        <RowStyle backcolor="#DEDFDE" forecolor="Black"></RowStyle>
+        <SelectedRowStyle backcolor="#9471DE" forecolor="White" font-bold="True"></SelectedRowStyle>
+        <PagerStyle backcolor="#C6C3C6" forecolor="Black" horizontalalign="Right"></PagerStyle>
+        <HeaderStyle backcolor="#4A3C8C" forecolor="#E7E7FF" font-bold="True"></HeaderStyle>
+      </asp:GridView>
+</form>
+    <p>&nbsp;
+</p>
+    <p>&nbsp;
+</p>
+    <p>&nbsp;
+</p>
+  </body>
+</html>

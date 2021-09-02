@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{C4F7EE51-08E3-440D-98DD-86671C47DBB2}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="DataLst.dll">..\..\..\..\DelphiNET\Cap 27\Ex12_DataList\DataLst.bdsproj</Projects>
+      <Projects Name="WebApplication1.dll">WebApplication1.bdsproj</Projects>
+      <Projects Name="Targets">DataLst.dll WebApplication1.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

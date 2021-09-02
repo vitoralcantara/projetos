@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2008/12/17 21:07:33.640.aspx,D:\ENGSOFT\AFContRelatorio\Default.aspx=D:\ENGSOFT\AFContRelatorio\RelatorioCofre.aspx</Transaction>
+    <Transaction>2008/12/17 21:07:33.656.pas,D:\ENGSOFT\AFContRelatorio\Default.pas=D:\ENGSOFT\AFContRelatorio\RelatorioCofre.pas</Transaction>
+    <Transaction>2008/12/17 21:07:33.796.resx,D:\ENGSOFT\AFContRelatorio\Default.resx=D:\ENGSOFT\AFContRelatorio\RelatorioCofre.resx</Transaction>
+    <Transaction>2008/12/17 21:07:33.953.aspx,D:\ENGSOFT\AFContRelatorio\Default.aspx=D:\ENGSOFT\AFContRelatorio\RelatorioCofre.aspx</Transaction>
+    <Transaction>2008/12/17 21:07:33.953.pas,D:\ENGSOFT\AFContRelatorio\Default.pas=D:\ENGSOFT\AFContRelatorio\RelatorioCofre.pas</Transaction>
+    <Transaction>2008/12/17 21:47:16.687.pas,D:\ENGSOFT\AFContRelatorio\Unit1.pas=D:\ENGSOFT\AFContRelatorio\UnitFunctions.pas</Transaction>
+    <Transaction>2008/12/17 21:49:59.906.pas,D:\ENGSOFT\AFContRelatorio\UnitFunctions.pas=</Transaction>
+    <Transaction>2008/12/17 22:02:12.421.pas,D:\ENGSOFT\AFContRelatorio\Class1.pas=D:\ENGSOFT\AFContRelatorio\Functions.pas</Transaction>
+    <Transaction>2008/12/17 23:28:52.265.pas,D:\ENGSOFT\AFContRelatorio\Functions.pas=</Transaction>
+    <Transaction>2008/12/22 13:31:23.351.aspx,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\RelatorioCaixa.aspx=</Transaction>
+    <Transaction>2008/12/22 18:55:31.265.aspx,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\Relatorio.aspx=</Transaction>
+    <Transaction>2008/12/23 15:11:15.421.aspx,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\Default.aspx=</Transaction>
+    <Transaction>2008/12/23 15:11:25.328.pas,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\Functions.pas=</Transaction>
+    <Transaction>2008/12/23 15:17:20.171.aspx,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\RelatorioCaixa.aspx=C:\Documents and Settings\aluno\Desktop\AFContRelatorio\PesquisaCaixa.aspx</Transaction>
+    <Transaction>2008/12/23 15:17:20.171.pas,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\RelatorioCaixa.pas=C:\Documents and Settings\aluno\Desktop\AFContRelatorio\PesquisaCaixa.pas</Transaction>
+    <Transaction>2008/12/23 15:17:20.312.resx,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\RelatorioCaixa.resx=C:\Documents and Settings\aluno\Desktop\AFContRelatorio\PesquisaCaixa.resx</Transaction>
+    <Transaction>2008/12/23 15:17:20.437.aspx,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\RelatorioCaixa.aspx=C:\Documents and Settings\aluno\Desktop\AFContRelatorio\PesquisaCaixa.aspx</Transaction>
+    <Transaction>2008/12/23 15:17:20.437.pas,C:\Documents and Settings\aluno\Desktop\AFContRelatorio\RelatorioCaixa.pas=C:\Documents and Settings\aluno\Desktop\AFContRelatorio\PesquisaCaixa.pas</Transaction>
+  </Transactions>
+</BorlandProject>

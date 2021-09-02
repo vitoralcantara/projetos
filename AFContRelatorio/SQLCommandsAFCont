@@ -1,0 +1,7 @@
+select Cofre.cod_cofre as Codigo, Usuario.nome as Funcionario, Cofre.data_operacao as 'Data de Operação', Cofre.entrada_saida as Tipo, Cofre.descricao as Descrição , Cofre.valor as Valor, Day(Caixa.data_hora_abertura) as 'Data Abertura Caixa' from Caixa, Usuario, Cofre where Cofre.cod_usuario = Usuario.cod_usuario and Cofre.cod_caixa = Caixa.cod_caixa
+
+select Cofre.cod_cofre as Codigo, Usuario.nome as Funcionario, Cofre.data_operacao as 'Data de Operação', Cofre.entrada_saida as Tipo, Cofre.descricao as Descrição , Cofre.valor as Valor, Day(Caixa.data_hora_abertura) as 'Data Abertura Caixa' from Caixa, Usuario, Cofre where Cofre.cod_usuario = Usuario.cod_usuario and Cofre.cod_caixa = Caixa.cod_caixa and Cofre.data_operacao > 28/12/2008
+
+select cod_caixa as Codigo, data_hora_abertura as 'Data Abertura', data_hora_fechamento as 'Data Fechamento', saldo as Saldo, Usuario.nome as Responsavel from Caixa, Usuario where data_hora_abertura > '30/11/2008 00:00:00' and data_hora_fechamento < '10/1/2009 00:00:00' and data_hora_fechamento is not NULL and usuario.cod_usuario = caixa.cod_usuario
+
+select cod_caixa as Codigo, data_hora_abertura as DataAbertura, data_hora_fechamento as DataFechamento, saldo as Saldo , Usuario.nome as Responsavel from Caixa, Usuario where data_hora_abertura > '01/12/2008 00:00:00' and data_hora_fechamento < '18/12/2008 00:30:57'is not NULL and usuario.cod_usuario = caixa.cod_usuario

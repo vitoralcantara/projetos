@@ -1,0 +1,77 @@
+<%@ Page language="c#" Debug="true" Codebehind="RelatorioCaixa.pas" AutoEventWireup="false" Inherits="RelatorioCaixa.TRelatorioCaixa" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head runat="server">
+    <title></title>
+  </head>
+
+  <body>
+     <form runat="server">
+      <p>RelatórioCofre
+</p>
+      <p>
+        <hr width="100%" size="1"></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p>&nbsp;
+</p>
+      <p>
+        <asp:Label id="LabelAlerta" runat="server"></asp:Label>
+      </p>
+    <p>
+      <asp:RadioButton id="RBMes" runat="server" text="Este Mês" checked="True"></asp:RadioButton>
+    </p>
+    <p>
+      <asp:RadioButton id="RBPeriodo" runat="server" text="Dentro do Período"></asp:RadioButton>
+    </p>
+      <p>Gerar Relatório: 
+</p>
+      <table cellspacing="1" cellpadding="1" width="300" border="1">
+          <tr>
+            <td style="HEIGHT: 100px">
+      <asp:Calendar id="Calendar2" runat="server" bordercolor="#3366CC" cellpadding="1" width="220px" borderwidth="1px" font-size="8pt" font-names="Verdana" backcolor="White" daynameformat="Shortest" height="200px" forecolor="#003399">
+                <SelectedDayStyle backcolor="#009999" forecolor="#CCFF99" font-bold="True"></SelectedDayStyle>
+                <TodayDayStyle backcolor="#99CCCC" forecolor="White"></TodayDayStyle>
+                <SelectorStyle backcolor="#99CCCC" forecolor="#336666"></SelectorStyle>
+                <WeekendDayStyle backcolor="#CCCCFF"></WeekendDayStyle>
+                <OtherMonthDayStyle forecolor="#999999"></OtherMonthDayStyle>
+                <NextPrevStyle forecolor="#CCCCFF" font-size="8pt"></NextPrevStyle>
+                <DayHeaderStyle backcolor="#99CCCC" height="1px" forecolor="#336666"></DayHeaderStyle>
+                <TitleStyle backcolor="#003399" height="25px" forecolor="#CCCCFF" borderwidth="1px" bordercolor="#3366CC" font-size="10pt" font-bold="True"></TitleStyle></asp:Calendar></td>
+            <td style="HEIGHT: 100px">
+    <p>
+      <asp:Calendar id="Calendar1" runat="server" bordercolor="#3366CC" cellpadding="1" width="220px" borderwidth="1px" font-size="8pt" font-names="Verdana" backcolor="White" daynameformat="Shortest" height="200px" forecolor="#003399">
+                  <SelectedDayStyle backcolor="#009999" forecolor="#CCFF99" font-bold="True"></SelectedDayStyle>
+                  <TodayDayStyle backcolor="#99CCCC" forecolor="White"></TodayDayStyle>
+                  <SelectorStyle backcolor="#99CCCC" forecolor="#336666"></SelectorStyle>
+                  <WeekendDayStyle backcolor="#CCCCFF"></WeekendDayStyle>
+                  <OtherMonthDayStyle forecolor="#999999"></OtherMonthDayStyle>
+                  <NextPrevStyle forecolor="#CCCCFF" font-size="8pt"></NextPrevStyle>
+                  <DayHeaderStyle backcolor="#99CCCC" height="1px" forecolor="#336666"></DayHeaderStyle>
+                  <TitleStyle backcolor="#003399" height="25px" forecolor="#CCCCFF" borderwidth="1px" bordercolor="#3366CC" font-size="10pt" font-bold="True"></TitleStyle></asp:Calendar>
+    </p></td>
+          </tr>
+      </table>
+      <asp:GridView id="GridView1" runat="server" bordercolor="#999999" cellpadding="4" width="464px" borderwidth="3px" backcolor="#CCCCCC" height="152px" forecolor="Black" borderstyle="Solid" cellspacing="2">
+        <FooterStyle backcolor="#CCCCCC"></FooterStyle>
+        <RowStyle backcolor="White"></RowStyle>
+        <SelectedRowStyle backcolor="#000099" forecolor="White" font-bold="True"></SelectedRowStyle>
+        <PagerStyle backcolor="#CCCCCC" forecolor="Black" horizontalalign="Left"></PagerStyle>
+        <HeaderStyle backcolor="Black" forecolor="White" font-bold="True"></HeaderStyle>
+      </asp:GridView>
+     </form>
+    <p>&nbsp;
+</p>
+    <p>
+</p>
+    <p>
+</p>
+    <p>
+</p>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<%@ Page language="c#" Debug="true" Codebehind="Default.pas" AutoEventWireup="false" Inherits="Default.TDefault" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head runat="server"><title></title>
+  </head>
+
+  <body>
+     <form runat="server">
+      <p><strong>Relatório do Cofre
+</strong><hr width="100%" size="1"></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p>&nbsp;
+</p>
+      <div align="center">
+      <asp:Panel id="Panel1" runat="server" height="161px" width="536px">
+          <P><strong>Gerar Relatório:</strong>
+          </P>
+          <P align="center">
+            <asp:Label id="LabelAlerta" runat="server" forecolor="Red"></asp:Label>
+          </P>
+          <P align="left">
+            <table style="WIDTH: 463px; HEIGHT: 80px" bordercolor="beige" cellspacing="2" cellpadding="2" width="463" bgcolor="lavenderblush" border="1">
+                <tr>
+                  <td style="WIDTH: 227px">
+                    <asp:RadioButton id="RBMes" runat="server" text="Este mês" groupname="Selecao" checked="True"></asp:RadioButton></td>
+                </tr>
+                <tr>
+                  <td style="WIDTH: 227px">
+                    <p align="left">
+                      <asp:RadioButton id="RBPeriodo" runat="server" text="Dentro do Periodo:" groupname="Selecao"></asp:RadioButton>
+                      <table bordercolor="pink" cellspacing="2" cellpadding="2" width="300" bgcolor="floralwhite" border="2">
+                          <tr>
+                            <td style="WIDTH: 214px; HEIGHT: 25px">
+                              <p align="center">Entre</p></td>
+                            <td style="HEIGHT: 25px">
+                              <p align="center">E</p></td>
+                          </tr>
+                          <tr>
+                            <td style="WIDTH: 214px; HEIGHT: 179px">
+                              <asp:Calendar id="CalendarEntrada" runat="server" width="209px" height="75px" enabletheming="True" nextprevformat="FullMonth" font-size="10pt" font-names="Times New Roman" forecolor="Black" titleformat="Month" daynameformat="Full"
+                                            backcolor="White" bordercolor="Black" borderstyle="Double" showgridlines="True">
+                                <SelectedDayStyle backcolor="#CC3333" forecolor="White"></SelectedDayStyle>
+                                <TodayDayStyle backcolor="#CCCC99"></TodayDayStyle>
+                                <SelectorStyle backcolor="#CCCCCC" width="1%" forecolor="#333333" font-size="8pt" font-names="Verdana" font-bold="True"></SelectorStyle>
+                                <DayStyle backcolor="#E0E0E0" width="14%" font-bold="False"></DayStyle>
+                                <OtherMonthDayStyle forecolor="#999999"></OtherMonthDayStyle>
+                                <NextPrevStyle forecolor="White" font-size="8pt"></NextPrevStyle>
+                                <DayHeaderStyle backcolor="#CCCCCC" height="10pt" forecolor="#333333" font-size="7pt" font-bold="True"></DayHeaderStyle>
+                                <TitleStyle backcolor="Black" height="14pt" forecolor="White" font-size="13pt" font-bold="True"></TitleStyle>
+                              </asp:Calendar></td>
+                            <td style="HEIGHT: 179px">
+                              <p align="right">
+                                <asp:Calendar id="CalendarSaida" runat="server" width="209px" height="75px" enabletheming="True" nextprevformat="FullMonth" font-size="10pt" font-names="Times New Roman" forecolor="Black" titleformat="Month" daynameformat="Full"
+                                              backcolor="White" bordercolor="Black" borderstyle="Double" showgridlines="True">
+                                  <SelectedDayStyle backcolor="#CC3333" forecolor="White"></SelectedDayStyle>
+                                  <TodayDayStyle backcolor="#CCCC99"></TodayDayStyle>
+                                  <SelectorStyle backcolor="#CCCCCC" width="1%" forecolor="#333333" font-size="8pt" font-names="Verdana" font-bold="True"></SelectorStyle>
+                                  <DayStyle backcolor="#E0E0E0" width="14%" font-bold="False"></DayStyle>
+                                  <OtherMonthDayStyle forecolor="#999999"></OtherMonthDayStyle>
+                                  <NextPrevStyle forecolor="White" font-size="8pt"></NextPrevStyle>
+                                  <DayHeaderStyle backcolor="#CCCCCC" height="10pt" forecolor="#333333" font-size="7pt" font-bold="True"></DayHeaderStyle>
+                                  <TitleStyle backcolor="Black" height="14pt" forecolor="White" font-size="13pt" font-bold="True"></TitleStyle>
+                                </asp:Calendar>
+                              </p></td>
+                          </tr>
+                      </table>
+                    </p></td>
+                </tr>
+            </table>
+          </P>
+          <P align="left">
+            <asp:Label id="Label3" runat="server" text="Label"></asp:Label>
+          </P>
+          <TABLE style="WIDTH: 357px; HEIGHT: 39px" bordercolor="wheat" cellspacing="3" cellpadding="1" width="357" bgcolor="oldlace" border="1">
+              <tr>
+                <td>
+                  <div align="center">
+                    <asp:Button id="Button2" runat="server" text="Mostrar Relatório" width="128px" height="25px"></asp:Button>
+                  </div></td>
+                <td>
+                  <div align="center">
+                    <asp:Button id="Button3" runat="server" text="Gerar Relatório"></asp:Button>
+                  </div></td>
+              </tr>
+          </TABLE>
+          <HR width="100%" size="1">
+          <DIV align="center">
+            <asp:GridView id="GridView1" runat="server" width="192px" backcolor="White" bordercolor="White" borderstyle="Ridge" borderwidth="2px" cellspacing="1" cellpadding="3" gridlines="None">
+              <FooterStyle backcolor="#C6C3C6" forecolor="Black"></FooterStyle>
+              <RowStyle backcolor="#DEDFDE" forecolor="Black"></RowStyle>
+              <SelectedRowStyle backcolor="#9471DE" forecolor="White" font-bold="True"></SelectedRowStyle>
+              <PagerStyle backcolor="#C6C3C6" forecolor="Black" horizontalalign="Right"></PagerStyle>
+              <HeaderStyle backcolor="#4A3C8C" forecolor="#E7E7FF" font-bold="True"></HeaderStyle>
+            </asp:GridView>
+          </DIV>
+      </asp:Panel>
+      </div>
+      <asp:Label id="Label2" runat="server" text="Label"></asp:Label>
+      <div align="center">
+</div>
+      <div align="center">
+</div>
+      <div align="center">
+</div>
+     </form>
+  </body>
+</html>

@@ -1,7 +1,0 @@
-package android.twitter;
-
-import android.app.Activity;
-
-public class NewTweetActivity extends Activity {
-
-}

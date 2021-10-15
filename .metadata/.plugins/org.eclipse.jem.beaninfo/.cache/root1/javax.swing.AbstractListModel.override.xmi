@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<change:ChangeDescription xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:change="http://www.eclipse.org/emf/2003/Change" xmlns:codeGenHelpers="platform:/plugin/org.eclipse.ve.java.core/overrides/codegenHelpers.ecore" xmlns:org.eclipse.jem.java="java.xmi" xmi:id="ChangeDescription_1272764627282">
-  <objectChanges xmi:type="change:EObjectToChangesMapEntry" xmi:id="EObjectToChangesMapEntry_1272764627282" key="org.eclipse.jem.java:JavaClass java:/javax.swing#AbstractListModel">
-    <value xmi:type="change:FeatureChange" xmi:id="FeatureChange_1272764627282" featureName="eAnnotations">
-      <listChanges xmi:type="change:ListChange" xmi:id="ListChange_1272764627282" referenceValues="codeGenHelpers:CodeGenHelperClass file:/C:/Users/Vitor/workspace/.metadata/.plugins/org.eclipse.jem.beaninfo/.cache/root1/javax.swing.AbstractListModel.override.xmi#CodeGenHelperClass_1272764627282"/>
-    </value>
-  </objectChanges>
-  <objectsToAttach xmi:type="codeGenHelpers:CodeGenHelperClass" xmi:id="CodeGenHelperClass_1272764627282" source="codegen.CodeGenHelperClass" modelled="true"/>
-</change:ChangeDescription>

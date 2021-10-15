@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;provaFinalEu/src/prova&apos;&#x0D;&#x0A;- Original project: &apos;provaFinal&apos;&#x0D;&#x0A;- Destination element: &apos;provaFinalEu/src/prova&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     prova.IRestaurante.java&#x0D;&#x0A;     prova.RestauranteEmptyException.java" description="Copy compilation units" destination="=provaFinalEu/src&lt;prova" element1="/src&lt;prova{IRestaurante.java" element2="/src&lt;prova{RestauranteEmptyException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1332262210992" units="2" version="1.0"/>
-</session>

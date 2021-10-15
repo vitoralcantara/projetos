@@ -1,7 +1,0 @@
-package game.forum;
-
-import android.app.Activity;
-
-public class RequisitosSistemaActivity extends Activity {
-
-}

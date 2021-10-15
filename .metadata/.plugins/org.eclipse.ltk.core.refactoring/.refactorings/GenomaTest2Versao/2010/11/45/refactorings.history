@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;GenomaTest.java&apos; to &apos;GenomaTest2Versao/src/test&apos;&#x0D;&#x0A;- Original project: &apos;GenomaTest2Versao&apos;&#x0D;&#x0A;- Destination element: &apos;GenomaTest2Versao/src/test&apos;&#x0D;&#x0A;- Original element: &apos;principal.GenomaTest.java&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update fully qualified names in &apos;*&apos; files" description="Move compilation unit" destination="/src&lt;test" element1="/src&lt;principal{GenomaTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="true" references="true" stamp="1288619661482" units="1" version="1.0"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;XML-To-SMT-Translator&apos;" deleteContents="false" description="Delete resource &apos;XML-To-SMT-Translator&apos;" element1="/XML-To-SMT-Translator" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1272134498488"/>
-</session>

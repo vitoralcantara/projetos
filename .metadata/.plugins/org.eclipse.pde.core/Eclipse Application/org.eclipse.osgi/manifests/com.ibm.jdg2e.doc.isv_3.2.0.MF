@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Generated-from: 1166128512000;type=2
-Bundle-ManifestVersion: 2
-Bundle-Name: JDG2E: Online Documentation
-Bundle-SymbolicName: com.ibm.jdg2e.doc.isv; singleton:=true
-Bundle-Version: 3.2.0
-Bundle-Vendor: The Java Developer's Guide to Eclipse
-Bundle-Localization: plugin
-Eclipse-LazyStart: true

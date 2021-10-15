@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;intString&apos; in &apos;CorteMaximoGrasp.main(...)&apos; to &apos;doubleString&apos;&#x0D;&#x0A;- Original project: &apos;CorteMaximoGrafo&apos;&#x0D;&#x0A;- Original element: &apos;CorteMaximoGrasp.main(String[]).intString&apos;&#x0D;&#x0A;- Renamed element: &apos;intString&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;intString&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{CorteMaximoGrasp.java[CorteMaximoGrasp~main~\[QString;@intString!16458!16506!16465!16473!QString;!0!false" name="doubleString" references="true" stamp="1322169578873" version="1.0"/>
-</session>

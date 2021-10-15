@@ -1,7 +1,0 @@
-import arvore.generica.TreeNode;
-
-public class ParentescoTree<T> extends TreeNode<T> {
-
-	private Parentesco parentesco;
-
-}

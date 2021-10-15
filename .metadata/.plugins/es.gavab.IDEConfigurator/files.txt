@@ -1,3 +1,0 @@
-org.eclipse.core.runtime/.settings/org.eclipse.dltk.ruby.debug.prefs
-org.eclipse.core.runtime/.settings/org.eclipse.dltk.launching.prefs
-org.eclipse.core.runtime/.settings/de.leiffrenzel.fp.haskell.ghccompiler.prefs

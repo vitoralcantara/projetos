@@ -1,5 +1,0 @@
-
-module Casa where
-
-f:: Int->Int
-f n = 2 * n
